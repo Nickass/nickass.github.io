@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html class="no-js" lang="ru">
+
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Main</title>
+        <meta content="" name="description">
+        <meta content="" name="keywords">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta content="telephone=no" name="format-detection">
+        <meta name="HandheldFriendly" content="true">
+
+        <link href="static/css/mainew77pstxpze4zn7e3ik9.min.css" rel="stylesheet" type="text/css">
+        <link rel="icon" type="image/x-icon" href="favicon.ico">
+        <script>
+            (function(H){H.className=H.className.replace(/\bno-js\b/,'js')})(document.documentElement)
+        </script>
+        
+        
+    </head>
+
+    <body class="page">
+        <!---->
+        <!--========================== DELETE ME start ===========================-->
+        <!---->
+        <style>
+            .demo{
+            	 position: fixed;
+            	 background: rgba(0,0,0,.5);
+            	 z-index: 1000;
+               top:20%;
+            	 font-size: 16px;
+            }
+            .demo ul{display:none;padding:0;margin:0;}
+            .demo li{
+             padding: 0.5em 1em;
+            	 list-style:none;
+            }
+            .demo a{color:#fff;}
+            .demo label{display:inline-block;background-color: rgba(20,20,200,.35);color: #ee9;position:absolute; bottom:100%;left:0;padding:.4em;cursor:pointer;border:1px solid #ee9;padding:0.5em;transition:300ms;}
+            .demo label:hover{background: #44f;}
+            .demo input:checked + ul{display:block;}
+        </style>
+        <div class="demo">
+            <label for="demo-hide">Cсылки</label>
+            <input type="checkbox" hidden style="display:none;" id="demo-hide">
+            <ul>
+                <li><a onclick="this.href = window.location.href.match(/.*\//)[0] + 'contacts.html'" href="#">contacts</a>
+                </li>
+                <li><a onclick="this.href = window.location.href.match(/.*\//)[0] + 'index.html'" href="#">index</a>
+                </li>
+            </ul>
+        </div>
+        <!---->
+        <!--========================== DELETE ME end ===========================-->
+        <!---->
+        <div class="header">
+            <div class="bg-light">
+                <div class="container--flex">
+                    <div class="header__logo">
+                        <a href="/">
+                            <img src="static/img/content/logo.png">
+                        </a>
+                    </div>
+                    <div class="header__info">Artilērijas iela 40, Rīga, LV-1009, Latvija.
+                        <br>Talr. +371 67297811
+                        <br>Fakss +371 67813121
+                        <br><a class="Mail-link" href="mailto:info@komteh.lv">info@komteh.lv
+            <svg class="svgic--letter Mail-link__icon" width="39.474px" height="39.474px">
+                <use xlink:href="static/img/svg-symbolsew77pstxpze4zn7e3ik9.svg#letter"></use>
+            </svg>
+        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-dark">
+                <div class="container--flex">
+                    <div class="header__nav">
+                        <!-- Do not use spaces because it will broke markup-->
+                        <nav class="Inline-nav">
+                            <button class="Inline-nav__toggler">
+                                <svg class="svgic--burger Inline-nav__icon" width="24px" height="24px">
+                                    <use xlink:href="static/img/svg-symbolsew77pstxpze4zn7e3ik9.svg#burger"></use>
+                                </svg>
+
+                            </button>
+                            <ul class="Inline-nav__list">
+                                <li class="Inline-nav__item"><a class="Nav-link" href="#">Par mums</a>
+                                </li>
+                                <li class="Inline-nav__item"><a class="Nav-link" href="#">Katalogs</a>
+                                </li>
+                                <li class="Inline-nav__item"><a class="Nav-link" href="#">Serviss</a>
+                                </li>
+                                <li class="Inline-nav__item"><a class="Nav-link" href="#">Izstādes</a>
+                                </li>
+                                <li class="Inline-nav__item"><a class="Nav-link" href="#">Kontakti</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="header__search">
+                        <form class="Search" method="GET" action="/">
+                            <input type="search" placeholder=Search class="Search__input" />
+                            <button type="submit" class="Search__btn">
+                                <svg class="svgic--search Search__icon" width="24px" height="24px">
+                                    <use xlink:href="static/img/svg-symbolsew77pstxpze4zn7e3ik9.svg#search"></use>
+                                </svg>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="header__more">
+                    <div class="Flags">
+                        <a class="Flags__item" href="/lv" title="lv">
+                            <svg class="svgic--lv Flags__icon" width="640px" height="480px">
+                                <use xlink:href="static/img/svg-symbolsew77pstxpze4zn7e3ik9.svg#lv"></use>
+                            </svg>
+                        </a>
+                        <a class="Flags__item" href="/ru" title="ru">
+                            <svg class="svgic--ru Flags__icon" width="640px" height="480px">
+                                <use xlink:href="static/img/svg-symbolsew77pstxpze4zn7e3ik9.svg#ru"></use>
+                            </svg>
+                        </a>
+                        <a class="Flags__item" href="/en" title="en">
+                            <svg class="svgic--en Flags__icon" width="640px" height="480px">
+                                <use xlink:href="static/img/svg-symbolsew77pstxpze4zn7e3ik9.svg#en"></use>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="header__more">
+                    <div class="Cart">
+                        <svg class="svgic--cart Cart__icon" width="512px" height="512px">
+                            <use xlink:href="static/img/svg-symbolsew77pstxpze4zn7e3ik9.svg#cart"></use>
+                        </svg>
+
+                        <ul class="Cart__list">
+                            <li class="Cart__item"><a class="Cart__link" href="#">Арендовать</a>
+                            </li>
+                            <li class="Cart__item"><a class="Cart__link" href="#">Купить</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="header__more">
+                    <button class="sidebar__toggler">В ПРОДАЖЕ</button>
+                </div>
+            </div>
+        </div>
+        <div class="page__wrapper">
+            <div class="container--flex">
+                <div class="sidebar bg-light">
+                    <h3 class="sidebar__title">В ПРОДАЖЕ</h3>
+                    <ul class="sidebar__list">
+                        <div class="Drop-menu sidebar__item">
+                            <div class="Drop-menu__header"><a class="Menu-link Drop-menu__title" href="#">Schowalter, Pollich and Lehner</a>
+                                <button class="Arrow-btn Drop-menu__toggler">
+                                    <svg class="svgic--arrow Arrow-btn__icon" width="768px" height="768px">
+                                        <use xlink:href="static/img/svg-symbolsew77pstxpze4zn7e3ik9.svg#arrow"></use>
+                                    </svg>
+
+                                </button>
+                            </div>
+                            <ul class="Drop-menu__list">
+                                <li class="Drop-menu__item"><a class="Menu-link" href="#">Johnston Group Streamlined leading edge analyzer</a>
+                                </li>
+                                <li class="Drop-menu__item"><a class="Menu-link" href="#">Kautzer Inc Monitored uniform firmware</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="Drop-menu sidebar__item">
+                            <div class="Drop-menu__header"><a class="Menu-link Drop-menu__title" href="#">Mosciski LLC</a>
+                                <button class="Arrow-btn Drop-menu__toggler">
+                                    <svg class="svgic--arrow Arrow-btn__icon" width="768px" height="768px">
+                                        <use xlink:href="static/img/svg-symbolsew77pstxpze4zn7e3ik9.svg#arrow"></use>
+                                    </svg>
+
+                                </button>
+                            </div>
+                            <ul class="Drop-menu__list">
+                                <li class="Drop-menu__item"><a class="Menu-link" href="#">Cummerata and Sons Versatile motivating open system</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="Drop-menu sidebar__item">
+                            <div class="Drop-menu__header"><a class="Menu-link Drop-menu__title" href="#">Haley LLC</a>
+                                <button class="Arrow-btn Drop-menu__toggler">
+                                    <svg class="svgic--arrow Arrow-btn__icon" width="768px" height="768px">
+                                        <use xlink:href="static/img/svg-symbolsew77pstxpze4zn7e3ik9.svg#arrow"></use>
+                                    </svg>
+
+                                </button>
+                            </div>
+                            <ul class="Drop-menu__list">
+                                <li class="Drop-menu__item"><a class="Menu-link" href="#">Hilpert LLC Devolved static contingency</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="Drop-menu sidebar__item">
+                            <div class="Drop-menu__header"><a class="Menu-link Drop-menu__title" href="#">Bruen, Lang and Hills</a>
+                                <button class="Arrow-btn Drop-menu__toggler">
+                                    <svg class="svgic--arrow Arrow-btn__icon" width="768px" height="768px">
+                                        <use xlink:href="static/img/svg-symbolsew77pstxpze4zn7e3ik9.svg#arrow"></use>
+                                    </svg>
+
+                                </button>
+                            </div>
+                            <ul class="Drop-menu__list">
+                                <li class="Drop-menu__item"><a class="Menu-link" href="#">Mueller, Corkery and Braun Phased mobile monitoring</a>
+                                </li>
+                                <li class="Drop-menu__item"><a class="Menu-link" href="#">O'Reilly - Towne Multi-lateral optimal project</a>
+                                </li>
+                                <li class="Drop-menu__item"><a class="Menu-link" href="#">Reynolds, Wuckert and Kshlerin Polarised scalable system engine</a>
+                                </li>
+                                <li class="Drop-menu__item"><a class="Menu-link" href="#">Prohaska - Goyette Public-key bottom-line contingency</a>
+                                </li>
+                                <li class="Drop-menu__item"><a class="Menu-link" href="#">Lehner - Marquardt Compatible neutral functionalities</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="Drop-menu sidebar__item">
+                            <div class="Drop-menu__header"><a class="Menu-link Drop-menu__title" href="#">Prohaska - Koss</a>
+                                <button class="Arrow-btn Drop-menu__toggler">
+                                    <svg class="svgic--arrow Arrow-btn__icon" width="768px" height="768px">
+                                        <use xlink:href="static/img/svg-symbolsew77pstxpze4zn7e3ik9.svg#arrow"></use>
+                                    </svg>
+
+                                </button>
+                            </div>
+                            <ul class="Drop-menu__list">
+                                <li class="Drop-menu__item"><a class="Menu-link" href="#">Koch, Muller and Crona Advanced web-enabled frame</a>
+                                </li>
+                                <li class="Drop-menu__item"><a class="Menu-link" href="#">Roberts - Senger Cross-group zero defect capacity</a>
+                                </li>
+                                <li class="Drop-menu__item"><a class="Menu-link" href="#">Feeney - Lang Monitored eco-centric capacity</a>
+                                </li>
+                                <li class="Drop-menu__item"><a class="Menu-link" href="#">Langosh Group Open-source executive paradigm</a>
+                                </li>
+                                <li class="Drop-menu__item"><a class="Menu-link" href="#">Mann - Bergstrom Expanded tertiary application</a>
+                                </li>
+                                <li class="Drop-menu__item"><a class="Menu-link" href="#">White, Willms and Ratke Switchable fresh-thinking help-desk</a>
+                                </li>
+                                <li class="Drop-menu__item"><a class="Menu-link" href="#">Aufderhar - Gibson Progressive next generation pricing structure</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="Drop-menu sidebar__item">
+                            <div class="Drop-menu__header"><a class="Menu-link Drop-menu__title" href="#">Kohler - Bartell</a>
+                                <button class="Arrow-btn Drop-menu__toggler">
+                                    <svg class="svgic--arrow Arrow-btn__icon" width="768px" height="768px">
+                                        <use xlink:href="static/img/svg-symbolsew77pstxpze4zn7e3ik9.svg#arrow"></use>
+                                    </svg>
+
+                                </button>
+                            </div>
+                            <ul class="Drop-menu__list">
+                                <li class="Drop-menu__item"><a class="Menu-link" href="#">Lesch, Mante and Wilkinson Automated scalable focus group</a>
+                                </li>
+                                <li class="Drop-menu__item"><a class="Menu-link" href="#">Lakin, Ortiz and Nolan Pre-emptive client-server customer loyalty</a>
+                                </li>
+                                <li class="Drop-menu__item"><a class="Menu-link" href="#">Emard - Adams Persevering interactive project</a>
+                                </li>
+                                <li class="Drop-menu__item"><a class="Menu-link" href="#">Glover - Gaylord Future-proofed 5th generation website</a>
+                                </li>
+                                <li class="Drop-menu__item"><a class="Menu-link" href="#">Conroy, Bauch and Towne Proactive optimal framework</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="Drop-menu sidebar__item">
+                            <div class="Drop-menu__header"><a class="Menu-link Drop-menu__title" href="#">Grady, Bayer and Hauck</a>
+                                <button class="Arrow-btn Drop-menu__toggler">
+                                    <svg class="svgic--arrow Arrow-btn__icon" width="768px" height="768px">
+                                        <use xlink:href="static/img/svg-symbolsew77pstxpze4zn7e3ik9.svg#arrow"></use>
+                                    </svg>
+
+                                </button>
+                            </div>
+                            <ul class="Drop-menu__list">
+                                <li class="Drop-menu__item"><a class="Menu-link" href="#">O'Reilly, Hilll and Jenkins Grass-roots responsive knowledge base</a>
+                                </li>
+                                <li class="Drop-menu__item"><a class="Menu-link" href="#">Thiel, Gusikowski and Mosciski Visionary exuding focus group</a>
+                                </li>
+                                <li class="Drop-menu__item"><a class="Menu-link" href="#">Gulgowski, Kuhlman and Reichel Universal content-based intranet</a>
+                                </li>
+                                <li class="Drop-menu__item"><a class="Menu-link" href="#">Zieme - Schneider Open-source multi-tasking infrastructure</a>
+                                </li>
+                                <li class="Drop-menu__item"><a class="Menu-link" href="#">Koepp, Bode and Quigley Visionary object-oriented strategy</a>
+                                </li>
+                                <li class="Drop-menu__item"><a class="Menu-link" href="#">Eichmann - Cronin Synergistic transitional encryption</a>
+                                </li>
+                                <li class="Drop-menu__item"><a class="Menu-link" href="#">Pagac LLC Enhanced web-enabled leverage</a>
+                                </li>
+                                <li class="Drop-menu__item"><a class="Menu-link" href="#">Hansen, Maggio and Stark Right-sized disintermediate implementation</a>
+                                </li>
+                                <li class="Drop-menu__item"><a class="Menu-link" href="#">Senger LLC Self-enabling system-worthy middleware</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="Drop-menu sidebar__item">
+                            <div class="Drop-menu__header"><a class="Menu-link Drop-menu__title" href="#">Zieme - Kub</a>
+                                <button class="Arrow-btn Drop-menu__toggler">
+                                    <svg class="svgic--arrow Arrow-btn__icon" width="768px" height="768px">
+                                        <use xlink:href="static/img/svg-symbolsew77pstxpze4zn7e3ik9.svg#arrow"></use>
+                                    </svg>
+
+                                </button>
+                            </div>
+                            <ul class="Drop-menu__list">
+                                <li class="Drop-menu__item"><a class="Menu-link" href="#">Lueilwitz Group Grass-roots leading edge migration</a>
+                                </li>
+                                <li class="Drop-menu__item"><a class="Menu-link" href="#">Zemlak Inc Centralized neutral pricing structure</a>
+                                </li>
+                                <li class="Drop-menu__item"><a class="Menu-link" href="#">Schaden, Nicolas and Abernathy Front-line asynchronous functionalities</a>
+                                </li>
+                                <li class="Drop-menu__item"><a class="Menu-link" href="#">Cassin - Feeney Managed homogeneous ability</a>
+                                </li>
+                                <li class="Drop-menu__item"><a class="Menu-link" href="#">Kuhlman Group Horizontal 24/7 help-desk</a>
+                                </li>
+                                <li class="Drop-menu__item"><a class="Menu-link" href="#">Barrows, Witting and Heathcote Business-focused heuristic access</a>
+                                </li>
+                                <li class="Drop-menu__item"><a class="Menu-link" href="#">Conn and Sons Reduced incremental local area network</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="Drop-menu sidebar__item">
+                            <div class="Drop-menu__header"><a class="Menu-link Drop-menu__title" href="#">Rogahn - Gulgowski</a>
+                                <button class="Arrow-btn Drop-menu__toggler">
+                                    <svg class="svgic--arrow Arrow-btn__icon" width="768px" height="768px">
+                                        <use xlink:href="static/img/svg-symbolsew77pstxpze4zn7e3ik9.svg#arrow"></use>
+                                    </svg>
+
+                                </button>
+                            </div>
+                            <ul class="Drop-menu__list">
+                                <li class="Drop-menu__item"><a class="Menu-link" href="#">Olson, Harber and Monahan Multi-tiered human-resource website</a>
+                                </li>
+                                <li class="Drop-menu__item"><a class="Menu-link" href="#">Heller - Emard Extended systematic attitude</a>
+                                </li>
+                                <li class="Drop-menu__item"><a class="Menu-link" href="#">Paucek LLC Configurable reciprocal challenge</a>
+                                </li>
+                                <li class="Drop-menu__item"><a class="Menu-link" href="#">West - Wolf Multi-layered demand-driven local area network</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="Drop-menu sidebar__item">
+                            <div class="Drop-menu__header"><a class="Menu-link Drop-menu__title" href="#">Larkin Inc</a>
+                                <button class="Arrow-btn Drop-menu__toggler">
+                                    <svg class="svgic--arrow Arrow-btn__icon" width="768px" height="768px">
+                                        <use xlink:href="static/img/svg-symbolsew77pstxpze4zn7e3ik9.svg#arrow"></use>
+                                    </svg>
+
+                                </button>
+                            </div>
+                            <ul class="Drop-menu__list">
+                                <li class="Drop-menu__item"><a class="Menu-link" href="#">Greenholt and Sons Customizable zero tolerance software</a>
+                                </li>
+                                <li class="Drop-menu__item"><a class="Menu-link" href="#">Hyatt Inc Open-architected maximized paradigm</a>
+                                </li>
+                                <li class="Drop-menu__item"><a class="Menu-link" href="#">Kohler Group Stand-alone system-worthy infrastructure</a>
+                                </li>
+                                <li class="Drop-menu__item"><a class="Menu-link" href="#">Mayer, Hansen and Moen Profit-focused systematic utilisation</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="Drop-menu sidebar__item">
+                            <div class="Drop-menu__header"><a class="Menu-link Drop-menu__title" href="#">Shields Inc</a>
+                                <button class="Arrow-btn Drop-menu__toggler">
+                                    <svg class="svgic--arrow Arrow-btn__icon" width="768px" height="768px">
+                                        <use xlink:href="static/img/svg-symbolsew77pstxpze4zn7e3ik9.svg#arrow"></use>
+                                    </svg>
+
+                                </button>
+                            </div>
+                            <ul class="Drop-menu__list">
+                                <li class="Drop-menu__item"><a class="Menu-link" href="#">Sipes Group Down-sized impactful data-warehouse</a>
+                                </li>
+                                <li class="Drop-menu__item"><a class="Menu-link" href="#">Beahan, Wehner and Prohaska Digitized dedicated info-mediaries</a>
+                                </li>
+                                <li class="Drop-menu__item"><a class="Menu-link" href="#">Goldner, Carter and Sanford Cross-platform fault-tolerant archive</a>
+                                </li>
+                                <li class="Drop-menu__item"><a class="Menu-link" href="#">Sanford, Hackett and Smitham Automated high-level hardware</a>
+                                </li>
+                                <li class="Drop-menu__item"><a class="Menu-link" href="#">Wiegand - MacGyver Persistent solution-oriented middleware</a>
+                                </li>
+                                <li class="Drop-menu__item"><a class="Menu-link" href="#">Waters and Sons Synergized actuating orchestration</a>
+                                </li>
+                                <li class="Drop-menu__item"><a class="Menu-link" href="#">Bogan, Bartoletti and VonRueden Exclusive non-volatile support</a>
+                                </li>
+                                <li class="Drop-menu__item"><a class="Menu-link" href="#">Kemmer - VonRueden Organic well-modulated paradigm</a>
+                                </li>
+                                <li class="Drop-menu__item"><a class="Menu-link" href="#">Veum Group Versatile leading edge open system</a>
+                                </li>
+                                <li class="Drop-menu__item"><a class="Menu-link" href="#">Crist, Rempel and Parisian Face to face client-driven open architecture</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="Drop-menu sidebar__item">
+                            <div class="Drop-menu__header"><a class="Menu-link Drop-menu__title" href="#">Williamson - Konopelski</a>
+                                <button class="Arrow-btn Drop-menu__toggler">
+                                    <svg class="svgic--arrow Arrow-btn__icon" width="768px" height="768px">
+                                        <use xlink:href="static/img/svg-symbolsew77pstxpze4zn7e3ik9.svg#arrow"></use>
+                                    </svg>
+
+                                </button>
+                            </div>
+                            <ul class="Drop-menu__list">
+                                <li class="Drop-menu__item"><a class="Menu-link" href="#">Durgan - Lemke Networked multi-state process improvement</a>
+                                </li>
+                                <li class="Drop-menu__item"><a class="Menu-link" href="#">McGlynn - Jacobson Profound 3rd generation data-warehouse</a>
+                                </li>
+                                <li class="Drop-menu__item"><a class="Menu-link" href="#">Monahan - Muller Upgradable intangible toolset</a>
+                                </li>
+                                <li class="Drop-menu__item"><a class="Menu-link" href="#">Howe Inc Optional client-server capacity</a>
+                                </li>
+                                <li class="Drop-menu__item"><a class="Menu-link" href="#">Stracke - McCullough Future-proofed empowering policy</a>
+                                </li>
+                                <li class="Drop-menu__item"><a class="Menu-link" href="#">Quitzon LLC Reactive needs-based service-desk</a>
+                                </li>
+                                <li class="Drop-menu__item"><a class="Menu-link" href="#">Weimann, Morar and Zulauf Progressive directional flexibility</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </ul>
+                </div>
+                <main class="main">
+                    <div class="main__title">Каталог</div>
+                    <div class="main__content">
+                        <ul class="Catalog">
+                            <li class="Catalog__item"><a class="Card" href="#"><span class="Card__desc">Green and Sons</span><img class="Card__img" src="http://lorempixel.com/640/480/technics"></a>
+                            </li>
+                            <li class="Catalog__item"><a class="Card" href="#"><span class="Card__desc">Brakus, Ebert and Johns</span><img class="Card__img" src="http://lorempixel.com/640/480/abstract"></a>
+                            </li>
+                            <li class="Catalog__item"><a class="Card" href="#"><span class="Card__desc">Dickens LLC</span><img class="Card__img" src="http://lorempixel.com/640/480/fashion"></a>
+                            </li>
+                            <li class="Catalog__item"><a class="Card" href="#"><span class="Card__desc">Haag, White and Barrows</span><img class="Card__img" src="http://lorempixel.com/640/480/people"></a>
+                            </li>
+                            <li class="Catalog__item"><a class="Card" href="#"><span class="Card__desc">Botsford - Feil</span><img class="Card__img" src="http://lorempixel.com/640/480/nightlife"></a>
+                            </li>
+                            <li class="Catalog__item"><a class="Card" href="#"><span class="Card__desc">Gulgowski LLC</span><img class="Card__img" src="http://lorempixel.com/640/480/nightlife"></a>
+                            </li>
+                            <li class="Catalog__item"><a class="Card" href="#"><span class="Card__desc">Towne and Sons</span><img class="Card__img" src="http://lorempixel.com/640/480/nature"></a>
+                            </li>
+                            <li class="Catalog__item"><a class="Card" href="#"><span class="Card__desc">Hilpert - Emmerich</span><img class="Card__img" src="http://lorempixel.com/640/480/animals"></a>
+                            </li>
+                            <li class="Catalog__item"><a class="Card" href="#"><span class="Card__desc">Fisher - Witting</span><img class="Card__img" src="http://lorempixel.com/640/480/cats"></a>
+                            </li>
+                            <li class="Catalog__item"><a class="Card" href="#"><span class="Card__desc">Mosciski and Sons</span><img class="Card__img" src="http://lorempixel.com/640/480/food"></a>
+                            </li>
+                            <li class="Catalog__item"><a class="Card" href="#"><span class="Card__desc">Reichel and Sons</span><img class="Card__img" src="http://lorempixel.com/640/480/sports"></a>
+                            </li>
+                            <li class="Catalog__item"><a class="Card" href="#"><span class="Card__desc">Lesch LLC</span><img class="Card__img" src="http://lorempixel.com/640/480/cats"></a>
+                            </li>
+                            <li class="Catalog__item"><a class="Card" href="#"><span class="Card__desc">Ernser, Davis and Simonis</span><img class="Card__img" src="http://lorempixel.com/640/480/nightlife"></a>
+                            </li>
+                            <li class="Catalog__item"><a class="Card" href="#"><span class="Card__desc">Cremin Group</span><img class="Card__img" src="http://lorempixel.com/640/480/people"></a>
+                            </li>
+                            <li class="Catalog__item"><a class="Card" href="#"><span class="Card__desc">Littel and Sons</span><img class="Card__img" src="http://lorempixel.com/640/480/nightlife"></a>
+                            </li>
+                            <li class="Catalog__item"><a class="Card" href="#"><span class="Card__desc">Kemmer, Spinka and Rice</span><img class="Card__img" src="http://lorempixel.com/640/480/cats"></a>
+                            </li>
+                            <li class="Catalog__item"><a class="Card" href="#"><span class="Card__desc">Tromp and Sons</span><img class="Card__img" src="http://lorempixel.com/640/480/fashion"></a>
+                            </li>
+                            <li class="Catalog__item"><a class="Card" href="#"><span class="Card__desc">Nolan, Connelly and Howe</span><img class="Card__img" src="http://lorempixel.com/640/480/business"></a>
+                            </li>
+                            <li class="Catalog__item"><a class="Card" href="#"><span class="Card__desc">Lubowitz and Sons</span><img class="Card__img" src="http://lorempixel.com/640/480/people"></a>
+                            </li>
+                            <li class="Catalog__item"><a class="Card" href="#"><span class="Card__desc">Johnston Group</span><img class="Card__img" src="http://lorempixel.com/640/480/transport"></a>
+                            </li>
+                            <li class="Catalog__item"><a class="Card" href="#"><span class="Card__desc">Lowe - Keeling</span><img class="Card__img" src="http://lorempixel.com/640/480/cats"></a>
+                            </li>
+                            <li class="Catalog__item"><a class="Card" href="#"><span class="Card__desc">Bogan Inc</span><img class="Card__img" src="http://lorempixel.com/640/480/food"></a>
+                            </li>
+                            <li class="Catalog__item"><a class="Card" href="#"><span class="Card__desc">Kuphal - Sawayn</span><img class="Card__img" src="http://lorempixel.com/640/480/abstract"></a>
+                            </li>
+                            <li class="Catalog__item"><a class="Card" href="#"><span class="Card__desc">Reilly LLC</span><img class="Card__img" src="http://lorempixel.com/640/480/transport"></a>
+                            </li>
+                            <li class="Catalog__item"><a class="Card" href="#"><span class="Card__desc">Kessler, Cronin and Adams</span><img class="Card__img" src="http://lorempixel.com/640/480/transport"></a>
+                            </li>
+                            <li class="Catalog__item"><a class="Card" href="#"><span class="Card__desc">Fay, Gorczany and Hermann</span><img class="Card__img" src="http://lorempixel.com/640/480/fashion"></a>
+                            </li>
+                            <li class="Catalog__item"><a class="Card" href="#"><span class="Card__desc">Barton, Ernser and Pollich</span><img class="Card__img" src="http://lorempixel.com/640/480/abstract"></a>
+                            </li>
+                            <li class="Catalog__item"><a class="Card" href="#"><span class="Card__desc">Deckow, Lemke and Medhurst</span><img class="Card__img" src="http://lorempixel.com/640/480/nightlife"></a>
+                            </li>
+                            <li class="Catalog__item"><a class="Card" href="#"><span class="Card__desc">Farrell Inc</span><img class="Card__img" src="http://lorempixel.com/640/480/abstract"></a>
+                            </li>
+                            <li class="Catalog__item"><a class="Card" href="#"><span class="Card__desc">Kulas - Berge</span><img class="Card__img" src="http://lorempixel.com/640/480/abstract"></a>
+                            </li>
+                            <li class="Catalog__item"><a class="Card" href="#"><span class="Card__desc">Klein, Hackett and Grimes</span><img class="Card__img" src="http://lorempixel.com/640/480/food"></a>
+                            </li>
+                            <li class="Catalog__item"><a class="Card" href="#"><span class="Card__desc">Hintz, Stokes and Emard</span><img class="Card__img" src="http://lorempixel.com/640/480/nature"></a>
+                            </li>
+                            <li class="Catalog__item"><a class="Card" href="#"><span class="Card__desc">Harber, Kirlin and Cassin</span><img class="Card__img" src="http://lorempixel.com/640/480/people"></a>
+                            </li>
+                            <li class="Catalog__item"><a class="Card" href="#"><span class="Card__desc">Runolfsdottir and Sons</span><img class="Card__img" src="http://lorempixel.com/640/480/business"></a>
+                            </li>
+                            <li class="Catalog__item"><a class="Card" href="#"><span class="Card__desc">Graham Inc</span><img class="Card__img" src="http://lorempixel.com/640/480/business"></a>
+                            </li>
+                            <li class="Catalog__item"><a class="Card" href="#"><span class="Card__desc">Jacobi Inc</span><img class="Card__img" src="http://lorempixel.com/640/480/fashion"></a>
+                            </li>
+                            <li class="Catalog__item"><a class="Card" href="#"><span class="Card__desc">Nader and Sons</span><img class="Card__img" src="http://lorempixel.com/640/480/fashion"></a>
+                            </li>
+                            <li class="Catalog__item"><a class="Card" href="#"><span class="Card__desc">Pagac, Doyle and Kautzer</span><img class="Card__img" src="http://lorempixel.com/640/480/business"></a>
+                            </li>
+                            <li class="Catalog__item"><a class="Card" href="#"><span class="Card__desc">Heller, Kovacek and Nader</span><img class="Card__img" src="http://lorempixel.com/640/480/technics"></a>
+                            </li>
+                            <li class="Catalog__item"><a class="Card" href="#"><span class="Card__desc">O'Hara, Crooks and Erdman</span><img class="Card__img" src="http://lorempixel.com/640/480/fashion"></a>
+                            </li>
+                        </ul>
+                    </div>
+                </main>
+            </div>
+        </div>
+        <div class="page__footer">
+            <footer class="footer bg-dark">
+                <div class="container">
+                    <ul class="Firms">
+                        <li class="Firms__item">
+                            <a href="#">
+                                <img src="static/img/content/firms/Webermt-logo.png">
+                            </a>
+                        </li>
+                        <li class="Firms__item">
+                            <a href="#">
+                                <img src="static/img/content/firms/ChPn-logo.png">
+                            </a>
+                        </li>
+                        <li class="Firms__item">
+                            <a href="#">
+                                <img src="static/img/content/firms/Subaru-logo.png">
+                            </a>
+                        </li>
+                        <li class="Firms__item">
+                            <a href="#">
+                                <img src="static/img/content/firms/Gesan-logo.png">
+                            </a>
+                        </li>
+                        <li class="Firms__item">
+                            <a href="#">
+                                <img src="static/img/content/firms/Gehl-logo.png">
+                            </a>
+                        </li>
+                        <li class="Firms__item">
+                            <a href="#">
+                                <img src="static/img/content/firms/Geko-logo.png">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="container ta-center">Powered by Goldbird.lv</div>
+            </footer>
+        </div>
+        
+        
+        <script src="static/js/separate-js/svg4everybody.min.js"></script>
+        <script>
+            svg4everybody();
+        </script>
+        <script src="static/js/mainew77pstxpze4zn7e3ik9.min.js"></script>
+    </body>
+
+</html>

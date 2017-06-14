@@ -1,0 +1,801 @@
+<!DOCTYPE html>
+<html class="no-js" lang="ru">
+
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Main</title>
+        <meta content="" name="description">
+        <meta content="" name="keywords">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta content="telephone=no" name="format-detection">
+        <meta name="HandheldFriendly" content="true">
+
+        <link href="static/css/mainew77pstxpze4zn7e3ik9.min.css" rel="stylesheet" type="text/css">
+        <link rel="icon" type="image/x-icon" href="favicon.ico">
+        <script>
+            (function(H){H.className=H.className.replace(/\bno-js\b/,'js')})(document.documentElement)
+        </script>
+        
+        
+    </head>
+
+    <body class="page">
+        <!---->
+        <!--========================== DELETE ME start ===========================-->
+        <!---->
+        <style>
+            .demo{
+            	 position: fixed;
+            	 background: rgba(0,0,0,.5);
+            	 z-index: 1000;
+               top:20%;
+            	 font-size: 16px;
+            }
+            .demo ul{display:none;padding:0;margin:0;}
+            .demo li{
+             padding: 0.5em 1em;
+            	 list-style:none;
+            }
+            .demo a{color:#fff;}
+            .demo label{display:inline-block;background-color: rgba(20,20,200,.35);color: #ee9;position:absolute; bottom:100%;left:0;padding:.4em;cursor:pointer;border:1px solid #ee9;padding:0.5em;transition:300ms;}
+            .demo label:hover{background: #44f;}
+            .demo input:checked + ul{display:block;}
+        </style>
+        <div class="demo">
+            <label for="demo-hide">Cсылки</label>
+            <input type="checkbox" hidden style="display:none;" id="demo-hide">
+            <ul>
+                <li><a onclick="this.href = window.location.href.match(/.*\//)[0] + 'contacts.html'" href="#">contacts</a>
+                </li>
+                <li><a onclick="this.href = window.location.href.match(/.*\//)[0] + 'index.html'" href="#">index</a>
+                </li>
+            </ul>
+        </div>
+        <!---->
+        <!--========================== DELETE ME end ===========================-->
+        <!---->
+        <div class="header">
+            <div class="bg-light">
+                <div class="container--flex">
+                    <div class="header__logo">
+                        <a href="/">
+                            <img src="static/img/content/logo.png">
+                        </a>
+                    </div>
+                    <div class="header__info">Artilērijas iela 40, Rīga, LV-1009, Latvija.
+                        <br>Talr. +371 67297811
+                        <br>Fakss +371 67813121
+                        <br><a class="Mail-link" href="mailto:info@komteh.lv">info@komteh.lv
+            <svg class="svgic--letter Mail-link__icon" width="39.474px" height="39.474px">
+                <use xlink:href="static/img/svg-symbolsew77pstxpze4zn7e3ik9.svg#letter"></use>
+            </svg>
+        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-dark">
+                <div class="container--flex">
+                    <div class="header__nav">
+                        <!-- Do not use spaces because it will broke markup-->
+                        <nav class="Inline-nav">
+                            <button class="Inline-nav__toggler">
+                                <svg class="svgic--burger Inline-nav__icon" width="24px" height="24px">
+                                    <use xlink:href="static/img/svg-symbolsew77pstxpze4zn7e3ik9.svg#burger"></use>
+                                </svg>
+
+                            </button>
+                            <ul class="Inline-nav__list">
+                                <li class="Inline-nav__item"><a class="Nav-link" href="#">Par mums</a>
+                                </li>
+                                <li class="Inline-nav__item"><a class="Nav-link" href="#">Katalogs</a>
+                                </li>
+                                <li class="Inline-nav__item"><a class="Nav-link" href="#">Serviss</a>
+                                </li>
+                                <li class="Inline-nav__item"><a class="Nav-link" href="#">Izstādes</a>
+                                </li>
+                                <li class="Inline-nav__item"><a class="Nav-link" href="#">Kontakti</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="header__search">
+                        <form class="Search" method="GET" action="/">
+                            <input type="search" placeholder=Search class="Search__input" />
+                            <button type="submit" class="Search__btn">
+                                <svg class="svgic--search Search__icon" width="24px" height="24px">
+                                    <use xlink:href="static/img/svg-symbolsew77pstxpze4zn7e3ik9.svg#search"></use>
+                                </svg>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="header__more">
+                    <div class="Flags">
+                        <a class="Flags__item" href="/lv" title="lv">
+                            <svg class="svgic--lv Flags__icon" width="640px" height="480px">
+                                <use xlink:href="static/img/svg-symbolsew77pstxpze4zn7e3ik9.svg#lv"></use>
+                            </svg>
+                        </a>
+                        <a class="Flags__item" href="/ru" title="ru">
+                            <svg class="svgic--ru Flags__icon" width="640px" height="480px">
+                                <use xlink:href="static/img/svg-symbolsew77pstxpze4zn7e3ik9.svg#ru"></use>
+                            </svg>
+                        </a>
+                        <a class="Flags__item" href="/en" title="en">
+                            <svg class="svgic--en Flags__icon" width="640px" height="480px">
+                                <use xlink:href="static/img/svg-symbolsew77pstxpze4zn7e3ik9.svg#en"></use>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="header__more">
+                    <div class="Cart">
+                        <svg class="svgic--cart Cart__icon" width="512px" height="512px">
+                            <use xlink:href="static/img/svg-symbolsew77pstxpze4zn7e3ik9.svg#cart"></use>
+                        </svg>
+
+                        <ul class="Cart__list">
+                            <li class="Cart__item"><a class="Cart__link" href="#">Арендовать</a>
+                            </li>
+                            <li class="Cart__item"><a class="Cart__link" href="#">Купить</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="header__more">
+                    <button class="sidebar__toggler">В ПРОДАЖЕ</button>
+                </div>
+            </div>
+        </div>
+        <div class="page__wrapper">
+            <div class="container--flex">
+                <div class="sidebar bg-light">
+                    <h3 class="sidebar__title">В ПРОДАЖЕ</h3>
+                    <ul class="sidebar__list">
+                        <div class="Drop-menu sidebar__item">
+                            <div class="Drop-menu__header"><a class="Menu-link Drop-menu__title" href="#">Bradtke - Sawayn</a>
+                                <button class="Arrow-btn Drop-menu__toggler">
+                                    <svg class="svgic--arrow Arrow-btn__icon" width="768px" height="768px">
+                                        <use xlink:href="static/img/svg-symbolsew77pstxpze4zn7e3ik9.svg#arrow"></use>
+                                    </svg>
+
+                                </button>
+                            </div>
+                            <ul class="Drop-menu__list">
+                                <li class="Drop-menu__item"><a class="Menu-link" href="#">Rogahn - Moore Inverse foreground implementation</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="Drop-menu sidebar__item">
+                            <div class="Drop-menu__header"><a class="Menu-link Drop-menu__title" href="#">Cassin - Leffler</a>
+                                <button class="Arrow-btn Drop-menu__toggler">
+                                    <svg class="svgic--arrow Arrow-btn__icon" width="768px" height="768px">
+                                        <use xlink:href="static/img/svg-symbolsew77pstxpze4zn7e3ik9.svg#arrow"></use>
+                                    </svg>
+
+                                </button>
+                            </div>
+                            <ul class="Drop-menu__list">
+                                <li class="Drop-menu__item"><a class="Menu-link" href="#">Robel Group Configurable full-range service-desk</a>
+                                </li>
+                                <li class="Drop-menu__item"><a class="Menu-link" href="#">Ruecker, Gaylord and Rath Cross-platform dynamic firmware</a>
+                                </li>
+                                <li class="Drop-menu__item"><a class="Menu-link" href="#">Mayert - Mertz Inverse encompassing emulation</a>
+                                </li>
+                                <li class="Drop-menu__item"><a class="Menu-link" href="#">Robel - O'Hara Upgradable 5th generation monitoring</a>
+                                </li>
+                                <li class="Drop-menu__item"><a class="Menu-link" href="#">Luettgen, Ernser and Anderson Exclusive contextually-based benchmark</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="Drop-menu sidebar__item">
+                            <div class="Drop-menu__header"><a class="Menu-link Drop-menu__title" href="#">Farrell, Willms and Gleichner</a>
+                                <button class="Arrow-btn Drop-menu__toggler">
+                                    <svg class="svgic--arrow Arrow-btn__icon" width="768px" height="768px">
+                                        <use xlink:href="static/img/svg-symbolsew77pstxpze4zn7e3ik9.svg#arrow"></use>
+                                    </svg>
+
+                                </button>
+                            </div>
+                            <ul class="Drop-menu__list">
+                                <li class="Drop-menu__item"><a class="Menu-link" href="#">Hyatt, Volkman and Nikolaus Exclusive eco-centric intranet</a>
+                                </li>
+                                <li class="Drop-menu__item"><a class="Menu-link" href="#">Wyman Group Devolved zero administration artificial intelligence</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="Drop-menu sidebar__item">
+                            <div class="Drop-menu__header"><a class="Menu-link Drop-menu__title" href="#">Cruickshank - Krajcik</a>
+                                <button class="Arrow-btn Drop-menu__toggler">
+                                    <svg class="svgic--arrow Arrow-btn__icon" width="768px" height="768px">
+                                        <use xlink:href="static/img/svg-symbolsew77pstxpze4zn7e3ik9.svg#arrow"></use>
+                                    </svg>
+
+                                </button>
+                            </div>
+                            <ul class="Drop-menu__list">
+                                <li class="Drop-menu__item"><a class="Menu-link" href="#">Welch and Sons Ergonomic composite core</a>
+                                </li>
+                                <li class="Drop-menu__item"><a class="Menu-link" href="#">O'Hara, Gislason and Wuckert Multi-lateral content-based local area network</a>
+                                </li>
+                                <li class="Drop-menu__item"><a class="Menu-link" href="#">Witting Group Decentralized system-worthy methodology</a>
+                                </li>
+                                <li class="Drop-menu__item"><a class="Menu-link" href="#">Grady, Stokes and Gislason Public-key demand-driven adapter</a>
+                                </li>
+                                <li class="Drop-menu__item"><a class="Menu-link" href="#">Romaguera Group Reduced reciprocal knowledge base</a>
+                                </li>
+                                <li class="Drop-menu__item"><a class="Menu-link" href="#">Klein - Hayes Stand-alone fault-tolerant extranet</a>
+                                </li>
+                                <li class="Drop-menu__item"><a class="Menu-link" href="#">Marquardt, Deckow and Ankunding Profit-focused modular leverage</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="Drop-menu sidebar__item">
+                            <div class="Drop-menu__header"><a class="Menu-link Drop-menu__title" href="#">Hackett Group</a>
+                                <button class="Arrow-btn Drop-menu__toggler">
+                                    <svg class="svgic--arrow Arrow-btn__icon" width="768px" height="768px">
+                                        <use xlink:href="static/img/svg-symbolsew77pstxpze4zn7e3ik9.svg#arrow"></use>
+                                    </svg>
+
+                                </button>
+                            </div>
+                            <ul class="Drop-menu__list">
+                                <li class="Drop-menu__item"><a class="Menu-link" href="#">Quigley, Volkman and O'Kon Devolved global parallelism</a>
+                                </li>
+                                <li class="Drop-menu__item"><a class="Menu-link" href="#">Reilly, Schinner and Gutmann Devolved systematic budgetary management</a>
+                                </li>
+                                <li class="Drop-menu__item"><a class="Menu-link" href="#">O'Conner - Durgan Innovative explicit portal</a>
+                                </li>
+                                <li class="Drop-menu__item"><a class="Menu-link" href="#">Cartwright, Welch and Nitzsche Configurable systematic firmware</a>
+                                </li>
+                                <li class="Drop-menu__item"><a class="Menu-link" href="#">Batz, Greenholt and Bins Decentralized content-based adapter</a>
+                                </li>
+                                <li class="Drop-menu__item"><a class="Menu-link" href="#">Koch Inc Stand-alone clear-thinking core</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="Drop-menu sidebar__item">
+                            <div class="Drop-menu__header"><a class="Menu-link Drop-menu__title" href="#">Wiegand, Trantow and Lang</a>
+                                <button class="Arrow-btn Drop-menu__toggler">
+                                    <svg class="svgic--arrow Arrow-btn__icon" width="768px" height="768px">
+                                        <use xlink:href="static/img/svg-symbolsew77pstxpze4zn7e3ik9.svg#arrow"></use>
+                                    </svg>
+
+                                </button>
+                            </div>
+                            <ul class="Drop-menu__list">
+                                <li class="Drop-menu__item"><a class="Menu-link" href="#">Wuckert, Hoeger and Kreiger Polarised content-based architecture</a>
+                                </li>
+                                <li class="Drop-menu__item"><a class="Menu-link" href="#">Emmerich, Wiegand and Dickens Compatible 3rd generation challenge</a>
+                                </li>
+                                <li class="Drop-menu__item"><a class="Menu-link" href="#">Kshlerin, Brekke and Schaefer Fully-configurable holistic Graphical User Interface</a>
+                                </li>
+                                <li class="Drop-menu__item"><a class="Menu-link" href="#">Bartell Group Customizable empowering groupware</a>
+                                </li>
+                                <li class="Drop-menu__item"><a class="Menu-link" href="#">Beatty Group Synergized cohesive complexity</a>
+                                </li>
+                                <li class="Drop-menu__item"><a class="Menu-link" href="#">Metz Group Multi-tiered systemic analyzer</a>
+                                </li>
+                                <li class="Drop-menu__item"><a class="Menu-link" href="#">Lebsack Group Enterprise-wide composite methodology</a>
+                                </li>
+                                <li class="Drop-menu__item"><a class="Menu-link" href="#">Schneider - Marks Persevering mobile initiative</a>
+                                </li>
+                                <li class="Drop-menu__item"><a class="Menu-link" href="#">Kunze, Grimes and Romaguera Enterprise-wide zero administration flexibility</a>
+                                </li>
+                                <li class="Drop-menu__item"><a class="Menu-link" href="#">Spinka Inc Implemented zero tolerance policy</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="Drop-menu sidebar__item">
+                            <div class="Drop-menu__header"><a class="Menu-link Drop-menu__title" href="#">Parker Inc</a>
+                                <button class="Arrow-btn Drop-menu__toggler">
+                                    <svg class="svgic--arrow Arrow-btn__icon" width="768px" height="768px">
+                                        <use xlink:href="static/img/svg-symbolsew77pstxpze4zn7e3ik9.svg#arrow"></use>
+                                    </svg>
+
+                                </button>
+                            </div>
+                            <ul class="Drop-menu__list">
+                                <li class="Drop-menu__item"><a class="Menu-link" href="#">Boehm, Bashirian and Hickle Reverse-engineered encompassing task-force</a>
+                                </li>
+                                <li class="Drop-menu__item"><a class="Menu-link" href="#">Goyette, Watsica and Hartmann Future-proofed tangible knowledge user</a>
+                                </li>
+                                <li class="Drop-menu__item"><a class="Menu-link" href="#">Gaylord - Huel Networked zero administration access</a>
+                                </li>
+                                <li class="Drop-menu__item"><a class="Menu-link" href="#">Ratke - Zemlak Object-based secondary open system</a>
+                                </li>
+                                <li class="Drop-menu__item"><a class="Menu-link" href="#">Boehm and Sons Right-sized maximized concept</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="Drop-menu sidebar__item">
+                            <div class="Drop-menu__header"><a class="Menu-link Drop-menu__title" href="#">Johns, Russel and Hagenes</a>
+                                <button class="Arrow-btn Drop-menu__toggler">
+                                    <svg class="svgic--arrow Arrow-btn__icon" width="768px" height="768px">
+                                        <use xlink:href="static/img/svg-symbolsew77pstxpze4zn7e3ik9.svg#arrow"></use>
+                                    </svg>
+
+                                </button>
+                            </div>
+                            <ul class="Drop-menu__list">
+                                <li class="Drop-menu__item"><a class="Menu-link" href="#">Rath - Breitenberg Managed tertiary throughput</a>
+                                </li>
+                                <li class="Drop-menu__item"><a class="Menu-link" href="#">Kunze Group Visionary systemic methodology</a>
+                                </li>
+                                <li class="Drop-menu__item"><a class="Menu-link" href="#">Watsica Inc Automated modular projection</a>
+                                </li>
+                                <li class="Drop-menu__item"><a class="Menu-link" href="#">Kovacek, Balistreri and Douglas Digitized fault-tolerant encoding</a>
+                                </li>
+                                <li class="Drop-menu__item"><a class="Menu-link" href="#">Stroman, Roob and Renner Advanced contextually-based solution</a>
+                                </li>
+                                <li class="Drop-menu__item"><a class="Menu-link" href="#">Bergstrom, Hintz and Schimmel Decentralized needs-based knowledge user</a>
+                                </li>
+                                <li class="Drop-menu__item"><a class="Menu-link" href="#">Windler and Sons De-engineered 5th generation monitoring</a>
+                                </li>
+                                <li class="Drop-menu__item"><a class="Menu-link" href="#">Reichel, Pollich and Jacobi Synergistic non-volatile definition</a>
+                                </li>
+                                <li class="Drop-menu__item"><a class="Menu-link" href="#">Becker - Turcotte Decentralized system-worthy secured line</a>
+                                </li>
+                                <li class="Drop-menu__item"><a class="Menu-link" href="#">Wisozk LLC Phased grid-enabled time-frame</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="Drop-menu sidebar__item">
+                            <div class="Drop-menu__header"><a class="Menu-link Drop-menu__title" href="#">Cruickshank, Predovic and Corkery</a>
+                                <button class="Arrow-btn Drop-menu__toggler">
+                                    <svg class="svgic--arrow Arrow-btn__icon" width="768px" height="768px">
+                                        <use xlink:href="static/img/svg-symbolsew77pstxpze4zn7e3ik9.svg#arrow"></use>
+                                    </svg>
+
+                                </button>
+                            </div>
+                            <ul class="Drop-menu__list">
+                                <li class="Drop-menu__item"><a class="Menu-link" href="#">Smitham Inc Seamless static throughput</a>
+                                </li>
+                                <li class="Drop-menu__item"><a class="Menu-link" href="#">Kuvalis, Renner and Flatley Devolved non-volatile access</a>
+                                </li>
+                                <li class="Drop-menu__item"><a class="Menu-link" href="#">Adams Inc Focused reciprocal instruction set</a>
+                                </li>
+                                <li class="Drop-menu__item"><a class="Menu-link" href="#">Bahringer - Oberbrunner Pre-emptive tangible knowledge base</a>
+                                </li>
+                                <li class="Drop-menu__item"><a class="Menu-link" href="#">Lang, Jacobs and Armstrong Innovative upward-trending circuit</a>
+                                </li>
+                                <li class="Drop-menu__item"><a class="Menu-link" href="#">Bergnaum, Lynch and Reilly Proactive discrete support</a>
+                                </li>
+                                <li class="Drop-menu__item"><a class="Menu-link" href="#">Ullrich LLC Sharable fresh-thinking architecture</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="Drop-menu sidebar__item">
+                            <div class="Drop-menu__header"><a class="Menu-link Drop-menu__title" href="#">Mohr - Bernhard</a>
+                                <button class="Arrow-btn Drop-menu__toggler">
+                                    <svg class="svgic--arrow Arrow-btn__icon" width="768px" height="768px">
+                                        <use xlink:href="static/img/svg-symbolsew77pstxpze4zn7e3ik9.svg#arrow"></use>
+                                    </svg>
+
+                                </button>
+                            </div>
+                            <ul class="Drop-menu__list">
+                                <li class="Drop-menu__item"><a class="Menu-link" href="#">Cassin Group User-centric tangible interface</a>
+                                </li>
+                                <li class="Drop-menu__item"><a class="Menu-link" href="#">Gaylord, Kassulke and Dietrich Diverse value-added solution</a>
+                                </li>
+                                <li class="Drop-menu__item"><a class="Menu-link" href="#">Hettinger - McGlynn Expanded bottom-line frame</a>
+                                </li>
+                                <li class="Drop-menu__item"><a class="Menu-link" href="#">Osinski - Hintz Distributed fault-tolerant approach</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="Drop-menu sidebar__item">
+                            <div class="Drop-menu__header"><a class="Menu-link Drop-menu__title" href="#">Armstrong - MacGyver</a>
+                                <button class="Arrow-btn Drop-menu__toggler">
+                                    <svg class="svgic--arrow Arrow-btn__icon" width="768px" height="768px">
+                                        <use xlink:href="static/img/svg-symbolsew77pstxpze4zn7e3ik9.svg#arrow"></use>
+                                    </svg>
+
+                                </button>
+                            </div>
+                            <ul class="Drop-menu__list">
+                                <li class="Drop-menu__item"><a class="Menu-link" href="#">Boehm Group Synergized background hardware</a>
+                                </li>
+                                <li class="Drop-menu__item"><a class="Menu-link" href="#">Keeling - Hettinger Streamlined composite framework</a>
+                                </li>
+                                <li class="Drop-menu__item"><a class="Menu-link" href="#">Ratke, Bogan and Leffler Distributed web-enabled local area network</a>
+                                </li>
+                                <li class="Drop-menu__item"><a class="Menu-link" href="#">Wolff - Lowe Pre-emptive bandwidth-monitored focus group</a>
+                                </li>
+                                <li class="Drop-menu__item"><a class="Menu-link" href="#">Hermiston Group Streamlined national algorithm</a>
+                                </li>
+                                <li class="Drop-menu__item"><a class="Menu-link" href="#">Lindgren LLC Inverse empowering flexibility</a>
+                                </li>
+                                <li class="Drop-menu__item"><a class="Menu-link" href="#">Schmitt, Howe and Lind Exclusive interactive attitude</a>
+                                </li>
+                                <li class="Drop-menu__item"><a class="Menu-link" href="#">Senger Group Quality-focused foreground core</a>
+                                </li>
+                                <li class="Drop-menu__item"><a class="Menu-link" href="#">Schmeler, Towne and Roberts Configurable client-driven leverage</a>
+                                </li>
+                                <li class="Drop-menu__item"><a class="Menu-link" href="#">Luettgen - Schiller Total optimizing encryption</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="Drop-menu sidebar__item">
+                            <div class="Drop-menu__header"><a class="Menu-link Drop-menu__title" href="#">Torphy and Sons</a>
+                                <button class="Arrow-btn Drop-menu__toggler">
+                                    <svg class="svgic--arrow Arrow-btn__icon" width="768px" height="768px">
+                                        <use xlink:href="static/img/svg-symbolsew77pstxpze4zn7e3ik9.svg#arrow"></use>
+                                    </svg>
+
+                                </button>
+                            </div>
+                            <ul class="Drop-menu__list">
+                                <li class="Drop-menu__item"><a class="Menu-link" href="#">Emmerich, Herzog and D'Amore Intuitive multimedia extranet</a>
+                                </li>
+                                <li class="Drop-menu__item"><a class="Menu-link" href="#">Kshlerin, O'Hara and Adams Open-architected explicit neural-net</a>
+                                </li>
+                                <li class="Drop-menu__item"><a class="Menu-link" href="#">Franecki LLC De-engineered systemic protocol</a>
+                                </li>
+                                <li class="Drop-menu__item"><a class="Menu-link" href="#">Powlowski, Dach and Breitenberg Object-based secondary pricing structure</a>
+                                </li>
+                                <li class="Drop-menu__item"><a class="Menu-link" href="#">Schimmel - Franecki Balanced stable capability</a>
+                                </li>
+                                <li class="Drop-menu__item"><a class="Menu-link" href="#">Bauch, Green and Ebert Open-architected hybrid leverage</a>
+                                </li>
+                                <li class="Drop-menu__item"><a class="Menu-link" href="#">Wiza Group Cross-platform radical function</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </ul>
+                </div>
+                <main class="main">
+                    <div class="main__title">Контакты</div>
+                    <div class="main__content">
+                        <div>
+                            <div class="main__item">
+                                <table class="f-left resp-table">
+                                    <tbody>
+                                        <tr>
+                                            <td>Название фирмы</td>
+                                            <td><em>SIA "Komunāltehnika"</em>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Председатель правления</td>
+                                            <td><em>Андрей Холстов<br /></em>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Рег. номер</td>
+                                            <td><em>40103153774</em>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>НДС. номер</td>
+                                            <td><em>LV40103153774</em>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Адрес</td>
+                                            <td><em>Artilērijas iela 40,</em>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td><em>Rīga, LV-1009, Latvija</em>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Тел.</td>
+                                            <td>
+                                                <a href="tel:+37167297811">(+371) 6 7 297 811</a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Факс</td>
+                                            <td>
+                                                <a href="tel:+37167813121" title="Позвонить через Skype на следующий номер (Латвия): +37167813121">(+371)67813121</a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>E-почта</td>
+                                            <td>
+                                                <a href="mailto:info@komteh.lv">info@komteh.lv</a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Банк</td>
+                                            <td><em>Swedbank A/S</em>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Номер счёта</td>
+                                            <td><em>LV17HABA0551023890908</em>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Код</td>
+                                            <td><em>HABALV22</em>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <img src="http://komteh.lv/files/foto/map.gif" class="f-right" />
+                            </div>
+                            <div class="main__item">
+                                <div class="resp-frame">
+                                    <iframe class="resp-frame__frame" src="https://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=ru&amp;geocode=&amp;q=komunaltehnika+loc:+,+R%C4%ABga,+LV-1011,+%D0%9B%D0%B0%D1%82%D0%B2%D0%B8%D1%8F&amp;aq=&amp;sll=56.957378,24.142134&amp;sspn=0.008342,0.01929&amp;ie=UTF8&amp;hq=komunaltehnika&amp;hnear=%D0%A0%D0%B8%D0%B3%D0%B0,+LV-1011,+%D0%9B%D0%B0%D1%82%D0%B2%D0%B8%D1%8F&amp;t=m&amp;ll=56.956592,24.143172&amp;spn=0.008477,0.029535&amp;output=embed"
+                                    frameborder="0" scrolling="no" height="350" width="100%"></iframe>
+                                </div>
+                                <small>
+<a style="color: #0000ff; text-align: left;" href="https://maps.google.com/maps?f=q&amp;source=embed&amp;hl=ru&amp;geocode=&amp;q=komunaltehnika+loc:+,+R%C4%ABga,+LV-1011,+%D0%9B%D0%B0%D1%82%D0%B2%D0%B8%D1%8F&amp;aq=&amp;sll=56.957378,24.142134&amp;sspn=0.008342,0.01929&amp;ie=UTF8&amp;hq=komunaltehnika&amp;hnear=%D0%A0%D0%B8%D0%B3%D0%B0,+LV-1011,+%D0%9B%D0%B0%D1%82%D0%B2%D0%B8%D1%8F&amp;t=m&amp;ll=56.956592,24.143172&amp;spn=0.008477,0.029535">Просмотреть увеличенную карту
+</a>
+</small>
+                            </div>
+                            <div class="Contact main__item">
+                                <div class="Contact__pic">
+                                    <img src="http://komteh.lv/files/komtehservis/dir1.JPG">
+                                </div>
+                                <div class="Contact__info">
+                                    <p style="text-align: left;"><span style="font-family: arial,helvetica,sans-serif; font-size: small;">Председатель правления&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <strong>Андрей Холстов&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (+371)67297811</strong></span>
+                                        <span
+                                        style="font-family: arial,helvetica,sans-serif; font-size: small;"><strong><span style="font-size: small; font-family: arial,helvetica,sans-serif;"><strong><span class="name"><span style="font-family: arial,helvetica,sans-serif; font-size: small;"><strong><span class="name">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; факс (+371) 67813121</span></strong>
+                                            </span>
+                                            </span>
+                                            </strong>
+                                            </span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</strong>
+                                            <a
+                                            href="mailto:director@komteh.lv">director@komteh.lv</a>&nbsp;</span>
+                                    </p>
+                                    <p style="text-align: left;"><span style="font-family: arial,helvetica,sans-serif; font-size: small;"><a href="mailto:sell@komteh.lv">sell@komteh.lv</a></span>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="Contact main__item">
+                                <div class="Contact__pic">
+                                    <img src="http://komteh.lv/files/komtehservis/buhg1.JPG">
+                                </div>
+                                <div class="Contact__info">
+                                    <p style="text-align: left;"><span style="font-size: small; font-family: arial,helvetica,sans-serif;"><span class="rank">Главный бухгалтер</span>&nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <strong><span class="name">Светлана Бояте&nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; (+371)67297811</span></strong>
+                                        </span><span style="font-size: small; font-family: arial,helvetica,sans-serif;"><strong><span class="name"><span style="font-family: arial,helvetica,sans-serif; font-size: small;"><strong><span class="name">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; факс (+371) 67813121 &nbsp;</span>
+                                        </strong>
+                                        </span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp; &nbsp;
+                                        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span>
+                                        </strong>
+                                        </span><span style="font-family: arial,helvetica,sans-serif; font-size: small;"><a class="mail" href="mailto:accountant@komteh.lv">accountant@komteh.lv</a></span>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="Contact main__item">
+                                <div class="Contact__pic">
+                                    <img>
+                                </div>
+                                <div class="Contact__info">
+                                    <p><span style="font-family: arial,helvetica,sans-serif; font-size: small;"><span><strong>Отдел по продаж</strong> "Weber MT", </span><span>"Atlas Copco", "Gehl", "Robin-Subaru", "Gesan", "GEKO", "IHIMER", "Terma",</span><strong><span> <br></span></strong>
+                                        </span>
+                                    </p>
+                                    <p><span style="font-family: arial,helvetica,sans-serif; font-size: small;"><strong><span>Моб.(+371) 22087799Марис Пелекзирнис</span>
+                                        </strong>
+                                        </span>
+                                    </p>
+                                    <p><span style="font-family: arial,helvetica,sans-serif; font-size: small;"><strong><span class="name"><span style="font-family: arial,helvetica,sans-serif; font-size: small;"><strong><span class="name"><span style="font-family: arial,helvetica,sans-serif; font-size: small;"><strong><span class="name">(+371)67297811</span>
+                                        </strong>
+                                        </span>
+                                        </span>
+                                        </strong>
+                                        </span>
+                                        </span>
+                                        </strong>
+                                        </span><span style="font-family: arial,helvetica,sans-serif; font-size: small;"><strong><span class="name"><span style="font-size: small; font-family: arial,helvetica,sans-serif;"><strong><span class="name"><span style="font-family: arial,helvetica,sans-serif; font-size: small;"><strong><span class="name"> факс (+371) 67813121</span>
+                                        </strong>
+                                        </span>
+                                        </span>
+                                        </strong>
+                                        </span>
+                                        </span>
+                                        </strong><a class="mail" href="mailto:komteh@komteh.lv">komteh@komteh.lv </a>
+                                        </span>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="Contact main__item">
+                                <div class="Contact__pic">
+                                    <img>
+                                </div>
+                                <div class="Contact__info">
+                                    <p style="text-align: left;"><span style="font-family: arial,helvetica,sans-serif; font-size: small;"><span><span style="font-family: arial,helvetica,sans-serif; font-size: small;"><span><strong>Отдел по продаж</strong> </span></span>"Weber MT",</span>
+                                        </span><span style="font-family: arial,helvetica,sans-serif; font-size: small;"><span><span style="font-family: arial,helvetica,sans-serif; font-size: small;"><span>"Atlas Copco"</span></span>
+                                        </span><span>, "Gehl", "Robin-Subaru", "Gesan", "IHIMER", "Terma", "Master"</span></span>
+                                    </p>
+                                    <p style="text-align: left;"><span style="font-family: arial,helvetica,sans-serif; font-size: small;"><span><span style="font-family: arial,helvetica,sans-serif; font-size: small;"><strong><span class="name"><span style="font-family: arial,helvetica,sans-serif; font-size: small;"><span><span style="font-family: arial,helvetica,sans-serif; font-size: small;"><strong><span class="name">(+371) 29533403</span>
+                                        </strong>
+                                        </span>
+                                        </span>
+                                        </span>
+                                        </span>
+                                        </strong>
+                                        </span>
+                                        </span>
+                                        </span>
+                                    </p>
+                                    <p style="text-align: left;"><span style="font-family: arial,helvetica,sans-serif; font-size: small;"><span><span style="font-family: arial,helvetica,sans-serif; font-size: small;"><strong><span class="name"><span style="font-family: arial,helvetica,sans-serif; font-size: small;"><span><span style="font-family: arial,helvetica,sans-serif; font-size: small;"><strong><span class="name">(+371)67297811</span>
+                                        </strong>
+                                        </span>
+                                        </span>
+                                        </span>
+                                        </span>
+                                        </strong>
+                                        </span>
+                                        </span>
+                                        </span>
+                                    </p>
+                                    <p style="text-align: left;"><span style="font-family: arial,helvetica,sans-serif; font-size: small;"><span><span style="font-family: arial,helvetica,sans-serif; font-size: small;"><strong><span class="name"><span style="font-family: arial,helvetica,sans-serif; font-size: small;"><strong><span class="name"><span style="font-size: small; font-family: arial,helvetica,sans-serif;"><strong><span class="name"><span style="font-family: arial,helvetica,sans-serif; font-size: small;"><strong><span class="name">факс (+371) 67813121</span>
+                                        </strong>
+                                        </span>
+                                        </span>
+                                        </strong>
+                                        </span>
+                                        </span>
+                                        </strong>
+                                        </span>
+                                        </span>
+                                        </strong><span class="name"><span style="font-family: arial,helvetica,sans-serif; font-size: small;"><a class="mail" href="mailto:komteh@komteh.lv">market@komteh.lv</a> <br></span></span>
+                                        </span>
+                                        </span>
+                                        </span>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="Contact main__item">
+                                <div class="Contact__pic">
+                                    <img>
+                                </div>
+                                <div class="Contact__info">
+                                    <p><span style="font-family: arial,helvetica,sans-serif; font-size: small;"><span class="rank">Механик сервиса</span></span>
+                                    </p>
+                                    <p><strong><span style="font-family: arial,helvetica,sans-serif; font-size: small;"><span class="rank">Моб. (+371) 29808211</span></span></strong>
+                                    </p>
+                                    <p><span style="font-family: arial,helvetica,sans-serif; font-size: small;"><strong><span class="name">(+371) 67297811</span>
+                                        </strong>
+                                        </span><span style="font-family: arial,helvetica,sans-serif; font-size: small;"><strong><span class="name"><span style="font-family: arial,helvetica,sans-serif; font-size: small;"><span><span style="font-family: arial,helvetica,sans-serif; font-size: small;"><strong><span class="name"><span style="font-family: arial,helvetica,sans-serif; font-size: small;"><strong><span class="name"><span style="font-size: small; font-family: arial,helvetica,sans-serif;"><strong><span class="name"><span style="font-family: arial,helvetica,sans-serif; font-size: small;"><strong><span class="name"></span>
+                                        </strong>
+                                        </span>
+                                        </span>
+                                        </strong>
+                                        </span>
+                                        </span>
+                                        </strong>
+                                        </span>
+                                        </span>
+                                        </strong>
+                                        </span>
+                                        </span>
+                                        </span>
+                                        </span>
+                                        </strong>
+                                        </span>
+                                    </p>
+                                    <p><span style="font-family: arial,helvetica,sans-serif; font-size: small;"><strong><span class="name"><span style="font-family: arial,helvetica,sans-serif; font-size: small;"><span><span style="font-family: arial,helvetica,sans-serif; font-size: small;"><strong><span class="name"><span style="font-family: arial,helvetica,sans-serif; font-size: small;"><strong><span class="name"><span style="font-size: small; font-family: arial,helvetica,sans-serif;"><strong><span class="name"><span style="font-family: arial,helvetica,sans-serif; font-size: small;"><strong><span class="name">факс (+371) 67813121</span>
+                                        </strong>
+                                        </span>
+                                        </span>
+                                        </strong>
+                                        </span>
+                                        </span>
+                                        </strong>
+                                        </span>
+                                        </span>
+                                        </strong>
+                                        </span>
+                                        </span>
+                                        </span>
+                                        </span>
+                                        </strong><a class="mail" href="mailto:stock@komteh.lv">service@komteh.lv <br></a>
+                                        </span>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="Contact main__item">
+                                <div class="Contact__pic">
+                                    <img>
+                                </div>
+                                <div class="Contact__info">
+                                    <p><span style="font-family: arial,helvetica,sans-serif; font-size: small;"><span class="rank">Отдел запасных частей  Эдгар Александров   <br></span><strong><span class="name">(+371) 26011134, 29502909</span></strong>
+                                        </span>
+                                    </p>
+                                    <p><span style="font-family: arial,helvetica,sans-serif; font-size: small;"><strong><span class="name">(+371) 67297811</span>
+                                        </strong>
+                                        </span><span style="font-family: arial,helvetica,sans-serif; font-size: small;"><strong><span class="name"><span style="font-family: arial,helvetica,sans-serif; font-size: small;"><span><span style="font-family: arial,helvetica,sans-serif; font-size: small;"><strong><span class="name"><span style="font-family: arial,helvetica,sans-serif; font-size: small;"><strong><span class="name"><span style="font-size: small; font-family: arial,helvetica,sans-serif;"><strong><span class="name"><span style="font-family: arial,helvetica,sans-serif; font-size: small;"><strong><span class="name"></span>
+                                        </strong>
+                                        </span>
+                                        </span>
+                                        </strong>
+                                        </span>
+                                        </span>
+                                        </strong>
+                                        </span>
+                                        </span>
+                                        </strong>
+                                        </span>
+                                        </span>
+                                        </span>
+                                        </span>
+                                        </strong>
+                                        </span>
+                                    </p>
+                                    <p><span style="font-family: arial,helvetica,sans-serif; font-size: small;"><strong><span class="name"><span style="font-family: arial,helvetica,sans-serif; font-size: small;"><span><span style="font-family: arial,helvetica,sans-serif; font-size: small;"><strong><span class="name"><span style="font-family: arial,helvetica,sans-serif; font-size: small;"><strong><span class="name"><span style="font-size: small; font-family: arial,helvetica,sans-serif;"><strong><span class="name"><span style="font-family: arial,helvetica,sans-serif; font-size: small;"><strong><span class="name">факс (+371) 67813121</span>
+                                        </strong>
+                                        </span>
+                                        </span>
+                                        </strong>
+                                        </span>
+                                        </span>
+                                        </strong>
+                                        </span>
+                                        </span>
+                                        </strong>
+                                        </span>
+                                        </span>
+                                        </span>
+                                        </span>
+                                        </strong>
+                                        </span>
+                                    </p>
+                                    <p><span style="font-family: arial,helvetica,sans-serif; font-size: small;"><a class="mail" href="mailto:stock@komteh.lv">stock@komteh.lv</a></span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </main>
+            </div>
+        </div>
+        <div class="page__footer">
+            <footer class="footer bg-dark">
+                <div class="container">
+                    <ul class="Firms">
+                        <li class="Firms__item">
+                            <a href="#">
+                                <img src="static/img/content/firms/Webermt-logo.png">
+                            </a>
+                        </li>
+                        <li class="Firms__item">
+                            <a href="#">
+                                <img src="static/img/content/firms/ChPn-logo.png">
+                            </a>
+                        </li>
+                        <li class="Firms__item">
+                            <a href="#">
+                                <img src="static/img/content/firms/Subaru-logo.png">
+                            </a>
+                        </li>
+                        <li class="Firms__item">
+                            <a href="#">
+                                <img src="static/img/content/firms/Gesan-logo.png">
+                            </a>
+                        </li>
+                        <li class="Firms__item">
+                            <a href="#">
+                                <img src="static/img/content/firms/Gehl-logo.png">
+                            </a>
+                        </li>
+                        <li class="Firms__item">
+                            <a href="#">
+                                <img src="static/img/content/firms/Geko-logo.png">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="container ta-center">Powered by Goldbird.lv</div>
+            </footer>
+        </div>
+        
+        
+        <script src="static/js/separate-js/svg4everybody.min.js"></script>
+        <script>
+            svg4everybody();
+        </script>
+        <script src="static/js/mainew77pstxpze4zn7e3ik9.min.js"></script>
+    </body>
+
+</html>
