@@ -461,7 +461,7 @@ blockquote {
 }
 
 .bg-dark {
-  background-color: #062BA0;
+  background-color: #ed1c24;
   color: #fff;
 }
 
@@ -505,7 +505,7 @@ body {
   margin: 0;
   padding: 0;
   color: #000;
-  background-color: whitesmoke;
+  background-color: #fff;
   font-family: sans-serif;
 }
 
@@ -581,7 +581,7 @@ html, body {
   display: inline-block;
   font-size: 2rem;
   box-sizing: border-box;
-  background-color: #ffe766;
+  background-color: #fff;
   width: 1em;
   height: 1em;
   position: relative;
@@ -598,7 +598,7 @@ html, body {
   left: 50%;
   margin-top: -0.25em;
   margin-left: -0.25em;
-  fill: #062BA0;
+  fill: #ed1c24;
   -webkit-transform-origin: center center;
           transform-origin: center center;
   -webkit-transform: rotate(0deg);
@@ -656,20 +656,20 @@ html, body {
   margin: 0;
   display: block;
   padding: 0.3125em 0;
-  height: 50%;
+  height: 40%;
   box-sizing: border-box;
   font-style: italic;
   color: #800080;
 }
 
 .Card__img {
-  max-height: 50%;
+  max-height: 60%;
   max-width: 100%;
   vertical-align: top;
 }
 
 .Card:hover {
-  border-color: #062BA0;
+  border-color: #ed1c24;
 }
 
 .Cart {
@@ -744,7 +744,7 @@ html, body {
 }
 
 .Cart:hover {
-  stroke: #062BA0;
+  stroke: #ed1c24;
   stroke-width: 0.125em;
 }
 
@@ -755,7 +755,7 @@ html, body {
 .Mail-link {
   display: inline-block;
   font-weight: 600;
-  color: #164cf6;
+  color: #f47b7f;
   white-space: nowrap;
 }
 
@@ -773,19 +773,18 @@ html, body {
   display: block;
   margin: 0 -1rem;
   padding: 0.625em 1rem;
-  font-style: italic;
-  color: inherit;
+  color: #000;
 }
 
 .Menu-link:hover {
-  color: #fff;
+  color: #f47b7f;
 }
 
 .Menu-link.active {
-  background-color: #062BA0;
+  background-color: #ed1c24;
   color: #fff;
-  background-image: -webkit-linear-gradient(top, transparent 9px, rgba(4, 30, 111, 0.6) 10px, rgba(8, 56, 209, 0.6) 11px);
-  background-image: linear-gradient(to bottom, transparent 9px, rgba(4, 30, 111, 0.6) 10px, rgba(8, 56, 209, 0.6) 11px);
+  background-image: -webkit-linear-gradient(top, transparent 9px, rgba(198, 16, 23, 0.6) 10px, rgba(241, 75, 82, 0.6) 11px);
+  background-image: linear-gradient(to bottom, transparent 9px, rgba(198, 16, 23, 0.6) 10px, rgba(241, 75, 82, 0.6) 11px);
   background-size: 90% 11px;
   background-position: center;
   background-repeat: repeat-y;
@@ -798,18 +797,54 @@ html, body {
   padding: .5em 1.5em;
   border: 0.1875em solid #ffe766;
   border-radius: 0.1875em;
-  background-color: #062BA0;
+  background-color: #ed1c24;
   color: #fff;
-  background-image: -webkit-linear-gradient(bottom, #062BA0 50%, #5179f8 50%);
-  background-image: linear-gradient(to top, #062BA0 50%, #5179f8 50%);
+  background-image: -webkit-linear-gradient(bottom, #ed1c24 50%, #f69296 50%);
+  background-image: linear-gradient(to top, #ed1c24 50%, #f69296 50%);
   text-decoration: none;
 }
 
 .Nav-link:hover {
-  background-color: #062BA0;
-  background-image: -webkit-linear-gradient(bottom, #FFD700 50%, #fff1a3 50%);
-  background-image: linear-gradient(to top, #FFD700 50%, #fff1a3 50%);
+  background-image: -webkit-linear-gradient(bottom, #ebebeb 50%, #fff 50%);
+  background-image: linear-gradient(to top, #ebebeb 50%, #fff 50%);
   color: #000;
+}
+
+.Contact {
+  display: table;
+  width: 100%;
+  border: 1px solid #ed1c24;
+  border-radius: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  overflow: hidden;
+}
+
+.Contact__pic {
+  display: table-cell;
+  width: 40%;
+  vertical-align: top;
+  padding: 1em;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 80px;
+          flex: 1 1 80px;
+  text-align: center;
+  background-color: #e6e6e6;
+}
+
+.Contact__info {
+  display: table-cell;
+  vertical-align: top;
+  padding: 1em;
+  width: 60%;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 200px;
+          flex: 1 1 200px;
 }
 
 .Catalog {
@@ -847,11 +882,11 @@ html, body {
   font-size: 16px;
   font-size: 1rem;
   margin: 0.25em;
-  width: 5.9375em;
-  height: 7.125em;
-  -webkit-box-flex: 5.9375em;
-      -ms-flex: 5.9375em 1 1;
-          flex: 5.9375em 1 1;
+  width: 8.125em;
+  height: 9.75em;
+  -webkit-box-flex: 8.125em;
+      -ms-flex: 8.125em 1 1;
+          flex: 8.125em 1 1;
 }
 
 .Drop-menu {
@@ -897,43 +932,6 @@ html, body {
   margin: 0 -1rem;
   padding: 0 1rem;
   background-color: rgba(0, 0, 0, 0.05);
-}
-
-.Contact {
-  display: table;
-  width: 100%;
-  border: 1px solid #062BA0;
-  border-radius: 5px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: row wrap;
-          flex-flow: row wrap;
-  overflow: hidden;
-}
-
-.Contact__pic {
-  display: table-cell;
-  width: 40%;
-  vertical-align: top;
-  padding: 1em;
-  -webkit-box-flex: 1;
-      -ms-flex: 1 1 80px;
-          flex: 1 1 80px;
-  text-align: center;
-  background-color: #e6e6e6;
-}
-
-.Contact__info {
-  display: table-cell;
-  vertical-align: top;
-  padding: 1em;
-  width: 60%;
-  -webkit-box-flex: 1;
-      -ms-flex: 1 1 200px;
-          flex: 1 1 200px;
 }
 
 .Firms {
@@ -989,7 +987,7 @@ html, body {
 .Flags__item {
   display: inline-block;
   margin: 0 0.25em;
-  border: 0.0625em solid #a9bdfc;
+  border: 0.0625em solid white;
 }
 
 .Flags__icon {
@@ -1131,6 +1129,7 @@ html, body {
 
 .Search__icon {
   display: inline-block;
+  vertical-align: middle;
   fill: #795548;
   height: 1.33333em;
   width: 1.33333em;
@@ -1235,12 +1234,12 @@ html, body {
   display: block;
   margin: 0 -1rem 0.44643em;
   padding: 0.44643em 1rem;
-  background: -webkit-radial-gradient(100% 200% at 50% 0%, #062ba0 49.6%, rgba(6, 43, 160, 0) 50.4%);
-  background: radial-gradient(100% 200% at 50% 0%, #062ba0 49.6%, rgba(6, 43, 160, 0) 50.4%);
+  background: -webkit-radial-gradient(100% 200% at 50% 0%, #ed1c24 49.6%, rgba(237, 28, 36, 0) 50.4%);
+  background: radial-gradient(100% 200% at 50% 0%, #ed1c24 49.6%, rgba(237, 28, 36, 0) 50.4%);
   background-size: 100% 100%;
   background-repeat: no-repeat;
   text-align: center;
-  color: #ffe766;
+  color: #fff;
   border-top-left-radius: inherit;
   border-top-right-radius: inherit;
 }
@@ -1290,7 +1289,6 @@ html, body {
   border: 1px solid #FFD700;
   border-radius: 0.625rem;
   padding: 0 1rem;
-  font-style: italic;
   font-family: 'Calibri', sans-serif;
 }
 
@@ -1299,9 +1297,9 @@ html, body {
   display: block;
   margin: 0 -1rem 0.44643em;
   padding: 0.44643em 1rem 0.89286em;
-  background-color: #062BA0;
-  background: -webkit-radial-gradient(150% 200% at 25% 0%, #7897fa 38.6%, #062ba0 39.4%, #062ba0 49.6%, rgba(6, 43, 160, 0) 50.4%);
-  background: radial-gradient(150% 200% at 25% 0%, #7897fa 38.6%, #062ba0 39.4%, #062ba0 49.6%, rgba(6, 43, 160, 0) 50.4%);
+  background-color: #ed1c24;
+  background: -webkit-radial-gradient(150% 200% at 25% 0%, #f69296 38.6%, #ed1c24 39.4%, #ed1c24 49.6%, rgba(237, 28, 36, 0) 50.4%);
+  background: radial-gradient(150% 200% at 25% 0%, #f69296 38.6%, #ed1c24 39.4%, #ed1c24 49.6%, rgba(237, 28, 36, 0) 50.4%);
   background-size: 100% 100%;
   background-repeat: no-repeat;
   border-top-right-radius: inherit;
@@ -1318,7 +1316,7 @@ html, body {
   background-color: #FFD700;
   padding: 0.71429rem;
   font-size: 0.6rem;
-  border: 1px solid #062BA0;
+  border: 1px solid #ed1c24;
   border-radius: 5px;
   display: none;
 }
