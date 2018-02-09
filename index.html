@@ -1,20 +1,385 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Pages</title>
-</head>
-<body>
-    <!-- <a href="/MixRest/index.html">MixRest</a> -->
-    <br />
-    <!-- <a href="/Komteh/index.html">Komteh</a> -->
-    <br />
-    <!-- <a href="/Evergreen/index.html">Evergreen</a> -->
-    <br />
-    <!-- <a href="/Cleanaqua/index.html">Cleanaqua</a> -->
-    <br />
-    <!-- <a href="/E-585/index.html">E-585</a> -->
-    <br />
-    <!-- <a href="/TRAL89/index.html">TRAL89</a> -->
-</body>
+<html lang="ru">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600&amp;amp;subset=cyrillic" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&amp;amp;subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="/static/styles/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="/static/styles/main.css">
+    <link rel="stylesheet" type="text/css" href="/static/styles/slick.css"><div id="fb-root"></div>
+    <script>
+      (function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = 'https://connect.facebook.net/uk_UA/sdk.js#xfbml=1&version=v2.12';
+      fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));
+    </script>
+  </head>
+  <body class="Home-page">
+    <header class="Header" id="header">
+      <div class="container">
+        <div class="row">
+          <div class="Header__logo"><a class="logo" href="/"><img src="./img/logo.svg" width="125" onerror="this.src='./img/logo.png'"/><img src="./img/logo-sm.svg" width="300" onerror="this.src='./img/logo-sm.png'"/><img src="./img/logo-xs.svg" width="40" onerror="this.src='./img/logo-xs.png'"/></a></div>
+          <div class="Header__center">
+            <div class="Header__info">
+              <div class="Header__phones">
+                <div class="col-md-12 col-lg-6"><strong class="text-warning va-middle">
+                    <svg class="ic-phone" role="img">
+                      <use xlink:href="/static/decors/sprite.svg#ic-phone"></use>
+                    </svg>&nbsp;    <strong>22000015</strong></strong></div>
+                <div class="col-md-12 col-lg-6"><strong class="text-warning va-middle">
+                    <svg class="ic-time" role="img">
+                      <use xlink:href="/static/decors/sprite.svg#ic-time"></use>
+                    </svg>&nbsp;<strong>10:30 - 22:30</strong></strong></div>
+              </div>
+              <div class="Header__social">
+                <div class="Social va-middle"><a class="Social__icon" href="#">
+                    <svg class="ic-facebook" role="img">
+                      <use xlink:href="/static/decors/sprite.svg#ic-facebook"></use>
+                    </svg></a><a class="Social__icon" href="#">
+                    <svg class="ic-twitter" role="img">
+                      <use xlink:href="/static/decors/sprite.svg#ic-twitter"></use>
+                    </svg></a><a class="Social__icon" href="#">
+                    <svg class="ic-instagram" role="img">
+                      <use xlink:href="/static/decors/sprite.svg#ic-instagram"></use>
+                    </svg></a></div>
+              </div>
+            </div>
+            <div class="Header__info">
+              <ul class="Main-nav va-middle Header__nav col-lg-12">
+                <li class="Main-nav__item"><a class="Main-nav__link" href="">Akcija</a>
+                </li>
+                <li class="Main-nav__item"><a class="Main-nav__link" href="/karte.html">Ēdienkarte</a>
+                </li>
+                <li class="Main-nav__item"><a class="Main-nav__link" href="/shipping.html">Piegāde</a>
+                </li>
+                <li class="Main-nav__item"><a class="Main-nav__link" href="/par-mums.html">Banketi</a>
+                </li>
+                <li class="Main-nav__item"><a class="Main-nav__link" href="/komments.html">Atsauksmes</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="Header__left">
+            <div class="Header__btns">
+              <Form class="Search Header__search isSmall">
+                <input class="Search__field" type="search" placeholder="Meklet:"/>
+                <button class="Search__btn">
+                  <svg class="ic-search" role="img">
+                    <use xlink:href="/static/decors/sprite.svg#ic-search"></use>
+                  </svg>
+                </button>
+              </Form>
+              <div class="dropdown Header__mobile">
+                <button class="btn-burger collapsed Main-nav__toggler" role="button" data-toggle="collapse" data-target="#mobile-menu" aria-expanded="false"></button>
+                <div class="dropdown-menu dropdown-menu-right Header__mobile-menu collapse" id="mobile-menu"></div>
+              </div>
+            </div>
+            <div class="Header__btns">
+              <div class="dropdown Header__login">
+                <button class="btn-login btn-dropdown" role="button" data-toggle="dropdown" data-target="#" aria-expanded="false">
+                  <svg class="ic-login btn-login__icon" role="img">
+                    <use xlink:href="/static/decors/sprite.svg#ic-login"></use>
+                  </svg>Ienākt
+                </button>
+                <form class="Login dropdown-menu">
+                  <div class="Login__header">Login</div>
+                  <div class="Login__content">
+                    <div>
+                      <svg class="ic-user-2 Login__icon" role="img">
+                        <use xlink:href="/static/decors/sprite.svg#ic-user-2"></use>
+                      </svg>
+                      <div class="input required Login__input">
+                        <input class="input__field" type="email"/><span class="input__placeholder">
+                           Email</span>
+                      </div>
+                    </div><br/>
+                    <div>
+                      <svg class="ic-lock Login__icon" role="img">
+                        <use xlink:href="/static/decors/sprite.svg#ic-lock"></use>
+                      </svg>
+                      <div class="input required Login__input">
+                        <input class="input__field" type="password"/><span class="input__placeholder">Password</span>
+                      </div>
+                    </div>
+                    <div class="text-center"> <a class="btn btn-sm btn-link text-primary" href="#">Forgot password?</a></div>
+                    <div class="text-center"><a class="btn btn-sm btn-link text-warning" href="#">Registration</a></div>
+                    <button class="btn btn-primary btn-block btn-lg">Lelogoties</button>
+                  </div>
+                </form>
+              </div>
+              <select class="btn-dropdown Header__lang">
+                <option>LV</option>
+                <option>EN</option>
+                <option>RU</option>
+              </select>
+              <div class="dropdown Header__cart">
+                <button class="btn-cart btn-dropdown" role="button" data-toggle="dropdown" data-target="#" aria-expanded="false">
+                  <svg class="ic-cart btn-cart__icon" role="img">
+                    <use xlink:href="/static/decors/sprite.svg#ic-cart"></use>
+                  </svg><span class="btn-cart__text">10</span>
+                </button>
+                <form class="Cart dropdown-menu dropdown-menu-right">
+                  <div class="Cart__header">Grozs</div>
+                  <ul class="list-unstyled clearfix">
+                    <li class="Cart__item">
+                      <div class="col-xs-9"><span style="color:#737373;">3x  </span>"Buhāra" suši maki <br/>(1 x 5.90 €)</div>
+                      <div class="col-xs-3 text-center">
+                        <div class="row">
+                          <div class="counter fz-xs">
+                            <button class="counter__btn" type="button">-</button>
+                            <button class="counter__btn" type="button">+</button>
+                          </div><br/>
+                          <button class="btn-del fz-xs" type="button">
+                            <svg class="ic-del" role="img">
+                              <use xlink:href="/static/decors/sprite.svg#ic-del"></use>
+                            </svg>
+                          </button>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="Cart__item">
+                      <div class="col-xs-9"><span style="color:#737373;">3x  </span>"Buhāra" suši maki <br/>(1 x 5.90 €)</div>
+                      <div class="col-xs-3 text-center">
+                        <div class="row">
+                          <div class="counter fz-xs">
+                            <button class="counter__btn" type="button">-</button>
+                            <button class="counter__btn" type="button">+</button>
+                          </div><br/>
+                          <button class="btn-del fz-xs" type="button">
+                            <svg class="ic-del" role="img">
+                              <use xlink:href="/static/decors/sprite.svg#ic-del"></use>
+                            </svg>
+                          </button>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="Cart__item">
+                      <div class="col-xs-9"><span style="color:#737373;">3x  </span>"Buhāra" suši maki <br/>(1 x 5.90 €)</div>
+                      <div class="col-xs-3 text-center">
+                        <div class="row">
+                          <div class="counter fz-xs">
+                            <button class="counter__btn" type="button">-</button>
+                            <button class="counter__btn" type="button">+</button>
+                          </div><br/>
+                          <button class="btn-del fz-xs" type="button">
+                            <svg class="ic-del" role="img">
+                              <use xlink:href="/static/decors/sprite.svg#ic-del"></use>
+                            </svg>
+                          </button>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                  <div class="Cart__total"> 
+                    <div class="pull-left">Kopā</div>
+                    <div class="pull-right fz-md">14.80 €</div>
+                  </div>
+                  <button class="btn btn-primary btn-block" type="submit">Izrakstīšanās</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="Slider carousel slide" data-ride="carousel" id="main-slider"> <img class="Slider__wink" style="opacity:.2;" src="/img/japan.svg"/>
+      <div class="Slider__inner carousel-inner">
+        <div class="Slider__item item active">
+          <div class="Slider__caption jumbotron">
+            <div class="subtitle">Ēdienu piegāde Rīgā</div>
+            <h1>bambook.lv</h1>
+            <button class="Slider__button btn btn-lg btn-primary">Ēdienkarte</button>
+          </div>
+        </div>
+        <div class="Slider__item item">
+          <div class="Slider__caption jumbotron">
+            <div class="subtitle">Ēdienu piegāde Rīgā2</div>
+            <h1>bambook.lv2</h1>
+            <button class="Slider__button btn btn-lg btn-primary">Ēdienkarte</button>
+          </div>
+        </div>
+      </div><a class="Slider__arrow left" href="#main-slider" data-slide="prev">
+        <svg class="ic-arrow" role="img">
+          <use xlink:href="/static/decors/sprite.svg#ic-arrow"></use>
+        </svg></a><a class="Slider__arrow right" href="#main-slider" data-slide="next">
+        <svg class="ic-arrow" role="img">
+          <use xlink:href="/static/decors/sprite.svg#ic-arrow"></use>
+        </svg></a>
+    </div>
+    <div class="Advantages">
+      <div class="container">
+        <ul class="Advantages__list">
+          <li class="Advantages__item">
+            <div class="col-lg-5">
+              <svg class="ic-heart" role="img" width="131" height="121">
+                <use xlink:href="/static/decors/sprite.svg#ic-heart"></use>
+              </svg>
+            </div>
+            <div class="col-lg-7">Vairāk nekā
+              <div class="h1 text-warning numscroller" data-min="1" data-max="5000" data-delay="1" data-increment="22">5000</div>Facebook fanu
+            </div>
+          </li>
+          <li class="Advantages__item">
+            <div class="col-lg-5">
+              <svg class="ic-team" role="img" width="156" height="115">
+                <use xlink:href="/static/decors/sprite.svg#ic-team"></use>
+              </svg>
+            </div>
+            <div class="col-lg-7">Vairāk nekā
+              <div class="h1 text-warning numscroller" data-min="1" data-max="45000" data-delay="1" data-increment="200">45000</div>apkalpotu klientu
+            </div>
+          </li>
+          <li class="Advantages__item">
+            <div class="col-lg-5">
+              <svg class="ic-chef" role="img" width="109" height="109">
+                <use xlink:href="/static/decors/sprite.svg#ic-chef"></use>
+              </svg>
+            </div>
+            <div class="col-lg-7">Vairāk nekā
+              <div class="h1 text-warning numscroller" data-min="1" data-max="75000" data-delay="1" data-increment="300">75000</div>pagatavotu ēdienu
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <footer class="Footer" id="footer">
+      <button class="Footer__to-up" onclick="$(&quot;html, body&quot;).animate({ scrollTop: 0 }, &quot;slow&quot;);"><img src="img/to-up.png"/>
+        <div class="bg-primary">22000015</div>
+      </button>
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-4 col-sm-2"><a class="logo" href="/"><img src="./img/logo.svg" width="125" onerror="this.src='./img/logo.png'"/></a></div>
+          <div class="col-sm-10 col-lg-6">
+            <div class="row">
+              <div class="col-xs-8 col-sm-4 text-uppercase">
+                <h5 class="v-line" style="white-space:nowrap;">Noderīga informācija</h5>
+                <ul class="list-unstyled">
+                  <li><a href="">Akcija</a>
+                  </li>
+                  <li><a href="/karte.html">Ēdienkarte</a>
+                  </li>
+                  <li><a href="/shipping.html">Piegāde</a>
+                  </li>
+                  <li><a href="/par-mums.html">Banketi</a>
+                  </li>
+                  <li><a href="/komments.html">Atsauksmes</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-xs-12 col-sm-8 text-uppercase">
+                <h5 class="v-line">Ēdienkarte</h5>
+                <div class="row">
+                  <ul class="col-xs-4 col-sm-4 list-unstyled">
+                    <li><a href="/"> Sašimi</a></li>
+                    <li><a href="/"> Nigiri</a></li>
+                    <li><a href="/"> Gunkans</a></li>
+                    <li><a href="/"> Maki</a></li>
+                    <li><a href="/"> Cepti suši</a></li>
+                  </ul>
+                  <ul class="col-xs-4 col-sm-4 list-unstyled">
+                    <li><a href="/">Suši komplekti</a></li>
+                    <li><a href="/">Salāti</a></li>
+                    <li><a href="/">Uzkodas</a></li>
+                    <li><a href="/">Zupas</a></li>
+                    <li><a href="/">WOK</a></li>
+                  </ul>
+                  <ul class="col-xs-4 col-sm-4 list-unstyled">
+                    <li><a href="/">Karstie ēdieni</a></li>
+                    <li><a href="/">Veģetārie ēdieni</a></li>
+                    <li><a href="/">Deserti</a></li>
+                    <li><a href="/">Dzērieni</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-10 col-sm-offset-2 col-lg-4 col-lg-offset-0">
+            <div class="row">
+              <div class="col-xs-6 col-sm-4 col-lg-7">
+                <h5 class="v-line text-uppercase">Darba laiks</h5>
+                <div>P. - Pk.:  no 09:00 - līdz 23:00</div>
+                <div>Se.: no 09:00 - līdz 24:00 </div>
+                <div>Sv.: no 10:00 - līdz 23:00</div>
+              </div>
+              <address class="col-xs-6 col-sm-4 col-lg-5">
+                <h5 class="v-line text-uppercase">Darba laiks</h5>
+                <div><a href="tel:+37122000015">+371-22000015</a></div>
+                <div><a href="mailto:info@bambook.lv">info@bambook.lv</a></div>
+                <div>Riga, A.Deglava 82</div>
+              </address>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="Footer__bottom">
+        <div class="container">
+          <div class="row">
+            <div class="col-xs-12 col-sm-5 col-md-4 pull-right">Sociālos tīklos:
+              <div class="Social va-middle"><a class="Social__icon" href="#">
+                  <svg class="ic-facebook" role="img">
+                    <use xlink:href="/static/decors/sprite.svg#ic-facebook"></use>
+                  </svg></a><a class="Social__icon" href="#">
+                  <svg class="ic-twitter" role="img">
+                    <use xlink:href="/static/decors/sprite.svg#ic-twitter"></use>
+                  </svg></a><a class="Social__icon" href="#">
+                  <svg class="ic-instagram" role="img">
+                    <use xlink:href="/static/decors/sprite.svg#ic-instagram"></use>
+                  </svg></a></div>
+            </div>
+            <div class="col-xs-12 col-sm-4 col-md-3 col-lg-2 pull-left">© Bambook Lounge. All rights reserved.</div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>
+<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+<script src="static/scripts//numscroller-1.0.js"></script>
+<script src="static/scripts//jquery.nice-select.min.js"></script>
+<script src="static/scripts//slick.min.js"></script>
+<script src="static/scripts//main.js"></script>
+<!---->
+<!--========================== DELETE ME start ===========================-->
+<!---->
+<style>
+  .demo{
+   position: fixed;
+   background: rgba(0,0,0,.5);
+   z-index: 1000;
+   top:20%;
+   width:120px;
+  }
+  .demo ul{display:none;padding:0;margin:0;}
+  .demo li{
+   padding: 0.5em 1em;
+   list-style:none;
+  }
+  .demo a{color:#fff;}
+  .demo label{display:inline-block;background-color: rgba(20,20,200,.35);color: #ee9;position:absolute; bottom:100%;left:0;padding:.4em;cursor:pointer;border:1px solid #ee9;padding:0.5em;transition:300ms;}
+  .demo label:hover{background: #44f;}
+  .demo input:checked + ul{display:block;}
+</style>
+<div class="demo">
+  <label for="demo-hide">Cсылки</label>
+  <input type="checkbox" hidden style="display:none;" id="demo-hide">
+  <ul>
+    <li><a onclick="this.href = window.location.href.match(/.*\//)[0] + 'history.html';" href="#">history.html</a></li>
+    <li><a onclick="this.href = window.location.href.match(/.*\//)[0] + 'index.html';" href="#">index.html</a></li>
+    <li><a onclick="this.href = window.location.href.match(/.*\//)[0] + 'kabinet-fav.html';" href="#">kabinet-fav.html</a></li>
+    <li><a onclick="this.href = window.location.href.match(/.*\//)[0] + 'kabinet.html';" href="#">kabinet.html</a></li>
+    <li><a onclick="this.href = window.location.href.match(/.*\//)[0] + 'karte.html';" href="#">karte.html</a></li>
+    <li><a onclick="this.href = window.location.href.match(/.*\//)[0] + 'komments.html';" href="#">komments.html</a></li>
+    <li><a onclick="this.href = window.location.href.match(/.*\//)[0] + 'konstruktor.html';" href="#">konstruktor.html</a></li>
+    <li><a onclick="this.href = window.location.href.match(/.*\//)[0] + 'offer-form.html';" href="#">offer-form.html</a></li>
+    <li><a onclick="this.href = window.location.href.match(/.*\//)[0] + 'order.html';" href="#">order.html</a></li>
+    <li><a onclick="this.href = window.location.href.match(/.*\//)[0] + 'par-mums.html';" href="#">par-mums.html</a></li>
+    <li><a onclick="this.href = window.location.href.match(/.*\//)[0] + 'registration.html';" href="#">registration.html</a></li>
+    <li><a onclick="this.href = window.location.href.match(/.*\//)[0] + 'shipping.html';" href="#">shipping.html</a></li>
+  </ul>
+</div>
