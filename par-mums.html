@@ -5,20 +5,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Document</title>
+    <!-- start favicons-->
+    <link rel="apple-touch-icon" sizes="180x180" href="static/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="static/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="230x230" href="static/favicon/favicon-230x230.png">
+    <link rel="icon" type="image/png" sizes="228x228" href="static/favicon/coast-228x228.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="static/favicon/favicon-16x16.png">
+    <link rel="manifest" href="static/favicon/site.webmanifest">
+    <link rel="mask-icon" href="static/favicon/safari-pinned-tab.svg" color="#5d11da">
+    <link rel="shortcut icon" href="static/favicon/favicon.ico">
+    <link rel="yandex-tableau-widget" href="static/favicon/yandex-browser-manifest.json">
+    <meta property="og:image" content="static/favicon/open-graph.png">
+    <meta name="apple-mobile-web-app-title" content="bambook">
+    <meta name="application-name" content="bambook">
+    <meta name="msapplication-TileColor" content="#d71f27">
+    <meta name="msapplication-TileImage" content="static/favicon/mstile-144x144.png">
+    <meta name="msapplication-config" content="static/favicon/browserconfig.xml">
+    <meta name="theme-color" content="#d71f27">
+    <!-- end favicons-->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600&amp;amp;subset=cyrillic" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&amp;amp;subset=cyrillic" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="/static/styles/bootstrap.css">
     <link rel="stylesheet" type="text/css" href="/static/styles/main.css">
-    <link rel="stylesheet" type="text/css" href="/static/styles/slick.css"><div id="fb-root"></div>
-    <script>
-      (function(d, s, id) {
-      var js, fjs = d.getElementsByTagName(s)[0];
-      if (d.getElementById(id)) return;
-      js = d.createElement(s); js.id = id;
-      js.src = 'https://connect.facebook.net/uk_UA/sdk.js#xfbml=1&version=v2.12';
-      fjs.parentNode.insertBefore(js, fjs);
-      }(document, 'script', 'facebook-jssdk'));
-    </script>
+    <link rel="stylesheet" type="text/css" href="/static/styles/slick.css">
   </head>
   <body>
     <header class="Header" id="header">
@@ -52,7 +61,7 @@
             </div>
             <div class="Header__info">
               <ul class="Main-nav va-middle Header__nav col-lg-12">
-                <li class="Main-nav__item"><a class="Main-nav__link" href="">Akcija</a>
+                <li class="Main-nav__item"><a class="Main-nav__link" href="/products.html">Akcija</a>
                 </li>
                 <li class="Main-nav__item"><a class="Main-nav__link" href="/karte.html">Ēdienkarte</a>
                 </li>
@@ -180,7 +189,9 @@
                     <div class="pull-left">Kopā</div>
                     <div class="pull-right fz-md">14.80 €</div>
                   </div>
-                  <button class="btn btn-primary btn-block" type="submit">Izrakstīšanās</button>
+                  <div class="Cart__forbtn">
+                    <button class="btn btn-primary" type="submit">Izrakstīšanās</button>
+                  </div>
                 </form>
               </div>
             </div>
@@ -286,7 +297,9 @@
                   <div class="pull-left">Kopā</div>
                   <div class="pull-right fz-md">14.80 €</div>
                 </div>
-                <button class="btn btn-primary btn-block" type="submit">Izrakstīšanās</button>
+                <div class="Cart__forbtn">
+                  <button class="btn btn-primary" type="submit">Izrakstīšanās</button>
+                </div>
               </form>
             </div>
           </div>
@@ -305,7 +318,7 @@
               <div class="col-xs-8 col-sm-4 text-uppercase">
                 <h5 class="v-line" style="white-space:nowrap;">Noderīga informācija</h5>
                 <ul class="list-unstyled">
-                  <li><a href="">Akcija</a>
+                  <li><a href="/products.html">Akcija</a>
                   </li>
                   <li><a href="/karte.html">Ēdienkarte</a>
                   </li>
@@ -425,6 +438,7 @@
     <li><a onclick="this.href = window.location.href.match(/.*\//)[0] + 'offer-form.html';" href="#">offer-form.html</a></li>
     <li><a onclick="this.href = window.location.href.match(/.*\//)[0] + 'order.html';" href="#">order.html</a></li>
     <li><a onclick="this.href = window.location.href.match(/.*\//)[0] + 'par-mums.html';" href="#">par-mums.html</a></li>
+    <li><a onclick="this.href = window.location.href.match(/.*\//)[0] + 'products.html';" href="#">products.html</a></li>
     <li><a onclick="this.href = window.location.href.match(/.*\//)[0] + 'registration.html';" href="#">registration.html</a></li>
     <li><a onclick="this.href = window.location.href.match(/.*\//)[0] + 'shipping.html';" href="#">shipping.html</a></li>
   </ul>
