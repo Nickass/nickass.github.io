@@ -2903,6 +2903,8 @@ textarea.input__field {
   margin-right: 12px;
   font-size: 14px;
   fill: transparent;
+  position: relative;
+  top: 5px;
 }
 
 .Header__cart .Cart__forbtn {
@@ -3268,10 +3270,10 @@ textarea.input__field {
 
 .Home-page {
   background-color: rgba(0, 0, 0, 0.8);
-  background: -webkit-radial-gradient(transparent 0%, rgba(0, 0, 0, 0.2) 40%, rgba(0, 0, 0, 0.8) 100%) no-repeat, url("../decors/bg-pattern1.png") repeat, rgba(0, 0, 0, 0.8);
-  background: -moz-radial-gradient(transparent 0%, rgba(0, 0, 0, 0.2) 40%, rgba(0, 0, 0, 0.8) 100%) no-repeat, url("../decors/bg-pattern1.png") repeat, rgba(0, 0, 0, 0.8);
-  background: -o-radial-gradient(transparent 0%, rgba(0, 0, 0, 0.2) 40%, rgba(0, 0, 0, 0.8) 100%) no-repeat, url("../decors/bg-pattern1.png") repeat, rgba(0, 0, 0, 0.8);
-  background: radial-gradient(transparent 0%, rgba(0, 0, 0, 0.2) 40%, rgba(0, 0, 0, 0.8) 100%) no-repeat, url("../decors/bg-pattern1.png") repeat, rgba(0, 0, 0, 0.8);
+  background: -webkit-radial-gradient(transparent 0%, rgba(0, 0, 0, 0.2) 40%, rgba(0, 0, 0, 0.8) 100%) no-repeat, url("../decors/bg-pattern.jpg") repeat, rgba(0, 0, 0, 0.8);
+  background: -moz-radial-gradient(transparent 0%, rgba(0, 0, 0, 0.2) 40%, rgba(0, 0, 0, 0.8) 100%) no-repeat, url("../decors/bg-pattern.jpg") repeat, rgba(0, 0, 0, 0.8);
+  background: -o-radial-gradient(transparent 0%, rgba(0, 0, 0, 0.2) 40%, rgba(0, 0, 0, 0.8) 100%) no-repeat, url("../decors/bg-pattern.jpg") repeat, rgba(0, 0, 0, 0.8);
+  background: radial-gradient(transparent 0%, rgba(0, 0, 0, 0.2) 40%, rgba(0, 0, 0, 0.8) 100%) no-repeat, url("../decors/bg-pattern.jpg") repeat, rgba(0, 0, 0, 0.8);
 }
 
 .Home-page .Header {
