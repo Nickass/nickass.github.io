@@ -440,6 +440,10 @@ hr {
   padding: 0;
 }
 
+a {
+  fill: inherit;
+}
+
 a:hover {
   text-decoration: none;
 }
@@ -2497,6 +2501,7 @@ textarea.input__field {
 }
 
 .Header.is-stiky .Header__cart {
+  position: static;
   vertical-align: top;
   margin-right: 10px;
 }
@@ -2913,6 +2918,7 @@ textarea.input__field {
 
 .Header__cart .btn {
   display: block;
+  width: 100%;
 }
 
 .Header__cart:hover, .Header__cart:focus {
