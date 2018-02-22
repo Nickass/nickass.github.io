@@ -737,8 +737,9 @@ select:invalid {
   display: inline-block;
   vertical-align: middle;
   fill: #fff;
-  width: 1.29167em;
-  height: 1.29167em;
+  width: 1.439167em;
+  height: 1.49167em;
+  vertical-align: sub;
 }
 
 .ic-old-phone, .ic-mail, .ic-location {
@@ -1107,7 +1108,13 @@ select:invalid {
 }
 
 .Search.isSmall.isShow {
-  left: 8.59375em;
+  left: auto;
+  right: 0;
+  position: absolute;
+  top: 100%;
+  margin-top: 15px;
+  margin-right: 0;
+  width: auto;
 }
 
 .Search.isSmall {
@@ -2468,6 +2475,7 @@ textarea.input__field {
   height: 90px;
   padding: 0;
   text-align: right;
+  padding-right: 5px;
 }
 
 .Header.is-stiky .Header__btns {
@@ -2789,6 +2797,85 @@ textarea.input__field {
   clear: both;
 }
 
+@media (max-width: 1200px) {
+  .Header__phones {
+    border: 1px solid #fff;
+    border-top: none;
+  }
+}
+
+@media (max-width: 992px) {
+  .Header__phones {
+    width: 60%;
+  }
+}
+
+.Header__phone-desc {
+  text-align: center;
+  text-transform: uppercase;
+  line-height: 1.2;
+  font-size: 16px;
+  background-color: transparent;
+  display: table;
+  position: absolute;
+  top: -20px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+     -moz-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+       -o-transform: translateX(-50%);
+          transform: translateX(-50%);
+  width: 50%;
+}
+
+.Header__phone-desc:before, .Header__phone-desc:after {
+  content: '';
+  display: table-cell;
+  width: 50%;
+  border: 0;
+  border-color: #fff;
+  border-style: solid;
+  border-top-width: 1px;
+  position: relative;
+  top: 10px;
+}
+
+.Header__phone-desc:before {
+  border-left-width: 1px;
+  right: 10px;
+}
+
+.Header__phone-desc:after {
+  border-right-width: 1px;
+  left: 10px;
+}
+
+@media (max-width: 1200px) {
+  .Header__phone-desc {
+    top: -10px;
+    width: 100%;
+    left: 0;
+    right: 0;
+    -webkit-transform: none;
+       -moz-transform: none;
+        -ms-transform: none;
+         -o-transform: none;
+            transform: none;
+  }
+  .Header__phone-desc:before, .Header__phone-desc:after {
+    border-left: none;
+    border-right: none;
+  }
+  .Header__phone-desc:before {
+    border-right: 30px solid transparent;
+    right: 1px;
+  }
+  .Header__phone-desc:after {
+    border-left: 30px solid transparent;
+    left: 1px;
+  }
+}
+
 .Header__social {
   position: relative;
   min-height: 1px;
@@ -2949,6 +3036,10 @@ textarea.input__field {
   width: auto;
   margin: 10px -15px 0;
   text-align: center;
+}
+
+.Header__mobile-menu .Header__phones {
+  margin: 20px -15px;
 }
 
 .Header__mobile-menu .Main-nav__item {
@@ -3472,6 +3563,10 @@ textarea.input__field {
 
 .fz-xl {
   font-size: 30px;
+}
+
+.fw-bold {
+  font-weight: 700;
 }
 
 .v-line {
