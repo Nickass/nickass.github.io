@@ -69,7 +69,7 @@ $(function () {
 });
 
 
-// var BIG_HEIGHT = 165;
+var BIG_HEIGHT = 165;
 
 // function responsiveHeader() {
 //   var header = $('.Header');
