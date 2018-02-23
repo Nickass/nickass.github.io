@@ -186,6 +186,9 @@ function responsiveHeader(device, isStiky) {
 
   var first_btns = hbtns.first();
   var last_btns = hbtns.last();
+    var isStiky = BIG_HEIGHT < window.scrollY;
+    var isTablet = window.innerWidth < 1200 && window.innerWidth >= 768;
+    var isMobile = window.innerWidth < 768;
 
     if(isStiky) {
       header.addClass('is-stiky');
