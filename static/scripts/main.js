@@ -21,7 +21,7 @@ $(function () {
 
     if(!self.is('.isShow')) {
       self.addClass('isShow')
-      .find('.Search__field').focus();
+      // .find('.Search__field').focus();
       $(document).on('click', handleOnBlur);
       return false;
     } else {
