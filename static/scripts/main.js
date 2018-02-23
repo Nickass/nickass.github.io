@@ -15,7 +15,7 @@ $(function () {
 
     }
   }
-  $('.Search').on('click', function(e) {
+  $('.Search').one('click', function(e) {
     var self = $(this);
     if (!self.is('.isSmall')) return;
 
