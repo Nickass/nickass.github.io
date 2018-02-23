@@ -7,8 +7,8 @@ $(document).ready(function() {
 $(function () {
   function handleOnBlur(e) {
     var self = $('.Search');
-    if(!$(e.target).is(self) && $(e.target).closest(self).length === 0) {
     console.log(e.target);
+    if(!$(e.target).is(self) && $(e.target).closest(self).length === 0) {
       self.removeClass('isShow');
       $(document).off('click', handleOnBlur);
     } else {
@@ -27,6 +27,14 @@ $(function () {
     } else {
 
     }
+
+    self.find('.Search__field').on('input', function(){
+      $(document).off('click', handleOnBlur);
+    })
+    self.find('.Search__field').on('change', function(){
+      $(document).on('click', handleOnBlur);
+    })
+
   });
 });
 $(function () {
