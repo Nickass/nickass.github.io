@@ -5,20 +5,27 @@ $(document).ready(function() {
 });
 
 $(function () {
+  function handleOnBlur(e) {
+    var self = $('.Search');
+    if(!$(e.target).is(self) && $(e.target).closest(self).length === 0) {
+    console.log(e.target);
+      self.removeClass('isShow');
+      $(document).off('click', handleOnBlur);
+    } else {
+
+    }
+  }
   $('.Search').on('click', function(e) {
     var self = $(this);
-    if(self.is('.isSmall:not(.isShow)')) {
-      e.preventDefault();
+    if (!self.is('.isSmall')) return;
+
+    if(!self.is('.isShow')) {
       self.addClass('isShow')
       .find('.Search__field').focus();
-
-      // $(document.body).on('click', function handleOnBlur(e) {
-      //   if(!$(e.target).is(self) && $(e.target).closest(self).length === 0) {
-      //     self.removeClass('isShow');
-      //     $(document.body).off('click', handleOnBlur);
-      //   }
-      // });
+      $(document).on('click', handleOnBlur);
       return false;
+    } else {
+
     }
   });
 });
