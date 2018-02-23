@@ -24,7 +24,7 @@ $(function () {
       // .find('.Search__field').focus();
       // $(document).on('click', handleOnBlur);
       alert(e.target.className)
-      e.preventDefault();
+      // e.preventDefault();
       // return false;
     } else {
 
@@ -32,13 +32,13 @@ $(function () {
 
 
   });
-    $('.Search').find('.Search__field').on('focus', function(e){
-      $(document).off('click', handleOnBlur);
-    })
-    $('.Search').find('.Search__field').on('blur', function(){
-      $(document).on('click', handleOnBlur);
-      alert(e.target.className)
-    })
+    // $('.Search').find('.Search__field').on('focus', function(e){
+    //   $(document).off('click', handleOnBlur);
+    // })
+    // $('.Search').find('.Search__field').on('blur', function(){
+    //   $(document).on('click', handleOnBlur);
+    //   alert(e.target.className)
+    // })
 });
 $(function () {
   $('.input')
