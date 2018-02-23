@@ -5,9 +5,10 @@ $(document).ready(function() {
 });
 
 $(function () {
-  $('.Search').on('click', function() {
+  $('.Search').on('click', function(e) {
     var self = $(this);
     if(self.is('.isSmall:not(.isShow)')) {
+      e.preventDefault();
       self.addClass('isShow')
       .find('.Search__field');
 
@@ -17,7 +18,7 @@ $(function () {
       //     $(document.body).off('click', handleOnBlur);
       //   }
       // });
-      // return false;
+      return false;
     }
   });
 });
