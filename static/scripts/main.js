@@ -11,12 +11,12 @@ $(function () {
       self.addClass('isShow')
       .find('.Search__field');
 
-      $(document.body).on('click', function handleOnBlur(e) {
-        if(!$(e.target).is(self) && $(e.target).closest(self).length === 0) {
-          self.removeClass('isShow');
-          $(document.body).off('click', handleOnBlur);
-        }
-      });
+      // $(document.body).on('click', function handleOnBlur(e) {
+      //   if(!$(e.target).is(self) && $(e.target).closest(self).length === 0) {
+      //     self.removeClass('isShow');
+      //     $(document.body).off('click', handleOnBlur);
+      //   }
+      // });
       return false;
     }
   });
