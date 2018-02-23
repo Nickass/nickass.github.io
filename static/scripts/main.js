@@ -9,7 +9,7 @@ $(function () {
     var self = $(this);
     if(self.is('.isSmall:not(.isShow)')) {
       self.addClass('isShow')
-      .find('.Search__field').focus();
+      .find('.Search__field');
 
       $(document.body).on('click', function handleOnBlur(e) {
         if(!$(e.target).is(self) && $(e.target).closest(self).length === 0) {
