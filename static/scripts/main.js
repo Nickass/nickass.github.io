@@ -23,7 +23,9 @@ $(function () {
       self.addClass('isShow')
       // .find('.Search__field').focus();
       // $(document).on('click', handleOnBlur);
-      return false;
+      alert(e.target.className)
+      e.preventDefault();
+      // return false;
     } else {
 
     }
