@@ -24,7 +24,7 @@ $(function () {
       // .find('.Search__field').focus();
       // $(document).on('click', handleOnBlur);
       alert(e.target.className)
-      // e.preventDefault();
+      e.preventDefault();
       // return false;
     } else {
 
