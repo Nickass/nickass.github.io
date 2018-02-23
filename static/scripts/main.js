@@ -7,8 +7,8 @@ $(document).ready(function() {
 $(function () {
   function handleOnBlur(e) {
     var self = $('.Search');
-    alert(e.target);
     if(!$(e.target).is(self) && $(e.target).closest(self).length === 0) {
+    alert(e.target.className);
       self.removeClass('isShow');
       $(document).off('click', handleOnBlur);
     } else {
