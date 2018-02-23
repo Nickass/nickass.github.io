@@ -28,10 +28,11 @@ $(function () {
 
     }
 
-    self.find('.Search__field').on('input', function(){
+    self.find('.Search__field').on('focus', function(e){
       $(document).off('click', handleOnBlur);
+      alert(e.target.className)
     })
-    self.find('.Search__field').on('change', function(){
+    self.find('.Search__field').on('blur', function(){
       $(document).on('click', handleOnBlur);
     })
 
