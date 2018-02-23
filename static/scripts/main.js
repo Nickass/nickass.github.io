@@ -28,15 +28,15 @@ $(function () {
 
     }
 
-    self.find('.Search__field').on('focus', function(e){
-      $(document).off('click', handleOnBlur);
-      alert(e.target.className)
-    })
-    self.find('.Search__field').on('blur', function(){
-      $(document).on('click', handleOnBlur);
-    })
 
   });
+    $('.Search').find('.Search__field').on('focus', function(e){
+      $(document).off('click', handleOnBlur);
+    })
+    $('.Search').find('.Search__field').on('blur', function(){
+      $(document).on('click', handleOnBlur);
+      alert(e.target.className)
+    })
 });
 $(function () {
   $('.input')
