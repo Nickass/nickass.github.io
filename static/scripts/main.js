@@ -69,10 +69,110 @@ $(function () {
 });
 
 
-var BIG_HEIGHT = 165;
+// var BIG_HEIGHT = 165;
 
-function responsiveHeader() {
-  var header = $('.Header');
+// function responsiveHeader() {
+//   var header = $('.Header');
+//   var hbtns  = header.find('.Header__btns');
+//   var hinfo  = header.find('.Header__info');
+//   var search = header.find('.Header__search');
+//   var mainNav= header.find('.Header__nav');
+//   var mobMenu= header.find('.Header__mobile-menu');
+//   var basket = header.find('.Header__cart');
+//   var phones = header.find('.Header__phones');
+//   var social = header.find('.Header__social');
+//   var login  = header.find('.Header__login');
+//   var lang   = header.find('.Header__lang.nice-select');
+
+//   var first_btns = hbtns.first();
+//   var last_btns = hbtns.last();
+
+
+//   return function() {
+//     if(lang.length == 0) lang = header.find('div.Header__lang'); // if nice-select not loaded
+//     var isStiky = BIG_HEIGHT < window.scrollY;
+//     var isTablet = window.innerWidth < 1200 && window.innerWidth >= 768;
+//     var isMobile = window.innerWidth < 768;
+
+
+//     if(isStiky) {
+//       header.parent().css('padding-top', header.outerHeight());
+//       header.css({'top': -BIG_HEIGHT}).addClass('is-stiky').animate({'top': '0'}, 400);
+//       search.addClass('isSmall');
+//     } else {
+//       header.parent().css('padding-top', 0);
+//       header.removeClass('is-stiky');
+//       search.removeClass('isSmall');
+//     }
+
+//     if(isTablet) {
+//       login.prependTo(last_btns);
+//       lang.appendTo(last_btns);
+//       mainNav.appendTo(mobMenu);
+//       search.addClass('isSmall');
+//       if(isStiky) {
+//         search.prependTo(last_btns);
+//         phones.appendTo(mobMenu);
+//         social.appendTo(mobMenu);
+//         basket.prependTo(first_btns);
+//       } else {
+//         search.prependTo(first_btns);
+//         phones.appendTo(hinfo.first());
+//         social.appendTo(hinfo.first());
+//         basket.insertAfter(search);
+//       }
+//     } else if(isMobile) {
+//       search.prependTo(first_btns);
+//       basket.insertAfter(search);
+//       mainNav.appendTo(mobMenu);
+//       phones.appendTo(mobMenu);
+//       social.appendTo(mobMenu);
+//       search.addClass('isSmall');
+//       if(isStiky) {
+//         lang.insertAfter(search);
+//         login.appendTo(mobMenu);   
+//       } else {
+//         lang.prependTo(last_btns);
+//         login.prependTo(last_btns);
+//       }
+//     } else /* is desktop*/ {
+//       login.prependTo(last_btns);   
+//       mainNav.appendTo(hinfo.last());
+//       search.prependTo(first_btns);
+//       phones.appendTo(hinfo.first());
+//       social.appendTo(hinfo.first());
+//       if(isStiky) {
+//         basket.appendTo(last_btns);   
+//       } else {        
+//         basket.appendTo(last_btns);   
+//         search.removeClass('isSmall');
+//       }
+//     }
+//   }
+// }
+
+// $(function() {
+//   var headerHandler = responsiveHeader();
+//   headerHandler();
+//   $(window).on('resize', headerHandler);
+
+//   var needReload = false;
+
+//   $(window).on('scroll', function() {
+//     needReload = (BIG_HEIGHT <= window.scrollY &&  !$('.Header').is('.is-stiky')) || 
+//                      (BIG_HEIGHT >= window.scrollY && $('.Header').is('.is-stiky'));
+//     if (needReload) {
+//       headerHandler();
+//       needReload = false;
+//     }
+//   });
+// });
+
+
+
+
+function responsiveHeader(device, isStiky) {
+  var header = $('.Header').clone(true);
   var hbtns  = header.find('.Header__btns');
   var hinfo  = header.find('.Header__info');
   var search = header.find('.Header__search');
@@ -87,23 +187,14 @@ function responsiveHeader() {
   var first_btns = hbtns.first();
   var last_btns = hbtns.last();
 
-
-  return function() {
-    if(lang.length == 0) lang = header.find('div.Header__lang'); // if nice-select not loaded
-    var isStiky = BIG_HEIGHT < window.scrollY;
-    var isTablet = window.innerWidth < 1200 && window.innerWidth >= 768;
-    var isMobile = window.innerWidth < 768;
-
-
     if(isStiky) {
-      header.parent().css('padding-top', header.outerHeight());
-      header.css({'top': -BIG_HEIGHT}).addClass('is-stiky').animate({'top': '0'}, 400);
+      header.addClass('is-stiky');
       search.addClass('isSmall');
     } else {
-      header.parent().css('padding-top', 0);
       header.removeClass('is-stiky');
       search.removeClass('isSmall');
     }
+    
 
     if(isTablet) {
       login.prependTo(last_btns);
@@ -148,140 +239,49 @@ function responsiveHeader() {
         search.removeClass('isSmall');
       }
     }
-  }
+
+  return header;
 }
 
 $(function() {
-  var headerHandler = responsiveHeader();
-  headerHandler();
-  $(window).on('resize', headerHandler);
+  var device = (window.innerWidth < 1200 && window.innerWidth >= 768) ? 'tablet' :
+            (window.innerWidth < 768) ? 'mobile' : 'desctop';
+  var isStiky = 165 < window.scrollY;
+  var currentHeader = responsiveHeader(device, isStiky);
+  $('.Header').replaceWith(currentHeader);
 
+  if(isStiky) {
+    $(document.body).css('padding-top', '165px');
+  } else {
+    $(document.body).css('padding-top', '0px');
+  }
+
+  var altHeader = responsiveHeader(device, !isStiky);
   var needReload = false;
 
   $(window).on('scroll', function() {
-    needReload = (BIG_HEIGHT <= window.scrollY &&  !$('.Header').is('.is-stiky')) || 
-                     (BIG_HEIGHT >= window.scrollY && $('.Header').is('.is-stiky'));
+    isStiky = 165 < window.scrollY;
+
+    needReload = (isStiky &&  !currentHeader.is('.is-stiky')) || 
+                     (!isStiky && currentHeader.is('.is-stiky'));
+
     if (needReload) {
-      headerHandler();
+      var temp = currentHeader;
+      currentHeader = altHeader
+      altHeader = temp;
+
+      if(isStiky) {
+        $(document.body).css('padding-top', '165px');
+        currentHeader.css({'top': '-165px'}).replaceAll('.Header').animate({'top': '0'}, 400);
+      } else {
+        $(document.body).css('padding-top', '0px');
+        $('.Header').replaceWith(currentHeader);
+      }
+
       needReload = false;
     }
   });
 });
-
-
-
-
-// function responsiveHeader(device, isStiky) {
-//   var header = $('.Header').clone(true);
-//   var hbtns  = header.find('.Header__btns');
-//   var hinfo  = header.find('.Header__info');
-//   var search = header.find('.Header__search');
-//   var mainNav= header.find('.Header__nav');
-//   var mobMenu= header.find('.Header__mobile-menu');
-//   var basket = header.find('.Header__cart');
-//   var phones = header.find('.Header__phones');
-//   var social = header.find('.Header__social');
-//   var login  = header.find('.Header__login');
-//   var lang   = header.find('.Header__lang.nice-select');
-
-//   var first_btns = hbtns.first();
-//   var last_btns = hbtns.last();
-
-//     if(isStiky) {
-//       header.addClass('is-stiky');
-//       search.addClass('isSmall');
-//     } else {
-//       header.removeClass('is-stiky');
-//       search.removeClass('isSmall');
-//     }
-    
-
-    // if(isTablet) {
-    //   login.prependTo(last_btns);
-    //   lang.appendTo(last_btns);
-    //   mainNav.appendTo(mobMenu);
-    //   search.addClass('isSmall');
-    //   if(isStiky) {
-    //     search.prependTo(last_btns);
-    //     phones.appendTo(mobMenu);
-    //     social.appendTo(mobMenu);
-    //     basket.prependTo(first_btns);
-    //   } else {
-    //     search.prependTo(first_btns);
-    //     phones.appendTo(hinfo.first());
-    //     social.appendTo(hinfo.first());
-    //     basket.insertAfter(search);
-    //   }
-    // } else if(isMobile) {
-    //   search.prependTo(first_btns);
-    //   basket.insertAfter(search);
-    //   mainNav.appendTo(mobMenu);
-    //   phones.appendTo(mobMenu);
-    //   social.appendTo(mobMenu);
-    //   search.addClass('isSmall');
-    //   if(isStiky) {
-    //     lang.insertAfter(search);
-    //     login.appendTo(mobMenu);   
-    //   } else {
-    //     lang.prependTo(last_btns);
-    //     login.prependTo(last_btns);
-    //   }
-    // } else /* is desktop*/ {
-    //   login.prependTo(last_btns);   
-    //   mainNav.appendTo(hinfo.last());
-    //   search.prependTo(first_btns);
-    //   phones.appendTo(hinfo.first());
-    //   social.appendTo(hinfo.first());
-    //   if(isStiky) {
-    //     basket.appendTo(last_btns);   
-    //   } else {        
-    //     basket.appendTo(last_btns);   
-      //   search.removeClass('isSmall');
-    //   }
-    // }
-
-//   return header;
-// }
-
-// $(function() {
-//   var device = (window.innerWidth < 1200 && window.innerWidth >= 768) ? 'tablet' :
-//             (window.innerWidth < 768) ? 'mobile' : 'desctop';
-//   var isStiky = 165 < window.scrollY;
-//   var currentHeader = responsiveHeader(device, isStiky);
-//   $('.Header').replaceWith(currentHeader);
-
-//   if(isStiky) {
-//     $(document.body).css('padding-top', '165px');
-//   } else {
-//     $(document.body).css('padding-top', '0px');
-//   }
-
-//   var altHeader = responsiveHeader(device, !isStiky);
-//   var needReload = false;
-
-//   $(window).on('scroll', function() {
-//     isStiky = 165 < window.scrollY;
-
-//     needReload = (isStiky &&  !currentHeader.is('.is-stiky')) || 
-//                      (!isStiky && currentHeader.is('.is-stiky'));
-
-//     if (needReload) {
-//       var temp = currentHeader;
-//       currentHeader = altHeader
-//       altHeader = temp;
-
-//       if(isStiky) {
-//         $(document.body).css('padding-top', '165px');
-//         currentHeader.css({'top': '-165px'}).replaceAll('.Header').animate({'top': '0'}, 400);
-//       } else {
-//         $(document.body).css('padding-top', '0px');
-//         $('.Header').replaceWith(currentHeader);
-//       }
-
-//       needReload = false;
-//     }
-//   });
-// });
 
 $(function(){
   var slider = $('.Slider');
