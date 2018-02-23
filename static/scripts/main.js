@@ -155,22 +155,22 @@ function responsiveHeader() {
   }
 }
 
-$(function() {
-  var headerHandler = responsiveHeader();
-  headerHandler();
-  $(window).on('resize', headerHandler);
+// $(function() {
+//   var headerHandler = responsiveHeader();
+//   headerHandler();
+//   $(window).on('resize', headerHandler);
 
-  var needReload = false;
+//   var needReload = false;
 
-  $(window).on('scroll', function() {
-    needReload = (BIG_HEIGHT <= window.scrollY &&  !$('.Header').is('.is-stiky')) || 
-                     (BIG_HEIGHT >= window.scrollY && $('.Header').is('.is-stiky'));
-    if (needReload) {
-      headerHandler();
-      needReload = false;
-    }
-  });
-});
+//   $(window).on('scroll', function() {
+//     needReload = (BIG_HEIGHT <= window.scrollY &&  !$('.Header').is('.is-stiky')) || 
+//                      (BIG_HEIGHT >= window.scrollY && $('.Header').is('.is-stiky'));
+//     if (needReload) {
+//       headerHandler();
+//       needReload = false;
+//     }
+//   });
+// });
 
 
 
