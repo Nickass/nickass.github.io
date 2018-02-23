@@ -10,31 +10,19 @@ $(function () {
     if(!$(e.target).is(self) && $(e.target).closest(self).length === 0) {
       self.removeClass('isShow');
       $(document).off('click', handleOnBlur);
-    } else {
-
     }
   }
-  $('.Search').on('click', function(e) {
+  $(document).on('click', '.Search',  function(e) {
     var self = $(this);
     if (!self.is('.isSmall')) return;
 
     if(!self.is('.isShow')) {
+      e.preventDefault();
       self.addClass('isShow')
       .find('.Search__field').focus();
       $(document).on('click', handleOnBlur);
-      return false;
-    } else {
-
-    }
-
-
+    } 
   });
-  $('.Search').find('.Search__field').on('focus', function(e){
-    $(document).off('click', handleOnBlur);
-  })
-  $('.Search').find('.Search__field').on('blur', function(){
-    $(document).on('click', handleOnBlur);
-  })
 });
 $(function () {
   $('.input')
@@ -69,110 +57,41 @@ $(function () {
 });
 
 
-var BIG_HEIGHT = 165;
+$(function() {
+  $(document).on('click', '.DD__toggler', function(e) {
+    e.preventDefault();
 
-// function responsiveHeader() {
-//   var header = $('.Header');
-//   var hbtns  = header.find('.Header__btns');
-//   var hinfo  = header.find('.Header__info');
-//   var search = header.find('.Header__search');
-//   var mainNav= header.find('.Header__nav');
-//   var mobMenu= header.find('.Header__mobile-menu');
-//   var basket = header.find('.Header__cart');
-//   var phones = header.find('.Header__phones');
-//   var social = header.find('.Header__social');
-//   var login  = header.find('.Header__login');
-//   var lang   = header.find('.Header__lang.nice-select');
+    var toggler = $(this);
+    var container = toggler.siblings('.DD__list');
 
-//   var first_btns = hbtns.first();
-//   var last_btns = hbtns.last();
+    function handleOnBlur(e) {
+      var target = $(e.target);
+      if(!target.is(container) && 
+         target.closest(container).length === 0 &&
+         !target.is(toggler) && 
+         target.closest(toggler).length === 0 ) {
+        toggler.removeClass('opened').addClass('collapsed');
+        container.removeClass('opened').slideUp(200).addClass('collapsed');
+        $(document.body).off('click', handleOnBlur);
+      }
+    }
 
-
-//   return function() {
-//     if(lang.length == 0) lang = header.find('div.Header__lang'); // if nice-select not loaded
-//     var isStiky = BIG_HEIGHT < window.scrollY;
-//     var isTablet = window.innerWidth < 1200 && window.innerWidth >= 768;
-//     var isMobile = window.innerWidth < 768;
-
-
-//     if(isStiky) {
-//       header.parent().css('padding-top', header.outerHeight());
-//       header.css({'top': -BIG_HEIGHT}).addClass('is-stiky').animate({'top': '0'}, 400);
-//       search.addClass('isSmall');
-//     } else {
-//       header.parent().css('padding-top', 0);
-//       header.removeClass('is-stiky');
-//       search.removeClass('isSmall');
-//     }
-
-//     if(isTablet) {
-//       login.prependTo(last_btns);
-//       lang.appendTo(last_btns);
-//       mainNav.appendTo(mobMenu);
-//       search.addClass('isSmall');
-//       if(isStiky) {
-//         search.prependTo(last_btns);
-//         phones.appendTo(mobMenu);
-//         social.appendTo(mobMenu);
-//         basket.prependTo(first_btns);
-//       } else {
-//         search.prependTo(first_btns);
-//         phones.appendTo(hinfo.first());
-//         social.appendTo(hinfo.first());
-//         basket.insertAfter(search);
-//       }
-//     } else if(isMobile) {
-//       search.prependTo(first_btns);
-//       basket.insertAfter(search);
-//       mainNav.appendTo(mobMenu);
-//       phones.appendTo(mobMenu);
-//       social.appendTo(mobMenu);
-//       search.addClass('isSmall');
-//       if(isStiky) {
-//         lang.insertAfter(search);
-//         login.appendTo(mobMenu);   
-//       } else {
-//         lang.prependTo(last_btns);
-//         login.prependTo(last_btns);
-//       }
-//     } else /* is desktop*/ {
-//       login.prependTo(last_btns);   
-//       mainNav.appendTo(hinfo.last());
-//       search.prependTo(first_btns);
-//       phones.appendTo(hinfo.first());
-//       social.appendTo(hinfo.first());
-//       if(isStiky) {
-//         basket.appendTo(last_btns);   
-//       } else {        
-//         basket.appendTo(last_btns);   
-//         search.removeClass('isSmall');
-//       }
-//     }
-//   }
-// }
-
-// $(function() {
-//   var headerHandler = responsiveHeader();
-//   headerHandler();
-//   $(window).on('resize', headerHandler);
-
-//   var needReload = false;
-
-//   $(window).on('scroll', function() {
-//     needReload = (BIG_HEIGHT <= window.scrollY &&  !$('.Header').is('.is-stiky')) || 
-//                      (BIG_HEIGHT >= window.scrollY && $('.Header').is('.is-stiky'));
-//     if (needReload) {
-//       headerHandler();
-//       needReload = false;
-//     }
-//   });
-// });
-
+    if(toggler.is('.opened')) {
+      toggler.removeClass('opened').addClass('collapsed');
+      container.removeClass('opened').slideUp(200).addClass('collapsed');
+      $(document.body).off('click', handleOnBlur);
+    } else {
+      toggler.addClass('opened').removeClass('collapsed');
+      container.addClass('opened').slideDown(200).removeClass('collapsed');
+      $(document).on('click', handleOnBlur);
+    }
+  });
+})
 
 
 
 function responsiveHeader(device, isStiky) {
-  var header = $('.Header').clone(true);
+  var header = $('.Header');
   var hbtns  = header.find('.Header__btns');
   var hinfo  = header.find('.Header__info');
   var search = header.find('.Header__search');
@@ -186,9 +105,9 @@ function responsiveHeader(device, isStiky) {
 
   var first_btns = hbtns.first();
   var last_btns = hbtns.last();
-    var isStiky = BIG_HEIGHT < window.scrollY;
-    var isTablet = window.innerWidth < 1200 && window.innerWidth >= 768;
-    var isMobile = window.innerWidth < 768;
+
+  var isTablet = window.innerWidth < 1200 && window.innerWidth >= 768;
+  var isMobile = window.innerWidth < 768;
 
     if(isStiky) {
       header.addClass('is-stiky');
@@ -259,7 +178,6 @@ $(function() {
     $(document.body).css('padding-top', '0px');
   }
 
-  var altHeader = responsiveHeader(device, !isStiky);
   var needReload = false;
 
   $(window).on('scroll', function() {
@@ -269,9 +187,7 @@ $(function() {
                      (!isStiky && currentHeader.is('.is-stiky'));
 
     if (needReload) {
-      var temp = currentHeader;
-      currentHeader = altHeader
-      altHeader = temp;
+      currentHeader = responsiveHeader(device, isStiky)
 
       if(isStiky) {
         $(document.body).css('padding-top', '165px');
@@ -285,6 +201,8 @@ $(function() {
     }
   });
 });
+
+
 
 $(function(){
   var slider = $('.Slider');

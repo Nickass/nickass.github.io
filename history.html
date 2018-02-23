@@ -83,19 +83,19 @@
                   </svg>
                 </button>
               </Form>
-              <div class="dropdown Header__mobile">
-                <button class="btn-burger collapsed Main-nav__toggler" role="button" data-toggle="collapse" data-target="#mobile-menu" aria-expanded="false"></button>
-                <div class="dropdown-menu dropdown-menu-right Header__mobile-menu collapse" id="mobile-menu"></div>
+              <div class="Header__mobile">
+                <button class="btn-burger Main-nav__toggler collapsed DD__toggler" role="button"></button>
+                <div class="Header__mobile-menu collapsed DD__list"></div>
               </div>
             </div>
             <div class="Header__btns">
               <div class="Logout dropdown Header__login">
-                <button class="Logout__dd btn-dropdown" role="button" data-toggle="dropdown" data-target="#" aria-expanded="false">
+                <button class="Logout__dd btn-dropdown DD__toggler collapsed" role="button">
                   <svg class="ic-user-2 fz-lg" role="img">
                     <use xlink:href="static/decors/sprite.svg#ic-user-2"></use>
                   </svg>
                 </button><a class="Logout__exit" href="/"></a>
-                <ul class="dropdown-menu Logout__menu">
+                <ul class="DD__list Logout__menu collapsed">
                   <li> <a href="/kabinet.html">Personīgie dati</a></li>
                   <li> <a href="/history.html">Pasūtījumi</a></li>
                   <li> <a href="/kabinet-fav.html">Favoriti</a></li>
@@ -106,13 +106,13 @@
                 <option>EN</option>
                 <option>RU</option>
               </select>
-              <div class="dropdown Header__cart">
-                <button class="btn-cart btn-dropdown" role="button" data-toggle="dropdown" data-target="#" aria-expanded="false">
+              <div class="Header__cart">
+                <button class="btn-cart DD__toggler btn-dropdown collapsed" role="button">
                   <svg class="ic-cart btn-cart__icon" role="img">
                     <use xlink:href="static/decors/sprite.svg#ic-cart"></use>
                   </svg><span class="btn-cart__text">10</span>
                 </button>
-                <form class="Cart dropdown-menu dropdown-menu-right">
+                <form class="Cart DD__list collapsed">
                   <div class="Cart__header">Grozs</div>
                   <ul class="list-unstyled clearfix">
                     <li class="Cart__item">

@@ -123,19 +123,19 @@
                   </svg>
                 </button>
               </Form>
-              <div class="dropdown Header__mobile">
-                <button class="btn-burger collapsed Main-nav__toggler" role="button" data-toggle="collapse" data-target="#mobile-menu" aria-expanded="false"></button>
-                <div class="dropdown-menu dropdown-menu-right Header__mobile-menu collapse" id="mobile-menu"></div>
+              <div class="Header__mobile">
+                <button class="btn-burger Main-nav__toggler collapsed DD__toggler" role="button"></button>
+                <div class="Header__mobile-menu collapsed DD__list"></div>
               </div>
             </div>
             <div class="Header__btns">
-              <div class="dropdown Header__login">
-                <button class="btn-login btn-dropdown" role="button" data-toggle="dropdown" data-target="#" aria-expanded="false">
+              <div class="Header__login">
+                <button class="btn-login btn-dropdown DD__toggler collapsed" role="button">
                   <svg class="ic-login btn-login__icon" role="img">
                     <use xlink:href="static/decors/sprite.svg#ic-login"></use>
                   </svg>Ienākt
                 </button>
-                <form class="Login dropdown-menu">
+                <form class="Login DD__list collapsed">
                   <div class="Login__header">Login</div>
                   <div class="Login__content">
                     <div>
@@ -157,7 +157,7 @@
                     </div>
                     <div class="text-center"> <a class="btn btn-sm btn-link text-primary" href="#">Forgot password?</a></div>
                     <div class="text-center"><a class="btn btn-sm btn-link text-warning" href="#">Registration</a></div>
-                    <button class="btn btn-primary btn-block btn-lg">Lelogoties</button>
+                    <button class="btn btn-primary btn-block">Lelogoties</button>
                   </div>
                 </form>
               </div>
@@ -166,13 +166,13 @@
                 <option>EN</option>
                 <option>RU</option>
               </select>
-              <div class="dropdown Header__cart">
-                <button class="btn-cart btn-dropdown" role="button" data-toggle="dropdown" data-target="#" aria-expanded="false">
+              <div class="Header__cart">
+                <button class="btn-cart DD__toggler btn-dropdown collapsed" role="button">
                   <svg class="ic-cart btn-cart__icon" role="img">
                     <use xlink:href="static/decors/sprite.svg#ic-cart"></use>
                   </svg><span class="btn-cart__text">10</span>
                 </button>
-                <form class="Cart dropdown-menu dropdown-menu-right">
+                <form class="Cart DD__list collapsed">
                   <div class="Cart__header">Grozs</div>
                   <ul class="list-unstyled clearfix">
                     <li class="Cart__item">
@@ -308,9 +308,9 @@
                     <li class="Grid__item showByScroll">
                       <div class="P-item" id="p-item-1" data-toggle="modal" data-target="#p-item-modal">
                         <div class="P-item__ctrls">
-                          <button class="btn btn-square bg-success pull-right">
-                            <svg class="ic-check" role="img">
-                              <use xlink:href="static/decors/sprite.svg#ic-check"></use>
+                          <button class="btn btn-square btn-primary pull-right">
+                            <svg class="ic-like-add" role="img">
+                              <use xlink:href="static/decors/sprite.svg#ic-like-add"></use>
                             </svg>
                           </button>
                         </div>
@@ -332,7 +332,7 @@
                             </svg>
                           </button>
                         </div>
-                        <div class="P-item__img"><img src="img/item-2.png"/></div>
+                        <div class="P-item__img"><img src="img/item-1.png"/></div>
                         <div class="P-item__more"><a class="P-item__btn btn btn-primary btn-lg" href="javascript:return void(0);">ielikt groza</a>
                         </div>
                         <div class="P-item__info"> 
@@ -354,17 +354,6 @@
                     </li>
                     <li class="Grid__item showByScroll">
                       <div class="P-item" id="p-item-4" data-toggle="modal" data-target="#p-item-modal">
-                        <div class="P-item__img"><img src="img/item-1.png"/></div>
-                        <div class="P-item__more"><a class="P-item__btn btn btn-primary btn-lg" href="javascript:return void(0);">ielikt groza</a>
-                        </div>
-                        <div class="P-item__info"> 
-                          <div><small> 
-                              <strike>7.50 €  </strike></small>&nbsp;  <strong class="text-primary h4">2.50 €  </strong></div>Cūkgaļas fileja  
-                        </div>
-                      </div>
-                    </li>
-                    <li class="Grid__item showByScroll">
-                      <div class="P-item" id="p-item-5" data-toggle="modal" data-target="#p-item-modal">
                         <div class="P-item__ctrls">
                           <button class="btn btn-square btn-primary pull-right">
                             <svg class="ic-like-add" role="img">
@@ -382,61 +371,7 @@
                       </div>
                     </li>
                     <li class="Grid__item showByScroll">
-                      <div class="P-item" id="p-item-6" data-toggle="modal" data-target="#p-item-modal">
-                        <div class="P-item__ctrls">
-                          <button class="btn btn-square bg-success pull-right">
-                            <svg class="ic-check" role="img">
-                              <use xlink:href="static/decors/sprite.svg#ic-check"></use>
-                            </svg>
-                          </button>
-                        </div>
-                        <div class="P-item__img"><img src="img/item-2.png"/></div>
-                        <div class="P-item__more"><a class="P-item__btn btn btn-primary btn-lg" href="javascript:return void(0);">ielikt groza</a>
-                        </div>
-                        <div class="P-item__info"> 
-                          <div><small> 
-                              <strike>7.50 €  </strike></small>&nbsp;  <strong class="text-primary h4">2.50 €  </strong></div>Cūkgaļas fileja  
-                        </div>
-                      </div>
-                    </li>
-                    <li class="Grid__item showByScroll">
-                      <div class="P-item" id="p-item-7" data-toggle="modal" data-target="#p-item-modal">
-                        <div class="P-item__ctrls">
-                          <button class="btn btn-square bg-success pull-right">
-                            <svg class="ic-check" role="img">
-                              <use xlink:href="static/decors/sprite.svg#ic-check"></use>
-                            </svg>
-                          </button>
-                        </div>
-                        <div class="P-item__img"><img src="img/item-2.png"/></div>
-                        <div class="P-item__more"><a class="P-item__btn btn btn-primary btn-lg" href="javascript:return void(0);">ielikt groza</a>
-                        </div>
-                        <div class="P-item__info"> 
-                          <div><small> 
-                              <strike>7.50 €  </strike></small>&nbsp;  <strong class="text-primary h4">2.50 €  </strong></div>Cūkgaļas fileja  
-                        </div>
-                      </div>
-                    </li>
-                    <li class="Grid__item showByScroll">
-                      <div class="P-item" id="p-item-8" data-toggle="modal" data-target="#p-item-modal">
-                        <div class="P-item__img"><img src="img/item-2.png"/></div>
-                        <div class="P-item__more"><a class="P-item__btn btn btn-primary btn-lg" href="javascript:return void(0);">ielikt groza</a>
-                        </div>
-                        <div class="P-item__info"> 
-                          <div><small> 
-                              <strike>7.50 €  </strike></small>&nbsp;  <strong class="text-primary h4">2.50 €  </strong></div>Cūkgaļas fileja  
-                        </div>
-                      </div>
-                    </li>
-                    <li class="Grid__item showByScroll">
-                      <div class="P-item" id="p-item-9" data-toggle="modal" data-target="#p-item-modal">
-                        <div class="P-item__ctrls">
-                          <button class="btn btn-square bg-success pull-right">
-                            <svg class="ic-check" role="img">
-                              <use xlink:href="static/decors/sprite.svg#ic-check"></use>
-                            </svg>
-                          </button>
-                        </div>
+                      <div class="P-item" id="p-item-5" data-toggle="modal" data-target="#p-item-modal">
                         <div class="P-item__img"><img src="img/item-1.png"/></div>
                         <div class="P-item__more"><a class="P-item__btn btn btn-primary btn-lg" href="javascript:return void(0);">ielikt groza</a>
                         </div>
@@ -447,14 +382,51 @@
                       </div>
                     </li>
                     <li class="Grid__item showByScroll">
-                      <div class="P-item" id="p-item-10" data-toggle="modal" data-target="#p-item-modal">
-                        <div class="P-item__ctrls">
-                          <button class="btn btn-square bg-success pull-right">
-                            <svg class="ic-check" role="img">
-                              <use xlink:href="static/decors/sprite.svg#ic-check"></use>
-                            </svg>
-                          </button>
+                      <div class="P-item" id="p-item-6" data-toggle="modal" data-target="#p-item-modal">
+                        <div class="P-item__img"><img src="img/item-1.png"/></div>
+                        <div class="P-item__more"><a class="P-item__btn btn btn-primary btn-lg" href="javascript:return void(0);">ielikt groza</a>
                         </div>
+                        <div class="P-item__info"> 
+                          <div><small> 
+                              <strike>7.50 €  </strike></small>&nbsp;  <strong class="text-primary h4">2.50 €  </strong></div>Cūkgaļas fileja  
+                        </div>
+                      </div>
+                    </li>
+                    <li class="Grid__item showByScroll">
+                      <div class="P-item" id="p-item-7" data-toggle="modal" data-target="#p-item-modal">
+                        <div class="P-item__img"><img src="img/item-1.png"/></div>
+                        <div class="P-item__more"><a class="P-item__btn btn btn-primary btn-lg" href="javascript:return void(0);">ielikt groza</a>
+                        </div>
+                        <div class="P-item__info"> 
+                          <div><small> 
+                              <strike>7.50 €  </strike></small>&nbsp;  <strong class="text-primary h4">2.50 €  </strong></div>Cūkgaļas fileja  
+                        </div>
+                      </div>
+                    </li>
+                    <li class="Grid__item showByScroll">
+                      <div class="P-item" id="p-item-8" data-toggle="modal" data-target="#p-item-modal">
+                        <div class="P-item__img"><img src="img/item-1.png"/></div>
+                        <div class="P-item__more"><a class="P-item__btn btn btn-primary btn-lg" href="javascript:return void(0);">ielikt groza</a>
+                        </div>
+                        <div class="P-item__info"> 
+                          <div><small> 
+                              <strike>7.50 €  </strike></small>&nbsp;  <strong class="text-primary h4">2.50 €  </strong></div>Cūkgaļas fileja  
+                        </div>
+                      </div>
+                    </li>
+                    <li class="Grid__item showByScroll">
+                      <div class="P-item" id="p-item-9" data-toggle="modal" data-target="#p-item-modal">
+                        <div class="P-item__img"><img src="img/item-2.png"/></div>
+                        <div class="P-item__more"><a class="P-item__btn btn btn-primary btn-lg" href="javascript:return void(0);">ielikt groza</a>
+                        </div>
+                        <div class="P-item__info"> 
+                          <div><small> 
+                              <strike>7.50 €  </strike></small>&nbsp;  <strong class="text-primary h4">2.50 €  </strong></div>Cūkgaļas fileja  
+                        </div>
+                      </div>
+                    </li>
+                    <li class="Grid__item showByScroll">
+                      <div class="P-item" id="p-item-10" data-toggle="modal" data-target="#p-item-modal">
                         <div class="P-item__img"><img src="img/item-2.png"/></div>
                         <div class="P-item__more"><a class="P-item__btn btn btn-primary btn-lg" href="javascript:return void(0);">ielikt groza</a>
                         </div>
@@ -478,42 +450,6 @@
                     <li class="Grid__item showByScroll">
                       <div class="P-item" id="p-item-12" data-toggle="modal" data-target="#p-item-modal">
                         <div class="P-item__ctrls">
-                          <button class="btn btn-square bg-success pull-right">
-                            <svg class="ic-check" role="img">
-                              <use xlink:href="static/decors/sprite.svg#ic-check"></use>
-                            </svg>
-                          </button>
-                        </div>
-                        <div class="P-item__img"><img src="img/item-2.png"/></div>
-                        <div class="P-item__more"><a class="P-item__btn btn btn-primary btn-lg" href="javascript:return void(0);">ielikt groza</a>
-                        </div>
-                        <div class="P-item__info"> 
-                          <div><small> 
-                              <strike>7.50 €  </strike></small>&nbsp;  <strong class="text-primary h4">2.50 €  </strong></div>Cūkgaļas fileja  
-                        </div>
-                      </div>
-                    </li>
-                    <li class="Grid__item showByScroll">
-                      <div class="P-item" id="p-item-13" data-toggle="modal" data-target="#p-item-modal">
-                        <div class="P-item__ctrls">
-                          <button class="btn btn-square bg-success pull-right">
-                            <svg class="ic-check" role="img">
-                              <use xlink:href="static/decors/sprite.svg#ic-check"></use>
-                            </svg>
-                          </button>
-                        </div>
-                        <div class="P-item__img"><img src="img/item-2.png"/></div>
-                        <div class="P-item__more"><a class="P-item__btn btn btn-primary btn-lg" href="javascript:return void(0);">ielikt groza</a>
-                        </div>
-                        <div class="P-item__info"> 
-                          <div><small> 
-                              <strike>7.50 €  </strike></small>&nbsp;  <strong class="text-primary h4">2.50 €  </strong></div>Cūkgaļas fileja  
-                        </div>
-                      </div>
-                    </li>
-                    <li class="Grid__item showByScroll">
-                      <div class="P-item" id="p-item-14" data-toggle="modal" data-target="#p-item-modal">
-                        <div class="P-item__ctrls">
                           <button class="btn btn-square btn-primary pull-right">
                             <svg class="ic-like-add" role="img">
                               <use xlink:href="static/decors/sprite.svg#ic-like-add"></use>
@@ -530,7 +466,18 @@
                       </div>
                     </li>
                     <li class="Grid__item showByScroll">
-                      <div class="P-item" id="p-item-15" data-toggle="modal" data-target="#p-item-modal">
+                      <div class="P-item" id="p-item-13" data-toggle="modal" data-target="#p-item-modal">
+                        <div class="P-item__img"><img src="img/item-1.png"/></div>
+                        <div class="P-item__more"><a class="P-item__btn btn btn-primary btn-lg" href="javascript:return void(0);">ielikt groza</a>
+                        </div>
+                        <div class="P-item__info"> 
+                          <div><small> 
+                              <strike>7.50 €  </strike></small>&nbsp;  <strong class="text-primary h4">2.50 €  </strong></div>Cūkgaļas fileja  
+                        </div>
+                      </div>
+                    </li>
+                    <li class="Grid__item showByScroll">
+                      <div class="P-item" id="p-item-14" data-toggle="modal" data-target="#p-item-modal">
                         <div class="P-item__ctrls">
                           <button class="btn btn-square bg-success pull-right">
                             <svg class="ic-check" role="img">
@@ -538,6 +485,17 @@
                             </svg>
                           </button>
                         </div>
+                        <div class="P-item__img"><img src="img/item-2.png"/></div>
+                        <div class="P-item__more"><a class="P-item__btn btn btn-primary btn-lg" href="javascript:return void(0);">ielikt groza</a>
+                        </div>
+                        <div class="P-item__info"> 
+                          <div><small> 
+                              <strike>7.50 €  </strike></small>&nbsp;  <strong class="text-primary h4">2.50 €  </strong></div>Cūkgaļas fileja  
+                        </div>
+                      </div>
+                    </li>
+                    <li class="Grid__item showByScroll">
+                      <div class="P-item" id="p-item-15" data-toggle="modal" data-target="#p-item-modal">
                         <div class="P-item__img"><img src="img/item-1.png"/></div>
                         <div class="P-item__more"><a class="P-item__btn btn btn-primary btn-lg" href="javascript:return void(0);">ielikt groza</a>
                         </div>
@@ -578,7 +536,7 @@
                             </svg>
                           </button>
                         </div>
-                        <div class="P-item__img"><img src="img/item-2.png"/></div>
+                        <div class="P-item__img"><img src="img/item-1.png"/></div>
                         <div class="P-item__more"><a class="P-item__btn btn btn-primary btn-lg" href="javascript:return void(0);">ielikt groza</a>
                         </div>
                         <div class="P-item__info"> 
@@ -589,13 +547,6 @@
                     </li>
                     <li class="Grid__item showByScroll">
                       <div class="P-item" id="p-item-19" data-toggle="modal" data-target="#p-item-modal">
-                        <div class="P-item__ctrls">
-                          <button class="btn btn-square bg-success pull-right">
-                            <svg class="ic-check" role="img">
-                              <use xlink:href="static/decors/sprite.svg#ic-check"></use>
-                            </svg>
-                          </button>
-                        </div>
                         <div class="P-item__img"><img src="img/item-1.png"/></div>
                         <div class="P-item__more"><a class="P-item__btn btn btn-primary btn-lg" href="javascript:return void(0);">ielikt groza</a>
                         </div>
@@ -607,13 +558,6 @@
                     </li>
                     <li class="Grid__item showByScroll">
                       <div class="P-item" id="p-item-20" data-toggle="modal" data-target="#p-item-modal">
-                        <div class="P-item__ctrls">
-                          <button class="btn btn-square bg-success pull-right">
-                            <svg class="ic-check" role="img">
-                              <use xlink:href="static/decors/sprite.svg#ic-check"></use>
-                            </svg>
-                          </button>
-                        </div>
                         <div class="P-item__img"><img src="img/item-2.png"/></div>
                         <div class="P-item__more"><a class="P-item__btn btn btn-primary btn-lg" href="javascript:return void(0);">ielikt groza</a>
                         </div>
@@ -625,6 +569,13 @@
                     </li>
                     <li class="Grid__item showByScroll">
                       <div class="P-item" id="p-item-21" data-toggle="modal" data-target="#p-item-modal">
+                        <div class="P-item__ctrls">
+                          <button class="btn btn-square btn-primary pull-right">
+                            <svg class="ic-like-add" role="img">
+                              <use xlink:href="static/decors/sprite.svg#ic-like-add"></use>
+                            </svg>
+                          </button>
+                        </div>
                         <div class="P-item__img"><img src="img/item-1.png"/></div>
                         <div class="P-item__more"><a class="P-item__btn btn btn-primary btn-lg" href="javascript:return void(0);">ielikt groza</a>
                         </div>
@@ -636,14 +587,7 @@
                     </li>
                     <li class="Grid__item showByScroll">
                       <div class="P-item" id="p-item-22" data-toggle="modal" data-target="#p-item-modal">
-                        <div class="P-item__ctrls">
-                          <button class="btn btn-square bg-success pull-right">
-                            <svg class="ic-check" role="img">
-                              <use xlink:href="static/decors/sprite.svg#ic-check"></use>
-                            </svg>
-                          </button>
-                        </div>
-                        <div class="P-item__img"><img src="img/item-2.png"/></div>
+                        <div class="P-item__img"><img src="img/item-1.png"/></div>
                         <div class="P-item__more"><a class="P-item__btn btn btn-primary btn-lg" href="javascript:return void(0);">ielikt groza</a>
                         </div>
                         <div class="P-item__info"> 
@@ -654,14 +598,7 @@
                     </li>
                     <li class="Grid__item showByScroll">
                       <div class="P-item" id="p-item-23" data-toggle="modal" data-target="#p-item-modal">
-                        <div class="P-item__ctrls">
-                          <button class="btn btn-square btn-primary pull-right">
-                            <svg class="ic-like-add" role="img">
-                              <use xlink:href="static/decors/sprite.svg#ic-like-add"></use>
-                            </svg>
-                          </button>
-                        </div>
-                        <div class="P-item__img"><img src="img/item-1.png"/></div>
+                        <div class="P-item__img"><img src="img/item-2.png"/></div>
                         <div class="P-item__more"><a class="P-item__btn btn btn-primary btn-lg" href="javascript:return void(0);">ielikt groza</a>
                         </div>
                         <div class="P-item__info"> 
