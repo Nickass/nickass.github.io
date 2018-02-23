@@ -8,37 +8,33 @@ $(function () {
   function handleOnBlur(e) {
     var self = $('.Search');
     if(!$(e.target).is(self) && $(e.target).closest(self).length === 0) {
-    alert(e.target.className);
       self.removeClass('isShow');
       $(document).off('click', handleOnBlur);
     } else {
 
     }
   }
-  $('.Search').one('click', function(e) {
+  $('.Search').on('click', function(e) {
     var self = $(this);
     if (!self.is('.isSmall')) return;
 
     if(!self.is('.isShow')) {
       self.addClass('isShow')
-      // .find('.Search__field').focus();
-      // $(document).on('click', handleOnBlur);
-      alert(e.target.className)
-      e.preventDefault();
-      // return false;
+      .find('.Search__field').focus();
+      $(document).on('click', handleOnBlur);
+      return false;
     } else {
 
     }
 
 
   });
-    // $('.Search').find('.Search__field').on('focus', function(e){
-    //   $(document).off('click', handleOnBlur);
-    // })
-    // $('.Search').find('.Search__field').on('blur', function(){
-    //   $(document).on('click', handleOnBlur);
-    //   alert(e.target.className)
-    // })
+  $('.Search').find('.Search__field').on('focus', function(e){
+    $(document).off('click', handleOnBlur);
+  })
+  $('.Search').find('.Search__field').on('blur', function(){
+    $(document).on('click', handleOnBlur);
+  })
 });
 $(function () {
   $('.input')
@@ -155,22 +151,22 @@ function responsiveHeader() {
   }
 }
 
-// $(function() {
-//   var headerHandler = responsiveHeader();
-//   headerHandler();
-//   $(window).on('resize', headerHandler);
+$(function() {
+  var headerHandler = responsiveHeader();
+  headerHandler();
+  $(window).on('resize', headerHandler);
 
-//   var needReload = false;
+  var needReload = false;
 
-//   $(window).on('scroll', function() {
-//     needReload = (BIG_HEIGHT <= window.scrollY &&  !$('.Header').is('.is-stiky')) || 
-//                      (BIG_HEIGHT >= window.scrollY && $('.Header').is('.is-stiky'));
-//     if (needReload) {
-//       headerHandler();
-//       needReload = false;
-//     }
-//   });
-// });
+  $(window).on('scroll', function() {
+    needReload = (BIG_HEIGHT <= window.scrollY &&  !$('.Header').is('.is-stiky')) || 
+                     (BIG_HEIGHT >= window.scrollY && $('.Header').is('.is-stiky'));
+    if (needReload) {
+      headerHandler();
+      needReload = false;
+    }
+  });
+});
 
 
 
