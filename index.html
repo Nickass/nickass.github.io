@@ -6,397 +6,391 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Document</title>
     <!-- start favicons-->
-    <link rel="apple-touch-icon" sizes="180x180" href="static/favicon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="static/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="230x230" href="static/favicon/favicon-230x230.png">
-    <link rel="icon" type="image/png" sizes="228x228" href="static/favicon/coast-228x228.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="static/favicon/favicon-16x16.png">
-    <link rel="manifest" href="static/favicon/site.webmanifest">
-    <link rel="mask-icon" href="static/favicon/safari-pinned-tab.svg" color="#5d11da">
-    <link rel="shortcut icon" href="static/favicon/favicon.ico">
-    <link rel="yandex-tableau-widget" href="static/favicon/yandex-browser-manifest.json">
-    <meta property="og:image" content="static/favicon/open-graph.png">
-    <meta name="apple-mobile-web-app-title" content="bambook">
-    <meta name="application-name" content="bambook">
-    <meta name="msapplication-TileColor" content="#d71f27">
-    <meta name="msapplication-TileImage" content="static/favicon/mstile-144x144.png">
-    <meta name="msapplication-config" content="static/favicon/browserconfig.xml">
-    <meta name="theme-color" content="#d71f27">
     <!-- end favicons-->
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600&amp;amp;subset=cyrillic" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&amp;amp;subset=cyrillic" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="/static/styles/bootstrap.css">
-    <link rel="stylesheet" type="text/css" href="/static/styles/main.css">
-    <link rel="stylesheet" type="text/css" href="/static/styles/slick.css">
+    <link rel="stylesheet" type="text/css" href="static/styles/main.css">
   </head>
-  <body class="Home-page">
+  <body>
     <header class="Header" id="header">
       <div class="container">
-        <div class="row">
-          <div class="Header__logo"><a class="logo" href="/"><img src="./img/logo.svg" width="125" onerror="this.src='./img/logo.png'"/><img src="./img/logo-sm.svg" width="300" onerror="this.src='./img/logo-sm.png'"/><img src="./img/logo-xs.svg" width="40" onerror="this.src='./img/logo-xs.png'"/></a></div>
-          <div class="Header__center">
-            <div class="Header__info">
-              <div class="Header__phones">
-                <div class="Header__phone-desc">piegade</div>
-                <div class="col-md-12 col-lg-6"><strong class="text-warning va-middle">
-                    <svg class="ic-phone" role="img">
-                      <use xlink:href="static/decors/sprite.svg#ic-phone"></use>
-                    </svg>&nbsp;    <span>22000015</span></strong></div>
-                <div class="col-md-12 col-lg-6"><strong class="text-warning va-middle">
-                    <svg class="ic-time" role="img">
-                      <use xlink:href="static/decors/sprite.svg#ic-time"></use>
-                    </svg>&nbsp;<span>10:30 - 22:30</span></strong></div>
-              </div>
-              <div class="Header__social">
-                <div class="Social va-middle"><a class="Social__icon" href="#">
-                    <svg class="ic-facebook" role="img">
-                      <use xlink:href="static/decors/sprite.svg#ic-facebook"></use>
-                    </svg></a><a class="Social__icon" href="#">
-                    <svg class="ic-twitter" role="img">
-                      <use xlink:href="static/decors/sprite.svg#ic-twitter"></use>
-                    </svg></a><a class="Social__icon" href="#">
-                    <svg class="ic-instagram" role="img">
-                      <use xlink:href="static/decors/sprite.svg#ic-instagram"></use>
-                    </svg></a></div>
-              </div>
-            </div>
-            <div class="Header__info">
-              <ul class="Main-nav va-middle Header__nav col-lg-12">
-                <li class="Main-nav__item"><a class="Main-nav__link" href="/karte.html">Ēdienkarte</a>
-                </li>
-                <li class="Main-nav__item"><a class="Main-nav__link" href="/shipping.html">Piegāde</a>
-                </li>
-                <li class="Main-nav__item"><a class="Main-nav__link" href="/par-mums.html">Banketi</a>
-                </li>
-                <li class="Main-nav__item"><a class="Main-nav__link" href="/komments.html">Atsauksmes</a>
-                </li>
-              </ul>
-            </div>
+        <div class="Header__logo"><a class="Header__logo1" href="/"><img class="va-middle" src="img/logo-white.png"/></a>
+          <div class="Lang Header__lang va-middle"><a class="Lang__current dd-toggler" href="#lang-list">
+              <svg class="ic-gb" role="img" width="30px" height="20px">
+                <use xlink:href="static/decors/sprite.svg#ic-gb"></use>
+              </svg>EN</a>
+            <ul class="Lang__list" id="lang-list">
+              <li class="Lang__item"> <a href="#">
+                  <svg class="ic-gb" role="img" width="30px" height="20px">
+                    <use xlink:href="static/decors/sprite.svg#ic-gb"></use>
+                  </svg></a></li>
+              <li class="Lang__item"><a href="#">
+                  <svg class="ic-lv" role="img" width="30px" height="20px">
+                    <use xlink:href="static/decors/sprite.svg#ic-lv"></use>
+                  </svg></a></li>
+              <li class="Lang__item"><a href="#">
+                  <svg class="ic-ru" role="img" width="30px" height="20px">
+                    <use xlink:href="static/decors/sprite.svg#ic-ru"></use>
+                  </svg></a></li>
+            </ul>
           </div>
-          <div class="Header__left">
-            <div class="Header__btns">
-              <Form class="Search Header__search isSmall">
-                <input class="Search__field" type="search" placeholder="Meklet:"/>
-                <button class="Search__btn">
-                  <svg class="ic-search" role="img">
-                    <use xlink:href="static/decors/sprite.svg#ic-search"></use>
-                  </svg>
-                </button>
-              </Form>
-              <div class="Header__mobile">
-                <button class="btn-burger Main-nav__toggler collapsed DD__toggler" role="button"></button>
-                <div class="Header__mobile-menu collapsed DD__list"></div>
-              </div>
-            </div>
-            <div class="Header__btns">
-              <div class="Header__login">
-                <button class="btn-login btn-dropdown DD__toggler collapsed" role="button">
-                  <svg class="ic-login btn-login__icon" role="img">
-                    <use xlink:href="static/decors/sprite.svg#ic-login"></use>
-                  </svg>Ienākt
-                </button>
-                <form class="Login DD__list collapsed">
-                  <div class="Login__header">Login</div>
-                  <div class="Login__content">
-                    <div>
-                      <svg class="ic-user-2 Login__icon" role="img">
-                        <use xlink:href="static/decors/sprite.svg#ic-user-2"></use>
-                      </svg>
-                      <div class="input required Login__input">
-                        <input class="input__field" type="email"/><span class="input__placeholder">
-                           Email</span>
-                      </div>
-                    </div><br/>
-                    <div>
-                      <svg class="ic-lock Login__icon" role="img">
-                        <use xlink:href="static/decors/sprite.svg#ic-lock"></use>
-                      </svg>
-                      <div class="input required Login__input">
-                        <input class="input__field" type="password"/><span class="input__placeholder">Password</span>
-                      </div>
-                    </div>
-                    <div class="text-center"> <a class="btn btn-sm btn-link text-primary" href="#">Forgot password?</a></div>
-                    <div class="text-center"><a class="btn btn-sm btn-link text-warning" href="#">Registration</a></div>
-                    <button class="btn btn-primary btn-block">Lelogoties</button>
-                  </div>
-                </form>
-              </div>
-              <select class="btn-dropdown Header__lang">
-                <option>LV</option>
-                <option>EN</option>
-                <option>RU</option>
-              </select>
-              <div class="Header__cart">
-                <button class="btn-cart DD__toggler btn-dropdown collapsed" role="button">
-                  <svg class="ic-cart btn-cart__icon" role="img">
-                    <use xlink:href="static/decors/sprite.svg#ic-cart"></use>
-                  </svg><span class="btn-cart__text">10</span>
-                </button>
-                <form class="Cart DD__list collapsed">
-                  <div class="Cart__header">Grozs</div>
-                  <ul class="list-unstyled clearfix">
-                    <li class="Cart__item">
-                      <div class="col-xs-9"><span style="color:#737373;">3x  </span>"Buhāra" suši maki <br/>(1 x 5.90 €)</div>
-                      <div class="col-xs-3 text-center">
-                        <div class="row">
-                          <div class="counter fz-xs">
-                            <button class="counter__btn" type="button">-</button>
-                            <button class="counter__btn" type="button">+</button>
-                          </div><br/>
-                          <button class="btn-del fz-xs" type="button">
-                            <svg class="ic-del" role="img">
-                              <use xlink:href="static/decors/sprite.svg#ic-del"></use>
-                            </svg>
-                          </button>
-                        </div>
-                      </div>
-                    </li>
-                    <li class="Cart__item">
-                      <div class="col-xs-9"><span style="color:#737373;">3x  </span>"Buhāra" suši maki <br/>(1 x 5.90 €)</div>
-                      <div class="col-xs-3 text-center">
-                        <div class="row">
-                          <div class="counter fz-xs">
-                            <button class="counter__btn" type="button">-</button>
-                            <button class="counter__btn" type="button">+</button>
-                          </div><br/>
-                          <button class="btn-del fz-xs" type="button">
-                            <svg class="ic-del" role="img">
-                              <use xlink:href="static/decors/sprite.svg#ic-del"></use>
-                            </svg>
-                          </button>
-                        </div>
-                      </div>
-                    </li>
-                    <li class="Cart__item">
-                      <div class="col-xs-9"><span style="color:#737373;">3x  </span>"Buhāra" suši maki <br/>(1 x 5.90 €)</div>
-                      <div class="col-xs-3 text-center">
-                        <div class="row">
-                          <div class="counter fz-xs">
-                            <button class="counter__btn" type="button">-</button>
-                            <button class="counter__btn" type="button">+</button>
-                          </div><br/>
-                          <button class="btn-del fz-xs" type="button">
-                            <svg class="ic-del" role="img">
-                              <use xlink:href="static/decors/sprite.svg#ic-del"></use>
-                            </svg>
-                          </button>
-                        </div>
-                      </div>
-                    </li>
-                  </ul>
-                  <div class="Cart__total"> 
-                    <div class="pull-left">Kopā</div>
-                    <div class="pull-right fz-md">14.80 €</div>
-                  </div>
-                  <div class="Cart__forbtn">
-                    <button class="btn btn-primary" type="submit">Izrakstīšanās</button>
-                  </div>
-                </form>
-              </div>
-            </div>
-          </div>
+        </div>
+        <div class="Header__btns"> <a class="reset-btn" href="#"><img class="va-middle" src="img/ic-mail-white.png"></a>&nbsp;
+          &nbsp;<a class="reset-btn" href="#"><img class="va-middle" src="img/ic-telegramm-circle.png"> </a>&nbsp;
+          &nbsp;<a class="buy-btn" href="#">buy tokens</a>
+        </div>
+        <div class="Header__menu">
+          <button class="btn-burger dd-toggler" type="button" data-target="#mobile-menu"></button>
+          <ul class="Main-menu" id="mobile-menu">
+            <li class="Main-menu__item"><a class="Main-menu__link" href="#home">home</a></li>
+            <li class="Main-menu__item"><a class="Main-menu__link" href="#about">about</a></li>
+            <li class="Main-menu__item"><a class="Main-menu__link" href="#how-to-use">how to use</a></li>
+            <li class="Main-menu__item"><a class="Main-menu__link" href="#devices">devices</a></li>
+            <li class="Main-menu__item"><a class="Main-menu__link" href="#buy">documents</a></li>
+            <li class="Main-menu__item"><a class="Main-menu__link" href="#roadmap">roadmap</a></li>
+            <li class="Main-menu__item"><a class="Main-menu__link" href="#team">team</a></li>
+            <li class="Main-menu__item"><a class="Main-menu__link" href="#faq">faq</a></li>
+          </ul>
         </div>
       </div>
     </header>
-    <div class="Slider carousel slide" data-ride="carousel" id="main-slider"> <img class="Slider__wink" style="opacity:.2;" src="/img/japan.svg"/>
-      <div class="Slider__inner carousel-inner">
-        <div class="Slider__item item active">
-          <div class="Slider__caption jumbotron">
-            <div class="subtitle">Ēdienu piegāde Rīgā</div>
-            <h1>bambook.lv</h1>
-            <button class="Slider__button btn btn-lg btn-primary">Ēdienkarte</button>
+    <main class="Home" id="home">
+      <button class="Home__mouse-btn" type="button" onclick="$(&quot;html, body&quot;).animate({ scrollTop: $(&quot;.Home&quot;).outerHeight()+1 }, 1000);"> 
+        <svg class="ic-mouse" role="img">
+          <use xlink:href="static/decors/sprite.svg#ic-mouse"></use>
+        </svg>
+      </button>
+      <button class="Home__play-btn" type="button">
+        <svg xmlns="http://www.w3.org/2000/svg" width="85" height="85">
+<circle class="circle" r="38" cx="42.5" cy="42.5"  fill="none" stroke-width="9" stroke-linejoin="round" stroke-dasharray="72, 9" />
+<path d="M 42.724609 15.925781 A 26.472219 26.998005 82.874397 0 0 15.603516 42.40625 A 26.472219 26.998005 82.874397 0 0 42.462891 68.886719 A 26.472219 26.998005 82.874397 0 0 69.583984 42.40625 A 26.472219 26.998005 82.874397 0 0 42.724609 15.925781 z M 35.246094 27.595703 L 46.400391 35.244141 L 57.556641 42.894531 L 46.173828 50.095703 L 34.791016 57.298828 L 35.017578 42.447266 L 35.246094 27.595703 z"/>
+</svg>Play video
+      </button>
+      <video class="Home__video" loop="loop" preload="none">
+        <source src="http://svit-mebliv.net.ua/New-York.mp4" type="video/mp4"/>
+      </video>
+      <div class="Home__content">
+        <h1 class="Home__title">BUILD YOU’RE FUTURE WITH OUR PROJECTS <br/>In the most stable area - real estate.</h1>
+        <div class="Timer Home__timer">
+          <h3 class="Timer__title">Token Sale Ends in:</h3>
+          <div class="clearfix">
+            <div class="Timer__item">
+              <div class="Timer__number">25</div>days
+            </div>
+            <div class="Timer__item"> 
+              <div class="Timer__number">25</div>hours
+            </div>
+            <div class="Timer__item"> 
+              <div class="Timer__number">25</div>minutes
+            </div>
+            <div class="Timer__item"> 
+              <div class="Timer__number">25</div>seconds
+            </div>
           </div>
-        </div>
-        <div class="Slider__item item">
-          <div class="Slider__caption jumbotron">
-            <div class="subtitle">Ēdienu piegāde Rīgā2</div>
-            <h1>bambook.lv2</h1>
-            <button class="Slider__button btn btn-lg btn-primary">Ēdienkarte</button>
+          <div class="ta-right clearfix"><a class="Timer__btn btn" href="#">Buy tokens</a>
+            <div class="ta-center col-xs-7 col-xs-offset-5">25% bonus</div>
           </div>
-        </div>
-      </div><a class="Slider__arrow left" href="#main-slider" data-slide="prev">
-        <svg class="ic-arrow" role="img">
-          <use xlink:href="static/decors/sprite.svg#ic-arrow"></use>
-        </svg></a><a class="Slider__arrow right" href="#main-slider" data-slide="next">
-        <svg class="ic-arrow" role="img">
-          <use xlink:href="static/decors/sprite.svg#ic-arrow"></use>
-        </svg></a>
-    </div>
-    <div class="Advantages">
+        </div><a class="Home__main-btn btn" href="#"> 
+          <svg class="ic-copy btn__icon" role="img">
+            <use xlink:href="static/decors/sprite.svg#ic-copy"></use>
+          </svg>read whitepapper</a>
+      </div>
+    </main>
+    <section class="About" id="about">
       <div class="container">
-        <ul class="Advantages__list">
-          <li class="Advantages__item">
-            <div class="col-lg-5">
-              <svg class="ic-heart" role="img" width="131" height="121">
-                <use xlink:href="static/decors/sprite.svg#ic-heart"></use>
-              </svg>
+        <div class="About__content"><a class="About__logo" href="#"><img src="img/logo-blue.png" /></a>
+          <h2 class="About__title">Don’t lose the chance to be a part of our organisation</h2>
+          <div class="About__subtitle">- and buy a share in real estate business ( not the simple utility token )</div>
+          <ul class="About__list">
+            <li class="About__item">We will combine the blockchain technologies with real estate to reinvent the whole process of utility bills.</li>
+            <li class="About__item">It will be not just  a dream life for a invest - also for a renter - where he will pay his bills thru 1 application - directly to the service providers.</li>
+            <li class="About__item">Great opportunities will also be open to all people after our project will take place, everybody can decide to who - he want’s to pay, to the middle man or directly to service provider - that is our mission today!</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section class="Howtouse" id="how-to-use">
+      <div class="container">
+        <h2 class="Howtouse__title">How it work?</h2>
+        <div class="Howtouse__top">
+          <div class="Howtouse__list">
+            <div class="Howtouse__item"><img src="img/h-notime.png" alt="no waking"/>
+              <div class="Howtouse__text">No more <br /> waking <br />up at 8:00</div>
             </div>
-            <div class="col-lg-7">Vairāk nekā
-              <div class="h1 text-warning numscroller" data-min="1" data-max="5000" data-delay="1" data-increment="22">5000</div>Facebook fanu
+            <div class="Howtouse__item">
+              <div class="Join-h"></div>
             </div>
+            <div class="Howtouse__item"><img src="img/h-nowork.png" alt="no working"/>
+              <div class="Howtouse__text">You don't need <br />to work</div>
+            </div>
+          </div>
+        </div>
+        <div class="Howtouse__list">
+          <div class="Howtouse__item"><img src="img/h-case.png" alt="investing"/>
+            <div class="Howtouse__text">Invest in <br /> our project</div>
+          </div>
+          <div class="Howtouse__item">
+            <div class="Join-h"></div>
+          </div>
+          <div class="Howtouse__item"><img src="img/h-coin.png" alt="recive"/>
+            <div class="Howtouse__text">Recive tokens</div>
+          </div>
+          <div class="Howtouse__item">
+            <div class="Join-h"></div>
+          </div>
+          <div class="Howtouse__item"><img src="img/h-office.png" alt="buy around world"/>
+            <div class="Howtouse__text">We will buy <br /> apartaments around <br /> the world</div>
+          </div>
+          <div class="Howtouse__item">
+            <div class="Join-h"></div>
+          </div>
+          <div class="Howtouse__item"><img src="img/h-rent.png" alt="rent tokens"/>
+            <div class="Howtouse__text">Rent them and <br /> you will recive <br /> youre share</div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="Devices" id="devices">
+      <div class="container">
+        <div class="Devices__content">
+          <h2 class="Devices__title">future sea city</h2>
+          <div class="Devices__subtitle">The hard cap will be for - building the future of business meating and living.</div>
+          <p>Imagine  :</p>
+          <ul class="Devices__list">
+            <li class="Devices__item"> 
+              <div class="Devices__text"> Place with will be in neutral waters - that will not hand over any human that will be there. </div>
+              <div class="Devices__img"><img src="img/d-item-1.png" /></div>
+            </li>
+            <li class="Devices__item"> 
+              <div class="Devices__text"> A place where you can speak face to face and not fear that - world wide surveillance will track you.  </div>
+              <div class="Devices__img"><img src="img/d-item-2.png" /></div>
+            </li>
+            <li class="Devices__item"> 
+              <div class="Devices__text"> All the latest hi-tec gadgets to help you live - a happy live that you will chouse with us. </div>
+              <div class="Devices__img"><img src="img/d-item-3.png" /></div>
+            </li>
+            <li class="Devices__item"> 
+              <div class="Devices__text"> Super eco environment - with a touch of our interior designers the place will becoma - the next oasis </div>
+              <div class="Devices__img"><img src="img/d-item-4.png" /></div>
+            </li>
+          </ul>
+          <div class="Devices__footer"><a class="btn" href="#"> 
+              <svg class="ic-copy btn__icon" role="img">
+                <use xlink:href="static/decors/sprite.svg#ic-copy"></use>
+              </svg>read whitepapper</a>
+            <p>will publish the white paper after we will hit the soft cap</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="Roadmap" id="roadmap">
+      <div class="container">
+        <h2 class="Roadmap__title">Roadmap</h2>
+        <div class="Progress">
+          <div class="Progress__item fill" data-point="10%">Start </div>
+          <div class="Progress__item" data-point="17%">
+            <div class="Progress__inner">
+              <div class="Progress__delim">2018</div>
+              <div>Soft cap</div>
+              <div class="Progress__accent">1 000 000</div>
+              <div class="Progress__text">Purchase apartments in most visitable places on the planet. Reword our investors imidiatly.</div>
+            </div>
+          </div>
+          <div class="Progress__item" data-point="17%">
+            <div class="Progress__inner">
+              <div class="Progress__delim">2019</div>
+              <div>Hard cap</div>
+              <div class="Progress__accent">40 000 000</div>
+              <div class="Progress__text">Finish the work on the application for decentralised utility bills.Share the profit with our investors - for transaction commision.</div>
+            </div>
+          </div>
+          <div class="Progress__item" data-point="17%">
+            <div class="Progress__inner">
+              <div class="Progress__delim">2019/1c</div>
+              <div class="Progress__text">Start the work on the Strix floating citywith ultra eco environment and technological miracle</div>
+            </div>
+          </div>
+          <div class="Progress__item" data-point="17%">
+            <div class="Progress__inner">
+              <div class="Progress__delim">2022</div>
+              <div class="Progress__text">Will finish construction works and will start testing it on water</div>
+            </div>
+          </div>
+          <div class="Progress__item" data-point="22%">
+            <div class="Progress__inner">
+              <div class="Progress__delim">2023</div>
+              <div class="Progress__text">Designers will show the interior design where - you will see the future : gardens and parks inside the buildings, and ultra technological miracle. gardens and parks inside the buildings, and ultra technological miracle.</div>
+            </div>
+          </div>
+        </div>
+        <div class="Roadmap__text">also we will deliver the hospital and all the services that you need will be in that building - you can order : any professional groan around the globe to the job that you want .Order any sheff , Gardner , handyman , electric specialist or it guy - write to you’re home , virtual and real. If you cannot fix the problem via video call - the specialist will be send .</div>
+      </div>
+    </section>
+    <section class="Team" id="team">
+      <div class="container">
+        <h2 class="Team__title">Our team</h2>
+        <div class="Team__item">
+          <div class="Team__img"> 
+            <div class="Avatar"><img class="Avatar__img" src="img/t-item-1.png" /></div>
+          </div>
+          <div class="Team__name">Anrean richton</div>
+          <div class="Team__text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type</div>
+        </div>
+        <div class="Team__item">
+          <div class="Team__img"> 
+            <div class="Avatar"><img class="Avatar__img" src="img/t-item-1.png" /></div>
+          </div>
+          <div class="Team__name">Anrean richton</div>
+          <div class="Team__text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since.</div>
+        </div>
+        <div class="Team__item">
+          <div class="Team__img"> 
+            <div class="Avatar"><img class="Avatar__img" src="img/t-item-1.png" /></div>
+          </div>
+          <div class="Team__name">Anrean richton</div>
+          <div class="Team__text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type</div>
+        </div>
+        <div class="Team__item">
+          <div class="Team__img"> 
+            <div class="Avatar"><img class="Avatar__img" src="img/t-item-1.png" /></div>
+          </div>
+          <div class="Team__name">Anrean richton</div>
+          <div class="Team__text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</div>
+        </div>
+        <div class="Team__item">
+          <div class="Team__img"> 
+            <div class="Avatar"><img class="Avatar__img" src="img/t-item-1.png" /></div>
+          </div>
+          <div class="Team__name">Anrean richton</div>
+          <div class="Team__text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.Lorem Ipsum is simply dummy text of the printing and typesetting industry.</div>
+        </div>
+      </div>
+    </section>
+    <section class="Buy" id="buy">
+      <h2 class="Buy__title">buy tokens</h2>
+      <div class="Buy__content">
+        <svg class="Buy__road" viewBox="0 0 358.98 259.9"><defs><style>.cls-1{fill:#dd8dff;}.cls-2{fill:#fff;}.cls-3{fill:#b89dff;}.cls-4{fill:#8dafff;}</style></defs>
+<title>buy-road</title>
+<path class="cls-1" d="M228.51,124a44,44,0,0,0-.29-88v5.38a38.63,38.63,0,0,1,.29,77.24h-0.3V124h0.3Z" transform="translate(-48.59 -29.38)"/>
+<path class="cls-1" d="M136.35,41.37h92.1c-0.09-2.42-.14-5.09.09-5.4H136.35v5.4Z" transform="translate(-48.59 -29.38)"/>
+<rect class="cls-1" width="99.83" height="19.04"/>
+<circle class="cls-1" cx="178.66" cy="43.26" r="25.47"/>
+<circle class="cls-2" cx="178.66" cy="43.26" r="15.97"/>
+<use width="21" height="23" x="168.5" fill="#1f6bff" y="30" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="static/decors/sprite.svg#ic-house"></use>
+<path class="cls-2" d="M227.25,94.71a22.07,22.07,0,1,1,22.07-22.07A22.1,22.1,0,0,1,227.25,94.71Zm0-43.16a21.09,21.09,0,1,0,21.09,21.09A21.11,21.11,0,0,0,227.25,51.54Z" transform="translate(-48.59 -29.38)"/>
+<polygon class="cls-1" points="147.44 43.04 124.05 43.04 124.05 37.55 118.01 41.03 111.98 44.52 118.01 48 124.05 51.48 124.05 45.99 147.44 45.99 147.44 43.04"/>
+<rect class="cls-3" x="179.62" y="89.23" width="91.33" height="5.44"/>
+<path class="cls-3" d="M227.54,201.25h-0.29v0a38.63,38.63,0,0,1-.68-77.25l0.68,0h0.29l0.66,0v-5.4l-0.66,0h-0.29l-0.68,0a44,44,0,0,0,.68,88v0h0.29l0.66,0v-5.39h-0.66Z" transform="translate(-48.59 -29.38)"/>
+<circle class="cls-3" cx="178.66" cy="125.87" r="25.47"/>
+<circle class="cls-2" cx="178.66" cy="125.87" r="15.97"/>
+<use width="21" height="23" x="168.5" fill="#1f6bff" y="113" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="static/decors/sprite.svg#ic-house"></use>
+<path class="cls-2" d="M227.25,177.32a22.07,22.07,0,1,1,22.07-22.07A22.1,22.1,0,0,1,227.25,177.32Zm0-43.16a21.09,21.09,0,1,0,21.09,21.09A21.11,21.11,0,0,0,227.25,134.16Z" transform="translate(-48.59 -29.38)"/>
+<rect class="cls-3" x="307.74" y="111.8" width="99.83" height="19.04" transform="translate(666.73 213.27) rotate(180)"/>
+<polygon class="cls-3" points="211.54 125.79 234.94 125.79 234.94 120.3 240.97 123.78 247 127.27 240.97 130.75 234.94 134.24 234.94 128.75 211.54 128.75 211.54 125.79"/>
+<path class="cls-4" d="M242.73,286.6a44,44,0,0,0-14.53-85.34v5.39a38.63,38.63,0,0,1,0,77.25v5.39A43.92,43.92,0,0,0,242.73,286.6Z" transform="translate(-48.59 -29.38)"/>
+<circle class="cls-4" cx="178.66" cy="208.49" r="25.47"/>
+<circle class="cls-2" cx="178.66" cy="208.49" r="15.97"/>
+<use width="21" height="23" x="168.5" fill="#1f6bff" y="196" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="static/decors/sprite.svg#ic-house"></use>
+<path class="cls-2" d="M227.25,259.94a22.07,22.07,0,1,1,22.07-22.07A22.1,22.1,0,0,1,227.25,259.94Zm0-43.16a21.09,21.09,0,1,0,21.09,21.09A21.11,21.11,0,0,0,227.25,216.78Z" transform="translate(-48.59 -29.38)"/>
+<polygon class="cls-4" points="147.44 210.51 124.05 210.51 124.05 205.02 118.01 208.51 111.98 211.99 118.01 215.47 124.05 218.96 124.05 213.47 147.44 213.47 147.44 210.51"/>
+<path class="cls-4" d="M136.35,206.59h92.1c-0.09-2.42-.14-5.09.09-5.4H136.35v5.4Z" transform="translate(-48.59 -29.38)"/>
+<rect class="cls-4" y="165.22" width="99.83" height="19.04"/>
+        </svg>
+        <div class="Buy__list">
+          <div class="Buy__item">
+            <div class="Buy__name">25% Bonus</div>
+            <div class="Buy__text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, unknown printer took a galley</div>
+            <div class="Buy__info">
+              <div class="ta-center">at the 1 round </div>
+              <button class="btn buy-btn">buy now</button>
+            </div>
+          </div>
+          <div class="Buy__item">
+            <div class="Buy__name">25% Bonus</div>
+            <div class="Buy__text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, unknown printer took a galley</div>
+            <div class="Buy__info">
+              <div class="ta-center">at the 2 round </div>
+              <button class="btn buy-btn">buy now</button>
+            </div>
+          </div>
+          <div class="Buy__item">
+            <div class="Buy__name">25% Bonus</div>
+            <div class="Buy__text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, unknown printer took a galley</div>
+            <div class="Buy__info">
+              <div class="ta-center">at the 3 round </div>
+              <button class="btn buy-btn">buy now</button>
+            </div>
+          </div>
+        </div>
+        <div class="Buy__end">Tokens</div>
+      </div>
+    </section>
+    <section class="Faq" id="faq">
+      <div class="container">
+        <h2 class="Faq__title">FAQ</h2>
+        <ul class="Faq__list">
+          <li class="Faq__item active-parent"><a class="Faq__header dd-toggler active" href="#faq-1">What is a realstrix?</a>
+            <div class="Faq__body opened" id="faq-1">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</div>
           </li>
-          <li class="Advantages__item">
-            <div class="col-lg-5">
-              <svg class="ic-team" role="img" width="156" height="115">
-                <use xlink:href="static/decors/sprite.svg#ic-team"></use>
-              </svg>
-            </div>
-            <div class="col-lg-7">Vairāk nekā
-              <div class="h1 text-warning numscroller" data-min="1" data-max="45000" data-delay="1" data-increment="200">45000</div>apkalpotu klientu
-            </div>
+          <li class="Faq__item"><a class="Faq__header dd-toggler" href="#faq-2">What is the difference between other projects?</a>
+            <div class="Faq__body" id="faq-2">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</div>
           </li>
-          <li class="Advantages__item">
-            <div class="col-lg-5">
-              <svg class="ic-chef" role="img" width="109" height="109">
-                <use xlink:href="static/decors/sprite.svg#ic-chef"></use>
-              </svg>
-            </div>
-            <div class="col-lg-7">Vairāk nekā
-              <div class="h1 text-warning numscroller" data-min="1" data-max="75000" data-delay="1" data-increment="300">75000</div>pagatavotu ēdienu
-            </div>
+          <li class="Faq__item"><a class="Faq__header dd-toggler" href="#faq-3"> How does credit subtoken CRED work?</a>
+            <div class="Faq__body" id="faq-3">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</div>
+          </li>
+          <li class="Faq__item"><a class="Faq__header dd-toggler" href="#faq-4">What is a realstrix?</a>
+            <div class="Faq__body" id="faq-4"> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</div>
+          </li>
+          <li class="Faq__item"><a class="Faq__header dd-toggler" href="#faq-5">What is a realstrix?</a>
+            <div class="Faq__body" id="faq-5">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</div>
           </li>
         </ul>
       </div>
-    </div>
+    </section>
     <footer class="Footer" id="footer">
-      <button class="Footer__to-up" onclick="$(&quot;html, body&quot;).animate({ scrollTop: 0 }, &quot;slow&quot;);"><img src="img/to-up.png"/>
-        <div class="bg-primary text-uppercase">piegade <br/>22000015</div>
-      </button>
       <div class="container">
-        <div class="row">
-          <div class="col-xs-4 col-sm-2"><a class="logo" href="/"><img src="./img/logo.svg" width="125" onerror="this.src='./img/logo.png'"/></a></div>
-          <div class="col-sm-10 col-lg-6">
-            <div class="row">
-              <div class="col-xs-8 col-sm-4 text-uppercase">
-                <h5 class="v-line" style="white-space:nowrap;">Noderīga informācija</h5>
-                <ul class="list-unstyled">
-                  <li><a href="/karte.html">Ēdienkarte</a>
-                  </li>
-                  <li><a href="/shipping.html">Piegāde</a>
-                  </li>
-                  <li><a href="/par-mums.html">Banketi</a>
-                  </li>
-                  <li><a href="/komments.html">Atsauksmes</a>
-                  </li>
-                </ul>
-              </div>
-              <div class="col-xs-12 col-sm-8 text-uppercase">
-                <h5 class="v-line">Ēdienkarte</h5>
-                <div class="row">
-                  <ul class="col-xs-4 col-sm-4 list-unstyled">
-                    <li><a href="/"> Sašimi</a></li>
-                    <li><a href="/"> Nigiri</a></li>
-                    <li><a href="/"> Gunkans</a></li>
-                    <li><a href="/"> Maki</a></li>
-                    <li><a href="/"> Cepti suši</a></li>
-                  </ul>
-                  <ul class="col-xs-4 col-sm-4 list-unstyled">
-                    <li><a href="/">Suši komplekti</a></li>
-                    <li><a href="/">Salāti</a></li>
-                    <li><a href="/">Uzkodas</a></li>
-                    <li><a href="/">Zupas</a></li>
-                    <li><a href="/">WOK</a></li>
-                  </ul>
-                  <ul class="col-xs-4 col-sm-4 list-unstyled">
-                    <li><a href="/">Karstie ēdieni</a></li>
-                    <li><a href="/">Veģetārie ēdieni</a></li>
-                    <li><a href="/">Deserti</a></li>
-                    <li><a href="/">Dzērieni</a></li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-xs-12 col-sm-10 col-sm-offset-2 col-lg-4 col-lg-offset-0 fw-bold fz-sm">
-            <div class="row">
-              <div class="col-xs-6 col-sm-4 col-lg-7">
-                <h5 class="v-line text-uppercase">Darba laiks</h5>
-                <div>P. - Pk.:  no 09:00 - līdz 23:00</div>
-                <div>Se.: no 09:00 - līdz 24:00 </div>
-                <div>Sv.: no 10:00 - līdz 23:00</div>
-              </div>
-              <address class="col-xs-6 col-sm-4 col-lg-5">
-                <h5 class="v-line text-uppercase">Darba laiks</h5>
-                <div><a href="tel:+37122000015">+371-22000015</a></div>
-                <div><a href="mailto:info@bambook.lv">info@bambook.lv</a></div>
-                <div>Riga, A.Deglava 82</div>
-              </address>
-            </div>
-          </div>
+        <div class="Footer__menu">
+          <ul class="Menu">
+            <li class="Menu__item"><a href="#home">home</a></li>
+            <li class="Menu__item"><a href="#about">about</a></li>
+            <li class="Menu__item"><a href="#how-to-use">how to use</a></li>
+            <li class="Menu__item"><a href="#devices">devices</a></li>
+            <li class="Menu__item"><a href="#buy">documents</a></li>
+            <li class="Menu__item"><a href="#roadmap">roadmap</a></li>
+            <li class="Menu__item"><a href="#team">team</a></li>
+            <li class="Menu__item"><a href="#faq">faq</a></li>
+          </ul>
         </div>
-      </div>
-      <div class="Footer__bottom">
-        <div class="container">
-          <div class="row">
-            <div class="col-xs-12 col-sm-5 col-md-4 pull-right">Sociālos tīklos:
-              <div class="Social va-middle"><a class="Social__icon" href="#">
-                  <svg class="ic-facebook" role="img">
-                    <use xlink:href="static/decors/sprite.svg#ic-facebook"></use>
-                  </svg></a><a class="Social__icon" href="#">
-                  <svg class="ic-twitter" role="img">
-                    <use xlink:href="static/decors/sprite.svg#ic-twitter"></use>
-                  </svg></a><a class="Social__icon" href="#">
-                  <svg class="ic-instagram" role="img">
-                    <use xlink:href="static/decors/sprite.svg#ic-instagram"></use>
-                  </svg></a></div>
-            </div>
-            <div class="col-xs-12 col-sm-4 col-md-3 col-lg-2 pull-left">© Bambook Lounge. All rights reserved.</div>
-          </div>
+        <div class="Footer__logo"><a href="/"><img class="va-middle" src="img/logo-blue.png" alt="logo"/></a></div>
+        <div class="Footer__btns"><a class="reset-btn" href="#"><img class="va-middle" src="img/ic-mail-white.png"></a>&nbsp;
+          &nbsp;<a class="reset-btn" href="#"><img class="va-middle" src="img/ic-telegramm-circle.png"> </a>
+        </div>
+        <div class="Footer__social">More info:
+          <div class="Social"><a class="Social__item" href="http://facebook.com">
+              <svg class="ic-facebook" role="img">
+                <use xlink:href="static/decors/sprite.svg#ic-facebook"></use>
+              </svg></a><a class="Social__item" href="http://twitter.com">
+              <svg class="ic-twitter" role="img">
+                <use xlink:href="static/decors/sprite.svg#ic-twitter"></use>
+              </svg></a><a class="Social__item" href="http://tumblr.com">
+              <svg class="ic-tumblr" role="img">
+                <use xlink:href="static/decors/sprite.svg#ic-tumblr"></use>
+              </svg></a><a class="Social__item" href="http://instagram.com">
+              <svg class="ic-instagram" role="img">
+                <use xlink:href="static/decors/sprite.svg#ic-instagram"></use>
+              </svg></a><a class="Social__item" href="http://google.com">
+              <svg class="ic-google" role="img">
+                <use xlink:href="static/decors/sprite.svg#ic-google"></use>
+              </svg></a><a class="Social__item" href="http://youtube.com">
+              <svg class="ic-youtube" role="img">
+                <use xlink:href="static/decors/sprite.svg#ic-youtube"></use>
+              </svg></a></div>
         </div>
       </div>
     </footer>
+    <div class="copyright">
+      <div class="container">© 2018 RealStrix.com I All rights reserved.</div>
+    </div>
   </body>
 </html>
 <script src="static/scripts//jquery-1.9.1.js"></script>
-<script src="static/scripts//bootstrap.min.js"></script>
-<script src="static/scripts//numscroller-1.0.js"></script>
 <script src="static/scripts//svg4everybody.min.js"></script>
-<script src="static/scripts//jquery.nice-select.min.js"></script>
-<script src="static/scripts//slick.min.js"></script>
 <script src="static/scripts//main.js"></script><script>svg4everybody();</script>
-<!---->
-<!--========================== DELETE ME start ===========================-->
-<!---->
-<style>
-  .demo{
-   position: fixed;
-   background: rgba(0,0,0,.5);
-   z-index: 1000;
-   top:20%;
-   width:120px;
-  }
-  .demo ul{display:none;padding:0;margin:0;}
-  .demo li{
-   padding: 0.5em 1em;
-   list-style:none;
-  }
-  .demo a{color:#fff;}
-  .demo label{display:inline-block;background-color: rgba(20,20,200,.35);color: #ee9;position:absolute; bottom:100%;left:0;padding:.4em;cursor:pointer;border:1px solid #ee9;padding:0.5em;transition:300ms;}
-  .demo label:hover{background: #44f;}
-  .demo input:checked + ul{display:block;}
-</style>
-<div class="demo">
-  <label for="demo-hide">Cсылки</label>
-  <input type="checkbox" hidden style="display:none;" id="demo-hide">
-  <ul>
-    <li><a href="/history.html">history.html</a></li>
-    <li><a href="/index.html">index.html</a></li>
-    <li><a href="/kabinet-fav.html">kabinet-fav.html</a></li>
-    <li><a href="/kabinet.html">kabinet.html</a></li>
-    <li><a href="/karte.html">karte.html</a></li>
-    <li><a href="/komments.html">komments.html</a></li>
-    <li><a href="/konstruktor.html">konstruktor.html</a></li>
-    <li><a href="/offer-form.html">offer-form.html</a></li>
-    <li><a href="/order.html">order.html</a></li>
-    <li><a href="/par-mums.html">par-mums.html</a></li>
-    <li><a href="/products.html">products.html</a></li>
-    <li><a href="/registration.html">registration.html</a></li>
-    <li><a href="/shipping.html">shipping.html</a></li>
-  </ul>
-  <script>
-    $('a').each(function() {
-      this.href = location.protocol + '//' + location.host + location.pathname.split('/').slice(0,-1).join('/') +
-      '/' + this.href.split('/').slice(-1)[0];
-    });
-  </script>
-</div>
