@@ -18,13 +18,13 @@
     <link rel="yandex-tableau-widget" href="static/favicon/yandex-browser-manifest.json">
     <meta name="apple-mobile-web-app-title" content="real_strix">
     <meta name="application-name" content="real_strix">
-    <meta name="msapplication-TileColor" content="#1f6bff">
+    <meta name="msapplication-TileColor" content="#a9c2f2">
     <meta name="msapplication-TileImage" content="static/favicon/mstile-144x144.png">
     <meta name="msapplication-config" content="static/favicon/browserconfig.xml">
-    <meta name="theme-color" content="#1f6bff">
+    <meta name="theme-color" content="#a9c2f2">
     <!-- end favicons-->
     <!-- link(rel="stylesheet",type="text/css",href=config.styles.to.slice(1) + 'flipclock.css')-->
-    <link rel="stylesheet" type="text/css" href="static/styles/main.css?1">
+    <link rel="stylesheet" type="text/css" href="static/styles/main.css">
     <script src="static/scripts//html5shiv-3.7.2.min.js"></script>
   </head>
   <body>
@@ -51,8 +51,14 @@
             </ul>
           </div>
         </div>
-        <div class="Header__btns"> <a class="reset-btn" href="#"><img class="va-middle" src="img/ic-mail-white.png"></a>&nbsp;
-          &nbsp;<a class="reset-btn" href="#"><img class="va-middle" src="img/ic-telegramm-circle.png"> </a>&nbsp;
+        <div class="Header__btns"> <a class="msg-btn" href="#">
+            <svg class="ic-letter" role="img">
+              <use xlink:href="static/decors/sprite.svg#ic-letter"></use>
+            </svg></a>&nbsp;
+          &nbsp;<a class="msg-btn" href="#">
+            <svg class="ic-telegram" role="img" style="position:relative;left:-1px;">
+              <use xlink:href="static/decors/sprite.svg#ic-telegram"></use>
+            </svg></a>&nbsp;
           &nbsp;<a class="buy-btn" href="#">buy tokens</a>
         </div>
         <div class="Header__menu">
@@ -71,33 +77,36 @@
       </div>
     </header>
     <main class="Home" id="home">
-      <button class="Home__mouse-btn" type="button" onclick="$(&quot;html, body&quot;).animate({ scrollTop: $(&quot;.Home&quot;).outerHeight()+1 }, 1000);"> 
-        <svg class="ic-mouse" role="img">
-          <use xlink:href="static/decors/sprite.svg#ic-mouse"></use>
-        </svg>
-      </button>
+      <!-- The positions refer to the Home's image sizes-->
+      <div class="Price-label" data-top="65%" data-left="63.7%">12993$ / <strong>bonus 25%</strong></div>
+      <div class="Price-label" data-top="17%" data-left="75.5%">12993$ / <strong>bonus 25%</strong></div>
+      <div class="Price-label" data-top="26%" data-left="93.1%">12993$ / <strong>bonus 25%</strong></div>
+      <video class="Home__video" loop="loop" preload="none" controls="controls">
+        <source src="http://svit-mebliv.net.ua/New-York.mp4" type="video/mp4"/>
+      </video>
+      <button class="Home__close-btn">&#10060</button>
       <button class="Home__play-btn" type="button">
         <svg xmlns="http://www.w3.org/2000/svg" width="85" height="85">
 <circle class="circle" r="38" cx="42.5" cy="42.5"  fill="none" stroke-width="9" stroke-linejoin="round" stroke-dasharray="72, 9" />
 <path d="M 42.724609 15.925781 A 26.472219 26.998005 82.874397 0 0 15.603516 42.40625 A 26.472219 26.998005 82.874397 0 0 42.462891 68.886719 A 26.472219 26.998005 82.874397 0 0 69.583984 42.40625 A 26.472219 26.998005 82.874397 0 0 42.724609 15.925781 z M 35.246094 27.595703 L 46.400391 35.244141 L 57.556641 42.894531 L 46.173828 50.095703 L 34.791016 57.298828 L 35.017578 42.447266 L 35.246094 27.595703 z"/>
 </svg>Play video
       </button>
-      <video class="Home__video" loop="loop" preload="none">
-        <source src="http://svit-mebliv.net.ua/New-York.mp4" type="video/mp4"/>
-      </video>
       <div class="Home__content">
         <h1 class="Home__title">BUILD YOU’RE FUTURE WITH OUR PROJECTS <br/>In the most stable area - real estate.</h1>
         <div class="Home__timer">
           <h3 class="Timer__title">Token Sale Ends in:</h3>
           <div class="Timer"></div>
-          <div class="ta-right clearfix"><a class="Timer__btn btn" href="#">Buy tokens</a>
-            <div class="ta-center col-xs-7 col-xs-offset-5">25% bonus</div>
-          </div>
+          <div class="Timer__footer"><a class="btn" href="#">Buy tokens</a><br/><br/>25% bonus</div>
         </div><a class="Home__main-btn btn" href="#"> 
           <svg class="ic-copy btn__icon" role="img">
             <use xlink:href="static/decors/sprite.svg#ic-copy"></use>
           </svg>read whitepapper</a>
       </div>
+      <button class="Home__mouse-btn" type="button" onclick="$(&quot;html, body&quot;).animate({ scrollTop: $(&quot;.Home&quot;).outerHeight()+1 }, 1000);"> 
+        <svg class="ic-mouse" role="img">
+          <use xlink:href="static/decors/sprite.svg#ic-mouse"></use>
+        </svg>
+      </button>
     </main>
     <section class="About" id="about">
       <div class="container">
@@ -338,8 +347,14 @@
           </ul>
         </div>
         <div class="Footer__logo"><a href="/"><img class="va-middle" src="img/logo-blue.png" alt="logo"/></a></div>
-        <div class="Footer__btns"><a class="reset-btn" href="#"><img class="va-middle" src="img/ic-mail-white.png"></a>&nbsp;
-          &nbsp;<a class="reset-btn" href="#"><img class="va-middle" src="img/ic-telegramm-circle.png"> </a>
+        <div class="Footer__btns"><a class="msg-btn" href="#">
+            <svg class="ic-letter" role="img">
+              <use xlink:href="static/decors/sprite.svg#ic-letter"></use>
+            </svg></a>&nbsp;
+          &nbsp;<a class="msg-btn" href="#">
+            <svg class="ic-telegram" role="img" style="position:relative;left:-1px;">
+              <use xlink:href="static/decors/sprite.svg#ic-telegram"></use>
+            </svg></a>
         </div>
         <div class="Footer__social">More info:
           <div class="Social"><a class="Social__item" href="http://facebook.com">
@@ -376,6 +391,6 @@
     <script src="static/scripts//svg4everybody.min.js"></script>
     <script src="static/scripts//flipclock.min.js"></script>
     <script src="static/scripts//ofi.min.js"></script>
-    <script src="static/scripts//main.js?1"></script><script>svg4everybody();objectFitImages('img');</script>
+    <script src="static/scripts//main.js"></script><script>svg4everybody();objectFitImages('img');</script>
   </body>
 </html>
