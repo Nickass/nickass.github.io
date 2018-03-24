@@ -201,7 +201,6 @@ function closeVideo() {
   $('.Home__video').trigger('pause').off('mousemove', mousemoveVideo);
   $('.Home').removeClass('is-show-video');
   $('.Home__play-btn').removeClass('hide').removeClass('loading').one('click', mousemoveVideo);
-  );
 }
 function toggleVideo() {
   $('.Home__video').each(function() {
