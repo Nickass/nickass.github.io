@@ -220,10 +220,7 @@ function initVideo() {
     window.scrollTo(0,1);
     $('.Home').addClass('is-show-video');
     $('.Home__play-btn')
-    .removeClass('loading')
-    .addClass('hide')
-    .css({opacity: 0})
-    .one('mouseleave', function() {$(this).css('opacity', '')});
+    .removeClass('loading').addClass('hide');
   })
   video.on('pause', function() {
     //$('.Home').removeClass('is-show-video');    
@@ -238,7 +235,9 @@ function initVideo() {
     $('.Home__play-btn').addClass('loading').removeClass('hide').css('opacity', '');
   });
   video.on('canplaythrough', function(e) {
-    $('.Home__play-btn').removeClass('loading').addClass('hide');
+    if($('.Home').is('.is-show-video')) {
+      $('.Home__play-btn').addClass('hide');
+    }
   });
 
   video.appendTo('.Home');
