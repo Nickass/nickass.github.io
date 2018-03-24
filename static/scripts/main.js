@@ -223,8 +223,7 @@ function initVideo() {
     .removeClass('loading').addClass('hide');
   })
   video.on('pause', function() {
-    //$('.Home').removeClass('is-show-video');    
-    //$('.Home__play-btn').removeClass('hide').removeClass('loading').css('opacity', '');
+    $('.Home__play-btn').removeClass('hide').removeClass('loading');
   })
   video.on('ended', function() {
     console.log('ended');
