@@ -234,6 +234,7 @@ function initVideo() {
     $('.Home__play-btn').addClass('loading').removeClass('hide').css('opacity', '');
   });
   video.on('canplaythrough', function(e) {
+    $('.Home__play-btn').removeClass('loading');
     if($('.Home').is('.is-show-video')) {
       $('.Home__play-btn').addClass('hide');
     }
