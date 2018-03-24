@@ -1939,7 +1939,12 @@ select:invalid {
 }
 
 .Home.is-show-video:before {
-  left: -150%;
+  margin-left: -232px;
+  left: -100%;
+  -webkit-transition: left 1000ms, margin-left 1s 501ms;
+  -o-transition: left 1000ms, margin-left 1s 501ms;
+  -moz-transition: left 1000ms, margin-left 1s 501ms;
+  transition: left 1000ms, margin-left 1s 501ms;
 }
 
 @media (max-width: 767px) {
@@ -1973,6 +1978,11 @@ select:invalid {
       -ms-transform-origin: 0 100%;
        -o-transform-origin: 0 100%;
           transform-origin: 0 100%;
+  margin-left: 0px;
+  -webkit-transition-timing-function: linear;
+     -moz-transition-timing-function: linear;
+       -o-transition-timing-function: linear;
+          transition-timing-function: linear;
   -webkit-transition: left 1000ms;
   -o-transition: left 1000ms;
   -moz-transition: left 1000ms;
@@ -1991,15 +2001,27 @@ select:invalid {
   }
 }
 
+.Home.is-show-video .Home__title {
+  left: -25%;
+  -webkit-transition: 500ms 501ms;
+  -o-transition: 500ms 501ms;
+  -moz-transition: 500ms 501ms;
+  transition: 500ms 501ms;
+}
+
 .Home__title {
   position: relative;
   left: 0;
   font-size: 30px;
   width: 125%;
-  -webkit-transition: 1000ms;
-  -o-transition: 1000ms;
-  -moz-transition: 1000ms;
-  transition: 1000ms;
+  -webkit-transition-timing-function: linear;
+     -moz-transition-timing-function: linear;
+       -o-transition-timing-function: linear;
+          transition-timing-function: linear;
+  -webkit-transition: 0s;
+  -o-transition: 0s;
+  -moz-transition: 0s;
+  transition: 0s;
   line-height: 1.2;
 }
 
@@ -2011,7 +2033,19 @@ select:invalid {
 }
 
 .Home.is-show-video .Home__content {
-  left: -100%;
+  left: 0%;
+}
+
+@media (max-width: 1170px) {
+  .Home.is-show-video .Home__content {
+    left: -50%;
+  }
+}
+
+@media (max-width: 767px) {
+  .Home.is-show-video .Home__content {
+    left: -100%;
+  }
 }
 
 .Home__content {
@@ -2034,6 +2068,7 @@ select:invalid {
     position: relative;
     left: 0;
     margin-left: 0;
+    max-width: 50%;
   }
 }
 
@@ -2236,8 +2271,14 @@ select:invalid {
 }
 
 .Home.is-show-video .Home__main-btn {
-  right: -200%;
+  right: -50vw;
   background-color: rgba(209, 115, 255, 0.5);
+}
+
+@media (max-width: 1170px) {
+  .Home.is-show-video .Home__main-btn {
+    right: -100%;
+  }
 }
 
 @media (max-width: 767px) {
