@@ -2242,10 +2242,6 @@ select:invalid {
   opacity: 0;
 }
 
-.Home__play-btn.hide:hover {
-  opacity: 0.5;
-}
-
 .Home__play-btn.loading {
   -webkit-animation-play-state: running;
      -moz-animation-play-state: running;
