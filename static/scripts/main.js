@@ -242,7 +242,7 @@ $(function() {
   video.on('ended', closeVideo);
   video.on('waiting', function(e) {
     window.hideVideoBtns = false;
-    $('.Home__play-btn').addClass('loading');
+    $('.Home__play-btn').removeClass('hide').addClass('loading');
   });
   video.on('canplaythrough', function(e) {
     window.hideVideoBtns = true;
