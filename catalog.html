@@ -1175,6 +1175,7 @@
   </ul>
   <script>
     $('a').each(function() {
+      if(this.href[0] === '#') return;
       this.href = location.protocol + '//' + location.host + location.pathname.split('/').slice(0,-1).join('/') +
       '/' + this.href.split('/').slice(-1)[0];
     });
