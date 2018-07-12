@@ -210,63 +210,77 @@
         <div class="container">
           <div class="Article__pic">
             <div class="A-pic">
-              <div class="A-pic__pic"><img class="A-pic__img" src="img/product-1.png"></div>
+              <ul class="A-pic__pic">
+                <li>
+                  <div class="as-ratio"><img class="as-ratio__inner" data-lazy="img/product-1.png"></div>
+                </li>
+                <li>
+                  <div class="as-ratio"><img class="as-ratio__inner" data-lazy="img/product-4.png"></div>
+                </li>
+                <li>
+                  <div class="as-ratio"><img class="as-ratio__inner" data-lazy="img/product-1.png"></div>
+                </li>
+                <li>
+                  <div class="as-ratio"><img class="as-ratio__inner" data-lazy="img/product-1.png"></div>
+                </li>
+                <li>
+                  <div class="as-ratio"><img class="as-ratio__inner" data-lazy="img/product-4.png"></div>
+                </li>
+                <li>
+                  <div class="as-ratio"><img class="as-ratio__inner" data-lazy="img/product-1.png"></div>
+                </li>
+                <li>
+                  <div class="as-ratio"><img class="as-ratio__inner" data-lazy="img/product-1.png"></div>
+                </li>
+                <li>
+                  <div class="as-ratio"><img class="as-ratio__inner" data-lazy="img/product-1.png"></div>
+                </li>
+              </ul>
               <ul class="A-pic__list">
-                <li class="A-pic__item as-ratio"><img class="as-ratio__inner" src="img/product-1.png"></li>
-                <li class="A-pic__item as-ratio"><img class="as-ratio__inner" src="img/product-1.png"></li>
-                <li class="A-pic__item as-ratio"><img class="as-ratio__inner" src="img/product-1.png"></li>
-                <li class="A-pic__item as-ratio"><img class="as-ratio__inner" src="img/product-1.png"></li>
-                <li class="A-pic__item as-ratio"><img class="as-ratio__inner" src="img/product-1.png"></li>
-                <li class="A-pic__item as-ratio"><img class="as-ratio__inner" src="img/product-1.png"></li>
+                <li class="A-pic__item as-ratio"><img class="as-ratio__inner" src="img/product-1-sm.png"></li>
+                <li class="A-pic__item as-ratio"><img class="as-ratio__inner" src="img/product-4-sm.png"></li>
+                <li class="A-pic__item as-ratio"><img class="as-ratio__inner" src="img/product-1-sm.png"></li>
+                <li class="A-pic__item as-ratio"><img class="as-ratio__inner" src="img/product-1-sm.png"></li>
+                <li class="A-pic__item as-ratio"><img class="as-ratio__inner" src="img/product-4-sm.png"></li>
+                <li class="A-pic__item as-ratio"><img class="as-ratio__inner" src="img/product-1-sm.png"></li>
+                <li class="A-pic__item as-ratio"><img class="as-ratio__inner" src="img/product-1-sm.png"></li>
+                <li class="A-pic__item as-ratio"><img class="as-ratio__inner" src="img/product-1-sm.png"></li>
               </ul>
             </div>
           </div>
           <div class="Article__info A-info">
-            <h1 class="A-info__title">Кресло “Шеф”: 
-              <div class="A-info__subtitle">офисное кресло с поворотным механизмом и регулировкой по высоте.</div>
-            </h1>
-            <div class="A-info__text">
+            <h1 class="A-info__title">Кресло “Шеф”: офисное кресло с поворотным механизмом и регулировкой по высоте.</h1>
+            <div class="A-info__main">
               <dl class="A-info__item">
                 <dt class="A-info__dt">Цена:</dt>
                 <dd class="A-info__dd"><span class="A-info__accent">$56</span> / штука</dd>
               </dl>
               <dl class="A-info__item">
-                <dt class="A-info__dt">Наличие:</dt>
-                <dd class="A-info__dd">Да</dd>
-              </dl>
-              <dl class="A-info__item">
-                <dt class="A-info__dt">Единица продукции:</dt>
-                <dd class="A-info__dd">Штука</dd>
-              </dl>
-              <dl class="A-info__item">
                 <dt class="A-info__dt">Минимальное количество заказа:</dt>
                 <dd class="A-info__dd"> <span class="A-info__accent">50</span>  штук</dd>
               </dl>
-            </div>
-            <div class="A-info__item">
-              <div class="A-info__dt">
-                <button class="btn-blue fz-sm d-b" type="button"> 
+              <div class="A-info__b1">
+                <button class="btn-blue d-b" type="button"> 
                   <svg class="ic-envelope btn__icon" role="img">
                     <use xlink:href="static/decors/sprite.svg#ic-envelope"></use>
                   </svg>связаться с поставщиком
                 </button>
               </div>
-              <div class="A-info__dd"> 
-                <button class="btn-primary fz-sm d-b" type="button"> 
+              <div class="A-info__b2">
+                <button class="btn-primary d-b" type="button"> 
                   <svg class="ic-todo btn__icon" role="img">
                     <use xlink:href="static/decors/sprite.svg#ic-todo"></use>
                   </svg>оформить заказ
                 </button>
               </div>
-            </div>
-            <div class="A-info__item">
-              <div class="A-info__dt">
-                <button class="btn-green fz-sm d-b" type="button"> 
+              <div class="A-info__b3">
+                <button class="btn-green d-b" type="button"> 
                   <svg class="ic-heart btn__icon" role="img">
                     <use xlink:href="static/decors/sprite.svg#ic-heart"></use>
                   </svg>Добавить в избраное
                 </button>
-              </div><strong class="A-info__dd">Соц. сети
+              </div>
+              <label class="A-info__b4"><strong>Соц. сети</strong>
                 <div class="Popover">
                   <button class="dd-toggler Popover__btn" type="button" data-target="#popover-social">
                     <svg class="ic-exit" role="img">
@@ -288,9 +302,18 @@
                           <use xlink:href="static/decors/sprite.svg#ic-instagram"></use>
                         </svg></a></div>
                   </div>
-                </div></strong>
+                </div>
+              </label>
             </div>
             <div class="A-info__footer">
+              <dl class="A-info__item">
+                <dt class="A-info__dt">Наличие:</dt>
+                <dd class="A-info__dd">Да</dd>
+              </dl>
+              <dl class="A-info__item">
+                <dt class="A-info__dt">Единица продукции:</dt>
+                <dd class="A-info__dd">Штука</dd>
+              </dl>
               <div class="A-info__item">Поставщик: &nbsp;&nbsp;<span class="A-info__accent">“REGINA”</span>&nbsp;
                 &nbsp;<span class="tariff">tariff<strong class="tariff__name">premium</strong></span>&nbsp;
                 &nbsp;
@@ -353,25 +376,24 @@
         <hr>
       </div>
       <div class="container">
-        <h2>Новые товары</h2>
-        <ul class="Catalog" data-mark="grid" data-slider="true" data-show-ctrls="false" data-show-counter="true">
+        <h2>Рекомендуемые товары</h2>
+        <ul class="Catalog" data-mark="grid" data-slider="true" data-show-ctrls="true" data-show-counter="true">
           <li class="Product Catalog__item is-grid">
-            <div class="Product__inner"><a class="Product__pic" href="/product.html">
-                <div class="as-ratio"><img class="as-ratio__inner" src="img/product-4.png"/></div></a>
+            <div class="Product__inner"><a class="Product__pic" href="/product.html"><img class="Product__img" src="img/product-2.png"/></a>
               <div class="Product__info">
-                <div class="Product__name"> <a class="Product__link" href="/product.html">Диван “БЕРК”</a></div>
-                <div class="Product__field">€509.00 <small>/ штука</small></div>
-                <div class="Product__field">5 штук <small>(Мин. заказ)</small></div>
+                <div class="Product__name"> <a class="Product__link" href="/product.html">Шкаф “Бук”  Lorem ipsum dolor.</a></div>
+                <div class="Product__field">10 штук <small>(Мин. заказ)</small></div>
+                <div class="Product__field">€209.00 <small>/ штука</small></div>
               </div>
               <div class="Product__footer">
                 <div class="Product__state">
-                  <svg class="ic-us" role="img" width="24px" height="16px">
-                    <use xlink:href="static/decors/sprite.svg#ic-us"></use>
-                  </svg>&nbsp; “Новый-мир”
+                  <svg class="ic-gb" role="img" width="24px" height="16px">
+                    <use xlink:href="static/decors/sprite.svg#ic-gb"></use>
+                  </svg>&nbsp; “Modern-furniture”  Lorem ipsum.
                 </div>
                 <div class="Product__rating">
                   <div class="Rating">
-                    <input class="Rating__input" type="hidden" value="2"/>
+                    <input class="Rating__input" type="hidden" value="5"/>
                     <div class="Rating__item">
                       <svg class="ic-star" role="img">
                         <use xlink:href="static/decors/sprite.svg#ic-star"></use>
@@ -399,11 +421,14 @@
                     </div>
                   </div>
                 </div>
-                <div class="Product__tariff"><span class="tariff">tariff<strong class="tariff__name">premium</strong></span>
-                </div><a class="Product__connect" href="#"> 
-                  <svg class="ic-envelope" role="img" width="20px" height="15px">
-                    <use xlink:href="static/decors/sprite.svg#ic-envelope"></use>
-                  </svg> Связаться с поставщиком</a>
+                <div class="Product__safe guarantee">
+                  <svg class="ic-shield" role="img">
+                    <use xlink:href="static/decors/sprite.svg#ic-shield"></use>
+                  </svg>
+                </div>
+                <div class="Product__tariff"><span class="tariff">tariff<strong class="tariff__name">pro</strong></span>
+                </div><a class="Product__connect" href="#">
+                   CONTACT SUPPLIER</a>
                 <label class="Product__like"> 
                   <button class="btn-like" type="button" onclick="$(this).toggleClass('active')">
                     <svg class="ic-heart" role="img">
@@ -415,22 +440,21 @@
             </div>
           </li>
           <li class="Product Catalog__item is-grid">
-            <div class="Product__inner"><a class="Product__pic" href="/product.html">
-                <div class="as-ratio"><img class="as-ratio__inner" src="img/product-4.png"/></div></a>
+            <div class="Product__inner"><a class="Product__pic" href="/product.html"><img class="Product__img" src="img/product-2.png"/></a>
               <div class="Product__info">
-                <div class="Product__name"> <a class="Product__link" href="/product.html">Диван “БЕРК”</a></div>
-                <div class="Product__field">€509.00 <small>/ штука</small></div>
-                <div class="Product__field">5 штук <small>(Мин. заказ)</small></div>
+                <div class="Product__name"> <a class="Product__link" href="/product.html">Шкаф “Бук”  Lorem ipsum dolor.</a></div>
+                <div class="Product__field">10 штук <small>(Мин. заказ)</small></div>
+                <div class="Product__field">€209.00 <small>/ штука</small></div>
               </div>
               <div class="Product__footer">
                 <div class="Product__state">
-                  <svg class="ic-us" role="img" width="24px" height="16px">
-                    <use xlink:href="static/decors/sprite.svg#ic-us"></use>
-                  </svg>&nbsp; “Новый-мир”
+                  <svg class="ic-gb" role="img" width="24px" height="16px">
+                    <use xlink:href="static/decors/sprite.svg#ic-gb"></use>
+                  </svg>&nbsp; “Modern-furniture”  Lorem ipsum.
                 </div>
                 <div class="Product__rating">
                   <div class="Rating">
-                    <input class="Rating__input" type="hidden" value="2"/>
+                    <input class="Rating__input" type="hidden" value="5"/>
                     <div class="Rating__item">
                       <svg class="ic-star" role="img">
                         <use xlink:href="static/decors/sprite.svg#ic-star"></use>
@@ -458,11 +482,14 @@
                     </div>
                   </div>
                 </div>
-                <div class="Product__tariff"><span class="tariff">tariff<strong class="tariff__name">premium</strong></span>
-                </div><a class="Product__connect" href="#"> 
-                  <svg class="ic-envelope" role="img" width="20px" height="15px">
-                    <use xlink:href="static/decors/sprite.svg#ic-envelope"></use>
-                  </svg> Связаться с поставщиком</a>
+                <div class="Product__safe guarantee">
+                  <svg class="ic-shield" role="img">
+                    <use xlink:href="static/decors/sprite.svg#ic-shield"></use>
+                  </svg>
+                </div>
+                <div class="Product__tariff"><span class="tariff">tariff<strong class="tariff__name">pro</strong></span>
+                </div><a class="Product__connect" href="#">
+                   CONTACT SUPPLIER</a>
                 <label class="Product__like"> 
                   <button class="btn-like" type="button" onclick="$(this).toggleClass('active')">
                     <svg class="ic-heart" role="img">
@@ -474,22 +501,21 @@
             </div>
           </li>
           <li class="Product Catalog__item is-grid">
-            <div class="Product__inner"><a class="Product__pic" href="/product.html">
-                <div class="as-ratio"><img class="as-ratio__inner" src="img/product-4.png"/></div></a>
+            <div class="Product__inner"><a class="Product__pic" href="/product.html"><img class="Product__img" src="img/product-2.png"/></a>
               <div class="Product__info">
-                <div class="Product__name"> <a class="Product__link" href="/product.html">Диван “БЕРК”</a></div>
-                <div class="Product__field">€509.00 <small>/ штука</small></div>
-                <div class="Product__field">5 штук <small>(Мин. заказ)</small></div>
+                <div class="Product__name"> <a class="Product__link" href="/product.html">Шкаф “Бук”  Lorem ipsum dolor.</a></div>
+                <div class="Product__field">10 штук <small>(Мин. заказ)</small></div>
+                <div class="Product__field">€209.00 <small>/ штука</small></div>
               </div>
               <div class="Product__footer">
                 <div class="Product__state">
-                  <svg class="ic-us" role="img" width="24px" height="16px">
-                    <use xlink:href="static/decors/sprite.svg#ic-us"></use>
-                  </svg>&nbsp; “Новый-мир”
+                  <svg class="ic-gb" role="img" width="24px" height="16px">
+                    <use xlink:href="static/decors/sprite.svg#ic-gb"></use>
+                  </svg>&nbsp; “Modern-furniture”  Lorem ipsum.
                 </div>
                 <div class="Product__rating">
                   <div class="Rating">
-                    <input class="Rating__input" type="hidden" value="2"/>
+                    <input class="Rating__input" type="hidden" value="5"/>
                     <div class="Rating__item">
                       <svg class="ic-star" role="img">
                         <use xlink:href="static/decors/sprite.svg#ic-star"></use>
@@ -517,11 +543,14 @@
                     </div>
                   </div>
                 </div>
-                <div class="Product__tariff"><span class="tariff">tariff<strong class="tariff__name">premium</strong></span>
-                </div><a class="Product__connect" href="#"> 
-                  <svg class="ic-envelope" role="img" width="20px" height="15px">
-                    <use xlink:href="static/decors/sprite.svg#ic-envelope"></use>
-                  </svg> Связаться с поставщиком</a>
+                <div class="Product__safe guarantee">
+                  <svg class="ic-shield" role="img">
+                    <use xlink:href="static/decors/sprite.svg#ic-shield"></use>
+                  </svg>
+                </div>
+                <div class="Product__tariff"><span class="tariff">tariff<strong class="tariff__name">pro</strong></span>
+                </div><a class="Product__connect" href="#">
+                   CONTACT SUPPLIER</a>
                 <label class="Product__like"> 
                   <button class="btn-like" type="button" onclick="$(this).toggleClass('active')">
                     <svg class="ic-heart" role="img">
@@ -533,22 +562,21 @@
             </div>
           </li>
           <li class="Product Catalog__item is-grid">
-            <div class="Product__inner"><a class="Product__pic" href="/product.html">
-                <div class="as-ratio"><img class="as-ratio__inner" src="img/product-4.png"/></div></a>
+            <div class="Product__inner"><a class="Product__pic" href="/product.html"><img class="Product__img" src="img/product-2.png"/></a>
               <div class="Product__info">
-                <div class="Product__name"> <a class="Product__link" href="/product.html">Диван “БЕРК”</a></div>
-                <div class="Product__field">€509.00 <small>/ штука</small></div>
-                <div class="Product__field">5 штук <small>(Мин. заказ)</small></div>
+                <div class="Product__name"> <a class="Product__link" href="/product.html">Шкаф “Бук”  Lorem ipsum dolor.</a></div>
+                <div class="Product__field">10 штук <small>(Мин. заказ)</small></div>
+                <div class="Product__field">€209.00 <small>/ штука</small></div>
               </div>
               <div class="Product__footer">
                 <div class="Product__state">
-                  <svg class="ic-us" role="img" width="24px" height="16px">
-                    <use xlink:href="static/decors/sprite.svg#ic-us"></use>
-                  </svg>&nbsp; “Новый-мир”
+                  <svg class="ic-gb" role="img" width="24px" height="16px">
+                    <use xlink:href="static/decors/sprite.svg#ic-gb"></use>
+                  </svg>&nbsp; “Modern-furniture”  Lorem ipsum.
                 </div>
                 <div class="Product__rating">
                   <div class="Rating">
-                    <input class="Rating__input" type="hidden" value="2"/>
+                    <input class="Rating__input" type="hidden" value="5"/>
                     <div class="Rating__item">
                       <svg class="ic-star" role="img">
                         <use xlink:href="static/decors/sprite.svg#ic-star"></use>
@@ -576,11 +604,14 @@
                     </div>
                   </div>
                 </div>
-                <div class="Product__tariff"><span class="tariff">tariff<strong class="tariff__name">premium</strong></span>
-                </div><a class="Product__connect" href="#"> 
-                  <svg class="ic-envelope" role="img" width="20px" height="15px">
-                    <use xlink:href="static/decors/sprite.svg#ic-envelope"></use>
-                  </svg> Связаться с поставщиком</a>
+                <div class="Product__safe guarantee">
+                  <svg class="ic-shield" role="img">
+                    <use xlink:href="static/decors/sprite.svg#ic-shield"></use>
+                  </svg>
+                </div>
+                <div class="Product__tariff"><span class="tariff">tariff<strong class="tariff__name">pro</strong></span>
+                </div><a class="Product__connect" href="#">
+                   CONTACT SUPPLIER</a>
                 <label class="Product__like"> 
                   <button class="btn-like" type="button" onclick="$(this).toggleClass('active')">
                     <svg class="ic-heart" role="img">
@@ -592,22 +623,21 @@
             </div>
           </li>
           <li class="Product Catalog__item is-grid">
-            <div class="Product__inner"><a class="Product__pic" href="/product.html">
-                <div class="as-ratio"><img class="as-ratio__inner" src="img/product-4.png"/></div></a>
+            <div class="Product__inner"><a class="Product__pic" href="/product.html"><img class="Product__img" src="img/product-2.png"/></a>
               <div class="Product__info">
-                <div class="Product__name"> <a class="Product__link" href="/product.html">Диван “БЕРК”</a></div>
-                <div class="Product__field">€509.00 <small>/ штука</small></div>
-                <div class="Product__field">5 штук <small>(Мин. заказ)</small></div>
+                <div class="Product__name"> <a class="Product__link" href="/product.html">Шкаф “Бук”  Lorem ipsum dolor.</a></div>
+                <div class="Product__field">10 штук <small>(Мин. заказ)</small></div>
+                <div class="Product__field">€209.00 <small>/ штука</small></div>
               </div>
               <div class="Product__footer">
                 <div class="Product__state">
-                  <svg class="ic-us" role="img" width="24px" height="16px">
-                    <use xlink:href="static/decors/sprite.svg#ic-us"></use>
-                  </svg>&nbsp; “Новый-мир”
+                  <svg class="ic-gb" role="img" width="24px" height="16px">
+                    <use xlink:href="static/decors/sprite.svg#ic-gb"></use>
+                  </svg>&nbsp; “Modern-furniture”  Lorem ipsum.
                 </div>
                 <div class="Product__rating">
                   <div class="Rating">
-                    <input class="Rating__input" type="hidden" value="2"/>
+                    <input class="Rating__input" type="hidden" value="5"/>
                     <div class="Rating__item">
                       <svg class="ic-star" role="img">
                         <use xlink:href="static/decors/sprite.svg#ic-star"></use>
@@ -635,11 +665,14 @@
                     </div>
                   </div>
                 </div>
-                <div class="Product__tariff"><span class="tariff">tariff<strong class="tariff__name">premium</strong></span>
-                </div><a class="Product__connect" href="#"> 
-                  <svg class="ic-envelope" role="img" width="20px" height="15px">
-                    <use xlink:href="static/decors/sprite.svg#ic-envelope"></use>
-                  </svg> Связаться с поставщиком</a>
+                <div class="Product__safe guarantee">
+                  <svg class="ic-shield" role="img">
+                    <use xlink:href="static/decors/sprite.svg#ic-shield"></use>
+                  </svg>
+                </div>
+                <div class="Product__tariff"><span class="tariff">tariff<strong class="tariff__name">pro</strong></span>
+                </div><a class="Product__connect" href="#">
+                   CONTACT SUPPLIER</a>
                 <label class="Product__like"> 
                   <button class="btn-like" type="button" onclick="$(this).toggleClass('active')">
                     <svg class="ic-heart" role="img">
@@ -651,22 +684,21 @@
             </div>
           </li>
           <li class="Product Catalog__item is-grid">
-            <div class="Product__inner"><a class="Product__pic" href="/product.html">
-                <div class="as-ratio"><img class="as-ratio__inner" src="img/product-4.png"/></div></a>
+            <div class="Product__inner"><a class="Product__pic" href="/product.html"><img class="Product__img" src="img/product-2.png"/></a>
               <div class="Product__info">
-                <div class="Product__name"> <a class="Product__link" href="/product.html">Диван “БЕРК”</a></div>
-                <div class="Product__field">€509.00 <small>/ штука</small></div>
-                <div class="Product__field">5 штук <small>(Мин. заказ)</small></div>
+                <div class="Product__name"> <a class="Product__link" href="/product.html">Шкаф “Бук”  Lorem ipsum dolor.</a></div>
+                <div class="Product__field">10 штук <small>(Мин. заказ)</small></div>
+                <div class="Product__field">€209.00 <small>/ штука</small></div>
               </div>
               <div class="Product__footer">
                 <div class="Product__state">
-                  <svg class="ic-us" role="img" width="24px" height="16px">
-                    <use xlink:href="static/decors/sprite.svg#ic-us"></use>
-                  </svg>&nbsp; “Новый-мир”
+                  <svg class="ic-gb" role="img" width="24px" height="16px">
+                    <use xlink:href="static/decors/sprite.svg#ic-gb"></use>
+                  </svg>&nbsp; “Modern-furniture”  Lorem ipsum.
                 </div>
                 <div class="Product__rating">
                   <div class="Rating">
-                    <input class="Rating__input" type="hidden" value="2"/>
+                    <input class="Rating__input" type="hidden" value="5"/>
                     <div class="Rating__item">
                       <svg class="ic-star" role="img">
                         <use xlink:href="static/decors/sprite.svg#ic-star"></use>
@@ -694,11 +726,14 @@
                     </div>
                   </div>
                 </div>
-                <div class="Product__tariff"><span class="tariff">tariff<strong class="tariff__name">premium</strong></span>
-                </div><a class="Product__connect" href="#"> 
-                  <svg class="ic-envelope" role="img" width="20px" height="15px">
-                    <use xlink:href="static/decors/sprite.svg#ic-envelope"></use>
-                  </svg> Связаться с поставщиком</a>
+                <div class="Product__safe guarantee">
+                  <svg class="ic-shield" role="img">
+                    <use xlink:href="static/decors/sprite.svg#ic-shield"></use>
+                  </svg>
+                </div>
+                <div class="Product__tariff"><span class="tariff">tariff<strong class="tariff__name">pro</strong></span>
+                </div><a class="Product__connect" href="#">
+                   CONTACT SUPPLIER</a>
                 <label class="Product__like"> 
                   <button class="btn-like" type="button" onclick="$(this).toggleClass('active')">
                     <svg class="ic-heart" role="img">
@@ -710,22 +745,21 @@
             </div>
           </li>
           <li class="Product Catalog__item is-grid">
-            <div class="Product__inner"><a class="Product__pic" href="/product.html">
-                <div class="as-ratio"><img class="as-ratio__inner" src="img/product-4.png"/></div></a>
+            <div class="Product__inner"><a class="Product__pic" href="/product.html"><img class="Product__img" src="img/product-2.png"/></a>
               <div class="Product__info">
-                <div class="Product__name"> <a class="Product__link" href="/product.html">Диван “БЕРК”</a></div>
-                <div class="Product__field">€509.00 <small>/ штука</small></div>
-                <div class="Product__field">5 штук <small>(Мин. заказ)</small></div>
+                <div class="Product__name"> <a class="Product__link" href="/product.html">Шкаф “Бук”  Lorem ipsum dolor.</a></div>
+                <div class="Product__field">10 штук <small>(Мин. заказ)</small></div>
+                <div class="Product__field">€209.00 <small>/ штука</small></div>
               </div>
               <div class="Product__footer">
                 <div class="Product__state">
-                  <svg class="ic-us" role="img" width="24px" height="16px">
-                    <use xlink:href="static/decors/sprite.svg#ic-us"></use>
-                  </svg>&nbsp; “Новый-мир”
+                  <svg class="ic-gb" role="img" width="24px" height="16px">
+                    <use xlink:href="static/decors/sprite.svg#ic-gb"></use>
+                  </svg>&nbsp; “Modern-furniture”  Lorem ipsum.
                 </div>
                 <div class="Product__rating">
                   <div class="Rating">
-                    <input class="Rating__input" type="hidden" value="2"/>
+                    <input class="Rating__input" type="hidden" value="5"/>
                     <div class="Rating__item">
                       <svg class="ic-star" role="img">
                         <use xlink:href="static/decors/sprite.svg#ic-star"></use>
@@ -753,11 +787,14 @@
                     </div>
                   </div>
                 </div>
-                <div class="Product__tariff"><span class="tariff">tariff<strong class="tariff__name">premium</strong></span>
-                </div><a class="Product__connect" href="#"> 
-                  <svg class="ic-envelope" role="img" width="20px" height="15px">
-                    <use xlink:href="static/decors/sprite.svg#ic-envelope"></use>
-                  </svg> Связаться с поставщиком</a>
+                <div class="Product__safe guarantee">
+                  <svg class="ic-shield" role="img">
+                    <use xlink:href="static/decors/sprite.svg#ic-shield"></use>
+                  </svg>
+                </div>
+                <div class="Product__tariff"><span class="tariff">tariff<strong class="tariff__name">pro</strong></span>
+                </div><a class="Product__connect" href="#">
+                   CONTACT SUPPLIER</a>
                 <label class="Product__like"> 
                   <button class="btn-like" type="button" onclick="$(this).toggleClass('active')">
                     <svg class="ic-heart" role="img">
@@ -769,22 +806,21 @@
             </div>
           </li>
           <li class="Product Catalog__item is-grid">
-            <div class="Product__inner"><a class="Product__pic" href="/product.html">
-                <div class="as-ratio"><img class="as-ratio__inner" src="img/product-4.png"/></div></a>
+            <div class="Product__inner"><a class="Product__pic" href="/product.html"><img class="Product__img" src="img/product-2.png"/></a>
               <div class="Product__info">
-                <div class="Product__name"> <a class="Product__link" href="/product.html">Диван “БЕРК”</a></div>
-                <div class="Product__field">€509.00 <small>/ штука</small></div>
-                <div class="Product__field">5 штук <small>(Мин. заказ)</small></div>
+                <div class="Product__name"> <a class="Product__link" href="/product.html">Шкаф “Бук”  Lorem ipsum dolor.</a></div>
+                <div class="Product__field">10 штук <small>(Мин. заказ)</small></div>
+                <div class="Product__field">€209.00 <small>/ штука</small></div>
               </div>
               <div class="Product__footer">
                 <div class="Product__state">
-                  <svg class="ic-us" role="img" width="24px" height="16px">
-                    <use xlink:href="static/decors/sprite.svg#ic-us"></use>
-                  </svg>&nbsp; “Новый-мир”
+                  <svg class="ic-gb" role="img" width="24px" height="16px">
+                    <use xlink:href="static/decors/sprite.svg#ic-gb"></use>
+                  </svg>&nbsp; “Modern-furniture”  Lorem ipsum.
                 </div>
                 <div class="Product__rating">
                   <div class="Rating">
-                    <input class="Rating__input" type="hidden" value="2"/>
+                    <input class="Rating__input" type="hidden" value="5"/>
                     <div class="Rating__item">
                       <svg class="ic-star" role="img">
                         <use xlink:href="static/decors/sprite.svg#ic-star"></use>
@@ -812,11 +848,14 @@
                     </div>
                   </div>
                 </div>
-                <div class="Product__tariff"><span class="tariff">tariff<strong class="tariff__name">premium</strong></span>
-                </div><a class="Product__connect" href="#"> 
-                  <svg class="ic-envelope" role="img" width="20px" height="15px">
-                    <use xlink:href="static/decors/sprite.svg#ic-envelope"></use>
-                  </svg> Связаться с поставщиком</a>
+                <div class="Product__safe guarantee">
+                  <svg class="ic-shield" role="img">
+                    <use xlink:href="static/decors/sprite.svg#ic-shield"></use>
+                  </svg>
+                </div>
+                <div class="Product__tariff"><span class="tariff">tariff<strong class="tariff__name">pro</strong></span>
+                </div><a class="Product__connect" href="#">
+                   CONTACT SUPPLIER</a>
                 <label class="Product__like"> 
                   <button class="btn-like" type="button" onclick="$(this).toggleClass('active')">
                     <svg class="ic-heart" role="img">
@@ -828,22 +867,21 @@
             </div>
           </li>
           <li class="Product Catalog__item is-grid">
-            <div class="Product__inner"><a class="Product__pic" href="/product.html">
-                <div class="as-ratio"><img class="as-ratio__inner" src="img/product-4.png"/></div></a>
+            <div class="Product__inner"><a class="Product__pic" href="/product.html"><img class="Product__img" src="img/product-2.png"/></a>
               <div class="Product__info">
-                <div class="Product__name"> <a class="Product__link" href="/product.html">Диван “БЕРК”</a></div>
-                <div class="Product__field">€509.00 <small>/ штука</small></div>
-                <div class="Product__field">5 штук <small>(Мин. заказ)</small></div>
+                <div class="Product__name"> <a class="Product__link" href="/product.html">Шкаф “Бук”  Lorem ipsum dolor.</a></div>
+                <div class="Product__field">10 штук <small>(Мин. заказ)</small></div>
+                <div class="Product__field">€209.00 <small>/ штука</small></div>
               </div>
               <div class="Product__footer">
                 <div class="Product__state">
-                  <svg class="ic-us" role="img" width="24px" height="16px">
-                    <use xlink:href="static/decors/sprite.svg#ic-us"></use>
-                  </svg>&nbsp; “Новый-мир”
+                  <svg class="ic-gb" role="img" width="24px" height="16px">
+                    <use xlink:href="static/decors/sprite.svg#ic-gb"></use>
+                  </svg>&nbsp; “Modern-furniture”  Lorem ipsum.
                 </div>
                 <div class="Product__rating">
                   <div class="Rating">
-                    <input class="Rating__input" type="hidden" value="2"/>
+                    <input class="Rating__input" type="hidden" value="5"/>
                     <div class="Rating__item">
                       <svg class="ic-star" role="img">
                         <use xlink:href="static/decors/sprite.svg#ic-star"></use>
@@ -871,11 +909,14 @@
                     </div>
                   </div>
                 </div>
-                <div class="Product__tariff"><span class="tariff">tariff<strong class="tariff__name">premium</strong></span>
-                </div><a class="Product__connect" href="#"> 
-                  <svg class="ic-envelope" role="img" width="20px" height="15px">
-                    <use xlink:href="static/decors/sprite.svg#ic-envelope"></use>
-                  </svg> Связаться с поставщиком</a>
+                <div class="Product__safe guarantee">
+                  <svg class="ic-shield" role="img">
+                    <use xlink:href="static/decors/sprite.svg#ic-shield"></use>
+                  </svg>
+                </div>
+                <div class="Product__tariff"><span class="tariff">tariff<strong class="tariff__name">pro</strong></span>
+                </div><a class="Product__connect" href="#">
+                   CONTACT SUPPLIER</a>
                 <label class="Product__like"> 
                   <button class="btn-like" type="button" onclick="$(this).toggleClass('active')">
                     <svg class="ic-heart" role="img">
@@ -887,22 +928,21 @@
             </div>
           </li>
           <li class="Product Catalog__item is-grid">
-            <div class="Product__inner"><a class="Product__pic" href="/product.html">
-                <div class="as-ratio"><img class="as-ratio__inner" src="img/product-4.png"/></div></a>
+            <div class="Product__inner"><a class="Product__pic" href="/product.html"><img class="Product__img" src="img/product-2.png"/></a>
               <div class="Product__info">
-                <div class="Product__name"> <a class="Product__link" href="/product.html">Диван “БЕРК”</a></div>
-                <div class="Product__field">€509.00 <small>/ штука</small></div>
-                <div class="Product__field">5 штук <small>(Мин. заказ)</small></div>
+                <div class="Product__name"> <a class="Product__link" href="/product.html">Шкаф “Бук”  Lorem ipsum dolor.</a></div>
+                <div class="Product__field">10 штук <small>(Мин. заказ)</small></div>
+                <div class="Product__field">€209.00 <small>/ штука</small></div>
               </div>
               <div class="Product__footer">
                 <div class="Product__state">
-                  <svg class="ic-us" role="img" width="24px" height="16px">
-                    <use xlink:href="static/decors/sprite.svg#ic-us"></use>
-                  </svg>&nbsp; “Новый-мир”
+                  <svg class="ic-gb" role="img" width="24px" height="16px">
+                    <use xlink:href="static/decors/sprite.svg#ic-gb"></use>
+                  </svg>&nbsp; “Modern-furniture”  Lorem ipsum.
                 </div>
                 <div class="Product__rating">
                   <div class="Rating">
-                    <input class="Rating__input" type="hidden" value="2"/>
+                    <input class="Rating__input" type="hidden" value="5"/>
                     <div class="Rating__item">
                       <svg class="ic-star" role="img">
                         <use xlink:href="static/decors/sprite.svg#ic-star"></use>
@@ -930,11 +970,14 @@
                     </div>
                   </div>
                 </div>
-                <div class="Product__tariff"><span class="tariff">tariff<strong class="tariff__name">premium</strong></span>
-                </div><a class="Product__connect" href="#"> 
-                  <svg class="ic-envelope" role="img" width="20px" height="15px">
-                    <use xlink:href="static/decors/sprite.svg#ic-envelope"></use>
-                  </svg> Связаться с поставщиком</a>
+                <div class="Product__safe guarantee">
+                  <svg class="ic-shield" role="img">
+                    <use xlink:href="static/decors/sprite.svg#ic-shield"></use>
+                  </svg>
+                </div>
+                <div class="Product__tariff"><span class="tariff">tariff<strong class="tariff__name">pro</strong></span>
+                </div><a class="Product__connect" href="#">
+                   CONTACT SUPPLIER</a>
                 <label class="Product__like"> 
                   <button class="btn-like" type="button" onclick="$(this).toggleClass('active')">
                     <svg class="ic-heart" role="img">
@@ -946,22 +989,21 @@
             </div>
           </li>
           <li class="Product Catalog__item is-grid">
-            <div class="Product__inner"><a class="Product__pic" href="/product.html">
-                <div class="as-ratio"><img class="as-ratio__inner" src="img/product-4.png"/></div></a>
+            <div class="Product__inner"><a class="Product__pic" href="/product.html"><img class="Product__img" src="img/product-2.png"/></a>
               <div class="Product__info">
-                <div class="Product__name"> <a class="Product__link" href="/product.html">Диван “БЕРК”</a></div>
-                <div class="Product__field">€509.00 <small>/ штука</small></div>
-                <div class="Product__field">5 штук <small>(Мин. заказ)</small></div>
+                <div class="Product__name"> <a class="Product__link" href="/product.html">Шкаф “Бук”  Lorem ipsum dolor.</a></div>
+                <div class="Product__field">10 штук <small>(Мин. заказ)</small></div>
+                <div class="Product__field">€209.00 <small>/ штука</small></div>
               </div>
               <div class="Product__footer">
                 <div class="Product__state">
-                  <svg class="ic-us" role="img" width="24px" height="16px">
-                    <use xlink:href="static/decors/sprite.svg#ic-us"></use>
-                  </svg>&nbsp; “Новый-мир”
+                  <svg class="ic-gb" role="img" width="24px" height="16px">
+                    <use xlink:href="static/decors/sprite.svg#ic-gb"></use>
+                  </svg>&nbsp; “Modern-furniture”  Lorem ipsum.
                 </div>
                 <div class="Product__rating">
                   <div class="Rating">
-                    <input class="Rating__input" type="hidden" value="2"/>
+                    <input class="Rating__input" type="hidden" value="5"/>
                     <div class="Rating__item">
                       <svg class="ic-star" role="img">
                         <use xlink:href="static/decors/sprite.svg#ic-star"></use>
@@ -989,11 +1031,14 @@
                     </div>
                   </div>
                 </div>
-                <div class="Product__tariff"><span class="tariff">tariff<strong class="tariff__name">premium</strong></span>
-                </div><a class="Product__connect" href="#"> 
-                  <svg class="ic-envelope" role="img" width="20px" height="15px">
-                    <use xlink:href="static/decors/sprite.svg#ic-envelope"></use>
-                  </svg> Связаться с поставщиком</a>
+                <div class="Product__safe guarantee">
+                  <svg class="ic-shield" role="img">
+                    <use xlink:href="static/decors/sprite.svg#ic-shield"></use>
+                  </svg>
+                </div>
+                <div class="Product__tariff"><span class="tariff">tariff<strong class="tariff__name">pro</strong></span>
+                </div><a class="Product__connect" href="#">
+                   CONTACT SUPPLIER</a>
                 <label class="Product__like"> 
                   <button class="btn-like" type="button" onclick="$(this).toggleClass('active')">
                     <svg class="ic-heart" role="img">
@@ -1005,22 +1050,21 @@
             </div>
           </li>
           <li class="Product Catalog__item is-grid">
-            <div class="Product__inner"><a class="Product__pic" href="/product.html">
-                <div class="as-ratio"><img class="as-ratio__inner" src="img/product-4.png"/></div></a>
+            <div class="Product__inner"><a class="Product__pic" href="/product.html"><img class="Product__img" src="img/product-2.png"/></a>
               <div class="Product__info">
-                <div class="Product__name"> <a class="Product__link" href="/product.html">Диван “БЕРК”</a></div>
-                <div class="Product__field">€509.00 <small>/ штука</small></div>
-                <div class="Product__field">5 штук <small>(Мин. заказ)</small></div>
+                <div class="Product__name"> <a class="Product__link" href="/product.html">Шкаф “Бук”  Lorem ipsum dolor.</a></div>
+                <div class="Product__field">10 штук <small>(Мин. заказ)</small></div>
+                <div class="Product__field">€209.00 <small>/ штука</small></div>
               </div>
               <div class="Product__footer">
                 <div class="Product__state">
-                  <svg class="ic-us" role="img" width="24px" height="16px">
-                    <use xlink:href="static/decors/sprite.svg#ic-us"></use>
-                  </svg>&nbsp; “Новый-мир”
+                  <svg class="ic-gb" role="img" width="24px" height="16px">
+                    <use xlink:href="static/decors/sprite.svg#ic-gb"></use>
+                  </svg>&nbsp; “Modern-furniture”  Lorem ipsum.
                 </div>
                 <div class="Product__rating">
                   <div class="Rating">
-                    <input class="Rating__input" type="hidden" value="2"/>
+                    <input class="Rating__input" type="hidden" value="5"/>
                     <div class="Rating__item">
                       <svg class="ic-star" role="img">
                         <use xlink:href="static/decors/sprite.svg#ic-star"></use>
@@ -1048,11 +1092,14 @@
                     </div>
                   </div>
                 </div>
-                <div class="Product__tariff"><span class="tariff">tariff<strong class="tariff__name">premium</strong></span>
-                </div><a class="Product__connect" href="#"> 
-                  <svg class="ic-envelope" role="img" width="20px" height="15px">
-                    <use xlink:href="static/decors/sprite.svg#ic-envelope"></use>
-                  </svg> Связаться с поставщиком</a>
+                <div class="Product__safe guarantee">
+                  <svg class="ic-shield" role="img">
+                    <use xlink:href="static/decors/sprite.svg#ic-shield"></use>
+                  </svg>
+                </div>
+                <div class="Product__tariff"><span class="tariff">tariff<strong class="tariff__name">pro</strong></span>
+                </div><a class="Product__connect" href="#">
+                   CONTACT SUPPLIER</a>
                 <label class="Product__like"> 
                   <button class="btn-like" type="button" onclick="$(this).toggleClass('active')">
                     <svg class="ic-heart" role="img">
@@ -1063,6 +1110,12 @@
               </div>
             </div>
           </li>
+          <select class="Catalog__sort">
+            <option>variant 1</option>
+            <option>variant 2</option>
+            <option>variant 3</option>
+            <option>variant 4</option>
+          </select>
         </ul>
       </div>
     </div>
