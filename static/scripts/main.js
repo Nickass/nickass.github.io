@@ -312,7 +312,7 @@ var Catalog = function () {
       focusOnSelect: false,
       slidesToScroll: 1,
       variableWidth: mark !== 'list',
-      slide: 'Catalog__item',
+      slide: '.Catalog__item',
       dots: false,
       infinite: false,
       prevArrow: btnLeft,
@@ -388,7 +388,7 @@ var Catalog = function () {
       allNumberContainer.css('display', '');
       counterContainer.css('display', '');
       items.on('mouseover', function() {
-        $(this).closest('.slick-list').css('height', 5000);
+        $(this).closest('.slick-list').css('height', 500);
       })
       items.on('mouseleave', function() {
         $(this).closest('.slick-list').css('height', '');
