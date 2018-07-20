@@ -4174,6 +4174,85 @@ a.Box__inner:hover {
   font-weight: 600;
 }
 
+.Subscribe {
+  background: #006599;
+  padding: 20px 0;
+  color: #fff;
+  font-size: 20px;
+}
+
+.Subscribe__text {
+  float: left;
+  max-width: 400px;
+}
+
+@media (max-width: 900px) {
+  .Subscribe__text {
+    max-width: none;
+    float: none;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+}
+
+.Subscribe__form {
+  float: right;
+}
+
+@media (max-width: 900px) {
+  .Subscribe__form {
+    float: none;
+    text-align: center;
+  }
+}
+
+@media (max-width: 560px) {
+  .Subscribe__form {
+    text-align: center;
+    height: auto;
+  }
+}
+
+.Subscribe__field {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+  border: 0;
+  padding: 0;
+  display: inline-block;
+  background: transparent;
+  -webkit-border-radius: 20px/50%;
+          border-radius: 20px/50%;
+  width: 300px;
+  max-width: 100%;
+  padding: 0px 20px;
+  border: 1px solid #fff;
+  height: 44px;
+  line-height: 44px;
+}
+
+@media (max-width: 560px) {
+  .Subscribe__field {
+    margin-top: 10px;
+  }
+}
+
+.Subscribe__btn {
+  -webkit-border-radius: 20px/50%;
+          border-radius: 20px/50%;
+  line-height: inherit;
+  padding-top: 0;
+  padding-bottom: 0;
+  height: 44px;
+  line-height: 44px;
+}
+
+@media (max-width: 560px) {
+  .Subscribe__btn {
+    margin-top: 10px;
+  }
+}
+
 .Header {
   position: relative;
   z-index: 20;
