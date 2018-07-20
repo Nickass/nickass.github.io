@@ -4184,6 +4184,7 @@ a.Box__inner:hover {
 .Subscribe__text {
   float: left;
   max-width: 400px;
+  line-height: 1.2;
 }
 
 @media (max-width: 900px) {
