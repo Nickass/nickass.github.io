@@ -175,24 +175,12 @@
         </nav>
         <div class="Header__search">
           <form class="Search">
-            <input class="Search__field dd-toggler" type="search" placeholder="Выбрать категорию" data-target="#search-menu"/>
-            <button class="Search__dd-btn dd-toggler" type="button" data-target="#search-menu">
-              <svg class="ic-chevron" role="img">
-                <use xlink:href="static/decors/sprite.svg#ic-chevron"></use>
-              </svg>
-            </button>
+            <input class="Search__field" type="search" placeholder="Найти товары"/>
             <button class="Search__btn" type="submit">Найти
               <svg class="ic-search Search__icon" role="img">
                 <use xlink:href="static/decors/sprite.svg#ic-search"></use>
               </svg>
             </button>
-            <div class="Search__box" id="search-menu">
-              <ul class="Box">
-                <li class="Box__item"><a class="Box__inner Box__accent" href="/">(567)</a> <a class="Box__inner" href="/">Шкафы</a></li>
-                <li class="Box__item"><a class="Box__inner Box__accent" href="/">(6 787)</a> <a class="Box__inner" href="/">Кресла</a></li>
-                <li class="Box__item"><a class="Box__inner Box__accent" href="/">(62)</a> <a class="Box__inner" href="/">Стелажи</a></li>
-              </ul>
-            </div>
           </form>
         </div>
       </div>
@@ -251,61 +239,54 @@
           <div class="Article__info A-info">
             <h1 class="A-info__title">Кресло “Шеф”: офисное кресло с поворотным механизмом и регулировкой по высоте.</h1>
             <div class="A-info__main">
-              <dl class="A-info__item">
-                <dt class="A-info__dt">Цена:</dt>
-                <dd class="A-info__dd"><span class="A-info__accent">$56</span> / штука</dd>
-              </dl>
-              <dl class="A-info__item">
-                <dt class="A-info__dt">Минимальное количество заказа:</dt>
-                <dd class="A-info__dd"> <span class="A-info__accent">50</span>  штук</dd>
-              </dl>
-              <div class="A-info__b1">
-                <button class="btn-blue d-b" type="button"> 
-                  <svg class="ic-envelope btn__icon" role="img">
-                    <use xlink:href="static/decors/sprite.svg#ic-envelope"></use>
-                  </svg>связаться с поставщиком
-                </button>
+              <div class="A-info__item">
+                <div class="Price"><span class="Price__text">Цена:</span><strong class="Price__num A-info__accent">$56</strong><span class="Price__info"> / штука</span></div>
+                <div class="Price"><span class="Price__text">Мин. заказ:</span><span class="Price__num A-info__accent">50</span><span class="Price__info"> штук</span></div>
               </div>
-              <div class="A-info__b2">
-                <button class="btn-primary d-b" type="button"> 
-                  <svg class="ic-todo btn__icon" role="img">
-                    <use xlink:href="static/decors/sprite.svg#ic-todo"></use>
-                  </svg>оформить заказ
-                </button>
+              <div class="A-info__item">
+                <button class="btn-buy" type="button">оформить заказ</button>
               </div>
-              <div class="A-info__b3">
-                <button class="btn-green d-b" type="button"> 
-                  <svg class="ic-heart btn__icon" role="img">
-                    <use xlink:href="static/decors/sprite.svg#ic-heart"></use>
-                  </svg>Добавить в избраное
-                </button>
-              </div>
-              <label class="A-info__b4"><strong>Соц. сети</strong>
-                <div class="Popover">
-                  <button class="dd-toggler Popover__btn" type="button" data-target="#popover-social">
-                    <svg class="ic-exit" role="img">
-                      <use xlink:href="static/decors/sprite.svg#ic-exit"></use>
-                    </svg>
+              <div class="A-info__item">
+                <div class="A-info__btn">
+                  <button class="btn-blue d-b" type="button"> 
+                    <svg class="ic-envelope btn__icon" role="img">
+                      <use xlink:href="static/decors/sprite.svg#ic-envelope"></use>
+                    </svg>связаться с поставщиком
                   </button>
-                  <div class="Popover__content" id="popover-social">
-                    <div class="Social"><a class="Social__icon" href="#">
-                        <svg class="ic-facebook" role="img">
-                          <use xlink:href="static/decors/sprite.svg#ic-facebook"></use>
-                        </svg></a><a class="Social__icon" href="#">
-                        <svg class="ic-twitter" role="img">
-                          <use xlink:href="static/decors/sprite.svg#ic-twitter"></use>
-                        </svg></a><a class="Social__icon" href="#">
-                        <svg class="ic-telegram" role="img">
-                          <use xlink:href="static/decors/sprite.svg#ic-telegram"></use>
-                        </svg></a><a class="Social__icon" href="#">
-                        <svg class="ic-instagram" role="img">
-                          <use xlink:href="static/decors/sprite.svg#ic-instagram"></use>
-                        </svg></a></div>
-                  </div>
                 </div>
-              </label>
+                <div class="A-info__btn">
+                  <button class="btn-gray d-b" type="button"> 
+                    <svg class="ic-heart btn__icon" role="img">
+                      <use xlink:href="static/decors/sprite.svg#ic-heart"></use>
+                    </svg>Добавить в избраное
+                  </button>
+                </div>
+              </div>
             </div>
             <div class="A-info__footer">
+              <dl class="A-info__item">
+                <dt class="A-info__dt">Оплата:</dt>
+                <dd class="A-info__dd">
+                  <svg class="ic-ps-visa" role="img" width="30" height="25">
+                    <use xlink:href="static/decors/sprite.svg#ic-ps-visa"></use>
+                  </svg>
+                  <svg class="ic-ps-mastercard" role="img" width="30" height="25">
+                    <use xlink:href="static/decors/sprite.svg#ic-ps-mastercard"></use>
+                  </svg>
+                  <svg class="ic-ps-tt" role="img" width="30" height="25">
+                    <use xlink:href="static/decors/sprite.svg#ic-ps-tt"></use>
+                  </svg>
+                  <svg class="ic-ps-e-checking" role="img" width="55" height="25">
+                    <use xlink:href="static/decors/sprite.svg#ic-ps-e-checking"></use>
+                  </svg>
+                  <button class="btn-reset" type="button" data-tippy-html="#another-ps" data-tippy data-tippy-maxWidth="250px">more
+                    <svg class="ic-chevron va-middle" role="img" width="10" height="10">
+                      <use xlink:href="static/decors/sprite.svg#ic-chevron"></use>
+                    </svg>
+                  </button>
+                  <div id="another-ps" style="display:none;">This supplier also supports L/C,D/A,D/P,T/T,Western Union,MoneyGram,PayPal payments for offline orders.</div>
+                </dd>
+              </dl>
               <dl class="A-info__item">
                 <dt class="A-info__dt">Наличие:</dt>
                 <dd class="A-info__dd">Да</dd>
@@ -317,8 +298,8 @@
               <div class="A-info__item">Поставщик: &nbsp;&nbsp;<span class="A-info__accent">“REGINA”</span>&nbsp;
                 &nbsp;<span class="tariff">tariff<strong class="tariff__name">premium</strong></span>&nbsp;
                 &nbsp;
-                <svg class="ic-shield guarantee" role="img">
-                  <use xlink:href="static/decors/sprite.svg#ic-shield"></use>
+                <svg class="ic-shield-2 guarantee" role="img">
+                  <use xlink:href="static/decors/sprite.svg#ic-shield-2"></use>
                 </svg>
               </div>
               <div class="A-info__item">Рейтинг: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
@@ -377,13 +358,13 @@
       </div>
       <div class="container">
         <h2 class="Catalog__title">Рекомендуемые товары</h2>
-        <ul class="Catalog" data-mark="grid" data-slider="true" data-show-ctrls="false" data-show-counter="true">
+        <ul class="Catalog" data-mark="grid" data-slider="true" data-show-ctrls="false" data-show-counter="false">
           <li class="Product Catalog__item is-grid">
             <div class="Product__inner"><a class="Product__pic" href="/product.html"><img class="Product__img" src="img/product-2.png"/></a>
               <div class="Product__info">
                 <div class="Product__name"> <a class="Product__link" href="/product.html">Шкаф “Бук”  Lorem ipsum dolor.</a></div>
-                <div class="Product__field">10 штук <small>(Мин. заказ)</small></div>
-                <div class="Product__field">€209.00 <small>/ штука</small></div>
+                <div class="Product__field">€209.00 <span>/ штука</span></div>
+                <div class="Product__field">10 штук <span>(Мин. заказ)</span></div>
               </div>
               <div class="Product__footer">
                 <div class="Product__state">
@@ -422,8 +403,8 @@
                   </div>
                 </div>
                 <div class="Product__safe guarantee">
-                  <svg class="ic-shield" role="img">
-                    <use xlink:href="static/decors/sprite.svg#ic-shield"></use>
+                  <svg class="ic-shield-2" role="img">
+                    <use xlink:href="static/decors/sprite.svg#ic-shield-2"></use>
                   </svg>
                 </div>
                 <div class="Product__tariff"><span class="tariff">tariff<strong class="tariff__name">pro</strong></span>
@@ -443,8 +424,8 @@
             <div class="Product__inner"><a class="Product__pic" href="/product.html"><img class="Product__img" src="img/product-2.png"/></a>
               <div class="Product__info">
                 <div class="Product__name"> <a class="Product__link" href="/product.html">Шкаф “Бук”  Lorem ipsum dolor.</a></div>
-                <div class="Product__field">10 штук <small>(Мин. заказ)</small></div>
-                <div class="Product__field">€209.00 <small>/ штука</small></div>
+                <div class="Product__field">€209.00 <span>/ штука</span></div>
+                <div class="Product__field">10 штук <span>(Мин. заказ)</span></div>
               </div>
               <div class="Product__footer">
                 <div class="Product__state">
@@ -483,8 +464,8 @@
                   </div>
                 </div>
                 <div class="Product__safe guarantee">
-                  <svg class="ic-shield" role="img">
-                    <use xlink:href="static/decors/sprite.svg#ic-shield"></use>
+                  <svg class="ic-shield-2" role="img">
+                    <use xlink:href="static/decors/sprite.svg#ic-shield-2"></use>
                   </svg>
                 </div>
                 <div class="Product__tariff"><span class="tariff">tariff<strong class="tariff__name">pro</strong></span>
@@ -504,8 +485,8 @@
             <div class="Product__inner"><a class="Product__pic" href="/product.html"><img class="Product__img" src="img/product-2.png"/></a>
               <div class="Product__info">
                 <div class="Product__name"> <a class="Product__link" href="/product.html">Шкаф “Бук”  Lorem ipsum dolor.</a></div>
-                <div class="Product__field">10 штук <small>(Мин. заказ)</small></div>
-                <div class="Product__field">€209.00 <small>/ штука</small></div>
+                <div class="Product__field">€209.00 <span>/ штука</span></div>
+                <div class="Product__field">10 штук <span>(Мин. заказ)</span></div>
               </div>
               <div class="Product__footer">
                 <div class="Product__state">
@@ -544,8 +525,8 @@
                   </div>
                 </div>
                 <div class="Product__safe guarantee">
-                  <svg class="ic-shield" role="img">
-                    <use xlink:href="static/decors/sprite.svg#ic-shield"></use>
+                  <svg class="ic-shield-2" role="img">
+                    <use xlink:href="static/decors/sprite.svg#ic-shield-2"></use>
                   </svg>
                 </div>
                 <div class="Product__tariff"><span class="tariff">tariff<strong class="tariff__name">pro</strong></span>
@@ -565,8 +546,8 @@
             <div class="Product__inner"><a class="Product__pic" href="/product.html"><img class="Product__img" src="img/product-2.png"/></a>
               <div class="Product__info">
                 <div class="Product__name"> <a class="Product__link" href="/product.html">Шкаф “Бук”  Lorem ipsum dolor.</a></div>
-                <div class="Product__field">10 штук <small>(Мин. заказ)</small></div>
-                <div class="Product__field">€209.00 <small>/ штука</small></div>
+                <div class="Product__field">€209.00 <span>/ штука</span></div>
+                <div class="Product__field">10 штук <span>(Мин. заказ)</span></div>
               </div>
               <div class="Product__footer">
                 <div class="Product__state">
@@ -605,8 +586,8 @@
                   </div>
                 </div>
                 <div class="Product__safe guarantee">
-                  <svg class="ic-shield" role="img">
-                    <use xlink:href="static/decors/sprite.svg#ic-shield"></use>
+                  <svg class="ic-shield-2" role="img">
+                    <use xlink:href="static/decors/sprite.svg#ic-shield-2"></use>
                   </svg>
                 </div>
                 <div class="Product__tariff"><span class="tariff">tariff<strong class="tariff__name">pro</strong></span>
@@ -626,8 +607,8 @@
             <div class="Product__inner"><a class="Product__pic" href="/product.html"><img class="Product__img" src="img/product-2.png"/></a>
               <div class="Product__info">
                 <div class="Product__name"> <a class="Product__link" href="/product.html">Шкаф “Бук”  Lorem ipsum dolor.</a></div>
-                <div class="Product__field">10 штук <small>(Мин. заказ)</small></div>
-                <div class="Product__field">€209.00 <small>/ штука</small></div>
+                <div class="Product__field">€209.00 <span>/ штука</span></div>
+                <div class="Product__field">10 штук <span>(Мин. заказ)</span></div>
               </div>
               <div class="Product__footer">
                 <div class="Product__state">
@@ -666,8 +647,8 @@
                   </div>
                 </div>
                 <div class="Product__safe guarantee">
-                  <svg class="ic-shield" role="img">
-                    <use xlink:href="static/decors/sprite.svg#ic-shield"></use>
+                  <svg class="ic-shield-2" role="img">
+                    <use xlink:href="static/decors/sprite.svg#ic-shield-2"></use>
                   </svg>
                 </div>
                 <div class="Product__tariff"><span class="tariff">tariff<strong class="tariff__name">pro</strong></span>
@@ -687,8 +668,8 @@
             <div class="Product__inner"><a class="Product__pic" href="/product.html"><img class="Product__img" src="img/product-2.png"/></a>
               <div class="Product__info">
                 <div class="Product__name"> <a class="Product__link" href="/product.html">Шкаф “Бук”  Lorem ipsum dolor.</a></div>
-                <div class="Product__field">10 штук <small>(Мин. заказ)</small></div>
-                <div class="Product__field">€209.00 <small>/ штука</small></div>
+                <div class="Product__field">€209.00 <span>/ штука</span></div>
+                <div class="Product__field">10 штук <span>(Мин. заказ)</span></div>
               </div>
               <div class="Product__footer">
                 <div class="Product__state">
@@ -727,8 +708,8 @@
                   </div>
                 </div>
                 <div class="Product__safe guarantee">
-                  <svg class="ic-shield" role="img">
-                    <use xlink:href="static/decors/sprite.svg#ic-shield"></use>
+                  <svg class="ic-shield-2" role="img">
+                    <use xlink:href="static/decors/sprite.svg#ic-shield-2"></use>
                   </svg>
                 </div>
                 <div class="Product__tariff"><span class="tariff">tariff<strong class="tariff__name">pro</strong></span>
@@ -748,8 +729,8 @@
             <div class="Product__inner"><a class="Product__pic" href="/product.html"><img class="Product__img" src="img/product-2.png"/></a>
               <div class="Product__info">
                 <div class="Product__name"> <a class="Product__link" href="/product.html">Шкаф “Бук”  Lorem ipsum dolor.</a></div>
-                <div class="Product__field">10 штук <small>(Мин. заказ)</small></div>
-                <div class="Product__field">€209.00 <small>/ штука</small></div>
+                <div class="Product__field">€209.00 <span>/ штука</span></div>
+                <div class="Product__field">10 штук <span>(Мин. заказ)</span></div>
               </div>
               <div class="Product__footer">
                 <div class="Product__state">
@@ -788,8 +769,8 @@
                   </div>
                 </div>
                 <div class="Product__safe guarantee">
-                  <svg class="ic-shield" role="img">
-                    <use xlink:href="static/decors/sprite.svg#ic-shield"></use>
+                  <svg class="ic-shield-2" role="img">
+                    <use xlink:href="static/decors/sprite.svg#ic-shield-2"></use>
                   </svg>
                 </div>
                 <div class="Product__tariff"><span class="tariff">tariff<strong class="tariff__name">pro</strong></span>
@@ -809,8 +790,8 @@
             <div class="Product__inner"><a class="Product__pic" href="/product.html"><img class="Product__img" src="img/product-2.png"/></a>
               <div class="Product__info">
                 <div class="Product__name"> <a class="Product__link" href="/product.html">Шкаф “Бук”  Lorem ipsum dolor.</a></div>
-                <div class="Product__field">10 штук <small>(Мин. заказ)</small></div>
-                <div class="Product__field">€209.00 <small>/ штука</small></div>
+                <div class="Product__field">€209.00 <span>/ штука</span></div>
+                <div class="Product__field">10 штук <span>(Мин. заказ)</span></div>
               </div>
               <div class="Product__footer">
                 <div class="Product__state">
@@ -849,8 +830,8 @@
                   </div>
                 </div>
                 <div class="Product__safe guarantee">
-                  <svg class="ic-shield" role="img">
-                    <use xlink:href="static/decors/sprite.svg#ic-shield"></use>
+                  <svg class="ic-shield-2" role="img">
+                    <use xlink:href="static/decors/sprite.svg#ic-shield-2"></use>
                   </svg>
                 </div>
                 <div class="Product__tariff"><span class="tariff">tariff<strong class="tariff__name">pro</strong></span>
@@ -870,8 +851,8 @@
             <div class="Product__inner"><a class="Product__pic" href="/product.html"><img class="Product__img" src="img/product-2.png"/></a>
               <div class="Product__info">
                 <div class="Product__name"> <a class="Product__link" href="/product.html">Шкаф “Бук”  Lorem ipsum dolor.</a></div>
-                <div class="Product__field">10 штук <small>(Мин. заказ)</small></div>
-                <div class="Product__field">€209.00 <small>/ штука</small></div>
+                <div class="Product__field">€209.00 <span>/ штука</span></div>
+                <div class="Product__field">10 штук <span>(Мин. заказ)</span></div>
               </div>
               <div class="Product__footer">
                 <div class="Product__state">
@@ -910,8 +891,8 @@
                   </div>
                 </div>
                 <div class="Product__safe guarantee">
-                  <svg class="ic-shield" role="img">
-                    <use xlink:href="static/decors/sprite.svg#ic-shield"></use>
+                  <svg class="ic-shield-2" role="img">
+                    <use xlink:href="static/decors/sprite.svg#ic-shield-2"></use>
                   </svg>
                 </div>
                 <div class="Product__tariff"><span class="tariff">tariff<strong class="tariff__name">pro</strong></span>
@@ -931,8 +912,8 @@
             <div class="Product__inner"><a class="Product__pic" href="/product.html"><img class="Product__img" src="img/product-2.png"/></a>
               <div class="Product__info">
                 <div class="Product__name"> <a class="Product__link" href="/product.html">Шкаф “Бук”  Lorem ipsum dolor.</a></div>
-                <div class="Product__field">10 штук <small>(Мин. заказ)</small></div>
-                <div class="Product__field">€209.00 <small>/ штука</small></div>
+                <div class="Product__field">€209.00 <span>/ штука</span></div>
+                <div class="Product__field">10 штук <span>(Мин. заказ)</span></div>
               </div>
               <div class="Product__footer">
                 <div class="Product__state">
@@ -971,8 +952,8 @@
                   </div>
                 </div>
                 <div class="Product__safe guarantee">
-                  <svg class="ic-shield" role="img">
-                    <use xlink:href="static/decors/sprite.svg#ic-shield"></use>
+                  <svg class="ic-shield-2" role="img">
+                    <use xlink:href="static/decors/sprite.svg#ic-shield-2"></use>
                   </svg>
                 </div>
                 <div class="Product__tariff"><span class="tariff">tariff<strong class="tariff__name">pro</strong></span>
@@ -992,8 +973,8 @@
             <div class="Product__inner"><a class="Product__pic" href="/product.html"><img class="Product__img" src="img/product-2.png"/></a>
               <div class="Product__info">
                 <div class="Product__name"> <a class="Product__link" href="/product.html">Шкаф “Бук”  Lorem ipsum dolor.</a></div>
-                <div class="Product__field">10 штук <small>(Мин. заказ)</small></div>
-                <div class="Product__field">€209.00 <small>/ штука</small></div>
+                <div class="Product__field">€209.00 <span>/ штука</span></div>
+                <div class="Product__field">10 штук <span>(Мин. заказ)</span></div>
               </div>
               <div class="Product__footer">
                 <div class="Product__state">
@@ -1032,8 +1013,8 @@
                   </div>
                 </div>
                 <div class="Product__safe guarantee">
-                  <svg class="ic-shield" role="img">
-                    <use xlink:href="static/decors/sprite.svg#ic-shield"></use>
+                  <svg class="ic-shield-2" role="img">
+                    <use xlink:href="static/decors/sprite.svg#ic-shield-2"></use>
                   </svg>
                 </div>
                 <div class="Product__tariff"><span class="tariff">tariff<strong class="tariff__name">pro</strong></span>
@@ -1053,8 +1034,8 @@
             <div class="Product__inner"><a class="Product__pic" href="/product.html"><img class="Product__img" src="img/product-2.png"/></a>
               <div class="Product__info">
                 <div class="Product__name"> <a class="Product__link" href="/product.html">Шкаф “Бук”  Lorem ipsum dolor.</a></div>
-                <div class="Product__field">10 штук <small>(Мин. заказ)</small></div>
-                <div class="Product__field">€209.00 <small>/ штука</small></div>
+                <div class="Product__field">€209.00 <span>/ штука</span></div>
+                <div class="Product__field">10 штук <span>(Мин. заказ)</span></div>
               </div>
               <div class="Product__footer">
                 <div class="Product__state">
@@ -1093,8 +1074,8 @@
                   </div>
                 </div>
                 <div class="Product__safe guarantee">
-                  <svg class="ic-shield" role="img">
-                    <use xlink:href="static/decors/sprite.svg#ic-shield"></use>
+                  <svg class="ic-shield-2" role="img">
+                    <use xlink:href="static/decors/sprite.svg#ic-shield-2"></use>
                   </svg>
                 </div>
                 <div class="Product__tariff"><span class="tariff">tariff<strong class="tariff__name">pro</strong></span>
@@ -1167,11 +1148,12 @@
   </body>
 </html>
 <script src="static/scripts//jquery-1.9.1.js"></script>
+<script src="static/scripts//tippy.all.min.js"></script>
 <script src="static/scripts//jquery.magnific-popup.min.js"></script>
 <script src="static/scripts//svg4everybody.min.js"></script>
 <script src="static/scripts//ofi.min.js"></script>
 <script src="static/scripts//slick.min.js"></script>
-<script src="static/scripts//main.js"></script><script>svg4everybody({ nosvg: true, polyfill: true });</script>
+<script src="static/scripts//main.js"></script><script>svg4everybody({ nosvg: true, polyfill: false });</script>
 <!---->
 <!--========================== DELETE ME start ===========================-->
 <!---->

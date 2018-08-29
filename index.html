@@ -175,24 +175,12 @@
         </nav>
         <div class="Header__search">
           <form class="Search">
-            <input class="Search__field dd-toggler" type="search" placeholder="Выбрать категорию" data-target="#search-menu"/>
-            <button class="Search__dd-btn dd-toggler" type="button" data-target="#search-menu">
-              <svg class="ic-chevron" role="img">
-                <use xlink:href="static/decors/sprite.svg#ic-chevron"></use>
-              </svg>
-            </button>
+            <input class="Search__field" type="search" placeholder="Найти товары"/>
             <button class="Search__btn" type="submit">Найти
               <svg class="ic-search Search__icon" role="img">
                 <use xlink:href="static/decors/sprite.svg#ic-search"></use>
               </svg>
             </button>
-            <div class="Search__box" id="search-menu">
-              <ul class="Box">
-                <li class="Box__item"><a class="Box__inner Box__accent" href="/">(567)</a> <a class="Box__inner" href="/">Шкафы</a></li>
-                <li class="Box__item"><a class="Box__inner Box__accent" href="/">(6 787)</a> <a class="Box__inner" href="/">Кресла</a></li>
-                <li class="Box__item"><a class="Box__inner Box__accent" href="/">(62)</a> <a class="Box__inner" href="/">Стелажи</a></li>
-              </ul>
-            </div>
           </form>
         </div>
       </div>
@@ -274,7 +262,7 @@
           </div>
         </header>
         <ul class="Roadmap__list active" id="r-customer">
-          <li class="Roadmap__item active">
+          <li class="Roadmap__item">
             <h3 class="Roadmap__item-title">ШАГ 1 <br /> Просто зарегистрируйтесь</h3>
             <div class="Roadmap__item-text">В (название) вам нужно только зарегистрироваться. Затем вы получаете прямой доступ к 17 500 поставщикам с более чем 5,4 миллионами продуктов. Таким юбразом, вы можете найти желаемого оптовика или производителя. Через несколько секунд связаться с ним напрямую и сравнить продукты.</div>
           </li>
@@ -358,22 +346,36 @@
     <section class="Reviews">
       <div class="container">
         <h2 class="Reviews__title">Отзывы</h2>
-        <div class="Reviews__item"><img class="Reviews__avatar" src="img/avatar.png"/>
-          <div class="Reviews__name">Наталья  Валеева</div>
-          <div class="Reviews__prof">администратор</div>
-          <div class="Reviews__text">Заказывали в интернет магазине вашем Шкаф Купе, очень понравилось качество исполнения,быстро привезли, отлично собрали а главное БЕСПЛАТНО. Очень порадовал сервис ,будем всем советовать ......</div>
-        </div>
-        <div class="Reviews__item">
-          <div class="Reviews__avatar"></div>
-          <div class="Reviews__name">Петр Доставучий</div>
-          <div class="Reviews__prof">менеджер</div>
-          <div class="Reviews__text">Заказал кресло за 10к с доставкой в офис. Доставили в срок, с обралось без проблем, но через 3 месяца сломалось крепление площадки опирания седла со спинкой на механизм опускания-поднимания. Срок гарантии 3 года(!!!). Сажусь - сиденье...</div>
-        </div><a class="Reviews__more" href="#">читать все ...</a>
+        <ul class="Reviews__list">
+          <li class="Reviews__item"><img class="Reviews__avatar" src="img/avatar.png"/>
+            <div class="Reviews__name">Наталья  Валеева</div>
+            <div class="Reviews__prof">администратор</div>
+            <div class="Reviews__text">Заказывали в интернет магазине вашем Шкаф Купе, очень понравилось качество исполнения,быстро привезли, отлично собрали а главное БЕСПЛАТНО. Очень порадовал сервис ,будем всем советовать ......</div>
+          </li>
+          <li class="Reviews__item">
+            <div class="Reviews__avatar"></div>
+            <div class="Reviews__name">Петр Доставучий</div>
+            <div class="Reviews__prof">менеджер</div>
+            <div class="Reviews__text">Заказал кресло за 10к с доставкой в офис. Доставили в срок, с обралось без проблем, но через 3 месяца сломалось крепление площадки опирания седла со спинкой на механизм опускания-поднимания. Срок гарантии 3 года(!!!). Сажусь - сиденье...</div>
+          </li>
+          <li class="Reviews__item">
+            <div class="Reviews__avatar"></div>
+            <div class="Reviews__name">Дональд Трамп</div>
+            <div class="Reviews__prof">президент</div>
+            <div class="Reviews__text">Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Оксмокс вскоре, города не за. Свое парадигматическая имеет за страну одна грустный там рыбными семантика ее предупредила, однажды, буквенных буквоград.</div>
+          </li>
+          <li class="Reviews__item">
+            <div class="Reviews__avatar"></div>
+            <div class="Reviews__name">Федя Пупкин</div>
+            <div class="Reviews__prof">безработный</div>
+            <div class="Reviews__text">Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Букв образ буквенных языкового ему, семантика свое строчка, над запятой скатился, по всей снова речью они но путь языком! Если, коварный.</div>
+          </li>
+        </ul>
       </div>
     </section>
     <div class="Subscribe">
       <div class="container">
-        <div class="Subscribe__text">Узнавайте о выгодных предложениях и новостях первыми</div>
+        <div class="Subscribe__text">Подписаться на новости</div>
         <form class="Subscribe__form">
           <input class="Subscribe__field" type="email" placeholder="Ваш e-mail">
           <button class="btn-primary Subscribe__btn">Отправить</button>
@@ -434,11 +436,12 @@
   </body>
 </html>
 <script src="static/scripts//jquery-1.9.1.js"></script>
+<script src="static/scripts//tippy.all.min.js"></script>
 <script src="static/scripts//jquery.magnific-popup.min.js"></script>
 <script src="static/scripts//svg4everybody.min.js"></script>
 <script src="static/scripts//ofi.min.js"></script>
 <script src="static/scripts//slick.min.js"></script>
-<script src="static/scripts//main.js"></script><script>svg4everybody({ nosvg: true, polyfill: true });</script>
+<script src="static/scripts//main.js"></script><script>svg4everybody({ nosvg: true, polyfill: false });</script>
 <!---->
 <!--========================== DELETE ME start ===========================-->
 <!---->
