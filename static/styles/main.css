@@ -690,6 +690,7 @@ select:invalid {
 
 .input-number {
   width: 50px;
+  -moz-appearance: textfield;
 }
 
 .input-number::-webkit-inner-spin-button, .input-number::-webkit-outer-spin-button {
