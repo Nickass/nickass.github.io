@@ -193,7 +193,7 @@
         </ul>
       </div>
       <div class="container">
-        <h1>Офисная мебель</h1>
+        <h1 class="Page__title">Офисная мебель</h1>
         <aside class="Page__sidebar">
           <h2 class="Box__title dd-toggler" data-target="#menu-cat">Категории</h2>
           <ul class="Box" id="menu-cat">
@@ -278,17 +278,15 @@
                   <use xlink:href="static/decors/sprite.svg#ic-chevron"></use>
                 </svg>
               </button>
-              <div class="Selector__box" id="rating-menu">
-                <ul class="Box">
-                  <li class="Box__item"><a class="Box__inner Box__accent" href="/">(567)</a> <a class="Box__inner" href="/">Шкафы</a></li>
-                  <li class="Box__item"><a class="Box__inner Box__accent" href="/">(6 787)</a> <a class="Box__inner" href="/">Кресла</a></li>
-                  <li class="Box__item"><a class="Box__inner Box__accent" href="/">(62)</a> <a class="Box__inner" href="/">Стелажи</a></li>
-                </ul>
-              </div>
+              <ul class="Box Selector__box" id="rating-menu">
+                <li class="Box__item"><a class="Box__inner Box__accent" href="/">(567)</a> <a class="Box__inner" href="/">Шкафы</a></li>
+                <li class="Box__item"><a class="Box__inner Box__accent" href="/">(6 787)</a> <a class="Box__inner" href="/">Кресла</a></li>
+                <li class="Box__item"><a class="Box__inner Box__accent" href="/">(62)</a> <a class="Box__inner" href="/">Стелажи</a></li>
+              </ul>
             </form>
           </div>
-          <h2 class="Box__title dd-toggler" data-target="#menu-producer">Диапазон цен(руб)</h2>
-          <ul class="Box" id="menu-producer">
+          <h2 class="Box__title dd-toggler" data-target="#menu-range">Диапазон цен(руб)</h2>
+          <ul class="Box" id="menu-range">
             <li class="Box__item">
               <label class="Box__inner">
                 <div class="Box__icon">
@@ -1119,13 +1117,15 @@
           </ul>
           <div class="Pagination">
             <div class="Pagination__info">страница <span class="primary-color">1</span>  из  13</div>
-            <div class="Pagination__list">
-              <li class="Pagination__item active"><a class="Pagination__link" href="/product.html">1</a></li>
-              <li class="Pagination__item"><a class="Pagination__link" href="/product.html">2</a></li>
-              <li class="Pagination__item"><a class="Pagination__link" href="/product.html">3</a></li>
-              <li class="Pagination__item"><a class="Pagination__link" href="/product.html">4</a></li>
-              <li class="Pagination__item"><a class="Pagination__link" href="/product.html">5</a></li>
-            </div><a class="Pagination__move" href="/product.html"><<</a><a class="Pagination__move" href="/product.html">></a>
+            <div class="Pagination__btns">
+              <ul class="Pagination__list">
+                <li class="Pagination__item active"><a class="Pagination__link" href="/product.html">1</a></li>
+                <li class="Pagination__item"><a class="Pagination__link" href="/product.html">2</a></li>
+                <li class="Pagination__item"><a class="Pagination__link" href="/product.html">3</a></li>
+                <li class="Pagination__item"><a class="Pagination__link" href="/product.html">4</a></li>
+                <li class="Pagination__item"><a class="Pagination__link" href="/product.html">5</a></li>
+              </ul><a class="Pagination__move" href="/product.html"><<</a><a class="Pagination__move" href="/product.html">></a>
+            </div>
           </div>
         </main>
       </div>

@@ -748,7 +748,7 @@ select:invalid {
 
 .counter {
   display: inline-block;
-  min-width: 3.33333em;
+  min-width: 60px;
   vertical-align: middle;
 }
 
@@ -767,13 +767,13 @@ select:invalid {
 
 .counter__btn {
   float: left;
-  font-size: 0.77778em;
+  font-size: 14px;
   padding: 0;
   border: none;
   text-decoration: none;
-  width: 3.57143em;
-  height: 2.5em;
-  line-height: 2.14286em;
+  width: 50px;
+  height: 35px;
+  line-height: 30px;
   vertical-align: top;
   text-align: center;
   background-color: #e3e2e2;
@@ -787,14 +787,14 @@ select:invalid {
 
 .counter__field {
   float: left;
-  font-size: 1em;
+  font-size: 18px;
   vertical-align: top;
-  width: 2.77778em;
-  height: 1.94444em;
-  line-height: 1.66667em;
+  width: 50px;
+  height: 35px;
+  line-height: 30px;
   text-align: center;
   border: 1px solid #bababa;
-  padding: 0 0.55556em;
+  padding: 0 10px;
   -moz-appearance: textfield;
 }
 
@@ -1150,9 +1150,9 @@ select:invalid {
   position: relative;
   display: inline-block;
   font-size: 14px;
-  height: 2.14286em;
-  width: 2.14286em;
-  padding: 0.35714em;
+  height: 30px;
+  width: 30px;
+  padding: 5px;
   vertical-align: middle;
   fill: #e6bd14;
   color: #e6bd14;
@@ -1175,18 +1175,18 @@ select:invalid {
   position: absolute;
   top: 100%;
   left: 100%;
-  font-size: 0.71429em;
-  margin-top: -0.5em;
-  margin-left: -0.5em;
+  font-size: 10px;
+  margin-top: -5px;
+  margin-left: -5px;
   -webkit-transform: translate(-50%, -50%);
      -moz-transform: translate(-50%, -50%);
       -ms-transform: translate(-50%, -50%);
        -o-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   background: #fd0202;
-  width: 1.8em;
-  height: 1.8em;
-  line-height: 1.8em;
+  width: 18px;
+  height: 18px;
+  line-height: 18px;
   text-align: center;
   color: #fff;
   font-weight: 600;
@@ -1203,9 +1203,9 @@ select:invalid {
   display: inline-block;
   vertical-align: middle;
   font-size: 14px;
-  height: 2.14286em;
-  line-height: 2.14286em;
-  width: 2.14286em;
+  height: 30px;
+  line-height: 30px;
+  width: 30px;
   padding: 0px 5px;
   stroke-width: 2px;
   stroke: #e6bd14;
@@ -1297,8 +1297,8 @@ select:invalid {
 .Rating__item {
   display: inline-block;
   font-size: 18px;
-  width: 0.66667em;
-  height: 0.66667em;
+  width: 12px;
+  height: 12px;
   fill: transparent;
   cursor: pointer;
   stroke: #e6bd14;
@@ -1323,9 +1323,9 @@ select:invalid {
   font-weight: 700;
   background: #d90303;
   color: #fff;
-  padding: 0 0.4em;
-  margin: 0 0.2em;
-  line-height: 1.6em;
+  padding: 0 4px;
+  margin: 0 2px;
+  line-height: 16px;
   vertical-align: bottom;
   text-transform: uppercase;
 }
@@ -1333,9 +1333,10 @@ select:invalid {
 .Selector {
   position: relative;
   font-size: 14px;
-  line-height: 2.28571em;
-  height: 2.28571em;
+  line-height: 32px;
+  height: 32px;
   border: 1px solid #e6bd14;
+  z-index: 100;
 }
 
 .Selector__field {
@@ -1346,8 +1347,8 @@ select:invalid {
   padding: 0;
   display: inline-block;
   display: block;
-  padding-left: 0.71429em;
-  padding-right: 3em;
+  padding-left: 10px;
+  padding-right: 42px;
   height: 100%;
   width: 100%;
 }
@@ -1363,9 +1364,9 @@ select:invalid {
   top: 0;
   right: 0;
   position: absolute;
-  height: 2.14286em;
-  width: 2.14286em;
-  padding: 0.71429em;
+  height: 30px;
+  width: 30px;
+  padding: 10px;
   border-left: 1px solid #e6bd14;
   vertical-align: top;
   fill: #737272;
@@ -1444,11 +1445,11 @@ select:invalid {
   background-color: #e6bd14;
   font-weight: 600;
   color: #fff;
-  min-width: 7.3em;
-  padding: 0.57143em 0.71429em;
+  min-width: 146px;
+  padding: 8px 10px;
   fill: #fff;
   text-align: center;
-  line-height: 1.07143em;
+  line-height: 15px;
 }
 
 .btn-primary:hover {
@@ -1466,12 +1467,12 @@ select:invalid {
   background-color: #fff;
   font-weight: 600;
   color: #e6bd14;
-  min-width: 7.3em;
-  padding: 0.57143em 0.71429em;
+  min-width: 146px;
+  padding: 8px 10px;
   fill: #e6bd14;
   border: 1px solid #e6bd14;
   text-align: center;
-  line-height: 1.07143em;
+  line-height: 15px;
 }
 
 .btn-primary-reverse:hover {
@@ -1490,11 +1491,11 @@ select:invalid {
   background-color: #4ec957;
   font-weight: 600;
   color: #fff;
-  min-width: 7.3em;
-  padding: 0.57143em 0.71429em;
+  min-width: 146px;
+  padding: 8px 10px;
   fill: #fff;
   text-align: center;
-  line-height: 1.07143em;
+  line-height: 15px;
 }
 
 .btn-green:hover {
@@ -1512,11 +1513,11 @@ select:invalid {
   background-color: #4e8ec9;
   font-weight: 600;
   color: #fff;
-  min-width: 7.3em;
-  padding: 0.57143em 0.71429em;
+  min-width: 146px;
+  padding: 8px 10px;
   fill: #fff;
   text-align: center;
-  line-height: 1.07143em;
+  line-height: 15px;
 }
 
 .btn-blue:hover {
@@ -1534,11 +1535,11 @@ select:invalid {
   background-color: #c0c0c0;
   font-weight: 600;
   color: #fff;
-  min-width: 7.3em;
-  padding: 0.57143em 0.71429em;
+  min-width: 146px;
+  padding: 8px 10px;
   fill: #fff;
   text-align: center;
-  line-height: 1.07143em;
+  line-height: 15px;
 }
 
 .btn-gray:hover {
@@ -1576,9 +1577,9 @@ select:invalid {
 
 .btn__icon {
   display: inline-block;
-  width: 1.42857em;
-  height: 1.07143em;
-  margin: 0 0.42857em;
+  width: 20px;
+  height: 15px;
+  margin: 0 6px;
   float: left;
   vertical-align: middle;
 }
@@ -2056,9 +2057,9 @@ a.Box__inner:hover {
 }
 
 .Basket {
-  max-width: 51.11111em;
+  max-width: 920px;
   margin: 0 auto;
-  padding: 1.66667em;
+  padding: 30px;
   font-size: 18px;
 }
 
@@ -2082,13 +2083,13 @@ a.Box__inner:hover {
 }
 
 .Basket__item {
-  margin-bottom: 2.22222em;
+  margin-bottom: 40px;
 }
 
 .Basket__footer {
   text-align: right;
   border: 1px solid #b5b4b4;
-  padding: 0.33333em 1.66667em;
+  padding: 6px 30px;
 }
 
 .Basket__footer:before, .Basket__footer:after {
@@ -2117,14 +2118,14 @@ a.Box__inner:hover {
 .Basket__accent {
   color: #fd060c;
   font-weight: 600;
-  margin-left: 2.77778em;
+  margin-left: 50px;
 }
 
 .Basket__btn {
-  margin-top: 1.66667em;
+  margin-top: 30px;
   clear: both;
   float: right;
-  min-width: 10.55556em;
+  min-width: 190px;
 }
 
 .B-item {
@@ -2144,8 +2145,8 @@ a.Box__inner:hover {
   position: relative;
   color: #2b2b2b;
   font-weight: 600;
-  padding: 0.55556em 0;
-  padding-right: 1.33333em;
+  padding: 10px 0;
+  padding-right: 24px;
 }
 
 .B-item__thead {
@@ -2166,26 +2167,26 @@ a.Box__inner:hover {
 }
 
 .B-item__td {
-  padding: 0.83333em 0.55556em;
-  border: 0.05556em solid #b3b3b3;
+  padding: 15px 10px;
+  border: 1px solid #b3b3b3;
   vertical-align: top;
 }
 
 .B-item__pic {
-  width: 7.77778em;
-  height: 7.77778em;
-  padding: 0.55556em;
+  width: 140px;
+  height: 140px;
+  padding: 10px;
 }
 
 .B-item__desc {
   text-align: left;
-  width: 18.88889em;
-  min-width: 9.44444em;
+  width: 340px;
+  min-width: 170px;
 }
 
 .B-item__text {
-  font-size: 0.77778em;
-  margin-top: 0.71429em;
+  font-size: 14px;
+  margin-top: 10px;
 }
 
 .B-item__close {
@@ -2198,11 +2199,11 @@ a.Box__inner:hover {
   background-color: transparent;
   position: absolute;
   top: 50%;
-  margin-top: -0.66667em;
+  margin-top: -12px;
   right: 0;
-  width: 1.33333em;
-  height: 1.33333em;
-  padding: 0.22222em;
+  width: 24px;
+  height: 24px;
+  padding: 4px;
   background-color: #fd060c;
   color: #fff;
   fill: #fff;
@@ -2236,11 +2237,11 @@ a.Box__inner:hover {
 .Social__icon {
   display: block;
   float: left;
-  width: 2.14286em;
-  height: 2.14286em;
+  width: 30px;
+  height: 30px;
   line-height: 1;
-  margin: 0 0.14286em;
-  padding: 0.42857em;
+  margin: 0 2px;
+  padding: 6px;
   -webkit-border-radius: 50%;
           border-radius: 50%;
   border-bottom: none;
@@ -2454,7 +2455,7 @@ a.Box__inner:hover {
 
 @media (max-width: 1020px) {
   .Product.is-grid .Product__name {
-    margin-right: 1.42857em;
+    margin-right: 20px;
     height: 47px;
     line-height: 47px;
   }
@@ -2527,7 +2528,7 @@ a.Box__inner:hover {
 
 .Product__state {
   display: block;
-  font-size: 0.85714em;
+  font-size: 12px;
   font-weight: 600;
   color: #e6bd14;
   margin-bottom: 10px;
@@ -2542,8 +2543,8 @@ a.Box__inner:hover {
 @media (max-width: 525px) {
   .Product.is-list .Product__state {
     display: inline-block;
-    width: 2em;
-    height: 2em;
+    width: 24px;
+    height: 24px;
     overflow: hidden;
     color: transparent;
     margin-bottom: 0;
@@ -2632,7 +2633,7 @@ a.Box__inner:hover {
   padding: 5px;
   font-weight: 600;
   color: #3b3b3b;
-  font-size: 0.85714em;
+  font-size: 12px;
   text-align: center;
   fill: #e6bd14;
   text-decoration: none;
@@ -2650,7 +2651,7 @@ a.Box__inner:hover {
   display: block;
   white-space: nowrap;
   cursor: pointer;
-  font-size: 0.85714em;
+  font-size: 12px;
   margin-top: 5px;
   text-align: right;
   min-width: 180px;
@@ -3303,6 +3304,11 @@ a.Box__inner:hover {
   margin-right: 10px;
 }
 
+.Pagination__btns {
+  display: inline-block;
+  white-space: nowrap;
+}
+
 .Pagination__item {
   -webkit-box-sizing: border-box;
      -moz-box-sizing: border-box;
@@ -3807,6 +3813,7 @@ a.Box__inner:hover {
   height: 30px;
   padding: 0 10px;
   width: 100%;
+  min-width: auto;
 }
 
 .Header {
@@ -4147,6 +4154,7 @@ a.Box__inner:hover {
 @media (max-width: 767px) {
   .Why {
     font-size: 14px;
+    padding: 15px 0;
   }
 }
 
@@ -4531,9 +4539,17 @@ a.Box__inner:hover {
   zoom: 1;
 }
 
+@media (max-width: 1020px) {
+  .Services {
+    font-size: 18px;
+    margin: 25px 0;
+  }
+}
+
 @media (max-width: 767px) {
   .Services {
     font-size: 14px;
+    margin: 15px 0;
   }
 }
 
@@ -4544,6 +4560,13 @@ a.Box__inner:hover {
   text-align: center;
   margin-top: 0;
   margin-bottom: 28px;
+}
+
+@media (max-width: 767px) {
+  .Services__title {
+    font-size: 28px;
+    margin-bottom: 15px;
+  }
 }
 
 .Services__list {
@@ -4643,12 +4666,14 @@ a.Box__inner:hover {
 @media (max-width: 1020px) {
   .Reviews {
     font-size: 18px;
+    margin: 25px 0;
   }
 }
 
 @media (max-width: 767px) {
   .Reviews {
     font-size: 14px;
+    margin: 15px 0;
   }
 }
 
@@ -4664,6 +4689,7 @@ a.Box__inner:hover {
 @media (max-width: 767px) {
   .Reviews__title {
     font-size: 28px;
+    margin-bottom: 15px;
   }
 }
 
@@ -4717,6 +4743,12 @@ a.Box__inner:hover {
   font-size: 24px;
   font-weight: 700;
   color: #1a1a1a;
+}
+
+@media (max-width: 767px) {
+  .Reviews__name {
+    font-size: 18px;
+  }
 }
 
 .Reviews__prof {
@@ -4832,24 +4864,26 @@ a.Box__inner:hover {
   font-size: 24px;
   font-weight: 600;
   margin: 0;
-  margin-bottom: 0.8em;
+  margin-bottom: 20px;
   color: #fff;
 }
 
 @media (max-width: 767px) {
   .F-box__title {
     font-size: 18px;
+    margin-bottom: 15px;
   }
 }
 
 .F-box__item {
   font-size: 17px;
-  margin-top: 0.8em;
+  margin-top: 20px;
 }
 
 @media (max-width: 767px) {
   .F-box__item {
     font-size: 14px;
+    margin-top: 10px;
   }
 }
 
@@ -4876,6 +4910,16 @@ a.Box__inner:hover {
 
 .lt-ie8 .Page {
   zoom: 1;
+}
+
+.Page__title {
+  margin-bottom: 40px;
+}
+
+@media (max-width: 767px) {
+  .Page__title {
+    margin-bottom: 10px;
+  }
 }
 
 .Page__sidebar {
