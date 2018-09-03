@@ -189,74 +189,31 @@
       <div class="container">
         <ul class="Breadcrumbs">
           <li class="Breadcrumbs__item"><a class="Breadcrumbs__link" href="/">Главная</a></li>
-          <li class="Breadcrumbs__item"><a class="Breadcrumbs__link" href="/catalog.html">Тендеры</a></li>
+          <li class="Breadcrumbs__item"><a class="Breadcrumbs__link" href="/tenders.html">Тендеры</a></li>
         </ul>
       </div>
       <div class="container">
         <h1>Тендеры</h1>
         <aside class="Page__sidebar">
-          <h2 class="Box__title dd-toggler" data-target="#menu-state">Страна Поставщик</h2>
-          <div class="Box" id="menu-state">
-            <div>
-              <div class="Box__icon">
-                <svg class="ic-cn" role="img">
-                  <use xlink:href="static/decors/sprite.svg#ic-cn"></use>
-                </svg>
-              </div>&nbsp;&nbsp;<a class="Box__inner" href="/">Китай</a> <a class="Box__inner Box__accent" href="/">(10 567)</a>
-            </div>
-            <div>
-              <div class="Box__icon">
-                <svg class="ic-de" role="img">
-                  <use xlink:href="static/decors/sprite.svg#ic-de"></use>
-                </svg>
-              </div>&nbsp;&nbsp;<a class="Box__inner" href="/">Германия</a> <a class="Box__inner Box__accent" href="/">(2 787)</a>
-            </div>
-            <div>
-              <div class="Box__icon">
-                <svg class="ic-us" role="img">
-                  <use xlink:href="static/decors/sprite.svg#ic-us"></use>
-                </svg>
-              </div>&nbsp;&nbsp;<a class="Box__inner" href="/">США</a> <a class="Box__inner Box__accent" href="/">(1 062)</a>
-            </div>
-            <div>
-              <div class="Box__icon">
-                <svg class="ic-ru" role="img">
-                  <use xlink:href="static/decors/sprite.svg#ic-ru"></use>
-                </svg>
-              </div>&nbsp;&nbsp;<a class="Box__inner" href="/">Россия</a> <a class="Box__inner Box__accent" href="/">(1 462)</a>
-            </div>
-            <div>
-              <div class="Box__icon">
-                <svg class="ic-gb" role="img">
-                  <use xlink:href="static/decors/sprite.svg#ic-gb"></use>
-                </svg>
-              </div>&nbsp;&nbsp;<a class="Box__inner" href="/">Великобритания</a> <a class="Box__inner Box__accent" href="/">(262)</a>
-            </div>
-          </div>
-          <h2 class="Box__title dd-toggler" data-target="#menu-firm">Тип фирмы</h2>
-          <div class="Box" id="menu-firm">
-            <div><a class="Box__inner" href="/">Производитель</a> <a class="Box__inner Box__accent" href="/">(1 067)</a></div>
-            <div><a class="Box__inner" href="/">Поставщик</a> <a class="Box__inner Box__accent" href="/">(679)</a></div>
-            <div><a class="Box__inner" href="/">Оптовик</a> <a class="Box__inner Box__accent" href="/">(467)</a></div>
-            <div><a class="Box__inner" href="/">Дистрибьютор</a> <a class="Box__inner Box__accent" href="/">(123)</a></div>
-            <div><a class="Box__inner" href="/">Торговый агент</a> <a class="Box__inner Box__accent" href="/">(75)</a></div>
-          </div>
-          <h2 class="Box__title dd-toggler" data-target="#box-rating">Рейтинг фирмы</h2>
-          <div class="Box" id="box-rating">
-            <form class="Selector">
-              <input class="Selector__field dd-toggler" type="text" placeholder="Выбрать" data-target="#rating-menu"/>
-              <button class="Selector__button dd-toggler" type="button" data-target="#rating-menu">
+          <h2 class="Box__title dd-toggler" data-target="#menu-common-cat">Категории</h2>
+          <ul class="Box" id="menu-common-cat">
+            <li class="Box__item"><a class="Box__inner" href="/">Сельхоз и продукты питания</a></li>
+            <li class="Box__item"><a class="Box__inner" href="/">Одежда и текстиль</a><a class="Box__toggler dd-toggler" href="#menu-cat-tabels">
                 <svg class="ic-chevron" role="img">
                   <use xlink:href="static/decors/sprite.svg#ic-chevron"></use>
-                </svg>
-              </button>
-              <ul class="Box Selector__box" id="rating-menu">
-                <li class="Box__item"><a class="Box__inner Box__accent" href="/">(567)</a> <a class="Box__inner" href="/">Шкафы</a></li>
-                <li class="Box__item"><a class="Box__inner Box__accent" href="/">(6 787)</a> <a class="Box__inner" href="/">Кресла</a></li>
-                <li class="Box__item"><a class="Box__inner Box__accent" href="/">(62)</a> <a class="Box__inner" href="/">Стелажи</a></li>
+                </svg></a>
+              <ul class="Box Box__subbox" id="menu-cat-tabels">
+                <li class="Box__item"><a class="Box__inner" href="/">Безопасность и защита</a></li>
+                <li class="Box__item"><a class="Box__inner" href="/">Софт и комплектующие для пк</a></li>
+                <li class="Box__item"><a class="Box__inner" href="/">Бытовая техника</a></li>
               </ul>
-            </form>
-          </div>
+            </li>
+            <li class="Box__item"><a class="Box__inner" href="/">Электроника</a></li>
+            <li class="Box__item"><a class="Box__inner" href="/">Авто и транспорт</a></li>
+            <li class="Box__item"><a class="Box__inner" href="/">Cумки, обувь и аксессуары</a></li>
+            <li class="Box__item"><a class="Box__inner" href="/">Оборудование и инструменты</a></li>
+            <li class="Box__item ta-right"><a class="Box__inner" href="/">Еще...</a></li>
+          </ul>
         </aside>
         <main class="Page__main">
           <ul class="reset-list">
@@ -266,7 +223,7 @@
                   <use xlink:href="static/decors/sprite.svg#ic-check"></use>
                 </svg>
               </div>
-              <div class="Tender__info"><a class="Tender__title" href="/tender.html"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit voluptatem placeat voluptatibus voluptas hic modi voluptate excepturi beatae mollitia quidem!        </a></div>
+              <div class="Tender__info"><a class="Tender__title" href="/tender.html"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit voluptatem placeat voluptatibus voluptas hic modi voluptate excepturi beatae mollitia quidem!  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis quas illum quia a. Itaque odio sed, quos repellat error ipsam sint. Voluptas earum beatae, necessitatibus quisquam sint libero asperiores magnam.     </a></div>
               <div class="Tender__country">
                 <svg class="ic-us" role="img">
                   <use xlink:href="static/decors/sprite.svg#ic-us"></use>
@@ -673,7 +630,7 @@
           </ul>
         </div>
         <div class="Footer__item"><img src="img/logo.png"/>
-          <p>
+          <p class="Footer__copy">
              2011-2018
             В2В торговая площадка для
             оптовиков, поставщиков 

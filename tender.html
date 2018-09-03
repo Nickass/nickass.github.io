@@ -187,17 +187,39 @@
     </header>
     <div class="Page">
       <div class="container">
+        <ul class="Breadcrumbs">
+          <li class="Breadcrumbs__item"><a class="Breadcrumbs__link" href="/">Главная</a></li>
+          <li class="Breadcrumbs__item"><a class="Breadcrumbs__link" href="/tenders.html">Тендеры</a></li>
+          <li class="Breadcrumbs__item"><a class="Breadcrumbs__link" href="/tender.html">12</a></li>
+        </ul>
+      </div>
+      <div class="container">
         <aside class="Page__sidebar">
-          <div class="logo-company Banner__logo"><img class="logo-company__inner" src="img/logo-company.png"></div>
-          <h2 class="Box__title dd-toggler" data-target="#box-about">Статус компании</h2>
-          <ul class="Box" id="box-about" style="display:block;">
-            <div class="Box__item b-none">
+          <div class="Box" style="display:block;">
+            <div class="Box__name"><strong>ЕВГЕНИЙ КОРЕНЮГИН</strong></div>
+            <div class="Box__item"> 
               <div class="Box__icon">
-                <svg class="ic-gear" role="img">
-                  <use xlink:href="static/decors/sprite.svg#ic-gear"></use>
+                <svg class="ic-us" role="img">
+                  <use xlink:href="static/decors/sprite.svg#ic-us"></use>
                 </svg>
-              </div>&nbsp;&nbsp;
-              <div class="Box__inner"><strong>Тип компании</strong><br/><small>поставщик</small></div>
+              </div>
+              <div class="Box__inner"><small>Страна</small><br><strong>CША</strong></div>
+            </div>
+            <div class="Box__item"> 
+              <div class="Box__icon">
+                <svg class="ic-phone" role="img">
+                  <use xlink:href="static/decors/sprite.svg#ic-phone"></use>
+                </svg>
+              </div>
+              <div class="Box__inner"><small>Номер телефона</small><br><strong>+79260173707</strong></div>
+            </div>
+            <div class="Box__item"> 
+              <div class="Box__icon">
+                <svg class="ic-envelope" role="img">
+                  <use xlink:href="static/decors/sprite.svg#ic-envelope"></use>
+                </svg>
+              </div>
+              <div class="Box__inner"><small>Електронная почта</small><br><strong>ekorenyugin@yandex.ru</strong></div>
             </div>
             <div class="Box__item b-none">
               <div class="Box__icon">
@@ -205,66 +227,29 @@
                   <use xlink:href="static/decors/sprite.svg#ic-calendar"></use>
                 </svg>
               </div>&nbsp;&nbsp;
-              <div class="Box__inner"><strong>На портале с</strong><br/><small>с мая 2017г.</small></div>
+              <div class="Box__inner"><small>На портале с</small><br><strong>с мая 2017г.</strong></div>
             </div>
-            <div class="Box__item b-none">
-              <div class="Box__icon">
-                <svg class="ic-coins" role="img">
-                  <use xlink:href="static/decors/sprite.svg#ic-coins"></use>
-                </svg>
-              </div>&nbsp;&nbsp;
-              <div class="Box__inner"><strong>Использует тариф</strong><br/><span><span class="tariff">tariff<strong class="tariff__name">premium</strong></span></span></div>
-            </div>
-            <div class="Box__item b-none">
-              <div class="Box__icon">
-                <svg class="ic-star" role="img">
-                  <use xlink:href="static/decors/sprite.svg#ic-star"></use>
-                </svg>
-              </div>&nbsp;&nbsp;
-              <div class="Box__inner"><strong>Рейтинг компании</strong><br/><span>
-                  <div class="Rating">
-                    <input class="Rating__input" type="hidden" value="2"/>
-                    <div class="Rating__item">
-                      <svg class="ic-star" role="img">
-                        <use xlink:href="static/decors/sprite.svg#ic-star"></use>
-                      </svg>
-                    </div>
-                    <div class="Rating__item">
-                      <svg class="ic-star" role="img">
-                        <use xlink:href="static/decors/sprite.svg#ic-star"></use>
-                      </svg>
-                    </div>
-                    <div class="Rating__item">
-                      <svg class="ic-star" role="img">
-                        <use xlink:href="static/decors/sprite.svg#ic-star"></use>
-                      </svg>
-                    </div>
-                    <div class="Rating__item">
-                      <svg class="ic-star" role="img">
-                        <use xlink:href="static/decors/sprite.svg#ic-star"></use>
-                      </svg>
-                    </div>
-                    <div class="Rating__item">
-                      <svg class="ic-star" role="img">
-                        <use xlink:href="static/decors/sprite.svg#ic-star"></use>
-                      </svg>
-                    </div>
-                  </div>2.5</span></div>
-            </div>
-            <div class="Box__item b-none">
-              <div class="Box__icon">
-                <svg class="ic-company" role="img">
-                  <use xlink:href="static/decors/sprite.svg#ic-company"></use>
-                </svg>
-              </div>&nbsp;&nbsp;
-              <div class="Box__inner"><strong>Проверяемая компания</strong><br/><span> 
-                  <svg class="ic-shield-2 guarantee" role="img">
-                    <use xlink:href="static/decors/sprite.svg#ic-shield-2"></use>
-                  </svg></span></div>
-            </div>
+            <button class="btn btn-primary d-b">Подать предложение</button>
+          </div>
+          <h2 class="Box__title dd-toggler" data-target="#menu-common-cat">Категории</h2>
+          <ul class="Box" id="menu-common-cat">
+            <li class="Box__item"><a class="Box__inner" href="/">Сельхоз и продукты питания</a></li>
+            <li class="Box__item"><a class="Box__inner" href="/">Одежда и текстиль</a><a class="Box__toggler dd-toggler" href="#menu-cat-tabels">
+                <svg class="ic-chevron" role="img">
+                  <use xlink:href="static/decors/sprite.svg#ic-chevron"></use>
+                </svg></a>
+              <ul class="Box Box__subbox" id="menu-cat-tabels">
+                <li class="Box__item"><a class="Box__inner" href="/">Безопасность и защита</a></li>
+                <li class="Box__item"><a class="Box__inner" href="/">Софт и комплектующие для пк</a></li>
+                <li class="Box__item"><a class="Box__inner" href="/">Бытовая техника</a></li>
+              </ul>
+            </li>
+            <li class="Box__item"><a class="Box__inner" href="/">Электроника</a></li>
+            <li class="Box__item"><a class="Box__inner" href="/">Авто и транспорт</a></li>
+            <li class="Box__item"><a class="Box__inner" href="/">Cумки, обувь и аксессуары</a></li>
+            <li class="Box__item"><a class="Box__inner" href="/">Оборудование и инструменты</a></li>
+            <li class="Box__item ta-right"><a class="Box__inner" href="/">Еще...</a></li>
           </ul>
-          <h2 class="Box__title dd-toggler" data-target="#tags">Теги</h2>
-          <div class="Box" id="tags"><a class="tag" href="#" style="background:blue;color:#fff;">трикотаж</a><a class="tag" href="#" style="background:red;color:#fff;">повседневные платья</a><a class="tag" href="#" style="background:yellow;">платки и палантины</a><a class="tag" href="#" style="background:green;color:#fff;">одежда</a><a class="tag" href="#" style="background:gray;color:#fff;">женская мусульманская одежда</a></div>
         </aside>
         <main class="Page__main">
           <div class="A-info">
@@ -282,20 +267,16 @@
                 <dd class="A-info__dd">2 месяца</dd>
               </dl>
               <div class="A-info__item">
-                <div class="A-info__btn">
-                  <button class="btn-blue d-b" type="button"> 
-                    <svg class="ic-envelope btn__icon" role="img">
-                      <use xlink:href="static/decors/sprite.svg#ic-envelope"></use>
-                    </svg>связаться с поставщиком
-                  </button>
-                </div>
-                <div class="A-info__btn">
-                  <button class="btn-gray d-b" type="button"> 
-                    <svg class="ic-heart btn__icon" role="img">
-                      <use xlink:href="static/decors/sprite.svg#ic-heart"></use>
-                    </svg>Добавить в избраное
-                  </button>
-                </div>
+                <svg class="ic-shield-2 guarantee" role="img" data-tippy="data-tippy" data-tippy-maxWidth="250px" title="Безопасная сделка">
+                  <use xlink:href="static/decors/sprite.svg#ic-shield-2"></use>
+                </svg><strong>Пользователь желает совершить защищенную сделку</strong>
+              </div>
+              <div class="A-info__item">
+                <button class="btn-primary" type="button">
+                  <svg class="ic-envelope btn__icon" role="img">
+                    <use xlink:href="static/decors/sprite.svg#ic-envelope"></use>
+                  </svg>Подать предложение
+                </button>
               </div>
             </div>
             <div class="A-info__footer">
@@ -309,120 +290,65 @@
               </div>
             </div>
           </div>
-          <div class="Tabs">
-            <ul class="Tabs__nav">
-              <li class="Tabs__item active"><a class="Tabs__link" href="#company-about" data-toggle="tab">О компании</a></li>
-              <li class="Tabs__item"><a class="Tabs__link" href="#company-products" data-toggle="tab">Товары
-                  <svg class="ic-chevron Tabs__icon" role="img">
-                    <use xlink:href="static/decors/sprite.svg#ic-chevron"></use>
-                  </svg></a></li>
-              <li class="Tabs__item"><a class="Tabs__link" href="#company-info" data-toggle="tab">Информация</a></li>
-              <li class="Tabs__item"><a class="Tabs__link" href="#company-files" data-toggle="tab">Файлы</a></li>
-              <li class="Tabs__item"><a class="Tabs__link" href="#company-contacts" data-toggle="tab">Контакты</a></li>
-            </ul>
-            <div class="Tabs__tab active" id="company-about">
-              <dl>
-                <dt>Компания: </dt>
-                <dd>“Romexsoft”</dd>
-              </dl>
-              <dl>
-                <dt>Адрес: </dt>
-                <dd>Россия   г. Москва  пр. Ломоносова, 47   копрус 3</dd>
-              </dl>
-              <dl>
-                <dt>Страна/регион: </dt>
-                <dd>Россия 
-                  <svg class="ic-ru" role="img" width="25px" height="16px">
-                    <use xlink:href="static/decors/sprite.svg#ic-ru"></use>
-                  </svg>
-                </dd>
-              </dl>
-              <dl>
-                <dt>Год основания: </dt>
-                <dd>2003</dd>
-              </dl>
-              <dl>
-                <dt>Всего сотрудников: </dt>
-                <dd>100-150</dd>
-              </dl>
-              <dl>
-                <dt>Годовой доход: </dt>
-                <dd>1.200.000 руб.</dd>
-              </dl>
-              <dl>
-                <dt>Основные продукты: </dt>
-                <dd>офиная мебель, комплектующие  и фурнитура</dd>
-              </dl>
-              <dl>
-                <dt>Дата последнего посещения: </dt>
-                <dd>09.08.2018</dd>
-              </dl>
-              <p>Мы созданы для комфорта.  А точнее, для того, чтобы наши клиенты ощущали эстетическое и осязательное наслаждения не только от качественной мебели, но также и комфорт от процесса ее выбора, заказа и покупки.</p>
+          <p class="fz-md">Предложения: <span class="primary-color">4</span></p>
+          <div class="Comment">
+            <div class="Comment__header">
+              <div class="Comment__date">2 сентября 2018 г. 18:22</div>
+              <div class="Comment__country">Германия
+                <svg class="ic-de" role="img" width="30px" height="20px">
+                  <use xlink:href="static/decors/sprite.svg#ic-de"></use>
+                </svg>
+              </div>
             </div>
-            <div class="Tabs__tab" id="company-products">
-              <h2 class="Box__title">Категории</h2>
-              <ul class="Box">
-                <li class="Box__item"><a class="Box__inner" href="/">Шкафы</a> <a class="Box__inner Box__accent" href="/">(567)</a></li>
-                <li class="Box__item"><a class="Box__inner" href="/">Столы</a> <a class="Box__inner Box__accent" href="/">(6 787)</a><a class="Box__toggler dd-toggler" href="#menu-cat-tabels">
-                    <svg class="ic-chevron" role="img">
-                      <use xlink:href="static/decors/sprite.svg#ic-chevron"></use>
-                    </svg></a>
-                  <ul class="Box Box__subbox" id="menu-cat-tabels">
-                    <li class="Box__item"><a class="Box__inner" href="/">Большие</a> <a class="Box__inner Box__accent" href="/">(3087)</a></li>
-                    <li class="Box__item"><a class="Box__inner" href="/">Средние</a> <a class="Box__inner Box__accent" href="/">(2587)</a></li>
-                    <li class="Box__item"><a class="Box__inner" href="/">Маленькие</a> <a class="Box__inner Box__accent" href="/">(482)</a></li>
-                  </ul>
-                </li>
-                <li class="Box__item"><a class="Box__inner" href="/">Кресла</a> <a class="Box__inner Box__accent" href="/">(187)</a></li>
-                <li class="Box__item"><a class="Box__inner" href="/">Компютерные столы</a> <a class="Box__inner Box__accent" href="/">(282)</a></li>
-                <li class="Box__item"><a class="Box__inner" href="/">Вешалки</a> <a class="Box__inner Box__accent" href="/">(47)</a></li>
-                <li class="Box__item"><a class="Box__inner" href="/">Стелажи</a> <a class="Box__inner Box__accent" href="/">(58)</a></li>
-                <li class="Box__item ta-right"><a class="Box__inner" href="/">Еще...</a><a class="Box__toggler dd-toggler" href="#menu-cat-more">
-                    <svg class="ic-chevron" role="img">
-                      <use xlink:href="static/decors/sprite.svg#ic-chevron"></use>
-                    </svg></a>
-                  <ul class="Box Box__subbox" id="menu-cat-more">
-                    <li class="Box__item"><a class="Box__inner" href="/">Тумбы</a> <a class="Box__inner Box__accent" href="/">(3087)</a></li>
-                    <li class="Box__item"><a class="Box__inner" href="/">Диваны</a> <a class="Box__inner Box__accent" href="/">(2587)</a></li>
-                    <li class="Box__item"><a class="Box__inner" href="/">Комоды</a> <a class="Box__inner Box__accent" href="/">(482)</a></li>
-                  </ul>
-                </li>
-              </ul>
+            <div class="Comment__text">можем предложить Нетканое полотно Спанбонд 60г/м2,черный, 1,6*5м</div>
+            <div class="Comment__footer">
+              <div class="Comment__price">USD 32,00</div>
+              <div class="Comment__time">3 day</div>
             </div>
-            <div class="Tabs__tab" id="company-info"><b>INFO</b>  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore assumenda itaque adipisci ea sunt nostrum quos, veniam saepe dolores deserunt, neque ab provident ducimus distinctio. Dolore a saepe, dolorem laboriosam.</div>
-            <div class="Tabs__tab" id="company-files"><b>FILES</b> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor cumque nemo numquam in veritatis ea quidem dolorem itaque praesentium fuga deleniti ratione, suscipit assumenda quis ad nihil aliquid optio. Impedit!</div>
-            <div class="Tabs__tab" id="company-contacts">        
-              <h3 class="h3 ta-center">Отправте запрос для этого поставщика</h3>
-              <form class="Feedback">
-                <label class="Feedback__item">
-                  <div class="Feedback__label">От</div>
-                  <div class="Feedback__field">
-                    <input class="input d-b" type="email" placeholder="ваш e-mail">
-                  </div>
-                </label>
-                <label class="Feedback__item">
-                  <div class="Feedback__label">Для</div>
-                  <div class="Feedback__field">Компания ООО“Romexsoft”</div>
-                </label>
-                <label class="Feedback__item">
-                  <div class="Feedback__label">Тема</div>
-                  <div class="Feedback__field">
-                    <input class="input d-b" type="text">
-                  </div>
-                </label>
-                <label class="Feedback__item">
-                  <div class="Feedback__label">Сообщение</div>
-                  <div class="Feedback__field">
-                    <textarea class="input d-b" type="text" placeholder="текст"></textarea>
-                  </div>
-                </label>
-                <label>
-                  <div class="Feedback__label"></div>
-                  <div class="Feedback__field">
-                    <button class="fz-md btn-primary" type="submit">Отправить </button>
-                  </div>
-                </label>
-              </form>
+          </div>
+          <div class="Comment">
+            <div class="Comment__header">
+              <div class="Comment__date">1 сентября 2018 г. 18:22</div>
+              <div class="Comment__country">Россия
+                <svg class="ic-ru" role="img" width="30px" height="20px">
+                  <use xlink:href="static/decors/sprite.svg#ic-ru"></use>
+                </svg>
+              </div>
+            </div>
+            <div class="Comment__text">У нас в Иваново компания Альянс http://spanb.ru/ продает очень дёшево.</div>
+            <div class="Comment__footer">
+              <div class="Comment__price">USD 12,00</div>
+              <div class="Comment__time">1 day</div>
+            </div>
+          </div>
+          <div class="Comment">
+            <div class="Comment__header">
+              <div class="Comment__date">2 сентября 2018 г. 18:22</div>
+              <div class="Comment__country">Германия
+                <svg class="ic-de" role="img" width="30px" height="20px">
+                  <use xlink:href="static/decors/sprite.svg#ic-de"></use>
+                </svg>
+              </div>
+            </div>
+            <div class="Comment__text">можем предложить Нетканое полотно Спанбонд 60г/м2,черный, 1,6*5м</div>
+            <div class="Comment__footer">
+              <div class="Comment__price">USD 32,00</div>
+              <div class="Comment__time">3 day</div>
+            </div>
+          </div>
+          <div class="Comment">
+            <div class="Comment__header">
+              <div class="Comment__date">1 сентября 2018 г. 18:22</div>
+              <div class="Comment__country">Россия
+                <svg class="ic-ru" role="img" width="30px" height="20px">
+                  <use xlink:href="static/decors/sprite.svg#ic-ru"></use>
+                </svg>
+              </div>
+            </div>
+            <div class="Comment__text">У нас в Иваново компания Альянс http://spanb.ru/ продает очень дёшево.</div>
+            <div class="Comment__footer">
+              <div class="Comment__price">USD 12,00</div>
+              <div class="Comment__time">1 day</div>
             </div>
           </div>
         </main>
@@ -457,7 +383,7 @@
           </ul>
         </div>
         <div class="Footer__item"><img src="img/logo.png"/>
-          <p>
+          <p class="Footer__copy">
              2011-2018
             В2В торговая площадка для
             оптовиков, поставщиков 

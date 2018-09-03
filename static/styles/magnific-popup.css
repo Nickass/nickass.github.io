@@ -431,24 +431,18 @@ img.mfp-img {
 @media all and (max-width: 900px) {
   .mfp-arrow {
     -webkit-transform: scale(0.75);
-    -moz-transform: scale(0.75);
-     -ms-transform: scale(0.75);
-      -o-transform: scale(0.75);
-         transform: scale(0.75);
+    -ms-transform: scale(0.75);
+        transform: scale(0.75);
   }
   .mfp-arrow-left {
     -webkit-transform-origin: 0;
-    -moz-transform-origin: 0;
-     -ms-transform-origin: 0;
-      -o-transform-origin: 0;
-         transform-origin: 0;
+    -ms-transform-origin: 0;
+        transform-origin: 0;
   }
   .mfp-arrow-right {
     -webkit-transform-origin: 100%;
-    -moz-transform-origin: 100%;
-     -ms-transform-origin: 100%;
-      -o-transform-origin: 100%;
-         transform-origin: 100%;
+    -ms-transform-origin: 100%;
+        transform-origin: 100%;
   }
   .mfp-container {
     padding-left: 6px;
