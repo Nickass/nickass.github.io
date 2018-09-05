@@ -920,8 +920,8 @@ select:invalid {
   z-index: 20;
   display: inline-block;
   vertical-align: middle;
-  width: 40px;
-  height: 30px;
+  width: 44px;
+  height: 38px;
   -webkit-border-radius: 5px;
           border-radius: 5px;
   white-space: normal;
@@ -933,10 +933,12 @@ select:invalid {
   transition: border-radius 0ms 200ms;
   transition: border-radius 0ms 200ms, -webkit-border-radius 0ms 200ms;
   line-height: 1.8;
+  border: 1px solid #244f59;
 }
 
 .Lang:hover, .Lang.active-parent {
   background-color: #102a30;
+  border-color: #102a30;
 }
 
 .Lang.active-parent {
@@ -953,7 +955,7 @@ select:invalid {
   display: block;
   text-decoration: none;
   color: inherit;
-  padding: 5px;
+  padding: 9px 5px;
   position: relative;
   color: #e6bd14;
   -webkit-border-radius: inherit;
@@ -964,7 +966,7 @@ select:invalid {
   content: '';
   display: block;
   position: absolute;
-  bottom: 14px;
+  bottom: 18px;
   right: 6px;
   width: 7px;
   height: 7px;
@@ -986,6 +988,7 @@ select:invalid {
   list-style: none;
   position: absolute;
   display: none;
+  margin: 0 -1px;
   border-top: 5px solid transparent;
   top: 100%;
   left: 0;
@@ -1142,8 +1145,8 @@ select:invalid {
   position: relative;
   display: inline-block;
   font-size: 14px;
-  height: 30px;
-  width: 30px;
+  height: 40px;
+  width: 40px;
   padding: 5px;
   vertical-align: middle;
   fill: #e6bd14;
@@ -1191,11 +1194,10 @@ select:invalid {
   display: inline-block;
   background-color: transparent;
   display: inline-block;
-  vertical-align: middle;
   font-size: 14px;
-  height: 30px;
-  line-height: 30px;
-  width: 30px;
+  height: 35px;
+  line-height: 40px;
+  width: 35px;
   padding: 0px 5px;
   stroke-width: 2px;
   stroke: #e6bd14;
@@ -1589,6 +1591,8 @@ select:invalid {
 
 .Price__num {
   font-weight: 600;
+  font-size: 30px;
+  color: #fe030f;
 }
 
 .Price__info {
@@ -3201,7 +3205,7 @@ a.Box__inner:hover {
     display: block;
     position: absolute;
     top: 5px;
-    left: 30px;
+    left: 20px;
     width: 40px;
     height: 20px;
   }
@@ -3268,7 +3272,7 @@ a.Box__inner:hover {
     display: block;
     position: absolute;
     top: 5px;
-    left: 60px;
+    left: 50px;
     height: 20px;
   }
 }
@@ -3710,9 +3714,9 @@ a.Box__inner:hover {
 }
 
 .A-info__accent {
-  color: #fe030f;
+  color: #e6bd14;
   font-weight: 600;
-  font-size: 30px;
+  font-size: 18px;
 }
 
 .Subscribe {
@@ -4091,6 +4095,7 @@ a.Box__inner:hover {
     height: 100%;
     margin-right: 5px;
     float: left;
+    margin-left: 0;
   }
 }
 
@@ -4121,6 +4126,7 @@ a.Box__inner:hover {
   .Header__cart {
     height: 100%;
     float: left;
+    margin-left: 0;
   }
 }
 
@@ -4136,6 +4142,7 @@ a.Box__inner:hover {
   .Header__entry {
     height: 100%;
     float: left;
+    margin-left: 0;
   }
 }
 
@@ -4148,6 +4155,7 @@ a.Box__inner:hover {
 @media (max-width: 767px) {
   .Header__burger {
     display: inline-block;
+    margin-left: 0;
   }
 }
 
@@ -4961,7 +4969,7 @@ a.Box__inner:hover {
 
 .F-box__item {
   font-size: 17px;
-  margin-top: 20px;
+  margin-top: 8px;
 }
 
 @media (max-width: 767px) {
