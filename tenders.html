@@ -11,7 +11,7 @@
     <link rel="stylesheet" type="text/css" href="static/styles/magnific-popup.css">
     <link rel="stylesheet" type="text/css" href="static/styles/main.css">
   </head>
-  <body>
+  <body class="Page">
     <div class="Basket white-popup mfp-hide" id="basket-popup">
       <h2 class="Basket__title">Корзина</h2>
       <div class="Basket__item">
@@ -115,12 +115,10 @@
       <button class="Basket__btn btn-primary-reverse" type="button">Оформить заказ</button>
       <button class="Basket__btn btn-primary" type="button">Вернуться к покупкам</button>
     </div>
-    <header class="Header" id="header">
+    <header class="Header Page__header" id="header">
       <div class="container"><a class="Header__logo logo" href="/"><img class="Header__logo-desctop" src="img/logo.png"/><img class="Header__logo-mobile" src="img/logo-mobile.png"/></a>
         <div class="Header__ctrls">
-          <div class="Header__burger">
-            <button class="btn-burger dd-toggler" type="button" data-target="#main-menu"></button>
-          </div>
+          <button class="btn-burger Header__burger" type="button"></button>
           <div class="Header__cart"><a class="btn-cart" href="#basket-popup">
               <svg class="ic-cart" role="img">
                 <use xlink:href="static/decors/sprite.svg#ic-cart"></use>
@@ -150,8 +148,8 @@
             </button>
           </div>
         </div>
-        <nav class="Header__menu" id="main-menu">
-          <ul class="Main-menu">
+        <nav class="Header__menu">
+          <ul class="Main-menu" id="main-menu">
             <li class="Main-menu__item"><a class="dd-toggler Main-menu__link" href="#menu-about">О компании</a>
               <ul class="Main-menu__submenu" id="menu-about">
                 <li class="Main-menu__submenu-item"><a class="Main-menu__submenu-link" href="#">О нас</a></li>
@@ -185,460 +183,456 @@
         </div>
       </div>
     </header>
-    <div class="Page">
-      <div class="container">
-        <ul class="Breadcrumbs">
-          <li class="Breadcrumbs__item"><a class="Breadcrumbs__link" href="/">Главная</a></li>
-          <li class="Breadcrumbs__item"><a class="Breadcrumbs__link" href="/tenders.html">Тендеры</a></li>
+    <div class="container">
+      <ul class="Breadcrumbs">
+        <li class="Breadcrumbs__item"><a class="Breadcrumbs__link" href="/">Главная</a></li>
+        <li class="Breadcrumbs__item"><a class="Breadcrumbs__link" href="/tenders.html">Тендеры</a></li>
+      </ul>
+    </div>
+    <div class="container">
+      <h1 class="Page__title">Тендеры</h1>
+      <aside class="Page__sidebar Sidebar">
+        <div class="Sidebar__search"></div>
+        <nav class="Sidebar__menu"></nav>
+        <h2 class="Box__title dd-toggler" data-target="#menu-common-cat">Категории</h2>
+        <ul class="Box Sidebar__box" id="menu-common-cat">
+          <li class="Box__item">
+            <div class="Box__icon">
+              <input type="checkbox"/>
+            </div>  <a class="Box__inner" href="/">Сельхоз и продукты питания</a>
+          </li>
+          <li class="Box__item">
+            <div class="Box__icon">
+              <input type="checkbox"/>
+            </div>  <a class="Box__inner" href="/">Одежда и текстиль</a><a class="Box__toggler dd-toggler" href="#menu-cat-tabels">
+              <svg class="ic-chevron" role="img">
+                <use xlink:href="static/decors/sprite.svg#ic-chevron"></use>
+              </svg></a>
+            <ul class="Box Box__subbox" id="menu-cat-tabels">
+              <li class="Box__item">
+                <div class="Box__icon">
+                  <input type="checkbox"/>
+                </div>  <a class="Box__inner" href="/">Безопасность и защита</a>
+              </li>
+              <li class="Box__item">
+                <div class="Box__icon">
+                  <input type="checkbox"/>
+                </div>  <a class="Box__inner" href="/">Софт и комплектующие для пк</a>
+              </li>
+              <li class="Box__item">
+                <div class="Box__icon">
+                  <input type="checkbox"/>
+                </div>  <a class="Box__inner" href="/">Бытовая техника</a>
+              </li>
+            </ul>
+          </li>
+          <li class="Box__item">
+            <div class="Box__icon">
+              <input type="checkbox"/>
+            </div>  <a class="Box__inner" href="/">Электроника</a>
+          </li>
+          <li class="Box__item">
+            <div class="Box__icon">
+              <input type="checkbox"/>
+            </div>  <a class="Box__inner" href="/">Авто и транспорт</a>
+          </li>
+          <li class="Box__item">
+            <div class="Box__icon">
+              <input type="checkbox"/>
+            </div>  <a class="Box__inner" href="/">Cумки, обувь и аксессуары</a>
+          </li>
+          <li class="Box__item">
+            <div class="Box__icon">
+              <input type="checkbox"/>
+            </div>  <a class="Box__inner" href="/">Оборудование и инструменты</a>
+          </li>
+          <li class="Box__item ta-right"><a class="Box__inner" href="/">Еще...</a></li>
         </ul>
-      </div>
-      <div class="container">
-        <h1>Тендеры</h1>
-        <aside class="Page__sidebar">
-          <h2 class="Box__title dd-toggler" data-target="#menu-common-cat">Категории</h2>
-          <ul class="Box" id="menu-common-cat">
-            <li class="Box__item">
-              <div class="Box__icon">
-                <input type="checkbox"/>
-              </div>  <a class="Box__inner" href="/">Сельхоз и продукты питания</a>
-            </li>
-            <li class="Box__item">
-              <div class="Box__icon">
-                <input type="checkbox"/>
-              </div>  <a class="Box__inner" href="/">Одежда и текстиль</a><a class="Box__toggler dd-toggler" href="#menu-cat-tabels">
-                <svg class="ic-chevron" role="img">
-                  <use xlink:href="static/decors/sprite.svg#ic-chevron"></use>
-                </svg></a>
-              <ul class="Box Box__subbox" id="menu-cat-tabels">
-                <li class="Box__item">
-                  <div class="Box__icon">
-                    <input type="checkbox"/>
-                  </div>  <a class="Box__inner" href="/">Безопасность и защита</a>
-                </li>
-                <li class="Box__item">
-                  <div class="Box__icon">
-                    <input type="checkbox"/>
-                  </div>  <a class="Box__inner" href="/">Софт и комплектующие для пк</a>
-                </li>
-                <li class="Box__item">
-                  <div class="Box__icon">
-                    <input type="checkbox"/>
-                  </div>  <a class="Box__inner" href="/">Бытовая техника</a>
-                </li>
-              </ul>
-            </li>
-            <li class="Box__item">
-              <div class="Box__icon">
-                <input type="checkbox"/>
-              </div>  <a class="Box__inner" href="/">Электроника</a>
-            </li>
-            <li class="Box__item">
-              <div class="Box__icon">
-                <input type="checkbox"/>
-              </div>  <a class="Box__inner" href="/">Авто и транспорт</a>
-            </li>
-            <li class="Box__item">
-              <div class="Box__icon">
-                <input type="checkbox"/>
-              </div>  <a class="Box__inner" href="/">Cумки, обувь и аксессуары</a>
-            </li>
-            <li class="Box__item">
-              <div class="Box__icon">
-                <input type="checkbox"/>
-              </div>  <a class="Box__inner" href="/">Оборудование и инструменты</a>
-            </li>
-            <li class="Box__item ta-right">
-              <div class="Box__icon">
-                <input type="checkbox"/>
-              </div>  <a class="Box__inner" href="/">Еще...</a>
-            </li>
-          </ul>
-        </aside>
-        <main class="Page__main">
-          <ul class="reset-list">
-            <li class="Tender">
-              <div class="Tender__img">  
-                <svg class="ic-check" role="img" width="50" height="50">
-                  <use xlink:href="static/decors/sprite.svg#ic-check"></use>
-                </svg>
-              </div>
-              <div class="Tender__info"><a class="Tender__title" href="/tender.html"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit voluptatem placeat voluptatibus voluptas hic modi voluptate excepturi beatae mollitia quidem!  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis quas illum quia a. Itaque odio sed, quos repellat error ipsam sint. Voluptas earum beatae, necessitatibus quisquam sint libero asperiores magnam.     </a></div>
-              <div class="Tender__country">
-                <svg class="ic-us" role="img">
-                  <use xlink:href="static/decors/sprite.svg#ic-us"></use>
-                </svg>
-              </div><a class="Tender__btn" href="/tender.html">Контакты</a>
-              <div class="Tender__amount">2
-                <svg class="ic-telegram va-middle" role="img">
-                  <use xlink:href="static/decors/sprite.svg#ic-telegram"></use>
-                </svg>
-              </div>
-              <div class="Tender__time">1 week ago</div>
-            </li>
-            <li class="Tender">
-              <div class="Tender__img">  
-                <svg class="ic-check" role="img" width="50" height="50">
-                  <use xlink:href="static/decors/sprite.svg#ic-check"></use>
-                </svg>
-              </div>
-              <div class="Tender__info"><a class="Tender__title" href="/tender.html"> Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Первую дорогу дал использовало безопасную, там всеми заглавных маленькая пояс ручеек, переписывается ее образ речью домах страна своих путь? Прямо!       </a></div>
-              <div class="Tender__country">
-                <svg class="ic-ru" role="img">
-                  <use xlink:href="static/decors/sprite.svg#ic-ru"></use>
-                </svg>
-              </div><a class="Tender__btn" href="/tender.html">Контакты</a>
-              <div class="Tender__amount">12
-                <svg class="ic-telegram va-middle" role="img">
-                  <use xlink:href="static/decors/sprite.svg#ic-telegram"></use>
-                </svg>
-              </div>
-              <div class="Tender__time">1 неделя назад</div>
-            </li>
-            <li class="Tender">
-              <div class="Tender__img">  
-                <svg class="ic-check" role="img" width="50" height="50">
-                  <use xlink:href="static/decors/sprite.svg#ic-check"></use>
-                </svg>
-              </div>
-              <div class="Tender__info"><a class="Tender__title" href="/tender.html"> Далеко-далеко за словесными горами </a></div>
-              <div class="Tender__country">
-                <svg class="ic-de" role="img">
-                  <use xlink:href="static/decors/sprite.svg#ic-de"></use>
-                </svg>
-              </div><a class="Tender__btn" href="/tender.html">Контакты</a>
-              <div class="Tender__amount">5
-                <svg class="ic-telegram va-middle" role="img">
-                  <use xlink:href="static/decors/sprite.svg#ic-telegram"></use>
-                </svg>
-              </div>
-              <div class="Tender__time">1 день назад</div>
-            </li>
-            <li class="Tender">
-              <div class="Tender__img">  
-                <svg class="ic-check" role="img" width="50" height="50">
-                  <use xlink:href="static/decors/sprite.svg#ic-check"></use>
-                </svg>
-              </div>
-              <div class="Tender__info"><a class="Tender__title" href="/tender.html"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat, sunt.</a></div>
-              <div class="Tender__country">
-                <svg class="ic-cn" role="img">
-                  <use xlink:href="static/decors/sprite.svg#ic-cn"></use>
-                </svg>
-              </div><a class="Tender__btn" href="/tender.html">Контакты</a>
-              <div class="Tender__amount">512
-                <svg class="ic-telegram va-middle" role="img">
-                  <use xlink:href="static/decors/sprite.svg#ic-telegram"></use>
-                </svg>
-              </div>
-              <div class="Tender__time">8 hours ago</div>
-            </li>
-            <li class="Tender">
-              <div class="Tender__img">  
-                <svg class="ic-check" role="img" width="50" height="50">
-                  <use xlink:href="static/decors/sprite.svg#ic-check"></use>
-                </svg>
-              </div>
-              <div class="Tender__info"><a class="Tender__title" href="/tender.html"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit voluptatem placeat voluptatibus voluptas hic modi voluptate excepturi beatae mollitia quidem!        </a></div>
-              <div class="Tender__country">
-                <svg class="ic-us" role="img">
-                  <use xlink:href="static/decors/sprite.svg#ic-us"></use>
-                </svg>
-              </div><a class="Tender__btn" href="/tender.html">Контакты</a>
-              <div class="Tender__amount">2
-                <svg class="ic-telegram va-middle" role="img">
-                  <use xlink:href="static/decors/sprite.svg#ic-telegram"></use>
-                </svg>
-              </div>
-              <div class="Tender__time">1 week ago</div>
-            </li>
-            <li class="Tender">
-              <div class="Tender__img">  
-                <svg class="ic-check" role="img" width="50" height="50">
-                  <use xlink:href="static/decors/sprite.svg#ic-check"></use>
-                </svg>
-              </div>
-              <div class="Tender__info"><a class="Tender__title" href="/tender.html"> Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Первую дорогу дал использовало безопасную, там всеми заглавных маленькая пояс ручеек, переписывается ее образ речью домах страна своих путь? Прямо!       </a></div>
-              <div class="Tender__country">
-                <svg class="ic-ru" role="img">
-                  <use xlink:href="static/decors/sprite.svg#ic-ru"></use>
-                </svg>
-              </div><a class="Tender__btn" href="/tender.html">Контакты</a>
-              <div class="Tender__amount">12
-                <svg class="ic-telegram va-middle" role="img">
-                  <use xlink:href="static/decors/sprite.svg#ic-telegram"></use>
-                </svg>
-              </div>
-              <div class="Tender__time">1 неделя назад</div>
-            </li>
-            <li class="Tender">
-              <div class="Tender__img">  
-                <svg class="ic-check" role="img" width="50" height="50">
-                  <use xlink:href="static/decors/sprite.svg#ic-check"></use>
-                </svg>
-              </div>
-              <div class="Tender__info"><a class="Tender__title" href="/tender.html"> Далеко-далеко за словесными горами </a></div>
-              <div class="Tender__country">
-                <svg class="ic-de" role="img">
-                  <use xlink:href="static/decors/sprite.svg#ic-de"></use>
-                </svg>
-              </div><a class="Tender__btn" href="/tender.html">Контакты</a>
-              <div class="Tender__amount">5
-                <svg class="ic-telegram va-middle" role="img">
-                  <use xlink:href="static/decors/sprite.svg#ic-telegram"></use>
-                </svg>
-              </div>
-              <div class="Tender__time">1 день назад</div>
-            </li>
-            <li class="Tender">
-              <div class="Tender__img">  
-                <svg class="ic-check" role="img" width="50" height="50">
-                  <use xlink:href="static/decors/sprite.svg#ic-check"></use>
-                </svg>
-              </div>
-              <div class="Tender__info"><a class="Tender__title" href="/tender.html"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat, sunt.</a></div>
-              <div class="Tender__country">
-                <svg class="ic-cn" role="img">
-                  <use xlink:href="static/decors/sprite.svg#ic-cn"></use>
-                </svg>
-              </div><a class="Tender__btn" href="/tender.html">Контакты</a>
-              <div class="Tender__amount">512
-                <svg class="ic-telegram va-middle" role="img">
-                  <use xlink:href="static/decors/sprite.svg#ic-telegram"></use>
-                </svg>
-              </div>
-              <div class="Tender__time">8 hours ago</div>
-            </li>
-            <li class="Tender">
-              <div class="Tender__img">  
-                <svg class="ic-check" role="img" width="50" height="50">
-                  <use xlink:href="static/decors/sprite.svg#ic-check"></use>
-                </svg>
-              </div>
-              <div class="Tender__info"><a class="Tender__title" href="/tender.html"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit voluptatem placeat voluptatibus voluptas hic modi voluptate excepturi beatae mollitia quidem!        </a></div>
-              <div class="Tender__country">
-                <svg class="ic-us" role="img">
-                  <use xlink:href="static/decors/sprite.svg#ic-us"></use>
-                </svg>
-              </div><a class="Tender__btn" href="/tender.html">Контакты</a>
-              <div class="Tender__amount">2
-                <svg class="ic-telegram va-middle" role="img">
-                  <use xlink:href="static/decors/sprite.svg#ic-telegram"></use>
-                </svg>
-              </div>
-              <div class="Tender__time">1 week ago</div>
-            </li>
-            <li class="Tender">
-              <div class="Tender__img">  
-                <svg class="ic-check" role="img" width="50" height="50">
-                  <use xlink:href="static/decors/sprite.svg#ic-check"></use>
-                </svg>
-              </div>
-              <div class="Tender__info"><a class="Tender__title" href="/tender.html"> Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Первую дорогу дал использовало безопасную, там всеми заглавных маленькая пояс ручеек, переписывается ее образ речью домах страна своих путь? Прямо!       </a></div>
-              <div class="Tender__country">
-                <svg class="ic-ru" role="img">
-                  <use xlink:href="static/decors/sprite.svg#ic-ru"></use>
-                </svg>
-              </div><a class="Tender__btn" href="/tender.html">Контакты</a>
-              <div class="Tender__amount">12
-                <svg class="ic-telegram va-middle" role="img">
-                  <use xlink:href="static/decors/sprite.svg#ic-telegram"></use>
-                </svg>
-              </div>
-              <div class="Tender__time">1 неделя назад</div>
-            </li>
-            <li class="Tender">
-              <div class="Tender__img">  
-                <svg class="ic-check" role="img" width="50" height="50">
-                  <use xlink:href="static/decors/sprite.svg#ic-check"></use>
-                </svg>
-              </div>
-              <div class="Tender__info"><a class="Tender__title" href="/tender.html"> Далеко-далеко за словесными горами </a></div>
-              <div class="Tender__country">
-                <svg class="ic-de" role="img">
-                  <use xlink:href="static/decors/sprite.svg#ic-de"></use>
-                </svg>
-              </div><a class="Tender__btn" href="/tender.html">Контакты</a>
-              <div class="Tender__amount">5
-                <svg class="ic-telegram va-middle" role="img">
-                  <use xlink:href="static/decors/sprite.svg#ic-telegram"></use>
-                </svg>
-              </div>
-              <div class="Tender__time">1 день назад</div>
-            </li>
-            <li class="Tender">
-              <div class="Tender__img">  
-                <svg class="ic-check" role="img" width="50" height="50">
-                  <use xlink:href="static/decors/sprite.svg#ic-check"></use>
-                </svg>
-              </div>
-              <div class="Tender__info"><a class="Tender__title" href="/tender.html"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat, sunt.</a></div>
-              <div class="Tender__country">
-                <svg class="ic-cn" role="img">
-                  <use xlink:href="static/decors/sprite.svg#ic-cn"></use>
-                </svg>
-              </div><a class="Tender__btn" href="/tender.html">Контакты</a>
-              <div class="Tender__amount">512
-                <svg class="ic-telegram va-middle" role="img">
-                  <use xlink:href="static/decors/sprite.svg#ic-telegram"></use>
-                </svg>
-              </div>
-              <div class="Tender__time">8 hours ago</div>
-            </li>
-            <li class="Tender">
-              <div class="Tender__img">  
-                <svg class="ic-check" role="img" width="50" height="50">
-                  <use xlink:href="static/decors/sprite.svg#ic-check"></use>
-                </svg>
-              </div>
-              <div class="Tender__info"><a class="Tender__title" href="/tender.html"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit voluptatem placeat voluptatibus voluptas hic modi voluptate excepturi beatae mollitia quidem!        </a></div>
-              <div class="Tender__country">
-                <svg class="ic-us" role="img">
-                  <use xlink:href="static/decors/sprite.svg#ic-us"></use>
-                </svg>
-              </div><a class="Tender__btn" href="/tender.html">Контакты</a>
-              <div class="Tender__amount">2
-                <svg class="ic-telegram va-middle" role="img">
-                  <use xlink:href="static/decors/sprite.svg#ic-telegram"></use>
-                </svg>
-              </div>
-              <div class="Tender__time">1 week ago</div>
-            </li>
-            <li class="Tender">
-              <div class="Tender__img">  
-                <svg class="ic-check" role="img" width="50" height="50">
-                  <use xlink:href="static/decors/sprite.svg#ic-check"></use>
-                </svg>
-              </div>
-              <div class="Tender__info"><a class="Tender__title" href="/tender.html"> Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Первую дорогу дал использовало безопасную, там всеми заглавных маленькая пояс ручеек, переписывается ее образ речью домах страна своих путь? Прямо!       </a></div>
-              <div class="Tender__country">
-                <svg class="ic-ru" role="img">
-                  <use xlink:href="static/decors/sprite.svg#ic-ru"></use>
-                </svg>
-              </div><a class="Tender__btn" href="/tender.html">Контакты</a>
-              <div class="Tender__amount">12
-                <svg class="ic-telegram va-middle" role="img">
-                  <use xlink:href="static/decors/sprite.svg#ic-telegram"></use>
-                </svg>
-              </div>
-              <div class="Tender__time">1 неделя назад</div>
-            </li>
-            <li class="Tender">
-              <div class="Tender__img">  
-                <svg class="ic-check" role="img" width="50" height="50">
-                  <use xlink:href="static/decors/sprite.svg#ic-check"></use>
-                </svg>
-              </div>
-              <div class="Tender__info"><a class="Tender__title" href="/tender.html"> Далеко-далеко за словесными горами </a></div>
-              <div class="Tender__country">
-                <svg class="ic-de" role="img">
-                  <use xlink:href="static/decors/sprite.svg#ic-de"></use>
-                </svg>
-              </div><a class="Tender__btn" href="/tender.html">Контакты</a>
-              <div class="Tender__amount">5
-                <svg class="ic-telegram va-middle" role="img">
-                  <use xlink:href="static/decors/sprite.svg#ic-telegram"></use>
-                </svg>
-              </div>
-              <div class="Tender__time">1 день назад</div>
-            </li>
-            <li class="Tender">
-              <div class="Tender__img">  
-                <svg class="ic-check" role="img" width="50" height="50">
-                  <use xlink:href="static/decors/sprite.svg#ic-check"></use>
-                </svg>
-              </div>
-              <div class="Tender__info"><a class="Tender__title" href="/tender.html"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat, sunt.</a></div>
-              <div class="Tender__country">
-                <svg class="ic-cn" role="img">
-                  <use xlink:href="static/decors/sprite.svg#ic-cn"></use>
-                </svg>
-              </div><a class="Tender__btn" href="/tender.html">Контакты</a>
-              <div class="Tender__amount">512
-                <svg class="ic-telegram va-middle" role="img">
-                  <use xlink:href="static/decors/sprite.svg#ic-telegram"></use>
-                </svg>
-              </div>
-              <div class="Tender__time">8 hours ago</div>
-            </li>
-            <li class="Tender">
-              <div class="Tender__img">  
-                <svg class="ic-check" role="img" width="50" height="50">
-                  <use xlink:href="static/decors/sprite.svg#ic-check"></use>
-                </svg>
-              </div>
-              <div class="Tender__info"><a class="Tender__title" href="/tender.html"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit voluptatem placeat voluptatibus voluptas hic modi voluptate excepturi beatae mollitia quidem!        </a></div>
-              <div class="Tender__country">
-                <svg class="ic-us" role="img">
-                  <use xlink:href="static/decors/sprite.svg#ic-us"></use>
-                </svg>
-              </div><a class="Tender__btn" href="/tender.html">Контакты</a>
-              <div class="Tender__amount">2
-                <svg class="ic-telegram va-middle" role="img">
-                  <use xlink:href="static/decors/sprite.svg#ic-telegram"></use>
-                </svg>
-              </div>
-              <div class="Tender__time">1 week ago</div>
-            </li>
-            <li class="Tender">
-              <div class="Tender__img">  
-                <svg class="ic-check" role="img" width="50" height="50">
-                  <use xlink:href="static/decors/sprite.svg#ic-check"></use>
-                </svg>
-              </div>
-              <div class="Tender__info"><a class="Tender__title" href="/tender.html"> Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Первую дорогу дал использовало безопасную, там всеми заглавных маленькая пояс ручеек, переписывается ее образ речью домах страна своих путь? Прямо!       </a></div>
-              <div class="Tender__country">
-                <svg class="ic-ru" role="img">
-                  <use xlink:href="static/decors/sprite.svg#ic-ru"></use>
-                </svg>
-              </div><a class="Tender__btn" href="/tender.html">Контакты</a>
-              <div class="Tender__amount">12
-                <svg class="ic-telegram va-middle" role="img">
-                  <use xlink:href="static/decors/sprite.svg#ic-telegram"></use>
-                </svg>
-              </div>
-              <div class="Tender__time">1 неделя назад</div>
-            </li>
-            <li class="Tender">
-              <div class="Tender__img">  
-                <svg class="ic-check" role="img" width="50" height="50">
-                  <use xlink:href="static/decors/sprite.svg#ic-check"></use>
-                </svg>
-              </div>
-              <div class="Tender__info"><a class="Tender__title" href="/tender.html"> Далеко-далеко за словесными горами </a></div>
-              <div class="Tender__country">
-                <svg class="ic-de" role="img">
-                  <use xlink:href="static/decors/sprite.svg#ic-de"></use>
-                </svg>
-              </div><a class="Tender__btn" href="/tender.html">Контакты</a>
-              <div class="Tender__amount">5
-                <svg class="ic-telegram va-middle" role="img">
-                  <use xlink:href="static/decors/sprite.svg#ic-telegram"></use>
-                </svg>
-              </div>
-              <div class="Tender__time">1 день назад</div>
-            </li>
-            <li class="Tender">
-              <div class="Tender__img">  
-                <svg class="ic-check" role="img" width="50" height="50">
-                  <use xlink:href="static/decors/sprite.svg#ic-check"></use>
-                </svg>
-              </div>
-              <div class="Tender__info"><a class="Tender__title" href="/tender.html"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat, sunt.</a></div>
-              <div class="Tender__country">
-                <svg class="ic-cn" role="img">
-                  <use xlink:href="static/decors/sprite.svg#ic-cn"></use>
-                </svg>
-              </div><a class="Tender__btn" href="/tender.html">Контакты</a>
-              <div class="Tender__amount">512
-                <svg class="ic-telegram va-middle" role="img">
-                  <use xlink:href="static/decors/sprite.svg#ic-telegram"></use>
-                </svg>
-              </div>
-              <div class="Tender__time">8 hours ago</div>
-            </li>
-          </ul>
-        </main>
-      </div>
+      </aside>
+      <main class="Page__main">
+        <ul class="reset-list">
+          <li class="Tender">
+            <div class="Tender__img">  
+              <svg class="ic-check" role="img" width="50" height="50">
+                <use xlink:href="static/decors/sprite.svg#ic-check"></use>
+              </svg>
+            </div>
+            <div class="Tender__info"><a class="Tender__title" href="/tender.html"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit voluptatem placeat voluptatibus voluptas hic modi voluptate excepturi beatae mollitia quidem!  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis quas illum quia a. Itaque odio sed, quos repellat error ipsam sint. Voluptas earum beatae, necessitatibus quisquam sint libero asperiores magnam.     </a></div>
+            <div class="Tender__country">
+              <svg class="ic-us" role="img">
+                <use xlink:href="static/decors/sprite.svg#ic-us"></use>
+              </svg>
+            </div><a class="Tender__btn" href="/tender.html">Контакты</a>
+            <div class="Tender__amount">
+              <svg class="ic-telegram va-middle" role="img">
+                <use xlink:href="static/decors/sprite.svg#ic-telegram"></use>
+              </svg>2
+            </div>
+            <div class="Tender__time">1 week ago</div>
+          </li>
+          <li class="Tender">
+            <div class="Tender__img">  
+              <svg class="ic-check" role="img" width="50" height="50">
+                <use xlink:href="static/decors/sprite.svg#ic-check"></use>
+              </svg>
+            </div>
+            <div class="Tender__info"><a class="Tender__title" href="/tender.html"> Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Первую дорогу дал использовало безопасную, там всеми заглавных маленькая пояс ручеек, переписывается ее образ речью домах страна своих путь? Прямо!       </a></div>
+            <div class="Tender__country">
+              <svg class="ic-ru" role="img">
+                <use xlink:href="static/decors/sprite.svg#ic-ru"></use>
+              </svg>
+            </div><a class="Tender__btn" href="/tender.html">Контакты</a>
+            <div class="Tender__amount">
+              <svg class="ic-telegram va-middle" role="img">
+                <use xlink:href="static/decors/sprite.svg#ic-telegram"></use>
+              </svg>12
+            </div>
+            <div class="Tender__time">1 неделя назад</div>
+          </li>
+          <li class="Tender">
+            <div class="Tender__img">  
+              <svg class="ic-check" role="img" width="50" height="50">
+                <use xlink:href="static/decors/sprite.svg#ic-check"></use>
+              </svg>
+            </div>
+            <div class="Tender__info"><a class="Tender__title" href="/tender.html"> Далеко-далеко за словесными горами </a></div>
+            <div class="Tender__country">
+              <svg class="ic-de" role="img">
+                <use xlink:href="static/decors/sprite.svg#ic-de"></use>
+              </svg>
+            </div><a class="Tender__btn" href="/tender.html">Контакты</a>
+            <div class="Tender__amount">
+              <svg class="ic-telegram va-middle" role="img">
+                <use xlink:href="static/decors/sprite.svg#ic-telegram"></use>
+              </svg>5
+            </div>
+            <div class="Tender__time">1 день назад</div>
+          </li>
+          <li class="Tender">
+            <div class="Tender__img">  
+              <svg class="ic-check" role="img" width="50" height="50">
+                <use xlink:href="static/decors/sprite.svg#ic-check"></use>
+              </svg>
+            </div>
+            <div class="Tender__info"><a class="Tender__title" href="/tender.html"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat, sunt.</a></div>
+            <div class="Tender__country">
+              <svg class="ic-cn" role="img">
+                <use xlink:href="static/decors/sprite.svg#ic-cn"></use>
+              </svg>
+            </div><a class="Tender__btn" href="/tender.html">Контакты</a>
+            <div class="Tender__amount">
+              <svg class="ic-telegram va-middle" role="img">
+                <use xlink:href="static/decors/sprite.svg#ic-telegram"></use>
+              </svg>512
+            </div>
+            <div class="Tender__time">8 hours ago</div>
+          </li>
+          <li class="Tender">
+            <div class="Tender__img">  
+              <svg class="ic-check" role="img" width="50" height="50">
+                <use xlink:href="static/decors/sprite.svg#ic-check"></use>
+              </svg>
+            </div>
+            <div class="Tender__info"><a class="Tender__title" href="/tender.html"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit voluptatem placeat voluptatibus voluptas hic modi voluptate excepturi beatae mollitia quidem!        </a></div>
+            <div class="Tender__country">
+              <svg class="ic-us" role="img">
+                <use xlink:href="static/decors/sprite.svg#ic-us"></use>
+              </svg>
+            </div><a class="Tender__btn" href="/tender.html">Контакты</a>
+            <div class="Tender__amount">
+              <svg class="ic-telegram va-middle" role="img">
+                <use xlink:href="static/decors/sprite.svg#ic-telegram"></use>
+              </svg>2
+            </div>
+            <div class="Tender__time">1 week ago</div>
+          </li>
+          <li class="Tender">
+            <div class="Tender__img">  
+              <svg class="ic-check" role="img" width="50" height="50">
+                <use xlink:href="static/decors/sprite.svg#ic-check"></use>
+              </svg>
+            </div>
+            <div class="Tender__info"><a class="Tender__title" href="/tender.html"> Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Первую дорогу дал использовало безопасную, там всеми заглавных маленькая пояс ручеек, переписывается ее образ речью домах страна своих путь? Прямо!       </a></div>
+            <div class="Tender__country">
+              <svg class="ic-ru" role="img">
+                <use xlink:href="static/decors/sprite.svg#ic-ru"></use>
+              </svg>
+            </div><a class="Tender__btn" href="/tender.html">Контакты</a>
+            <div class="Tender__amount">
+              <svg class="ic-telegram va-middle" role="img">
+                <use xlink:href="static/decors/sprite.svg#ic-telegram"></use>
+              </svg>12
+            </div>
+            <div class="Tender__time">1 неделя назад</div>
+          </li>
+          <li class="Tender">
+            <div class="Tender__img">  
+              <svg class="ic-check" role="img" width="50" height="50">
+                <use xlink:href="static/decors/sprite.svg#ic-check"></use>
+              </svg>
+            </div>
+            <div class="Tender__info"><a class="Tender__title" href="/tender.html"> Далеко-далеко за словесными горами </a></div>
+            <div class="Tender__country">
+              <svg class="ic-de" role="img">
+                <use xlink:href="static/decors/sprite.svg#ic-de"></use>
+              </svg>
+            </div><a class="Tender__btn" href="/tender.html">Контакты</a>
+            <div class="Tender__amount">
+              <svg class="ic-telegram va-middle" role="img">
+                <use xlink:href="static/decors/sprite.svg#ic-telegram"></use>
+              </svg>5
+            </div>
+            <div class="Tender__time">1 день назад</div>
+          </li>
+          <li class="Tender">
+            <div class="Tender__img">  
+              <svg class="ic-check" role="img" width="50" height="50">
+                <use xlink:href="static/decors/sprite.svg#ic-check"></use>
+              </svg>
+            </div>
+            <div class="Tender__info"><a class="Tender__title" href="/tender.html"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat, sunt.</a></div>
+            <div class="Tender__country">
+              <svg class="ic-cn" role="img">
+                <use xlink:href="static/decors/sprite.svg#ic-cn"></use>
+              </svg>
+            </div><a class="Tender__btn" href="/tender.html">Контакты</a>
+            <div class="Tender__amount">
+              <svg class="ic-telegram va-middle" role="img">
+                <use xlink:href="static/decors/sprite.svg#ic-telegram"></use>
+              </svg>512
+            </div>
+            <div class="Tender__time">8 hours ago</div>
+          </li>
+          <li class="Tender">
+            <div class="Tender__img">  
+              <svg class="ic-check" role="img" width="50" height="50">
+                <use xlink:href="static/decors/sprite.svg#ic-check"></use>
+              </svg>
+            </div>
+            <div class="Tender__info"><a class="Tender__title" href="/tender.html"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit voluptatem placeat voluptatibus voluptas hic modi voluptate excepturi beatae mollitia quidem!        </a></div>
+            <div class="Tender__country">
+              <svg class="ic-us" role="img">
+                <use xlink:href="static/decors/sprite.svg#ic-us"></use>
+              </svg>
+            </div><a class="Tender__btn" href="/tender.html">Контакты</a>
+            <div class="Tender__amount">
+              <svg class="ic-telegram va-middle" role="img">
+                <use xlink:href="static/decors/sprite.svg#ic-telegram"></use>
+              </svg>2
+            </div>
+            <div class="Tender__time">1 week ago</div>
+          </li>
+          <li class="Tender">
+            <div class="Tender__img">  
+              <svg class="ic-check" role="img" width="50" height="50">
+                <use xlink:href="static/decors/sprite.svg#ic-check"></use>
+              </svg>
+            </div>
+            <div class="Tender__info"><a class="Tender__title" href="/tender.html"> Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Первую дорогу дал использовало безопасную, там всеми заглавных маленькая пояс ручеек, переписывается ее образ речью домах страна своих путь? Прямо!       </a></div>
+            <div class="Tender__country">
+              <svg class="ic-ru" role="img">
+                <use xlink:href="static/decors/sprite.svg#ic-ru"></use>
+              </svg>
+            </div><a class="Tender__btn" href="/tender.html">Контакты</a>
+            <div class="Tender__amount">
+              <svg class="ic-telegram va-middle" role="img">
+                <use xlink:href="static/decors/sprite.svg#ic-telegram"></use>
+              </svg>12
+            </div>
+            <div class="Tender__time">1 неделя назад</div>
+          </li>
+          <li class="Tender">
+            <div class="Tender__img">  
+              <svg class="ic-check" role="img" width="50" height="50">
+                <use xlink:href="static/decors/sprite.svg#ic-check"></use>
+              </svg>
+            </div>
+            <div class="Tender__info"><a class="Tender__title" href="/tender.html"> Далеко-далеко за словесными горами </a></div>
+            <div class="Tender__country">
+              <svg class="ic-de" role="img">
+                <use xlink:href="static/decors/sprite.svg#ic-de"></use>
+              </svg>
+            </div><a class="Tender__btn" href="/tender.html">Контакты</a>
+            <div class="Tender__amount">
+              <svg class="ic-telegram va-middle" role="img">
+                <use xlink:href="static/decors/sprite.svg#ic-telegram"></use>
+              </svg>5
+            </div>
+            <div class="Tender__time">1 день назад</div>
+          </li>
+          <li class="Tender">
+            <div class="Tender__img">  
+              <svg class="ic-check" role="img" width="50" height="50">
+                <use xlink:href="static/decors/sprite.svg#ic-check"></use>
+              </svg>
+            </div>
+            <div class="Tender__info"><a class="Tender__title" href="/tender.html"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat, sunt.</a></div>
+            <div class="Tender__country">
+              <svg class="ic-cn" role="img">
+                <use xlink:href="static/decors/sprite.svg#ic-cn"></use>
+              </svg>
+            </div><a class="Tender__btn" href="/tender.html">Контакты</a>
+            <div class="Tender__amount">
+              <svg class="ic-telegram va-middle" role="img">
+                <use xlink:href="static/decors/sprite.svg#ic-telegram"></use>
+              </svg>512
+            </div>
+            <div class="Tender__time">8 hours ago</div>
+          </li>
+          <li class="Tender">
+            <div class="Tender__img">  
+              <svg class="ic-check" role="img" width="50" height="50">
+                <use xlink:href="static/decors/sprite.svg#ic-check"></use>
+              </svg>
+            </div>
+            <div class="Tender__info"><a class="Tender__title" href="/tender.html"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit voluptatem placeat voluptatibus voluptas hic modi voluptate excepturi beatae mollitia quidem!        </a></div>
+            <div class="Tender__country">
+              <svg class="ic-us" role="img">
+                <use xlink:href="static/decors/sprite.svg#ic-us"></use>
+              </svg>
+            </div><a class="Tender__btn" href="/tender.html">Контакты</a>
+            <div class="Tender__amount">
+              <svg class="ic-telegram va-middle" role="img">
+                <use xlink:href="static/decors/sprite.svg#ic-telegram"></use>
+              </svg>2
+            </div>
+            <div class="Tender__time">1 week ago</div>
+          </li>
+          <li class="Tender">
+            <div class="Tender__img">  
+              <svg class="ic-check" role="img" width="50" height="50">
+                <use xlink:href="static/decors/sprite.svg#ic-check"></use>
+              </svg>
+            </div>
+            <div class="Tender__info"><a class="Tender__title" href="/tender.html"> Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Первую дорогу дал использовало безопасную, там всеми заглавных маленькая пояс ручеек, переписывается ее образ речью домах страна своих путь? Прямо!       </a></div>
+            <div class="Tender__country">
+              <svg class="ic-ru" role="img">
+                <use xlink:href="static/decors/sprite.svg#ic-ru"></use>
+              </svg>
+            </div><a class="Tender__btn" href="/tender.html">Контакты</a>
+            <div class="Tender__amount">
+              <svg class="ic-telegram va-middle" role="img">
+                <use xlink:href="static/decors/sprite.svg#ic-telegram"></use>
+              </svg>12
+            </div>
+            <div class="Tender__time">1 неделя назад</div>
+          </li>
+          <li class="Tender">
+            <div class="Tender__img">  
+              <svg class="ic-check" role="img" width="50" height="50">
+                <use xlink:href="static/decors/sprite.svg#ic-check"></use>
+              </svg>
+            </div>
+            <div class="Tender__info"><a class="Tender__title" href="/tender.html"> Далеко-далеко за словесными горами </a></div>
+            <div class="Tender__country">
+              <svg class="ic-de" role="img">
+                <use xlink:href="static/decors/sprite.svg#ic-de"></use>
+              </svg>
+            </div><a class="Tender__btn" href="/tender.html">Контакты</a>
+            <div class="Tender__amount">
+              <svg class="ic-telegram va-middle" role="img">
+                <use xlink:href="static/decors/sprite.svg#ic-telegram"></use>
+              </svg>5
+            </div>
+            <div class="Tender__time">1 день назад</div>
+          </li>
+          <li class="Tender">
+            <div class="Tender__img">  
+              <svg class="ic-check" role="img" width="50" height="50">
+                <use xlink:href="static/decors/sprite.svg#ic-check"></use>
+              </svg>
+            </div>
+            <div class="Tender__info"><a class="Tender__title" href="/tender.html"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat, sunt.</a></div>
+            <div class="Tender__country">
+              <svg class="ic-cn" role="img">
+                <use xlink:href="static/decors/sprite.svg#ic-cn"></use>
+              </svg>
+            </div><a class="Tender__btn" href="/tender.html">Контакты</a>
+            <div class="Tender__amount">
+              <svg class="ic-telegram va-middle" role="img">
+                <use xlink:href="static/decors/sprite.svg#ic-telegram"></use>
+              </svg>512
+            </div>
+            <div class="Tender__time">8 hours ago</div>
+          </li>
+          <li class="Tender">
+            <div class="Tender__img">  
+              <svg class="ic-check" role="img" width="50" height="50">
+                <use xlink:href="static/decors/sprite.svg#ic-check"></use>
+              </svg>
+            </div>
+            <div class="Tender__info"><a class="Tender__title" href="/tender.html"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit voluptatem placeat voluptatibus voluptas hic modi voluptate excepturi beatae mollitia quidem!        </a></div>
+            <div class="Tender__country">
+              <svg class="ic-us" role="img">
+                <use xlink:href="static/decors/sprite.svg#ic-us"></use>
+              </svg>
+            </div><a class="Tender__btn" href="/tender.html">Контакты</a>
+            <div class="Tender__amount">
+              <svg class="ic-telegram va-middle" role="img">
+                <use xlink:href="static/decors/sprite.svg#ic-telegram"></use>
+              </svg>2
+            </div>
+            <div class="Tender__time">1 week ago</div>
+          </li>
+          <li class="Tender">
+            <div class="Tender__img">  
+              <svg class="ic-check" role="img" width="50" height="50">
+                <use xlink:href="static/decors/sprite.svg#ic-check"></use>
+              </svg>
+            </div>
+            <div class="Tender__info"><a class="Tender__title" href="/tender.html"> Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Первую дорогу дал использовало безопасную, там всеми заглавных маленькая пояс ручеек, переписывается ее образ речью домах страна своих путь? Прямо!       </a></div>
+            <div class="Tender__country">
+              <svg class="ic-ru" role="img">
+                <use xlink:href="static/decors/sprite.svg#ic-ru"></use>
+              </svg>
+            </div><a class="Tender__btn" href="/tender.html">Контакты</a>
+            <div class="Tender__amount">
+              <svg class="ic-telegram va-middle" role="img">
+                <use xlink:href="static/decors/sprite.svg#ic-telegram"></use>
+              </svg>12
+            </div>
+            <div class="Tender__time">1 неделя назад</div>
+          </li>
+          <li class="Tender">
+            <div class="Tender__img">  
+              <svg class="ic-check" role="img" width="50" height="50">
+                <use xlink:href="static/decors/sprite.svg#ic-check"></use>
+              </svg>
+            </div>
+            <div class="Tender__info"><a class="Tender__title" href="/tender.html"> Далеко-далеко за словесными горами </a></div>
+            <div class="Tender__country">
+              <svg class="ic-de" role="img">
+                <use xlink:href="static/decors/sprite.svg#ic-de"></use>
+              </svg>
+            </div><a class="Tender__btn" href="/tender.html">Контакты</a>
+            <div class="Tender__amount">
+              <svg class="ic-telegram va-middle" role="img">
+                <use xlink:href="static/decors/sprite.svg#ic-telegram"></use>
+              </svg>5
+            </div>
+            <div class="Tender__time">1 день назад</div>
+          </li>
+          <li class="Tender">
+            <div class="Tender__img">  
+              <svg class="ic-check" role="img" width="50" height="50">
+                <use xlink:href="static/decors/sprite.svg#ic-check"></use>
+              </svg>
+            </div>
+            <div class="Tender__info"><a class="Tender__title" href="/tender.html"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat, sunt.</a></div>
+            <div class="Tender__country">
+              <svg class="ic-cn" role="img">
+                <use xlink:href="static/decors/sprite.svg#ic-cn"></use>
+              </svg>
+            </div><a class="Tender__btn" href="/tender.html">Контакты</a>
+            <div class="Tender__amount">
+              <svg class="ic-telegram va-middle" role="img">
+                <use xlink:href="static/decors/sprite.svg#ic-telegram"></use>
+              </svg>512
+            </div>
+            <div class="Tender__time">8 hours ago</div>
+          </li>
+        </ul>
+      </main>
     </div>
     <footer class="Footer" id="footer">
       <div class="container">
@@ -699,7 +693,7 @@
 <script src="static/scripts//svg4everybody.min.js"></script>
 <script src="static/scripts//ofi.min.js"></script>
 <script src="static/scripts//slick.min.js"></script>
-<script src="static/scripts//main.js"></script><script>svg4everybody({ nosvg: true, polyfill: false });</script>
+<script src="static/scripts//main.js"></script><script>svg4everybody();</script>
 <!---->
 <!--========================== DELETE ME start ===========================-->
 <!---->
