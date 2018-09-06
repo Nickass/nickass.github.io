@@ -4719,6 +4719,14 @@ a.Box__inner:hover {
 
 .Roadmap__item-text {
   font-size: 14px;
+  height: 152px;
+  overflow: auto;
+}
+
+@media (min-width:500px) and (max-width: 1019px) {
+  .Roadmap__item-text {
+    height: 100px;
+  }
 }
 
 .Roadmap__button {
