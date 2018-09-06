@@ -394,70 +394,70 @@ blockquote {
   font-family: "Open sans";
   font-style: normal;
   font-weight: 300;
-  src: font-url("../font/Opensans-light/OPENSANS-LIGHT.ttf") format("truetype");
+  src: url("../font/Opensans-light/OPENSANS-LIGHT.eot?#iefix") format("embedded-opentype"), url("../font/Opensans-light/OPENSANS-LIGHT.woff2") format("woff2"), url("../font/Opensans-light/OPENSANS-LIGHT.woff") format("woff"), url("../font/Opensans-light/OPENSANS-LIGHT.ttf") format("truetype"), url("../font/Opensans-light/OPENSANS-LIGHT.svg#Open sans") format("svg");
 }
 
 @font-face {
   font-family: "Open sans";
   font-style: italic;
   font-weight: 300;
-  src: font-url("../font/Opensans-lightitalic/OPENSANS-LIGHTITALIC.ttf") format("truetype");
+  src: url("../font/Opensans-lightitalic/OPENSANS-LIGHTITALIC.eot?#iefix") format("embedded-opentype"), url("../font/Opensans-lightitalic/OPENSANS-LIGHTITALIC.woff2") format("woff2"), url("../font/Opensans-lightitalic/OPENSANS-LIGHTITALIC.woff") format("woff"), url("../font/Opensans-lightitalic/OPENSANS-LIGHTITALIC.ttf") format("truetype"), url("../font/Opensans-lightitalic/OPENSANS-LIGHTITALIC.svg#Open sans") format("svg");
 }
 
 @font-face {
   font-family: "Open sans";
   font-style: normal;
   font-weight: 400;
-  src: font-url("../font/Opensans-regular/OPENSANS-REGULAR.ttf") format("truetype");
+  src: url("../font/Opensans-regular/OPENSANS-REGULAR.eot?#iefix") format("embedded-opentype"), url("../font/Opensans-regular/OPENSANS-REGULAR.woff2") format("woff2"), url("../font/Opensans-regular/OPENSANS-REGULAR.woff") format("woff"), url("../font/Opensans-regular/OPENSANS-REGULAR.ttf") format("truetype"), url("../font/Opensans-regular/OPENSANS-REGULAR.svg#Open sans") format("svg");
 }
 
 @font-face {
   font-family: "Open sans";
   font-style: italic;
   font-weight: 400;
-  src: font-url("../font/Opensans-italic/OPENSANS-ITALIC.ttf") format("truetype");
+  src: url("../font/Opensans-italic/OPENSANS-ITALIC.eot?#iefix") format("embedded-opentype"), url("../font/Opensans-italic/OPENSANS-ITALIC.woff2") format("woff2"), url("../font/Opensans-italic/OPENSANS-ITALIC.woff") format("woff"), url("../font/Opensans-italic/OPENSANS-ITALIC.ttf") format("truetype"), url("../font/Opensans-italic/OPENSANS-ITALIC.svg#Open sans") format("svg");
 }
 
 @font-face {
   font-family: "Open sans";
   font-style: normal;
   font-weight: 600;
-  src: font-url("../font/Opensans-semibold/OPENSANS-SEMIBOLD.ttf") format("truetype");
+  src: url("../font/Opensans-semibold/OPENSANS-SEMIBOLD.eot?#iefix") format("embedded-opentype"), url("../font/Opensans-semibold/OPENSANS-SEMIBOLD.woff2") format("woff2"), url("../font/Opensans-semibold/OPENSANS-SEMIBOLD.woff") format("woff"), url("../font/Opensans-semibold/OPENSANS-SEMIBOLD.ttf") format("truetype"), url("../font/Opensans-semibold/OPENSANS-SEMIBOLD.svg#Open sans") format("svg");
 }
 
 @font-face {
   font-family: "Open sans";
   font-style: italic;
   font-weight: 600;
-  src: font-url("../font/Opensans-semibolditalic/OPENSANS-SEMIBOLDITALIC.ttf") format("truetype");
+  src: url("../font/Opensans-semibolditalic/OPENSANS-SEMIBOLDITALIC.eot?#iefix") format("embedded-opentype"), url("../font/Opensans-semibolditalic/OPENSANS-SEMIBOLDITALIC.woff2") format("woff2"), url("../font/Opensans-semibolditalic/OPENSANS-SEMIBOLDITALIC.woff") format("woff"), url("../font/Opensans-semibolditalic/OPENSANS-SEMIBOLDITALIC.ttf") format("truetype"), url("../font/Opensans-semibolditalic/OPENSANS-SEMIBOLDITALIC.svg#Open sans") format("svg");
 }
 
 @font-face {
   font-family: "Open sans";
   font-style: normal;
   font-weight: 700;
-  src: font-url("../font/Opensans-bold/OPENSANS-BOLD.ttf") format("truetype");
+  src: url("../font/Opensans-bold/OPENSANS-BOLD.eot?#iefix") format("embedded-opentype"), url("../font/Opensans-bold/OPENSANS-BOLD.woff2") format("woff2"), url("../font/Opensans-bold/OPENSANS-BOLD.woff") format("woff"), url("../font/Opensans-bold/OPENSANS-BOLD.ttf") format("truetype"), url("../font/Opensans-bold/OPENSANS-BOLD.svg#Open sans") format("svg");
 }
 
 @font-face {
   font-family: "Open sans";
   font-style: italic;
   font-weight: 700;
-  src: font-url("../font/Opensans-bolditalic/OPENSANS-BOLDITALIC.ttf") format("truetype");
+  src: url("../font/Opensans-bolditalic/OPENSANS-BOLDITALIC.eot?#iefix") format("embedded-opentype"), url("../font/Opensans-bolditalic/OPENSANS-BOLDITALIC.woff2") format("woff2"), url("../font/Opensans-bolditalic/OPENSANS-BOLDITALIC.woff") format("woff"), url("../font/Opensans-bolditalic/OPENSANS-BOLDITALIC.ttf") format("truetype"), url("../font/Opensans-bolditalic/OPENSANS-BOLDITALIC.svg#Open sans") format("svg");
 }
 
 @font-face {
   font-family: "Open sans";
   font-style: normal;
   font-weight: 800;
-  src: font-url("../font/Opensans-extrabold/OPENSANS-EXTRABOLD.ttf") format("truetype");
+  src: url("../font/Opensans-extrabold/OPENSANS-EXTRABOLD.eot?#iefix") format("embedded-opentype"), url("../font/Opensans-extrabold/OPENSANS-EXTRABOLD.woff2") format("woff2"), url("../font/Opensans-extrabold/OPENSANS-EXTRABOLD.woff") format("woff"), url("../font/Opensans-extrabold/OPENSANS-EXTRABOLD.ttf") format("truetype"), url("../font/Opensans-extrabold/OPENSANS-EXTRABOLD.svg#Open sans") format("svg");
 }
 
 @font-face {
   font-family: "Open sans";
   font-style: italic;
   font-weight: 800;
-  src: font-url("../font/Opensans-extrabolditalic/OPENSANS-EXTRABOLDITALIC.ttf") format("truetype");
+  src: url("../font/Opensans-extrabolditalic/OPENSANS-EXTRABOLDITALIC.eot?#iefix") format("embedded-opentype"), url("../font/Opensans-extrabolditalic/OPENSANS-EXTRABOLDITALIC.woff2") format("woff2"), url("../font/Opensans-extrabolditalic/OPENSANS-EXTRABOLDITALIC.woff") format("woff"), url("../font/Opensans-extrabolditalic/OPENSANS-EXTRABOLDITALIC.ttf") format("truetype"), url("../font/Opensans-extrabolditalic/OPENSANS-EXTRABOLDITALIC.svg#Open sans") format("svg");
 }
 
 * {
@@ -3049,7 +3049,7 @@ a.Box__inner:hover {
   }
 }
 
-@media (max-width: 767px) {
+@media (min-width: 526px) and (max-width: 767px) {
   .Catalog__item:not(.slick-slide).is-grid:nth-of-type(3n) {
     padding: 0;
     padding-right: 7.5px;
@@ -3373,7 +3373,7 @@ a.Box__inner:hover {
 
 .Tender__amount svg {
   width: 20px;
-  height: 17px;
+  height: 15px;
   vertical-align: bottom;
 }
 
