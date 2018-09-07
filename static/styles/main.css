@@ -4220,7 +4220,8 @@ a.Box__inner:hover {
     margin-bottom: 0;
     width: 250px;
     position: fixed;
-    top: 0;
+    top: -100px;
+    padding-top: 100px;
     right: -250px;
     height: 150%;
     z-index: 200;
