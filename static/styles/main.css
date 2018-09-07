@@ -881,6 +881,7 @@ select:invalid {
   padding: 0;
   display: inline-block;
   background-color: transparent;
+  text-decoration: none;
   height: 100%;
   background: #e6bd14;
   position: absolute;
@@ -1082,6 +1083,7 @@ select:invalid {
   padding: 0;
   display: inline-block;
   background-color: transparent;
+  text-decoration: none;
   position: relative;
   z-index: 10;
   display: inline-block;
@@ -1125,6 +1127,7 @@ select:invalid {
   padding: 0;
   display: inline-block;
   background-color: transparent;
+  text-decoration: none;
   border: 1px solid #e6bd14;
   vertical-align: middle;
   height: 30px;
@@ -1214,6 +1217,7 @@ select:invalid {
   padding: 0;
   display: inline-block;
   background-color: transparent;
+  text-decoration: none;
   display: inline-block;
   font-size: 14px;
   height: 35px;
@@ -1247,6 +1251,7 @@ select:invalid {
   padding: 0;
   display: inline-block;
   background-color: transparent;
+  text-decoration: none;
   position: relative;
   -webkit-border-radius: 20px/50%;
           border-radius: 20px/50%;
@@ -1374,6 +1379,7 @@ select:invalid {
   padding: 0;
   display: inline-block;
   background-color: transparent;
+  text-decoration: none;
   top: 0;
   right: 0;
   position: absolute;
@@ -1443,6 +1449,7 @@ select:invalid {
   padding: 0;
   display: inline-block;
   background-color: transparent;
+  text-decoration: none;
 }
 
 .btn-primary {
@@ -1453,10 +1460,10 @@ select:invalid {
   padding: 0;
   display: inline-block;
   background-color: transparent;
+  text-decoration: none;
   background-color: #e6bd14;
   font-weight: 600;
   color: #fff;
-  min-width: 146px;
   padding: 8px 10px;
   fill: #fff;
   text-align: center;
@@ -1475,10 +1482,10 @@ select:invalid {
   padding: 0;
   display: inline-block;
   background-color: transparent;
+  text-decoration: none;
   background-color: #fff;
   font-weight: 600;
   color: #e6bd14;
-  min-width: 146px;
   padding: 8px 10px;
   fill: #e6bd14;
   border: 1px solid #e6bd14;
@@ -1499,10 +1506,10 @@ select:invalid {
   padding: 0;
   display: inline-block;
   background-color: transparent;
+  text-decoration: none;
   background-color: #4ec957;
   font-weight: 600;
   color: #fff;
-  min-width: 146px;
   padding: 8px 10px;
   fill: #fff;
   text-align: center;
@@ -1521,10 +1528,10 @@ select:invalid {
   padding: 0;
   display: inline-block;
   background-color: transparent;
+  text-decoration: none;
   background-color: #4e8ec9;
   font-weight: 600;
   color: #fff;
-  min-width: 146px;
   padding: 8px 10px;
   fill: #fff;
   text-align: center;
@@ -1543,10 +1550,10 @@ select:invalid {
   padding: 0;
   display: inline-block;
   background-color: transparent;
+  text-decoration: none;
   background-color: #c0c0c0;
   font-weight: 600;
   color: #fff;
-  min-width: 146px;
   padding: 8px 10px;
   fill: #fff;
   text-align: center;
@@ -1565,6 +1572,7 @@ select:invalid {
   padding: 0;
   display: inline-block;
   background-color: transparent;
+  text-decoration: none;
   font-weight: 600;
   color: #fe030f;
   font-size: 20px;
@@ -1827,7 +1835,7 @@ select:invalid {
   .Main-menu__link {
     display: block;
     padding: 15px 10px;
-    margin: 0 -15px;
+    margin: 0 -10px;
     margin-bottom: -1px;
     margin-top: -1px;
   }
@@ -2269,6 +2277,7 @@ a.Box__inner:hover {
   padding: 0;
   display: inline-block;
   background-color: transparent;
+  text-decoration: none;
   position: absolute;
   top: 50%;
   margin-top: -12px;
@@ -2706,6 +2715,7 @@ a.Box__inner:hover {
   padding: 0;
   display: inline-block;
   background-color: transparent;
+  text-decoration: none;
   display: block;
   border: 1px solid #b6b7b6;
   padding: 5px;
@@ -2880,6 +2890,7 @@ a.Box__inner:hover {
   padding: 0;
   display: inline-block;
   background-color: transparent;
+  text-decoration: none;
   display: block;
   width: 100%;
   height: 100%;
@@ -3084,6 +3095,7 @@ a.Box__inner:hover {
     border-left-color: transparent;
     border-right-color: #c4c4c4;
     border-bottom-color: #c4c4c4;
+    padding: 0;
   }
   .Catalog__item:not(.slick-slide).is-grid:nth-of-type(3n) {
     border-right-color: #c4c4c4;
@@ -3106,6 +3118,7 @@ a.Box__inner:hover {
     border-top-color: transparent;
     border-right-color: #c4c4c4;
     border-bottom-color: #c4c4c4;
+    padding: 0;
   }
   .Catalog__item:not(.slick-slide).is-grid:nth-of-type(4n + 1) {
     border-left-color: #c4c4c4;
@@ -3124,6 +3137,7 @@ a.Box__inner:hover {
   padding: 0;
   display: inline-block;
   background-color: transparent;
+  text-decoration: none;
   position: absolute;
   z-index: 10;
   top: 70px;
@@ -3220,6 +3234,7 @@ a.Box__inner:hover {
   padding: 0;
   display: inline-block;
   background-color: transparent;
+  text-decoration: none;
   text-decoration: none;
   font-size: 14px;
   width: 25px;
@@ -3329,6 +3344,7 @@ a.Box__inner:hover {
   padding: 0;
   display: inline-block;
   background-color: transparent;
+  text-decoration: none;
   vertical-align: middle;
   display: table-cell;
   width: 120px;
@@ -3450,6 +3466,7 @@ a.Box__inner:hover {
   padding: 0;
   display: inline-block;
   background-color: transparent;
+  text-decoration: none;
   display: inline-block;
   width: 30px;
   height: 30px;
@@ -3492,6 +3509,7 @@ a.Box__inner:hover {
   padding: 0;
   display: inline-block;
   background-color: transparent;
+  text-decoration: none;
   text-decoration: none;
   width: 100%;
 }
@@ -3597,6 +3615,7 @@ a.Box__inner:hover {
   padding: 0;
   display: inline-block;
   background-color: transparent;
+  text-decoration: none;
   position: absolute;
   z-index: 2;
   top: 50%;
@@ -3647,6 +3666,7 @@ a.Box__inner:hover {
   padding: 0;
   display: inline-block;
   background-color: transparent;
+  text-decoration: none;
   color: transparent;
   overflow: hidden;
   width: 16px;
@@ -3997,9 +4017,97 @@ a.Box__inner:hover {
   font-weight: 600;
 }
 
+@media (max-width: 767px) {
+  .Filters {
+    position: fixed;
+    top: 80px;
+    background: #fff;
+    margin-left: -15px;
+    width: 100%;
+    padding: 0 15px;
+    z-index: 200;
+    border-bottom: 1px solid #f1f1f1;
+  }
+  .Filters:before, .Filters:after {
+    display: table;
+    content: "";
+  }
+  .Filters:after {
+    clear: both;
+  }
+  .lt-ie8 .Filters {
+    zoom: 1;
+  }
+}
+
+.Filters__btns {
+  display: table;
+  width: 100%;
+  max-width: 450px;
+  margin: 0 auto;
+  padding: 15px 0;
+  -webkit-transition: margin-top 400ms;
+  -o-transition: margin-top 400ms;
+  transition: margin-top 400ms;
+}
+
+.Filters__btns.hide {
+  margin-top: -61px;
+}
+
+@media (min-width: 768px) {
+  .Filters__btns {
+    display: none;
+  }
+}
+
+.Filters__btn {
+  display: table-cell;
+  width: 50%;
+  text-transform: uppercase;
+}
+
+.Filters__btn:first-child {
+  padding-right: 5px;
+}
+
+.Filters__btn:last-child {
+  padding-left: 5px;
+}
+
+@media (max-width: 767px) {
+  .Filters__left, .Filters__right {
+    background: inherit;
+    padding-bottom: 20px;
+    height: -webkit-calc(100vh - 140px);
+    height: calc(100vh - 140px);
+    overflow: auto;
+    width: 100%;
+    -webkit-transition: 200ms;
+    -o-transition: 200ms;
+    transition: 200ms;
+  }
+  .Filters__right {
+    position: absolute;
+    left: 100%;
+  }
+  .Filters__right.open {
+    left: 0;
+    display: block;
+  }
+  .Filters__left {
+    position: absolute;
+    right: 100%;
+  }
+  .Filters__left.open {
+    right: 0;
+    display: block;
+  }
+}
+
 .Header {
   position: relative;
-  z-index: 20;
+  z-index: 300;
   padding: 15px 0;
   color: #fff;
   background: #1d4248;
@@ -4106,12 +4214,32 @@ a.Box__inner:hover {
 
 @media (max-width: 767px) {
   .Header__menu {
-    top: 100%;
-    bottom: auto;
-    padding-top: 0;
-    height: auto;
-    text-align: right;
-    display: none;
+    padding: 0px 10px 10px;
+    background-color: #102a30;
+    text-align: left;
+    margin-bottom: 0;
+    width: 250px;
+    position: fixed;
+    top: 0;
+    right: -250px;
+    height: 150%;
+    z-index: 200;
+    overflow: auto;
+    -webkit-transition: right 400ms;
+    -o-transition: right 400ms;
+    transition: right 400ms;
+  }
+  .Header__menu .Search {
+    margin: 20px 0 19px;
+  }
+  .Header__menu .Main-menu {
+    padding: 0;
+    padding-top: 1px;
+    border-top: 1px solid #595959;
+    border-bottom: 1px solid #595959;
+  }
+  .Header__menu.open {
+    right: 0px;
   }
 }
 
@@ -4723,7 +4851,7 @@ a.Box__inner:hover {
   overflow: auto;
 }
 
-@media (min-width:500px) and (max-width: 1019px) {
+@media (min-width: 500px) and (max-width: 1019px) {
   .Roadmap__item-text {
     height: 100px;
   }
@@ -4737,6 +4865,7 @@ a.Box__inner:hover {
   padding: 0;
   display: inline-block;
   background-color: transparent;
+  text-decoration: none;
   color: #fff;
   background-color: #e6bd14;
   font-size: 18px;
@@ -5001,6 +5130,7 @@ a.Box__inner:hover {
   padding: 0;
   display: inline-block;
   background-color: transparent;
+  text-decoration: none;
   position: absolute;
   z-index: 2;
   top: 50%;
@@ -5207,60 +5337,11 @@ a.Box__inner:hover {
   }
 }
 
-@media (min-width: 768px) {
-  .Page__sidebar.no-sidebar {
-    display: none;
-  }
-}
-
 @media (max-width: 767px) {
   .Page__sidebar {
-    margin-bottom: 0;
-    width: 250px;
-    position: fixed;
-    top: 0;
-    right: -250px;
-    height: 100%;
-    z-index: 200;
-    overflow: auto;
-    -webkit-transition: right 400ms;
-    -o-transition: right 400ms;
-    transition: right 400ms;
-  }
-  .Page__sidebar.open {
-    right: 0px;
-  }
-}
-
-.Sidebar:before, .Sidebar:after {
-  display: table;
-  content: "";
-}
-
-.Sidebar:after {
-  clear: both;
-}
-
-.lt-ie8 .Sidebar {
-  zoom: 1;
-}
-
-@media (max-width: 767px) {
-  .Sidebar {
-    padding: 0px 10px 10px;
-    border-right: 1px solid #ddd;
-    background-color: #102a30;
-  }
-  .Sidebar__search {
-    margin: 20px 0 19px;
-  }
-  .Sidebar__menu {
-    padding: 10px 0;
-    border-top: 1px solid #595959;
-    border-bottom: 1px solid #595959;
-    margin: 15px 0px;
-  }
-  .Sidebar__box {
+    width: auto;
+    padding-right: 0;
+    float: none;
   }
 }
 
@@ -5581,6 +5662,7 @@ a.Box__inner:hover {
   padding: 0;
   display: inline-block;
   background-color: transparent;
+  text-decoration: none;
   position: absolute;
   z-index: 2;
   top: 50%;
@@ -5710,6 +5792,12 @@ a.Box__inner:hover {
 
 .b-none {
   border: none;
+}
+
+@media (max-width: 767px) {
+  .hide-xs {
+    display: none;
+  }
 }
 
 .reset-list {

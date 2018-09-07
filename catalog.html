@@ -191,236 +191,239 @@
     </div>
     <div class="container">
       <h1 class="Page__title" style="margin-bottom: 40px;">Офисная мебель</h1>
-      <aside class="Page__sidebar Sidebar">
-        <div class="Sidebar__search"></div>
-        <nav class="Sidebar__menu"></nav>
-        <h2 class="Box__title dd-toggler" data-target="#menu-cat">Категории</h2>
-        <ul class="Box Sidebar__box" id="menu-cat">
-          <li class="Box__item">
-            <div class="Box__icon">
-              <input type="checkbox"/>
-            </div><a class="Box__inner" href="/">Шкафы</a> <a class="Box__inner Box__accent" href="/">(567)</a>
-          </li>
-          <li class="Box__item">
-            <div class="Box__icon">
-              <input type="checkbox"/>
-            </div><a class="Box__inner" href="/">Столы</a> <a class="Box__inner Box__accent" href="/">(6 787)</a><a class="Box__toggler dd-toggler" href="#menu-cat-tabels">
-              <svg class="ic-chevron" role="img">
-                <use xlink:href="static/decors/sprite.svg#ic-chevron"></use>
-              </svg></a>
-            <ul class="Box Box__subbox" id="menu-cat-tabels">
+      <aside class="Page__sidebar">
+        <div class="Filters">
+          <div class="Filters__btns">
+            <div class="Filters__btn">
+              <button class="btn-gray d-b" type="button" data-target="#f-cats">КАТЕГОРИИ</button>
+            </div>
+            <div class="Filters__btn">
+              <button class="btn-gray d-b" type="button" data-target="#f-filters">ФИЛЬТРА</button>
+            </div>
+          </div>
+          <div class="Filters__left" id="f-cats">
+            <h2 class="Box__title">Категории</h2>
+            <ul class="Box" id="menu-cat">
               <li class="Box__item">
                 <div class="Box__icon">
                   <input type="checkbox"/>
-                </div><a class="Box__inner" href="/">Большие</a> <a class="Box__inner Box__accent" href="/">(3087)</a>
+                </div><a class="Box__inner" href="/">Шкафы</a> <a class="Box__inner Box__accent" href="/">(567)</a>
               </li>
               <li class="Box__item">
                 <div class="Box__icon">
                   <input type="checkbox"/>
-                </div><a class="Box__inner" href="/">Средние</a> <a class="Box__inner Box__accent" href="/">(2587)</a>
+                </div><a class="Box__inner" href="/">Столы</a> <a class="Box__inner Box__accent" href="/">(6 787)</a><a class="Box__toggler dd-toggler" href="#menu-cat-tabels">
+                  <svg class="ic-chevron" role="img">
+                    <use xlink:href="static/decors/sprite.svg#ic-chevron"></use>
+                  </svg></a>
+                <ul class="Box Box__subbox" id="menu-cat-tabels">
+                  <li class="Box__item">
+                    <div class="Box__icon">
+                      <input type="checkbox"/>
+                    </div><a class="Box__inner" href="/">Большие</a> <a class="Box__inner Box__accent" href="/">(3087)</a>
+                  </li>
+                  <li class="Box__item">
+                    <div class="Box__icon">
+                      <input type="checkbox"/>
+                    </div><a class="Box__inner" href="/">Средние</a> <a class="Box__inner Box__accent" href="/">(2587)</a>
+                  </li>
+                  <li class="Box__item">
+                    <div class="Box__icon">
+                      <input type="checkbox"/>
+                    </div><a class="Box__inner" href="/">Маленькие</a> <a class="Box__inner Box__accent" href="/">(482)</a>
+                  </li>
+                </ul>
               </li>
               <li class="Box__item">
                 <div class="Box__icon">
                   <input type="checkbox"/>
-                </div><a class="Box__inner" href="/">Маленькие</a> <a class="Box__inner Box__accent" href="/">(482)</a>
+                </div><a class="Box__inner" href="/">Кресла</a> <a class="Box__inner Box__accent" href="/">(187)</a>
+              </li>
+              <li class="Box__item">
+                <div class="Box__icon">
+                  <input type="checkbox"/>
+                </div><a class="Box__inner" href="/">Компютерные столы</a> <a class="Box__inner Box__accent" href="/">(282)</a>
+              </li>
+              <li class="Box__item">
+                <div class="Box__icon">
+                  <input type="checkbox"/>
+                </div><a class="Box__inner" href="/">Вешалки</a> <a class="Box__inner Box__accent" href="/">(47)</a>
+              </li>
+              <li class="Box__item">
+                <div class="Box__icon">
+                  <input type="checkbox"/>
+                </div><a class="Box__inner" href="/">Стелажи</a> <a class="Box__inner Box__accent" href="/">(58)</a>
+              </li>
+              <li class="Box__item ta-right"><a class="Box__inner" href="/">Еще...</a></li>
+            </ul>
+          </div>
+          <div class="Filters__right" id="f-filters">
+            <h2 class="Box__title">Страна Поставщик</h2>
+            <div class="Box" id="menu-state">
+              <div>
+                <div class="Box__icon">
+                  <input type="checkbox"/>
+                </div>
+                <div class="Box__icon">
+                  <svg class="ic-cn" role="img">
+                    <use xlink:href="static/decors/sprite.svg#ic-cn"></use>
+                  </svg>
+                </div>&nbsp;&nbsp;<a class="Box__inner" href="/">Китай</a> <a class="Box__inner Box__accent" href="/">(10 567)</a>
+              </div>
+              <div>
+                <div class="Box__icon">
+                  <input type="checkbox"/>
+                </div>
+                <div class="Box__icon">
+                  <svg class="ic-de" role="img">
+                    <use xlink:href="static/decors/sprite.svg#ic-de"></use>
+                  </svg>
+                </div>&nbsp;&nbsp;<a class="Box__inner" href="/">Германия</a> <a class="Box__inner Box__accent" href="/">(2 787)</a>
+              </div>
+              <div>
+                <div class="Box__icon">
+                  <input type="checkbox"/>
+                </div>
+                <div class="Box__icon">
+                  <svg class="ic-us" role="img">
+                    <use xlink:href="static/decors/sprite.svg#ic-us"></use>
+                  </svg>
+                </div>&nbsp;&nbsp;<a class="Box__inner" href="/">США</a> <a class="Box__inner Box__accent" href="/">(1 062)</a>
+              </div>
+              <div>
+                <div class="Box__icon">
+                  <input type="checkbox"/>
+                </div>
+                <div class="Box__icon">
+                  <svg class="ic-ru" role="img">
+                    <use xlink:href="static/decors/sprite.svg#ic-ru"></use>
+                  </svg>
+                </div>&nbsp;&nbsp;<a class="Box__inner" href="/">Россия</a> <a class="Box__inner Box__accent" href="/">(1 462)</a>
+              </div>
+              <div>
+                <div class="Box__icon">
+                  <input type="checkbox"/>
+                </div>
+                <div class="Box__icon">
+                  <svg class="ic-gb" role="img">
+                    <use xlink:href="static/decors/sprite.svg#ic-gb"></use>
+                  </svg>
+                </div>&nbsp;&nbsp;<a class="Box__inner" href="/">Великобритания</a> <a class="Box__inner Box__accent" href="/">(262)</a>
+              </div>
+            </div>
+            <h2 class="Box__title">Тип фирмы</h2>
+            <div class="Box" id="menu-firm">
+              <div>
+                <div class="Box__icon">
+                  <input type="checkbox"/>
+                </div><a class="Box__inner" href="/">Производитель</a> <a class="Box__inner Box__accent" href="/">(1 067)</a>
+              </div>
+              <div>
+                <div class="Box__icon">
+                  <input type="checkbox"/>
+                </div><a class="Box__inner" href="/">Поставщик</a> <a class="Box__inner Box__accent" href="/">(679)</a>
+              </div>
+              <div>
+                <div class="Box__icon">
+                  <input type="checkbox"/>
+                </div><a class="Box__inner" href="/">Оптовик</a> <a class="Box__inner Box__accent" href="/">(467)</a>
+              </div>
+              <div>
+                <div class="Box__icon">
+                  <input type="checkbox"/>
+                </div><a class="Box__inner" href="/">Дистрибьютор</a> <a class="Box__inner Box__accent" href="/">(123)</a>
+              </div>
+              <div>
+                <div class="Box__icon">
+                  <input type="checkbox"/>
+                </div><a class="Box__inner" href="/">Торговый агент</a> <a class="Box__inner Box__accent" href="/">(75)</a>
+              </div>
+            </div>
+            <h2 class="Box__title">Рейтинг фирмы</h2>
+            <div class="Box" id="box-rating">
+              <form class="Selector">
+                <input class="Selector__field dd-toggler" type="text" placeholder="Выбрать" data-target="#rating-menu"/>
+                <button class="Selector__button dd-toggler" type="button" data-target="#rating-menu">
+                  <svg class="ic-chevron" role="img">
+                    <use xlink:href="static/decors/sprite.svg#ic-chevron"></use>
+                  </svg>
+                </button>
+                <ul class="Box Selector__box" id="rating-menu">
+                  <li class="Box__item"><a class="Box__inner Box__accent" href="/">(567)</a> <a class="Box__inner" href="/">Шкафы</a></li>
+                  <li class="Box__item"><a class="Box__inner Box__accent" href="/">(6 787)</a> <a class="Box__inner" href="/">Кресла</a></li>
+                  <li class="Box__item"><a class="Box__inner Box__accent" href="/">(62)</a> <a class="Box__inner" href="/">Стелажи</a></li>
+                </ul>
+              </form>
+            </div>
+            <h2 class="Box__title">Диапазон цен(руб)</h2>
+            <ul class="Box" id="menu-range">
+              <li class="Box__item">
+                <div class="Box__icon">
+                  <input type="checkbox">
+                </div><a class="Box__inner" href="/">5000 - 13 000</a> <a class="Box__inner Box__accent" href="/">(24)</a>
+              </li>
+              <li class="Box__item">
+                <div class="Box__icon">
+                  <input type="checkbox">
+                </div><a class="Box__inner" href="/">13 000 - 22 000</a> <a class="Box__inner Box__accent" href="/">(213)</a>
+              </li>
+              <li class="Box__item">
+                <div class="Box__icon">
+                  <input type="checkbox">
+                </div><a class="Box__inner" href="/">22 000 - 40 000</a><a class="Box__inner Box__accent" href="/">(8)</a>
+              </li>
+              <li class="Box__item">
+                <div class="Box__icon">
+                  <input type="checkbox">
+                </div><a class="Box__inner" href="/">более 40 000</a> <a class="Box__inner Box__accent" href="/">(8)</a>
+              </li>
+              <li class="Box__item">
+                <form class="Range-form">
+                  <div class="Range-form__item">
+                    <input class="Range-form__inp input-number" type="number" value="10000">
+                  </div>
+                  <div class="Range-form__item">
+                    <input class="Range-form__inp input-number" type="number" value="15000">
+                  </div>
+                  <div class="Range-form__item">
+                    <button class="Range-form__inp btn-gray" type="submit">Ok</button>
+                  </div>
+                </form>
               </li>
             </ul>
-          </li>
-          <li class="Box__item">
-            <div class="Box__icon">
-              <input type="checkbox"/>
-            </div><a class="Box__inner" href="/">Кресла</a> <a class="Box__inner Box__accent" href="/">(187)</a>
-          </li>
-          <li class="Box__item">
-            <div class="Box__icon">
-              <input type="checkbox"/>
-            </div><a class="Box__inner" href="/">Компютерные столы</a> <a class="Box__inner Box__accent" href="/">(282)</a>
-          </li>
-          <li class="Box__item">
-            <div class="Box__icon">
-              <input type="checkbox"/>
-            </div><a class="Box__inner" href="/">Вешалки</a> <a class="Box__inner Box__accent" href="/">(47)</a>
-          </li>
-          <li class="Box__item">
-            <div class="Box__icon">
-              <input type="checkbox"/>
-            </div><a class="Box__inner" href="/">Стелажи</a> <a class="Box__inner Box__accent" href="/">(58)</a>
-          </li>
-          <li class="Box__item ta-right"><a class="Box__inner" href="/">Еще...</a><a class="Box__toggler dd-toggler" href="#menu-cat-more">
-              <svg class="ic-chevron" role="img">
-                <use xlink:href="static/decors/sprite.svg#ic-chevron"></use>
-              </svg></a>
-            <ul class="Box Box__subbox" id="menu-cat-more">
-              <li class="Box__item"><a class="Box__inner" href="/">Тумбы</a> <a class="Box__inner Box__accent" href="/">(3087)</a></li>
-              <li class="Box__item"><a class="Box__inner" href="/">Диваны</a> <a class="Box__inner Box__accent" href="/">(2587)</a></li>
-              <li class="Box__item"><a class="Box__inner" href="/">Комоды</a> <a class="Box__inner Box__accent" href="/">(482)</a></li>
+            <h2 class="Box__title">Производитель</h2>
+            <ul class="Box" id="menu-producer">
+              <li class="Box__item">
+                <div class="Box__icon">
+                  <input type="checkbox">
+                </div><a class="Box__inner" href="/">apple</a> <a class="Box__inner Box__accent" href="/">(24)</a>
+              </li>
+              <li class="Box__item">
+                <div class="Box__icon">
+                  <input type="checkbox">
+                </div><a class="Box__inner" href="/">samsung</a> <a class="Box__inner Box__accent" href="/">(213)</a>
+              </li>
+              <li class="Box__item">
+                <div class="Box__icon">
+                  <input type="checkbox">
+                </div><a class="Box__inner" href="/">xiaomi</a> <a class="Box__inner Box__accent" href="/">(8)</a>
+              </li>
             </ul>
-          </li>
-        </ul>
-        <h2 class="Box__title dd-toggler" data-target="#menu-state">Страна Поставщик</h2>
-        <div class="Box Sidebar__box" id="menu-state">
-          <div>
-            <div class="Box__icon">
-              <input type="checkbox"/>
-            </div>
-            <div class="Box__icon">
-              <svg class="ic-cn" role="img">
-                <use xlink:href="static/decors/sprite.svg#ic-cn"></use>
-              </svg>
-            </div>&nbsp;&nbsp;<a class="Box__inner" href="/">Китай</a> <a class="Box__inner Box__accent" href="/">(10 567)</a>
-          </div>
-          <div>
-            <div class="Box__icon">
-              <input type="checkbox"/>
-            </div>
-            <div class="Box__icon">
-              <svg class="ic-de" role="img">
-                <use xlink:href="static/decors/sprite.svg#ic-de"></use>
-              </svg>
-            </div>&nbsp;&nbsp;<a class="Box__inner" href="/">Германия</a> <a class="Box__inner Box__accent" href="/">(2 787)</a>
-          </div>
-          <div>
-            <div class="Box__icon">
-              <input type="checkbox"/>
-            </div>
-            <div class="Box__icon">
-              <svg class="ic-us" role="img">
-                <use xlink:href="static/decors/sprite.svg#ic-us"></use>
-              </svg>
-            </div>&nbsp;&nbsp;<a class="Box__inner" href="/">США</a> <a class="Box__inner Box__accent" href="/">(1 062)</a>
-          </div>
-          <div>
-            <div class="Box__icon">
-              <input type="checkbox"/>
-            </div>
-            <div class="Box__icon">
-              <svg class="ic-ru" role="img">
-                <use xlink:href="static/decors/sprite.svg#ic-ru"></use>
-              </svg>
-            </div>&nbsp;&nbsp;<a class="Box__inner" href="/">Россия</a> <a class="Box__inner Box__accent" href="/">(1 462)</a>
-          </div>
-          <div>
-            <div class="Box__icon">
-              <input type="checkbox"/>
-            </div>
-            <div class="Box__icon">
-              <svg class="ic-gb" role="img">
-                <use xlink:href="static/decors/sprite.svg#ic-gb"></use>
-              </svg>
-            </div>&nbsp;&nbsp;<a class="Box__inner" href="/">Великобритания</a> <a class="Box__inner Box__accent" href="/">(262)</a>
-          </div>
-        </div>
-        <h2 class="Box__title dd-toggler" data-target="#menu-firm">Тип фирмы</h2>
-        <div class="Box Sidebar__box" id="menu-firm">
-          <div>
-            <div class="Box__icon">
-              <input type="checkbox"/>
-            </div><a class="Box__inner" href="/">Производитель</a> <a class="Box__inner Box__accent" href="/">(1 067)</a>
-          </div>
-          <div>
-            <div class="Box__icon">
-              <input type="checkbox"/>
-            </div><a class="Box__inner" href="/">Поставщик</a> <a class="Box__inner Box__accent" href="/">(679)</a>
-          </div>
-          <div>
-            <div class="Box__icon">
-              <input type="checkbox"/>
-            </div><a class="Box__inner" href="/">Оптовик</a> <a class="Box__inner Box__accent" href="/">(467)</a>
-          </div>
-          <div>
-            <div class="Box__icon">
-              <input type="checkbox"/>
-            </div><a class="Box__inner" href="/">Дистрибьютор</a> <a class="Box__inner Box__accent" href="/">(123)</a>
-          </div>
-          <div>
-            <div class="Box__icon">
-              <input type="checkbox"/>
-            </div><a class="Box__inner" href="/">Торговый агент</a> <a class="Box__inner Box__accent" href="/">(75)</a>
-          </div>
-        </div>
-        <h2 class="Box__title dd-toggler" data-target="#box-rating">Рейтинг фирмы</h2>
-        <div class="Box Sidebar__box" id="box-rating">
-          <form class="Selector">
-            <input class="Selector__field dd-toggler" type="text" placeholder="Выбрать" data-target="#rating-menu"/>
-            <button class="Selector__button dd-toggler" type="button" data-target="#rating-menu">
-              <svg class="ic-chevron" role="img">
-                <use xlink:href="static/decors/sprite.svg#ic-chevron"></use>
-              </svg>
-            </button>
-            <ul class="Box Selector__box" id="rating-menu">
-              <li class="Box__item"><a class="Box__inner Box__accent" href="/">(567)</a> <a class="Box__inner" href="/">Шкафы</a></li>
-              <li class="Box__item"><a class="Box__inner Box__accent" href="/">(6 787)</a> <a class="Box__inner" href="/">Кресла</a></li>
-              <li class="Box__item"><a class="Box__inner Box__accent" href="/">(62)</a> <a class="Box__inner" href="/">Стелажи</a></li>
+            <h2 class="Box__title">Состояние</h2>
+            <ul class="Box" id="menu-status">
+              <li class="Box__item">
+                <div class="Box__icon">
+                  <input type="checkbox">
+                </div><a class="Box__inner" href="/">б/у</a> <a class="Box__inner Box__accent" href="/">(12)</a>
+              </li>
+              <li class="Box__item">
+                <div class="Box__icon">
+                  <input type="checkbox">
+                </div><a class="Box__inner" href="/">новое</a> <a class="Box__inner Box__accent" href="/">(558)</a>
+              </li>
             </ul>
-          </form>
+          </div>
         </div>
-        <h2 class="Box__title dd-toggler" data-target="#menu-range">Диапазон цен(руб)</h2>
-        <ul class="Box Sidebar__box" id="menu-range">
-          <li class="Box__item">
-            <div class="Box__icon">
-              <input type="checkbox">
-            </div><a class="Box__inner" href="/">5000 - 13 000</a> <a class="Box__inner Box__accent" href="/">(24)</a>
-          </li>
-          <li class="Box__item">
-            <div class="Box__icon">
-              <input type="checkbox">
-            </div><a class="Box__inner" href="/">13 000 - 22 000</a> <a class="Box__inner Box__accent" href="/">(213)</a>
-          </li>
-          <li class="Box__item">
-            <div class="Box__icon">
-              <input type="checkbox">
-            </div><a class="Box__inner" href="/">22 000 - 40 000</a><a class="Box__inner Box__accent" href="/">(8)</a>
-          </li>
-          <li class="Box__item">
-            <div class="Box__icon">
-              <input type="checkbox">
-            </div><a class="Box__inner" href="/">более 40 000</a> <a class="Box__inner Box__accent" href="/">(8)</a>
-          </li>
-          <li class="Box__item">
-            <form class="Range-form">
-              <div class="Range-form__item">
-                <input class="Range-form__inp input-number" type="number" value="10000">
-              </div>
-              <div class="Range-form__item">
-                <input class="Range-form__inp input-number" type="number" value="15000">
-              </div>
-              <div class="Range-form__item">
-                <button class="Range-form__inp btn-gray" type="submit">Ok</button>
-              </div>
-            </form>
-          </li>
-        </ul>
-        <h2 class="Box__title dd-toggler" data-target="#menu-producer">Производитель</h2>
-        <ul class="Box Sidebar__box" id="menu-producer">
-          <li class="Box__item">
-            <div class="Box__icon">
-              <input type="checkbox">
-            </div><a class="Box__inner" href="/">apple</a> <a class="Box__inner Box__accent" href="/">(24)</a>
-          </li>
-          <li class="Box__item">
-            <div class="Box__icon">
-              <input type="checkbox">
-            </div><a class="Box__inner" href="/">samsung</a> <a class="Box__inner Box__accent" href="/">(213)</a>
-          </li>
-          <li class="Box__item">
-            <div class="Box__icon">
-              <input type="checkbox">
-            </div><a class="Box__inner" href="/">xiaomi</a> <a class="Box__inner Box__accent" href="/">(8)</a>
-          </li>
-        </ul>
-        <h2 class="Box__title dd-toggler" data-target="#menu-status">Состояние</h2>
-        <ul class="Box Sidebar__box" id="menu-status">
-          <li class="Box__item">
-            <div class="Box__icon">
-              <input type="checkbox">
-            </div><a class="Box__inner" href="/">б/у</a> <a class="Box__inner Box__accent" href="/">(12)</a>
-          </li>
-          <li class="Box__item">
-            <div class="Box__icon">
-              <input type="checkbox">
-            </div><a class="Box__inner" href="/">новое</a> <a class="Box__inner Box__accent" href="/">(558)</a>
-          </li>
-        </ul>
       </aside>
       <main class="Page__main">
         <ul class="Catalog" data-show-ctrls="true" data-mark="grid">

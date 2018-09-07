@@ -191,10 +191,8 @@
       </ul>
     </div>
     <div class="container">
-      <aside class="Page__sidebar Sidebar">
-        <div class="Sidebar__search"></div>
-        <nav class="Sidebar__menu"></nav>
-        <div class="Box Sidebar__box">
+      <aside class="Page__sidebar">
+        <div class="Box">
           <div class="Box__name"><strong>ЕВГЕНИЙ КОРЕНЮГИН</strong></div>
           <div class="Box__item"> 
             <div class="Box__icon">
@@ -229,60 +227,69 @@
             <div class="Box__inner"><small>На портале с</small><br><strong>с мая 2017г.</strong></div>
           </div>
         </div>
-        <h2 class="Box__title dd-toggler" data-target="#menu-common-cat">Категории</h2>
-        <ul class="Box Sidebar__box" id="menu-common-cat">
-          <li class="Box__item">
-            <div class="Box__icon">
-              <input type="checkbox"/>
-            </div>  <a class="Box__inner" href="/">Сельхоз и продукты питания</a>
-          </li>
-          <li class="Box__item">
-            <div class="Box__icon">
-              <input type="checkbox"/>
-            </div>  <a class="Box__inner" href="/">Одежда и текстиль</a><a class="Box__toggler dd-toggler" href="#menu-cat-tabels">
-              <svg class="ic-chevron" role="img">
-                <use xlink:href="static/decors/sprite.svg#ic-chevron"></use>
-              </svg></a>
-            <ul class="Box Box__subbox" id="menu-cat-tabels">
+        <div class="Filters">
+          <div class="Filters__btns">
+            <div class="Filters__btn">
+              <button class="btn-gray d-b" type="button" data-target="#f-cats">КАТЕГОРИИ</button>
+            </div>
+          </div>
+          <div class="Filters__left" id="f-cats">
+            <h2 class="Box__title">Категории</h2>
+            <ul class="Box" id="menu-common-cat">
               <li class="Box__item">
                 <div class="Box__icon">
                   <input type="checkbox"/>
-                </div>  <a class="Box__inner" href="/">Безопасность и защита</a>
+                </div>  <a class="Box__inner" href="/">Сельхоз и продукты питания</a>
               </li>
               <li class="Box__item">
                 <div class="Box__icon">
                   <input type="checkbox"/>
-                </div>  <a class="Box__inner" href="/">Софт и комплектующие для пк</a>
+                </div>  <a class="Box__inner" href="/">Одежда и текстиль</a><a class="Box__toggler dd-toggler" href="#menu-cat-tabels">
+                  <svg class="ic-chevron" role="img">
+                    <use xlink:href="static/decors/sprite.svg#ic-chevron"></use>
+                  </svg></a>
+                <ul class="Box Box__subbox" id="menu-cat-tabels">
+                  <li class="Box__item">
+                    <div class="Box__icon">
+                      <input type="checkbox"/>
+                    </div>  <a class="Box__inner" href="/">Безопасность и защита</a>
+                  </li>
+                  <li class="Box__item">
+                    <div class="Box__icon">
+                      <input type="checkbox"/>
+                    </div>  <a class="Box__inner" href="/">Софт и комплектующие для пк</a>
+                  </li>
+                  <li class="Box__item">
+                    <div class="Box__icon">
+                      <input type="checkbox"/>
+                    </div>  <a class="Box__inner" href="/">Бытовая техника</a>
+                  </li>
+                </ul>
               </li>
               <li class="Box__item">
                 <div class="Box__icon">
                   <input type="checkbox"/>
-                </div>  <a class="Box__inner" href="/">Бытовая техника</a>
+                </div>  <a class="Box__inner" href="/">Электроника</a>
               </li>
+              <li class="Box__item">
+                <div class="Box__icon">
+                  <input type="checkbox"/>
+                </div>  <a class="Box__inner" href="/">Авто и транспорт</a>
+              </li>
+              <li class="Box__item">
+                <div class="Box__icon">
+                  <input type="checkbox"/>
+                </div>  <a class="Box__inner" href="/">Cумки, обувь и аксессуары</a>
+              </li>
+              <li class="Box__item">
+                <div class="Box__icon">
+                  <input type="checkbox"/>
+                </div>  <a class="Box__inner" href="/">Оборудование и инструменты</a>
+              </li>
+              <li class="Box__item ta-right"><a class="Box__inner" href="/">Еще...</a></li>
             </ul>
-          </li>
-          <li class="Box__item">
-            <div class="Box__icon">
-              <input type="checkbox"/>
-            </div>  <a class="Box__inner" href="/">Электроника</a>
-          </li>
-          <li class="Box__item">
-            <div class="Box__icon">
-              <input type="checkbox"/>
-            </div>  <a class="Box__inner" href="/">Авто и транспорт</a>
-          </li>
-          <li class="Box__item">
-            <div class="Box__icon">
-              <input type="checkbox"/>
-            </div>  <a class="Box__inner" href="/">Cумки, обувь и аксессуары</a>
-          </li>
-          <li class="Box__item">
-            <div class="Box__icon">
-              <input type="checkbox"/>
-            </div>  <a class="Box__inner" href="/">Оборудование и инструменты</a>
-          </li>
-          <li class="Box__item ta-right"><a class="Box__inner" href="/">Еще...</a></li>
-        </ul>
+          </div>
+        </div>
       </aside>
       <main class="Page__main">
         <div class="A-info">
