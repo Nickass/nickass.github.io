@@ -4220,18 +4220,15 @@ a.Box__inner:hover {
     margin-bottom: 0;
     width: 250px;
     position: fixed;
-    padding-top: 100px;
+    top: 0;
+    height: 100vh;
     right: -250px;
-    height: 150%;
     z-index: 200;
     overflow: auto;
     -webkit-transition: right 400ms;
     -o-transition: right 400ms;
     transition: right 400ms;
-    top: inherit;
-    bottom: -100px;
     -webkit-backface-visibility: hidden;
-    padding: 100px 10px;
   }
   .Header__menu .Search {
     margin: 20px 0 19px;
