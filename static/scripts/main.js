@@ -662,6 +662,6 @@ $(function() {
   if(window.innerWidth > 767) return;
 
   $(window).on('resize', function() {
-    $('.Header__menu').outerHeight($(window).height()); 
+    $('.Header__menu').outerHeight($(window).height());
   });
 });
