@@ -4221,7 +4221,6 @@ a.Box__inner:hover {
     width: 250px;
     position: fixed;
     top: 0;
-
     min-height: 100vh;
     height: auto;
     right: -150px;
