@@ -4221,15 +4221,15 @@ a.Box__inner:hover {
     width: 250px;
     position: fixed;
     top: 0;
-    
+
+    min-height: 100vh;
     height: 100vh;
-    right: -250px;
+    right: -150px;
     z-index: 200;
     overflow: auto;
     -webkit-transition: right 400ms;
     -o-transition: right 400ms;
     transition: right 400ms;
-    -webkit-backface-visibility: hidden;
   }
   .Header__menu .Search {
     margin: 20px 0 19px;
