@@ -4022,11 +4022,15 @@ a.Box__inner:hover {
   .Filters {
     position: fixed;
     top: 80px;
+    right: 0;
     background: #fff;
     margin-left: -15px;
     width: 100%;
     padding: 0 15px;
     z-index: 200;
+    -webkit-transition: 400ms;
+    -o-transition: 400ms;
+    transition: 400ms;
     border-bottom: 1px solid #f1f1f1;
   }
   .Filters:before, .Filters:after {
@@ -5274,6 +5278,9 @@ a.Box__inner:hover {
     right: 250px;
   }
   .Page.move .Page__header {
+    right: 250px;
+  }
+  .Page.move .Filters {
     right: 250px;
   }
 }
