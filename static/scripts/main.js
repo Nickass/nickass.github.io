@@ -665,4 +665,3 @@ $(function() {
     $('.Header__menu').outerHeight($(window).height()); 
   });
 });
-
