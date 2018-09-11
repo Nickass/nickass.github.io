@@ -4229,7 +4229,10 @@ a.Box__inner:hover {
     -webkit-transition: right 400ms;
     -o-transition: right 400ms;
     transition: right 400ms;
+    top: -100px;
+    bottom: -100px;
     -webkit-backface-visibility: hidden;
+    padding: 100px 10px;
   }
   .Header__menu .Search {
     margin: 20px 0 19px;
@@ -5280,6 +5283,11 @@ a.Box__inner:hover {
     position: fixed;
     width: 100%;
     top: 0;
+    transition: right 400ms;
+    right: 0;
+  }
+  .Page.move .Page__header {
+    right: 250px;
   }
 }
 
