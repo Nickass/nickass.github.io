@@ -1220,9 +1220,9 @@ select:invalid {
   text-decoration: none;
   display: inline-block;
   font-size: 14px;
-  height: 35px;
+  height: 30px;
   line-height: 40px;
-  width: 35px;
+  width: 30px;
   padding: 0px 5px;
   stroke-width: 2px;
   stroke: #e6bd14;
@@ -2640,7 +2640,7 @@ a.Box__inner:hover {
   display: inline-block;
   vertical-align: middle;
   float: right;
-  margin-bottom: 10px;
+  margin: 3px 0;
 }
 
 @media (max-width: 1020px) {
@@ -2664,6 +2664,7 @@ a.Box__inner:hover {
   display: inline-block;
   vertical-align: middle;
   width: 20px;
+  margin-left: 15px;
 }
 
 @media (max-width: 767px) {
@@ -2904,7 +2905,7 @@ a.Box__inner:hover {
 
 .Tabs__icon {
   display: inline-block;
-  vertical-align: middle;
+  vertical-align: baseline;
   width: 15px;
   height: 15px;
   margin-left: 5px;
@@ -4214,16 +4215,16 @@ a.Box__inner:hover {
 
 @media (max-width: 767px) {
   .Header__menu {
-    padding: 0px 10px 10px;
     background-color: #102a30;
     text-align: left;
     margin-bottom: 0;
     width: 250px;
     position: fixed;
-    top: 0;
-    min-height: 100vh;
     height: auto;
-    right: 0px;
+    top: -100px;
+    bottom: -100px;
+    padding: 100px 10px;
+    right: -250px;
     z-index: 200;
     overflow: auto;
     -webkit-transition: right 400ms;
@@ -5272,6 +5273,9 @@ a.Box__inner:hover {
   .Page.move {
     right: 250px;
   }
+  .Page.move .Page__header {
+    right: 250px;
+  }
 }
 
 @media (max-width: 767px) {
@@ -5279,11 +5283,10 @@ a.Box__inner:hover {
     position: fixed;
     width: 100%;
     top: 0;
-    transition: right 400ms;
     right: 0;
-  }
-  .Page.move .Page__header {
-    right: 250px;
+    -webkit-transition: 400ms;
+    -o-transition: 400ms;
+    transition: 400ms;
   }
 }
 
@@ -5367,7 +5370,7 @@ a.Box__inner:hover {
 
 .Feedback__item {
   display: block;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
 }
 
 .Feedback__item:before, .Feedback__item:after {
@@ -5396,7 +5399,7 @@ a.Box__inner:hover {
   font-weight: 600;
   text-align: right;
   width: 20%;
-  line-height: 35px;
+  line-height: 25px;
   padding-right: 15px;
 }
 
