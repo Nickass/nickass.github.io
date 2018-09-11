@@ -4220,7 +4220,6 @@ a.Box__inner:hover {
     margin-bottom: 0;
     width: 250px;
     position: fixed;
-    top: -100px;
     padding-top: 100px;
     right: -250px;
     height: 150%;
@@ -4229,7 +4228,7 @@ a.Box__inner:hover {
     -webkit-transition: right 400ms;
     -o-transition: right 400ms;
     transition: right 400ms;
-    top: -100px;
+    top: inherit;
     bottom: -100px;
     -webkit-backface-visibility: hidden;
     padding: 100px 10px;
