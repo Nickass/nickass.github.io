@@ -4020,13 +4020,12 @@ a.Box__inner:hover {
 
 @media (max-width: 767px) {
   .Filters {
-    position: fixed;
-    top: 80px;
     right: 0;
     background: #fff;
-    margin-left: -15px;
     width: 100%;
     padding: 0 15px;
+    margin-bottom: -10px;
+    margin-top: 10px;
     z-index: 200;
     -webkit-transition: 400ms;
     -o-transition: 400ms;
@@ -4376,11 +4375,8 @@ a.Box__inner:hover {
 .Header__burger {
   display: none;
   position: absolute;
-  top: 50%;
+  top: 25px;
   right: 15px;
-  -webkit-transform: translateY(-50%);
-      -ms-transform: translateY(-50%);
-          transform: translateY(-50%);
 }
 
 @media (max-width: 767px) {
