@@ -4023,13 +4023,10 @@ a.Box__inner:hover {
     right: 0;
     background: #fff;
     width: 100%;
-    padding: 0 15px;
-    margin-bottom: -10px;
-    margin-top: 10px;
     z-index: 200;
-    -webkit-transition: 400ms;
-    -o-transition: 400ms;
-    transition: 400ms;
+    -webkit-transition: top 400ms;
+    -o-transition: top 400ms;
+    transition: top 400ms;
     border-bottom: 1px solid #f1f1f1;
   }
   .Filters:before, .Filters:after {
@@ -4053,10 +4050,6 @@ a.Box__inner:hover {
   -webkit-transition: margin-top 400ms;
   -o-transition: margin-top 400ms;
   transition: margin-top 400ms;
-}
-
-.Filters__btns.hide {
-  margin-top: -61px;
 }
 
 @media (min-width: 768px) {
@@ -4083,16 +4076,15 @@ a.Box__inner:hover {
   .Filters__left, .Filters__right {
     background: inherit;
     padding-bottom: 20px;
-    height: -webkit-calc(100vh - 140px);
-    height: calc(100vh - 140px);
     overflow: auto;
     width: 100%;
-    -webkit-transition: 200ms;
-    -o-transition: 200ms;
-    transition: 200ms;
+    -webkit-transition: left 200ms, right 200ms;
+    -o-transition: left 200ms, right 200ms;
+    transition: left 200ms, right 200ms;
+    position: absolute;
+    z-index: 100;
   }
   .Filters__right {
-    position: absolute;
     left: 100%;
   }
   .Filters__right.open {
@@ -4100,7 +4092,6 @@ a.Box__inner:hover {
     display: block;
   }
   .Filters__left {
-    position: absolute;
     right: 100%;
   }
   .Filters__left.open {
@@ -5264,33 +5255,21 @@ a.Box__inner:hover {
   -o-transition: right 400ms;
   transition: right 400ms;
   right: 0;
+  overflow-x: hidden;
 }
 
 @media (max-width: 767px) {
-  .Page {
-    padding-top: 80px;
-  }
   .Page.move {
     right: 250px;
-  }
-  .Page.move .Page__header {
-    right: 250px;
+    overflow: hidden;
   }
   .Page.move .Filters {
     right: 250px;
   }
 }
 
-@media (max-width: 767px) {
-  .Page__header {
-    position: fixed;
-    width: 100%;
-    top: 0;
-    right: 0;
-    -webkit-transition: 400ms;
-    -o-transition: 400ms;
-    transition: 400ms;
-  }
+.Page__header {
+  position: relative;
 }
 
 .Page__title {
