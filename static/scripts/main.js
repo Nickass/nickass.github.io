@@ -419,6 +419,15 @@ $(function() {
   $('.Catalog').each(Catalog);
 });
 
+$(function() {
+  $('.btn-entry').magnificPopup({
+    items: {
+      type:'inline', src: '#checkin'
+    }
+  });
+  $("#producer-reg-form").validate();
+  $("#customer-reg-form").validate();
+});
 $(function(){
   tippy('[data-tippy]', {
     placement: 'bottom',

@@ -663,10 +663,6 @@ select:invalid {
   color: #A7A9AC;
 }
 
-:-ms-input-placeholder {
-  color: #A7A9AC;
-}
-
 ::-ms-input-placeholder {
   color: #A7A9AC;
 }
@@ -858,10 +854,6 @@ select:invalid {
 }
 
 .Search__field::-moz-placeholder {
-  color: #a8a8a8;
-}
-
-.Search__field:-ms-input-placeholder {
   color: #a8a8a8;
 }
 
@@ -3515,6 +3507,68 @@ a.Box__inner:hover {
   width: 100%;
 }
 
+.Checkin {
+  background: #fff;
+  width: 1000px;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 15px;
+  padding-bottom: 0px;
+  -webkit-border-radius: 5px;
+          border-radius: 5px;
+}
+
+.Checkin:before, .Checkin:after {
+  display: table;
+  content: "";
+}
+
+.Checkin:after {
+  clear: both;
+}
+
+.lt-ie8 .Checkin {
+  zoom: 1;
+}
+
+.Form {
+  border: 1px solid #eee;
+  padding: 10px 15px;
+  margin: 0 -15px;
+}
+
+.Form__item {
+  margin-bottom: 10px;
+}
+
+.Form__item .input {
+  -webkit-border-radius: 2px;
+          border-radius: 2px;
+}
+
+.Form__footer {
+  margin-top: 20px;
+}
+
+.Form__footer:before, .Form__footer:after {
+  display: table;
+  content: "";
+}
+
+.Form__footer:after {
+  clear: both;
+}
+
+.lt-ie8 .Form__footer {
+  zoom: 1;
+}
+
+.Form__btn {
+  float: right;
+  margin-left: 10px;
+  margin-bottom: 10px;
+}
+
 .Breadcrumbs {
   margin: 0;
   padding: 0;
@@ -5853,4 +5907,8 @@ a.Box__inner:hover {
 
 .fz-xs {
   font-size: 10px;
+}
+
+.error {
+  color: red;
 }

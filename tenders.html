@@ -12,6 +12,87 @@
     <link rel="stylesheet" type="text/css" href="static/styles/main.css">
   </head>
   <body class="Page">
+    <div class="Checkin mfp-hide" id="checkin" role="dialog" aria-labelledby="checkin-dialog" aria-describedby="dialog1Desc">
+      <h3 id="checkin-dialog"> Заявка на продажу товаров оптом</h3>
+      <div class="Tabs v2">
+        <ul class="Tabs__nav">
+          <li class="Tabs__item active"><a class="Tabs__link" href="#producer-tab-form" data-toggle="tab">Производителям, оптовым поставщикам</a></li>
+          <li class="Tabs__item"><a class="Tabs__link" href="#customer-tab-form" data-toggle="tab">Регистрация покупателя</a></li>
+        </ul>
+        <div class="Tabs__tab active" id="producer-tab-form"> 
+          <form class="Form" id="producer-reg-form">
+            <div class="Form__item">
+              <input class="input d-b" type="text" maxlength="20" name="producer-reg-form[companyName]" placeholder="Название предприятия"/>
+            </div>
+            <div class="Form__item">
+              <input class="input d-b" type="text" maxlength="20" name="producer-reg-form[desc]" placeholder="Вид деятельности (коротко)"/>
+            </div>
+            <div class="Form__item">
+              <input class="input d-b" type="text" required="required" maxlength="20" name="producer-reg-form[name]" placeholder="Ваше имя"/>
+            </div>
+            <div class="Form__item">
+              <input class="input d-b" type="text" name="producer-reg-form[telNumber]" placeholder="Номер телефона"/>
+            </div>
+            <div class="Form__item">
+              <input class="input d-b" type="url" name="producer-reg-form[site]" placeholder="Сайт"/>
+            </div>
+            <div class="Form__item">
+              <input class="input d-b" type="email" required="required" name="producer-reg-form[email]" placeholder="Email"/>
+            </div>
+            <div class="Form__item">
+              <input class="input d-b" type="password" required="required" name="producer-reg-form[password]" placeholder="Пароль"/>
+            </div>
+            <div class="Form__footer">
+              <button class="btn-primary Form__btn" type="submit">Зарегистрироваться
+                <svg class="ic-envelope btn__icon" role="img">
+                  <use xlink:href="static/decors/sprite.svg#ic-envelope"></use>
+                </svg>
+              </button>
+              <button class="btn-gray Form__btn" type="reset">Отмена</button>
+            </div>
+          </form>
+        </div>
+        <div class="Tabs__tab" id="customer-tab-form">
+          <form class="Form" id="customer-reg-form">
+            <div class="Form__item">
+              <input class="input d-b" type="text" required="required" maxlength="20" name="customer-reg-form[name]" placeholder="Ваше имя"/>
+            </div>
+            <div class="Form__item">Выберите фото:  
+              <input type="file" name="customer-reg-form[file]"/>
+            </div>
+            <div class="Form__item">
+              <input class="input d-b" type="text" name="customer-reg-form[telNumber]" placeholder="Номер телефона"/>
+            </div>
+            <div class="Form__item">
+              <input class="input d-b" type="text" name="customer-reg-form[city]" placeholder="Ваш город"/>
+            </div>
+            <div class="Form__item">Выберите категории
+              <select class="input d-b" type="text" multiple="multiple" name="customer-reg-form[categories]">
+                <option value="Technic">Техника</option>
+                <option value="Sport">Спорт</option>
+                <option value="Service">Сервис</option>
+                <option value="Gear">Запчасти</option>
+                <option value="Clothes">Одежда</option>
+              </select>
+            </div>
+            <div class="Form__item">
+              <input class="input d-b" type="email" required="required" name="customer-reg-form[email]" placeholder="Email"/>
+            </div>
+            <div class="Form__item">
+              <input class="input d-b" type="password" required="required" name="customer-reg-form[password]" placeholder="Пароль"/>
+            </div>
+            <div class="Form__footer">
+              <button class="btn-primary Form__btn" type="submit">Зарегистрироваться
+                <svg class="ic-envelope btn__icon" role="img">
+                  <use xlink:href="static/decors/sprite.svg#ic-envelope"></use>
+                </svg>
+              </button>
+              <button class="btn-gray Form__btn" type="reset">Отмена</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
     <div class="Basket white-popup mfp-hide" id="basket-popup">
       <h2 class="Basket__title">Корзина</h2>
       <div class="Basket__item">
@@ -695,6 +776,7 @@
   </body>
 </html>
 <script src="static/scripts//jquery-1.9.1.js"></script>
+<script src="static/scripts//jquery.validate.min.js"></script>
 <script src="static/scripts//tippy.all.min.js"></script>
 <script src="static/scripts//jquery.magnific-popup.min.js"></script>
 <script src="static/scripts//svg4everybody.min.js"></script>
