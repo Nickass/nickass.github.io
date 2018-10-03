@@ -14,12 +14,12 @@
   <body class="Page">
     <div class="Popup mfp-hide" style="width: 500px;" id="entry-popup" role="dialog" aria-labelledby="entry-popup-title">
       <h3 id="entry-popup-title">Войти</h3>
-      <form class="Form" method="POST" action="/entry.php">
+      <form class="Form" method="POST" action="/entry.php" id="entry-form">
         <div class="Form__item">
-          <input class="input d-b" type="email" required="required" name="entry-reg-form[email]" placeholder="Email"/>
+          <input class="input d-b" type="email" required="required" name="entry-form[email]" placeholder="Email"/>
         </div>
         <div class="Form__item">
-          <input class="input d-b" type="password" required="required" name="entry-reg-form[password]" placeholder="Пароль"/>
+          <input class="input d-b" type="password" required="required" name="entry-form[password]" placeholder="Пароль"/>
           <div class="ta-right"> <a href="#">Забыли пароль?</a></div>
         </div>
         <div class="Form__footer">
@@ -28,6 +28,7 @@
         </div>
       </form>
       <div class="Popup__footer">Не зарегистрированны?     <a class="open-popap-btn" role="button" href="#registry-popup" data-mfp-src="#registry-popup">Регистрация</a></div>
+      <script>document.addEventListener('DOMContentLoaded', function() {$('#entry-form').validate();});</script>
     </div>
     <div class="Popup mfp-hide" id="registry-popup" role="dialog" aria-labelledby="registry-popup-title">
       <h3 id="registry-popup-title"> Заявка на продажу товаров оптом</h3>
@@ -64,14 +65,16 @@
               <button class="btn-gray Form__btn" type="reset">Отмена</button>
             </div>
           </form>
+          <script>document.addEventListener('DOMContentLoaded', function() {$('#producer-reg-form').validate();});</script>
         </div>
         <div class="Tabs__tab" id="customer-tab-form">
           <form class="Form" method="POST" action="/registry.php" id="customer-reg-form">
             <div class="Form__item">
               <input class="input d-b" type="text" required="required" maxlength="20" name="customer-reg-form[name]" placeholder="Ваше имя"/>
             </div>
-            <div class="Form__item">Выберите фото:  
-              <input type="file" name="customer-reg-form[file]"/>
+            <div class="Form__item"> 
+              <label class="Form__label" for="cutomer-reg-form-photo">Выберите фото:  </label>
+              <input type="file" name="customer-reg-form[file]" id="cutomer-reg-form-photo"/>
             </div>
             <div class="Form__item">
               <input class="input d-b" type="text" name="customer-reg-form[telNumber]" placeholder="Номер телефона"/>
@@ -79,8 +82,9 @@
             <div class="Form__item">
               <input class="input d-b" type="text" name="customer-reg-form[city]" placeholder="Ваш город"/>
             </div>
-            <div class="Form__item">Выберите категории
-              <select class="input d-b" type="text" multiple="multiple" name="customer-reg-form[categories]">
+            <div class="Form__item"> 
+              <label class="Form__label" for="cutomer-reg-form-cat">Выберите категории: </label>
+              <select class="input d-b" type="text" multiple="multiple" name="customer-reg-form[categories]" id="cutomer-reg-form-cat">
                 <option value="Technic">Техника</option>
                 <option value="Sport">Спорт</option>
                 <option value="Service">Сервис</option>
@@ -95,10 +99,11 @@
               <input class="input d-b" type="password" required="required" name="customer-reg-form[password]" placeholder="Пароль"/>
             </div>
             <div class="Form__footer">
-              <button class="btn-primary Form__btn" type="submit">Зарегистрироваться</button>
+              <button class="btn-primary Form__btn" type="submit">Зарегистрироваться            </button>
               <button class="btn-gray Form__btn" type="reset">Отмена</button>
             </div>
           </form>
+          <script>document.addEventListener('DOMContentLoaded', function() {$('#customer-reg-form').validate();});</script>
         </div>
       </div>
       <div class="Popup__footer">Уже зарегистрированны?     <a class="open-popap-btn" role="button" href="#entry-popup" data-mfp-src="#entry-popup">Войти</a></div>
@@ -210,7 +215,7 @@
       <div class="container"><a class="Header__logo logo" href="/"><img class="Header__logo-desctop" src="img/logo.png"/><img class="Header__logo-mobile" src="img/logo-mobile.png"/></a>
         <div class="Header__ctrls">
           <button class="btn-burger Header__burger" type="button"></button>
-          <div class="Header__cart"><a class="btn-cart" href="#basket-popup">
+          <div class="Header__cart"><a class="open-popap-btn btn-cart" href="#basket-popup">
               <svg class="ic-cart" role="img">
                 <use xlink:href="static/decors/sprite.svg#ic-cart"></use>
               </svg><span class="btn-cart__count">2</span></a>

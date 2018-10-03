@@ -2017,6 +2017,7 @@ select:invalid {
 }
 
 .Box__title {
+  position: relative;
   background: #e9eaea;
   font-weight: 600;
   color: #3e3e3e;
@@ -2091,6 +2092,7 @@ a.Box__inner:hover {
   position: absolute;
   top: 10px;
   right: 0;
+  z-index: 1;
   width: 25px;
   height: 25px;
   padding: 5.5px 5px 4.5px 5px;
@@ -3537,44 +3539,6 @@ a.Box__inner:hover {
   margin: 20px 0;
 }
 
-.Form {
-  border: 1px solid #eee;
-  padding: 10px 15px;
-  margin: 0 -15px;
-}
-
-.Form__item {
-  margin-bottom: 10px;
-}
-
-.Form__item .input {
-  -webkit-border-radius: 2px;
-          border-radius: 2px;
-}
-
-.Form__footer {
-  margin-top: 20px;
-}
-
-.Form__footer:before, .Form__footer:after {
-  display: table;
-  content: "";
-}
-
-.Form__footer:after {
-  clear: both;
-}
-
-.lt-ie8 .Form__footer {
-  zoom: 1;
-}
-
-.Form__btn {
-  float: right;
-  margin-left: 10px;
-  margin-bottom: 10px;
-}
-
 .Breadcrumbs {
   margin: 0;
   padding: 0;
@@ -4158,6 +4122,51 @@ a.Box__inner:hover {
     right: 0;
     display: block;
   }
+}
+
+.Form {
+  border: 1px solid #eee;
+  padding: 10px 15px;
+  color: #111;
+}
+
+.Form__item {
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.Form__item .input {
+  -webkit-border-radius: 2px;
+          border-radius: 2px;
+}
+
+.Form__label {
+  display: inline-block;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.Form__footer {
+  margin-top: 20px;
+}
+
+.Form__footer:before, .Form__footer:after {
+  display: table;
+  content: "";
+}
+
+.Form__footer:after {
+  clear: both;
+}
+
+.lt-ie8 .Form__footer {
+  zoom: 1;
+}
+
+.Form__btn {
+  float: right;
+  margin-left: 10px;
+  margin-bottom: 10px;
 }
 
 .Header {
