@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Document</title>
+    <!-- start favicons-->
+    <!-- end favicons-->
+    <link rel="stylesheet" type="text/css" href="static/styles/slick.css">
+    <link rel="stylesheet" type="text/css" href="static/styles/magnific-popup.css">
+    <link rel="stylesheet" type="text/css" href="static/styles/main.css">
+  </head>
+  <body class="Page">
+    <div class="Popup mfp-hide" style="width: 500px;" id="entry-popup" role="dialog" aria-labelledby="entry-popup-title">
+      <h3 id="entry-popup-title">Войти</h3>
+      <form class="Form" method="POST" action="/entry.php" id="entry-form">
+        <div class="Form__item">
+          <input class="input d-b" type="email" required="required" name="entry-form[email]" placeholder="Email"/>
+        </div>
+        <div class="Form__item">
+          <input class="input d-b" type="password" required="required" name="entry-form[password]" placeholder="Пароль"/>
+          <div class="ta-right"> <a href="#">Забыли пароль?</a></div>
+        </div>
+        <div class="Form__footer">
+          <button class="btn-primary Form__btn" type="submit">Войти</button>
+          <button class="btn-gray Form__btn" type="reset">Отмена</button>
+        </div>
+      </form>
+      <div class="Popup__footer">Не зарегистрированны?     <a class="open-popap-btn" role="button" href="#registry-popup" data-mfp-src="#registry-popup">Регистрация</a></div>
+      <script>document.addEventListener('DOMContentLoaded', function() {$('#entry-form').validate();});</script>
+    </div>
+    <div class="Popup mfp-hide" id="registry-popup" role="dialog" aria-labelledby="registry-popup-title">
+      <h3 id="registry-popup-title"> Заявка на продажу товаров оптом</h3>
+      <div class="Tabs v2">
+        <ul class="Tabs__nav">
+          <li class="Tabs__item active"><a class="Tabs__link" href="#producer-tab-form" data-toggle="tab">Производителям, оптовым поставщикам</a></li>
+          <li class="Tabs__item"><a class="Tabs__link" href="#customer-tab-form" data-toggle="tab">Регистрация покупателя</a></li>
+        </ul>
+        <div class="Tabs__tab active" id="producer-tab-form"> 
+          <form class="Form" method="POST" action="/registry.php" id="producer-reg-form">
+            <div class="Form__item">
+              <input class="input d-b" type="text" maxlength="20" name="producer-reg-form[companyName]" placeholder="Название предприятия"/>
+            </div>
+            <div class="Form__item">
+              <input class="input d-b" type="text" maxlength="20" name="producer-reg-form[desc]" placeholder="Вид деятельности (коротко)"/>
+            </div>
+            <div class="Form__item">
+              <input class="input d-b" type="text" required="required" maxlength="20" name="producer-reg-form[name]" placeholder="Ваше имя"/>
+            </div>
+            <div class="Form__item">
+              <input class="input d-b" type="text" name="producer-reg-form[telNumber]" placeholder="Номер телефона"/>
+            </div>
+            <div class="Form__item">
+              <input class="input d-b" type="url" name="producer-reg-form[site]" placeholder="Сайт"/>
+            </div>
+            <div class="Form__item">
+              <input class="input d-b" type="email" required="required" name="producer-reg-form[email]" placeholder="Email"/>
+            </div>
+            <div class="Form__item">
+              <input class="input d-b" type="password" required="required" name="producer-reg-form[password]" placeholder="Пароль"/>
+            </div>
+            <div class="Form__footer">
+              <button class="btn-primary Form__btn" type="submit">Зарегистрироваться</button>
+              <button class="btn-gray Form__btn" type="reset">Отмена</button>
+            </div>
+          </form>
+          <script>document.addEventListener('DOMContentLoaded', function() {$('#producer-reg-form').validate();});</script>
+        </div>
+        <div class="Tabs__tab" id="customer-tab-form">
+          <form class="Form" method="POST" action="/registry.php" id="customer-reg-form">
+            <div class="Form__item">
+              <input class="input d-b" type="text" required="required" maxlength="20" name="customer-reg-form[name]" placeholder="Ваше имя"/>
+            </div>
+            <div class="Form__item"> 
+              <label class="Form__label" for="cutomer-reg-form-photo">Выберите фото:  </label>
+              <input type="file" name="customer-reg-form[file]" id="cutomer-reg-form-photo"/>
+            </div>
+            <div class="Form__item">
+              <input class="input d-b" type="text" name="customer-reg-form[telNumber]" placeholder="Номер телефона"/>
+            </div>
+            <div class="Form__item">
+              <input class="input d-b" type="text" name="customer-reg-form[city]" placeholder="Ваш город"/>
+            </div>
+            <div class="Form__item"> 
+              <label class="Form__label" for="cutomer-reg-form-cat">Выберите категории: </label>
+              <select class="input d-b" type="text" multiple="multiple" name="customer-reg-form[categories]" id="cutomer-reg-form-cat">
+                <option value="Technic">Техника</option>
+                <option value="Sport">Спорт</option>
+                <option value="Service">Сервис</option>
+                <option value="Gear">Запчасти</option>
+                <option value="Clothes">Одежда</option>
+              </select>
+            </div>
+            <div class="Form__item">
+              <input class="input d-b" type="email" required="required" name="customer-reg-form[email]" placeholder="Email"/>
+            </div>
+            <div class="Form__item">
+              <input class="input d-b" type="password" required="required" name="customer-reg-form[password]" placeholder="Пароль"/>
+            </div>
+            <div class="Form__footer">
+              <button class="btn-primary Form__btn" type="submit">Зарегистрироваться            </button>
+              <button class="btn-gray Form__btn" type="reset">Отмена</button>
+            </div>
+          </form>
+          <script>document.addEventListener('DOMContentLoaded', function() {$('#customer-reg-form').validate();});</script>
+        </div>
+      </div>
+      <div class="Popup__footer">Уже зарегистрированны?     <a class="open-popap-btn" role="button" href="#entry-popup" data-mfp-src="#entry-popup">Войти</a></div>
+    </div>
+    <div class="Basket white-popup mfp-hide" id="basket-popup">
+      <h2 class="Basket__title">Корзина</h2>
+      <div class="Basket__item">
+        <div class="B-item__header"><strong>Поставщик:  </strong><strong class="primary-color">"Regina"</strong>&nbsp; &nbsp;<span class="tariff">tariff<strong class="tariff__name">premium</strong></span>&nbsp; &nbsp;
+          <svg class="ic-shield guarantee" role="img">
+            <use xlink:href="static/decors/sprite.svg#ic-shield"></use>
+          </svg>
+          <button class="B-item__close" type="button" onclick="$(this).closest('.Basket__item').hide()">
+            <svg class="ic-close" role="img">
+              <use xlink:href="static/decors/sprite.svg#ic-close"></use>
+            </svg>
+          </button>
+        </div>
+        <table class="B-item">
+          <tr class="B-item__thead">
+            <td class="B-item__td">Товар</td>
+            <td class="B-item__td"> </td>
+            <td class="B-item__td">Цена</td>
+            <td class="B-item__td">Количество</td>
+            <td class="B-item__td">Сумма</td>
+          </tr>
+          <tr class="B-item__tbody">
+            <td class="B-item__td B-item__pic">
+              <div class="as-ratio"><img class="as-ratio__inner" src="img/product-1.png"/></div>
+            </td>
+            <td class="B-item__td B-item__desc">
+              <div>Кресло "Шеф"</div>
+              <div class="B-item__text"><small>Артикул</small><span class="primary-color">083452</span></div>
+            </td>
+            <td class="B-item__td B-item__price">$52.00/шт</td>
+            <td class="B-item__td B-item__counter">
+              <div class="counter">
+                <input class="counter__field" type="number" value="1"/>
+                <button class="counter__btn" type="button" onclick="$(this).prev().val(parseInt($(this).prev().val())+1)">шт</button>
+              </div>
+            </td>
+            <td class="B-item__td B-item__total">$54.00 </td>
+          </tr>
+          <tr class="B-item__tfoot">
+            <td class="B-item__td"></td>
+            <td class="B-item__td"></td>
+            <td class="B-item__td"></td>
+            <td class="B-item__td">Всего: </td>
+            <td class="B-item__td">$54.00</td>
+          </tr>
+        </table>
+      </div>
+      <div class="Basket__item">
+        <div class="B-item__header"><strong>Поставщик:</strong><strong class="primary-color">"Regina"</strong>
+          <button class="B-item__close" type="button" onclick="$(this).closest('.Basket__item').hide()">
+            <svg class="ic-close" role="img">
+              <use xlink:href="static/decors/sprite.svg#ic-close"></use>
+            </svg>
+          </button>
+        </div>
+        <table class="B-item">
+          <tr class="B-item__thead">
+            <td class="B-item__td">Товар</td>
+            <td class="B-item__td"> </td>
+            <td class="B-item__td">Цена</td>
+            <td class="B-item__td">Количество</td>
+            <td class="B-item__td">Сумма</td>
+          </tr>
+          <tr class="B-item__tbody">
+            <td class="B-item__td B-item__pic">
+              <div class="as-ratio"><img class="as-ratio__inner" src="img/product-2.png"/></div>
+            </td>
+            <td class="B-item__td B-item__desc">
+              <div>Шкаф "Шеф"</div>
+              <div class="B-item__text"><small>Артикул</small><span class="primary-color">0984509</span>
+                <div>При покупке более 10-ти шт. <br/>цена:  $180/шт</div>
+              </div>
+            </td>
+            <td class="B-item__td B-item__price">$209.00/шт </td>
+            <td class="B-item__td B-item__counter">
+              <div class="counter">
+                <input class="counter__field" type="number" value="1"/>
+                <button class="counter__btn" type="button" onclick="$(this).prev().val(parseInt($(this).prev().val())+1)">шт</button>
+              </div>
+            </td>
+            <td class="B-item__td B-item__total">$209.00</td>
+          </tr>
+          <tr class="B-item__tfoot">
+            <td class="B-item__td"></td>
+            <td class="B-item__td"></td>
+            <td class="B-item__td"></td>
+            <td class="B-item__td">Всего: </td>
+            <td class="B-item__td">$209.00</td>
+          </tr>
+        </table>
+      </div>
+      <div class="Basket__footer">
+        <div class="Basket__counter"><strong>Всего в корзине:</strong>
+          <div class="counter Basket__accent">
+            <input class="counter__field" type="number" value="2"/>
+            <button class="counter__btn" type="button" onclick="$(this).prev().val(parseInt($(this).prev().val())+1)">шт</button>
+          </div>
+        </div>
+        <div class="Basket__total"><strong>Сумма к оплате:</strong><strong class="Basket__accent">$263.00 </strong></div>
+      </div>
+      <button class="Basket__btn btn-primary-reverse" type="button">Оформить заказ</button>
+      <button class="Basket__btn btn-primary" type="button">Вернуться к покупкам</button>
+    </div>
+    <header class="Header Page__header" id="header">
+      <div class="container"><a class="Header__logo logo" href="/"><img class="Header__logo-desctop" src="img/logo.png"/><img class="Header__logo-mobile" src="img/logo-mobile.png"/></a>
+        <div class="Header__ctrls">
+          <button class="btn-burger Header__burger" type="button"></button>
+          <div class="Header__cart"><a class="open-popap-btn btn-cart" href="#basket-popup">
+              <svg class="ic-cart" role="img">
+                <use xlink:href="static/decors/sprite.svg#ic-cart"></use>
+              </svg><span class="btn-cart__count">2</span></a>
+          </div>
+          <div class="Header__like">
+            <button class="btn-like" type="button" onclick="$(this).toggleClass('active')">
+              <svg class="ic-heart" role="img">
+                <use xlink:href="static/decors/sprite.svg#ic-heart"></use>
+              </svg>
+            </button>
+          </div>
+          <div class="Header__lang">
+            <div class="Lang"><a class="Lang__current dd-toggler" href="#lang-list">EN</a>
+              <ul class="Lang__list" id="lang-list">
+                <li class="Lang__item"> <a href="#">RU</a></li>
+                <li class="Lang__item"><a href="#">EN</a></li>
+                <li class="Lang__item"><a href="#">LV</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="Header__entry"><a class="open-popap-btn btn-entry" href="#entry-popup" data-mfp-src="#entry-popup">Вход / Регистрация
+              <svg class="ic-user btn-entry__icon" role="img">
+                <use xlink:href="static/decors/sprite.svg#ic-user"></use>
+              </svg></a>
+          </div>
+        </div>
+        <nav class="Header__menu">
+          <ul class="Main-menu" id="main-menu">
+            <li class="Main-menu__item"><a class="dd-toggler Main-menu__link" href="#menu-about">О компании</a>
+              <ul class="Main-menu__submenu" id="menu-about">
+                <li class="Main-menu__submenu-item"><a class="Main-menu__submenu-link" href="#">О нас</a></li>
+                <li class="Main-menu__submenu-item"><a class="Main-menu__submenu-link" href="#">Гарантии</a></li>
+                <li class="Main-menu__submenu-item"><a class="Main-menu__submenu-link" href="#">Контакты</a></li>
+                <li class="Main-menu__submenu-item"><a class="Main-menu__submenu-link" href="#">О нас</a></li>
+              </ul>
+            </li>
+            <li class="Main-menu__item"><a class="dd-toggler Main-menu__link" href="#menu-catalog">Каталог</a>
+              <ul class="Main-menu__submenu" id="menu-catalog">
+                <li class="Main-menu__submenu-item"><a class="Main-menu__submenu-link" href="/product.html">Шкафы</a></li>
+                <li class="Main-menu__submenu-item"><a class="Main-menu__submenu-link" href="/product.html">Столы</a></li>
+                <li class="Main-menu__submenu-item"><a class="Main-menu__submenu-link" href="/product.html">Кресла</a></li>
+              </ul>
+            </li>
+            <li class="Main-menu__item"><a class="Main-menu__link" href="/">Тендеры</a></li>
+            <li class="Main-menu__item"><a class="Main-menu__link" href="/">Правила</a></li>
+            <li class="Main-menu__item"><a class="Main-menu__link" href="/">Блог</a></li>
+            <li class="Main-menu__item"><a class="Main-menu__link" href="/">FAQ</a></li>
+          </ul>
+        </nav>
+        <div class="Header__search">
+          <form class="Search">
+            <input class="Search__field" type="search" placeholder="Найти товары"/>
+            <button class="Search__btn" type="submit">Найти
+              <svg class="ic-search Search__icon" role="img">
+                <use xlink:href="static/decors/sprite.svg#ic-search"></use>
+              </svg>
+            </button>
+          </form>
+        </div>
+      </div>
+    </header>
+    <div class="container">
+      <ul class="Breadcrumbs">
+        <li class="Breadcrumbs__item"><a class="Breadcrumbs__link" href="/">Главная</a></li>
+        <li class="Breadcrumbs__item"><a class="Breadcrumbs__link" href="/cabinet.html">Личный кабинет</a></li>
+        <li class="Breadcrumbs__item"><a class="Breadcrumbs__link" href="/cabinet/about.html">О компании</a></li>
+      </ul>
+    </div>
+    <div class="container">
+      <aside class="Page__sidebar">
+        <ul class="Box">
+          <li class="Box__item"><span class="Box__icon">
+              <svg class="ic-home" role="img">
+                <use xlink:href="static/decors/sprite.svg#ic-home"></use>
+              </svg></span><a class="Box__inner" href="/">Главная</a></li>
+          <li class="Box__item"><span class="Box__icon">
+              <svg class="ic-info" role="img">
+                <use xlink:href="static/decors/sprite.svg#ic-info"></use>
+              </svg></span><a class="Box__inner" href="/">О компании</a><a class="Box__toggler dd-toggler" href="#settings-menu-about">
+              <svg class="ic-chevron" role="img">
+                <use xlink:href="static/decors/sprite.svg#ic-chevron"></use>
+              </svg></a>
+            <ul class="Box Box__subbox opened" id="settings-menu-about">
+              <li class="Box__item"><a class="Box__inner" href="/">Общая информация</a></li>
+              <li class="Box__item"><a class="Box__inner" href="/">Контакты</a></li>
+              <li class="Box__item"><a class="Box__inner" href="/">Оплата, доставка</a></li>
+            </ul>
+          </li>
+          <li class="Box__item"><span class="Box__icon">
+              <svg class="ic-folder" role="img">
+                <use xlink:href="static/decors/sprite.svg#ic-folder"></use>
+              </svg></span><a class="Box__inner" href="/">Товары</a><a class="Box__toggler dd-toggler" href="#settings-menu-products">
+              <svg class="ic-chevron" role="img">
+                <use xlink:href="static/decors/sprite.svg#ic-chevron"></use>
+              </svg></a>
+            <ul class="Box Box__subbox opened" id="settings-menu-products">
+              <li class="Box__item"><a class="Box__inner" href="/">Группы товаров</a></li>
+              <li class="Box__item"><a class="Box__inner" href="/">Экспорт товаров</a></li>
+              <li class="Box__item"><a class="Box__inner" href="/">Импорт товаров</a></li>
+              <li class="Box__item"><a class="Box__inner" href="/">Оптимизация товаров</a></li>
+              <li class="Box__item"><a class="Box__inner" href="/">Бренды</a></li>
+            </ul>
+          </li>
+          <li class="Box__item"><span class="Box__icon">
+              <svg class="ic-envelope" role="img">
+                <use xlink:href="static/decors/sprite.svg#ic-envelope"></use>
+              </svg></span><a class="Box__inner" href="/">Сообщения</a></li>
+          <li class="Box__item"><span class="Box__icon">
+              <svg class="ic-cart-2" role="img">
+                <use xlink:href="static/decors/sprite.svg#ic-cart-2"></use>
+              </svg></span><a class="Box__inner" href="/">Заказы</a> <a class="Box__inner Box__accent" href="/">(62)</a></li>
+        </ul>
+      </aside>
+      <main class="Page__main">
+        <h1 class="Page__title">Общая информация</h1>
+        <form class="Form" method="POST" id="settings-main">
+          <div class="Form__item">
+            <label class="Form__label" for="settings-main-name">Название компании</label>
+            <input class="input d-b" type="text" value="Romexsoft" required name="settings[main][name]" id="settings-main-name">
+          </div>
+          <div class="Form__item">
+            <label class="Form__label" for="settings-main-address">Адрес</label>
+            <input class="input d-b" type="text" value="Россия г. Москва пр. Ломоносова, 47 копрус 3" name="settings[main][address]" id="settings-main-address">
+          </div>
+          <div class="Form__item">
+            <label class="Form__label" for="settings-main-country">Страна</label>
+            <input class="input d-b" type="text" value="Россия" required name="settings[main][country]" id="settings-main-country">
+          </div>
+          <div class="Form__item">
+            <label class="Form__label" for="settings-main-income">Годовой доход</label>
+            <input class="input d-b" type="text" value="1.200.000 руб." name="settings[main][income]" id="settings-main-income">
+          </div>
+          <div class="Form__item">
+            <label class="Form__label" for="settings-main-yearoffoundation">Год основания</label>
+            <input type="number" value="2003" name="settings[main][yearoffoundation]">
+          </div>
+          <div class="Form__item">
+            <label class="Form__label" for="settings-main-employes">Всего сотрудников</label>
+            <input class="input d-b" type="text" value="100-150" name="settings[main][employes]" id="settings-main-employes">
+          </div>
+          <div class="Form__item">
+            <label class="Form__label" for="settings-main-mainproducts">Основные продукты</label>
+            <input class="input d-b" type="text" value="офиная мебель, комплектующие и фурнитура" name="settings[main][mainproducts]" id="settings-main-mainproducts">
+          </div>
+          <div class="Form__item">
+            <label class="Form__label" for="settings-main-logo">Загрузить логотип</label>
+            <input type="file" required name="settings[main][logo]" id="settings-main-logo">
+          </div>
+          <div class="Form__item">
+            <label class="Form__label" for="settings-main-site">Адрес сайта </label>
+            <input class="input d-b" type="url" required name="settings[main][site]" id="settings-main-site">
+          </div>
+          <div class="Form__item">
+            <label class="Form__label" for="settings-main-mainseokeys">Основные товарные группы (ключевые слова) </label>
+            <input class="input d-b" type="text" name="settings[main][mainseokeys]" id="settings-main-mainseokeys">
+          </div>
+          <div class="Form__item">
+            <label class="Form__label" for="settings-main-description">Полное описание компании </label>
+            <textarea class="input d-b" name="settings[main][description]" id="settings-main-description">Мы созданы для комфорта. А точнее, для того, чтобы наши клиенты ощущали эстетическое и осязательное наслаждения не только от качественной мебели, но также и комфорт от процесса ее выбора, заказа и покупки.</textarea>
+          </div>
+          <div class="Form__item">
+            <label class="Form__label" for="settings-main-seodescription">SeoDescription</label>
+            <textarea class="input d-b" name="settings[main][seodescription]" id="settings-main-seodescription"></textarea>
+          </div>
+          <div class="Form__item">
+            <label class="Form__label" for="settings-main-commonseokeys">Основные товарные группы (ключевые слова) </label>
+            <textarea class="input d-b" name="settings[main][commonseokeys]" id="settings-main-commonseokeys"></textarea>
+          </div>
+          <div class="Form__footer">
+            <button class="Form__btn btn-primary" type="submit">Сохранить </button>
+            <button class="Form__btn btn-gray" type="reset">Сбросить </button>
+          </div>
+        </form>
+      </main>
+      <script>document.addEventListener('DOMContentLoaded', function() {$('#settings-main').validate();});</script>
+    </div>
+    <footer class="Footer" id="footer">
+      <div class="container">
+        <div class="Footer__item">
+          <h2 class="F-box__title">Информация</h2>
+          <ul class="F-box">
+            <li class="F-box__item"><a class="F-box__link" href="/">Тарифы</a></li>
+            <li class="F-box__item"><a class="F-box__link" href="/">Правила</a></li>
+            <li class="F-box__item"><a class="F-box__link" href="/">О компании</a></li>
+            <li class="F-box__item"><a class="F-box__link" href="/">Контакты</a></li>
+            <li class="F-box__item"><a class="F-box__link" href="/">FAQ</a></li>
+          </ul>
+        </div>
+        <div class="Footer__item">
+          <h2 class="F-box__title">Поставщикам</h2>
+          <ul class="F-box">
+            <li class="F-box__item"><a class="F-box__link" href="/catalog.html">Товары</a></li>
+            <li class="F-box__item"><a class="F-box__link" href="/catalog.html">Поставщики</a></li>
+            <li class="F-box__item"><a class="F-box__link" href="/">Личный кабинет</a></li>
+          </ul>
+        </div>
+        <div class="Footer__item">
+          <h2 class="F-box__title">Покупателям</h2>
+          <ul class="F-box">
+            <li class="F-box__item"><a class="F-box__link" href="/catalog.html">Товары</a></li>
+            <li class="F-box__item"><a class="F-box__link" href="/catalog.html">Поставщики</a></li>
+            <li class="F-box__item"><a class="F-box__link" href="/">Личный кабинет</a></li>
+          </ul>
+        </div>
+        <div class="Footer__item"><img src="img/logo.png"/>
+          <p class="Footer__copy">
+             2011-2018
+            В2В торговая площадка для
+            оптовиков, поставщиков 
+            и производителей.
+          </p>
+          <div class="Social"><a class="Social__icon" href="#">
+              <svg class="ic-facebook" role="img">
+                <use xlink:href="static/decors/sprite.svg#ic-facebook"></use>
+              </svg></a><a class="Social__icon" href="#">
+              <svg class="ic-twitter" role="img">
+                <use xlink:href="static/decors/sprite.svg#ic-twitter"></use>
+              </svg></a><a class="Social__icon" href="#">
+              <svg class="ic-telegram" role="img">
+                <use xlink:href="static/decors/sprite.svg#ic-telegram"></use>
+              </svg></a><a class="Social__icon" href="#">
+              <svg class="ic-instagram" role="img">
+                <use xlink:href="static/decors/sprite.svg#ic-instagram"></use>
+              </svg></a></div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
+<script src="static/scripts//jquery-1.9.1.js"></script>
+<script src="static/scripts//jquery.validate.min.js"></script>
+<script src="static/scripts//tippy.all.min.js"></script>
+<script src="static/scripts//jquery.magnific-popup.min.js"></script>
+<script src="static/scripts//svg4everybody.min.js"></script>
+<script src="static/scripts//ofi.min.js"></script>
+<script src="static/scripts//slick.min.js"></script>
+<script src="static/scripts//main.js"></script><script>svg4everybody();</script>
+<!---->
+<!--========================== DELETE ME start ===========================-->
+<!---->
+<style>
+  .demo{
+   position: fixed;
+   background: rgba(0,0,0,.5);
+   z-index: 1000;
+   top:20%;
+  }
+  .demo ul{display:none;padding:0;margin:0;}
+  .demo li{
+   padding: 0.5em 1em;
+   list-style:none;
+  }
+  .demo a{color:#fff;}
+  .demo label{display:inline-block;background-color: rgba(20,20,200,.35);color: #ee9;position:absolute; bottom:100%;left:0;padding:.4em;cursor:pointer;border:1px solid #ee9;padding:0.5em;transition:300ms;}
+  .demo label:hover{background: #44f;}
+  .demo input:checked + ul{display:block;}
+</style>
+<div class="demo">
+  <label for="demo-hide">Cсылки</label>
+  <input type="checkbox" hidden style="display:none;" id="demo-hide">
+  <ul>
+    <li><a href="/catalog.html">catalog.html</a></li>
+    <li><a href="/categories.html">categories.html</a></li>
+    <li><a href="/company.html">company.html</a></li>
+    <li><a href="/index.html">index.html</a></li>
+    <li><a href="/product.html">product.html</a></li>
+    <li><a href="/tender.html">tender.html</a></li>
+    <li><a href="/tenders.html">tenders.html</a></li>
+  </ul>
+  <script>
+    $('a').each(function() {
+      if(this.hash) return;
+      this.href = location.protocol + '//' + location.host + location.pathname.split('/').slice(0,-1).join('/') +
+      '/' + this.href.split('/').slice(-1)[0];
+    });
+  </script>
+</div>
+<!---->
+<!--========================== DELETE ME end ===========================-->
+<!---->
