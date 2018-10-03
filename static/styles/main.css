@@ -3507,9 +3507,10 @@ a.Box__inner:hover {
   width: 100%;
 }
 
-.Checkin {
+.Popup {
+  position: relative;
   background: #fff;
-  width: 1000px;
+  width: 800px;
   max-width: 100%;
   margin: 0 auto;
   padding: 15px;
@@ -3518,17 +3519,21 @@ a.Box__inner:hover {
           border-radius: 5px;
 }
 
-.Checkin:before, .Checkin:after {
+.Popup:before, .Popup:after {
   display: table;
   content: "";
 }
 
-.Checkin:after {
+.Popup:after {
   clear: both;
 }
 
-.lt-ie8 .Checkin {
+.lt-ie8 .Popup {
   zoom: 1;
+}
+
+.Popup__footer {
+  margin: 20px 0;
 }
 
 .Form {

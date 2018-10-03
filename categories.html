@@ -12,15 +12,32 @@
     <link rel="stylesheet" type="text/css" href="static/styles/main.css">
   </head>
   <body class="Page">
-    <div class="Checkin mfp-hide" id="checkin" role="dialog" aria-labelledby="checkin-dialog" aria-describedby="dialog1Desc">
-      <h3 id="checkin-dialog"> Заявка на продажу товаров оптом</h3>
+    <div class="Popup mfp-hide" style="width: 500px;" id="entry-popup" role="dialog" aria-labelledby="entry-popup-title">
+      <h3 id="entry-popup-title">Войти</h3>
+      <form class="Form" method="POST" action="/entry.php">
+        <div class="Form__item">
+          <input class="input d-b" type="email" required="required" name="entry-reg-form[email]" placeholder="Email"/>
+        </div>
+        <div class="Form__item">
+          <input class="input d-b" type="password" required="required" name="entry-reg-form[password]" placeholder="Пароль"/>
+          <div class="ta-right"> <a href="#">Забыли пароль?</a></div>
+        </div>
+        <div class="Form__footer">
+          <button class="btn-primary Form__btn" type="submit">Войти</button>
+          <button class="btn-gray Form__btn" type="reset">Отмена</button>
+        </div>
+      </form>
+      <div class="Popup__footer">Не зарегистрированны?     <a class="open-popap-btn" role="button" href="#registry-popup" data-mfp-src="#registry-popup">Регистрация</a></div>
+    </div>
+    <div class="Popup mfp-hide" id="registry-popup" role="dialog" aria-labelledby="registry-popup-title">
+      <h3 id="registry-popup-title"> Заявка на продажу товаров оптом</h3>
       <div class="Tabs v2">
         <ul class="Tabs__nav">
           <li class="Tabs__item active"><a class="Tabs__link" href="#producer-tab-form" data-toggle="tab">Производителям, оптовым поставщикам</a></li>
           <li class="Tabs__item"><a class="Tabs__link" href="#customer-tab-form" data-toggle="tab">Регистрация покупателя</a></li>
         </ul>
         <div class="Tabs__tab active" id="producer-tab-form"> 
-          <form class="Form" id="producer-reg-form">
+          <form class="Form" method="POST" action="/registry.php" id="producer-reg-form">
             <div class="Form__item">
               <input class="input d-b" type="text" maxlength="20" name="producer-reg-form[companyName]" placeholder="Название предприятия"/>
             </div>
@@ -49,7 +66,7 @@
           </form>
         </div>
         <div class="Tabs__tab" id="customer-tab-form">
-          <form class="Form" id="customer-reg-form">
+          <form class="Form" method="POST" action="/registry.php" id="customer-reg-form">
             <div class="Form__item">
               <input class="input d-b" type="text" required="required" maxlength="20" name="customer-reg-form[name]" placeholder="Ваше имя"/>
             </div>
@@ -84,6 +101,7 @@
           </form>
         </div>
       </div>
+      <div class="Popup__footer">Уже зарегистрированны?     <a class="open-popap-btn" role="button" href="#entry-popup" data-mfp-src="#entry-popup">Войти</a></div>
     </div>
     <div class="Basket white-popup mfp-hide" id="basket-popup">
       <h2 class="Basket__title">Корзина</h2>
@@ -213,12 +231,10 @@
               </ul>
             </div>
           </div>
-          <div class="Header__entry">
-            <button class="btn-entry" type="button">Вход / Регистрация
+          <div class="Header__entry"><a class="open-popap-btn btn-entry" href="#registry-popup" data-mfp-src="#entry-popup">Вход / Регистрация
               <svg class="ic-user btn-entry__icon" role="img">
                 <use xlink:href="static/decors/sprite.svg#ic-user"></use>
-              </svg>
-            </button>
+              </svg></a>
           </div>
         </div>
         <nav class="Header__menu">

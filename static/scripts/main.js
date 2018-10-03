@@ -420,11 +420,7 @@ $(function() {
 });
 
 $(function() {
-  $('.btn-entry').magnificPopup({
-    items: {
-      type:'inline', src: '#checkin'
-    }
-  });
+  $('.open-popap-btn').magnificPopup({ type: 'inline' });
   $("#producer-reg-form").validate();
   $("#customer-reg-form").validate();
 });
