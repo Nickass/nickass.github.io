@@ -23,8 +23,8 @@
           <div class="ta-right"> <a href="#">Забыли пароль?</a></div>
         </div>
         <div class="Form__footer">
-          <button class="btn-primary Form__btn" type="submit">Войти</button>
-          <button class="btn-gray Form__btn" type="reset">Отмена</button>
+          <button class="btn btn--primary Form__btn" type="submit">Войти</button>
+          <button class="btn btn--gray Form__btn" type="reset">Отмена</button>
         </div>
       </form>
       <div class="Popup__footer">Не зарегистрированны?     <a class="open-popap-btn" role="button" href="#registry-popup" data-mfp-src="#registry-popup">Регистрация</a></div>
@@ -61,8 +61,8 @@
               <input class="input d-b" type="password" required="required" name="producer-reg-form[password]" placeholder="Пароль"/>
             </div>
             <div class="Form__footer">
-              <button class="btn-primary Form__btn" type="submit">Зарегистрироваться</button>
-              <button class="btn-gray Form__btn" type="reset">Отмена</button>
+              <button class="btn btn--primary Form__btn" type="submit">Зарегистрироваться</button>
+              <button class="btn btn--gray Form__btn" type="reset">Отмена</button>
             </div>
           </form>
           <script>document.addEventListener('DOMContentLoaded', function() {$('#producer-reg-form').validate();});</script>
@@ -99,8 +99,8 @@
               <input class="input d-b" type="password" required="required" name="customer-reg-form[password]" placeholder="Пароль"/>
             </div>
             <div class="Form__footer">
-              <button class="btn-primary Form__btn" type="submit">Зарегистрироваться            </button>
-              <button class="btn-gray Form__btn" type="reset">Отмена</button>
+              <button class="btn btn--primary Form__btn" type="submit">Зарегистрироваться            </button>
+              <button class="btn btn--gray Form__btn" type="reset">Отмена</button>
             </div>
           </form>
           <script>document.addEventListener('DOMContentLoaded', function() {$('#customer-reg-form').validate();});</script>
@@ -208,8 +208,8 @@
         </div>
         <div class="Basket__total"><strong>Сумма к оплате:</strong><strong class="Basket__accent">$263.00 </strong></div>
       </div>
-      <button class="Basket__btn btn-primary-reverse" type="button">Оформить заказ</button>
-      <button class="Basket__btn btn-primary" type="button">Вернуться к покупкам</button>
+      <button class="Basket__btn btn btn--primary-reverse" type="button">Оформить заказ</button>
+      <button class="Basket__btn btn btn--primary" type="button">Вернуться к покупкам</button>
     </div>
     <header class="Header Page__header" id="header">
       <div class="container"><a class="Header__logo logo" href="/"><img class="Header__logo-desctop" src="img/logo.png"/><img class="Header__logo-mobile" src="img/logo-mobile.png"/></a>
@@ -338,10 +338,10 @@
               <button class="btn-buy" type="button">оформить заказ</button>
             </div>
             <div class="A-info__item">
-              <div class="A-btns"><a class="btn-blue A-btns__btn" href="#">
+              <div class="A-btns"><a class="btn btn--blue A-btns__btn" href="#">
                   <svg class="ic-envelope btn__icon" role="img">
                     <use xlink:href="static/decors/sprite.svg#ic-envelope"></use>
-                  </svg>связаться с поставщиком</a><a class="btn-gray A-btns__btn" href="#">
+                  </svg>связаться с поставщиком</a><a class="btn btn--gray A-btns__btn" href="#">
                   <svg class="ic-heart btn__icon" role="img">
                     <use xlink:href="static/decors/sprite.svg#ic-heart"></use>
                   </svg>Добавить в избраное</a></div>
@@ -362,12 +362,10 @@
                 </svg>
                 <svg class="ic-ps-e-checking" role="img" width="55" height="25">
                   <use xlink:href="static/decors/sprite.svg#ic-ps-e-checking"></use>
-                </svg>
-                <button class="btn-reset" type="button" data-tippy-html="#another-ps" data-tippy data-tippy-maxWidth="250px">more
+                </svg><span data-tippy-html="#another-ps" data-tippy data-tippy-maxWidth="250px">  more
                   <svg class="ic-chevron va-middle" role="img" width="10" height="10">
                     <use xlink:href="static/decors/sprite.svg#ic-chevron"></use>
-                  </svg>
-                </button>
+                  </svg></span>
                 <div id="another-ps" style="display:none;">This supplier also supports L/C,D/A,D/P,T/T,Western Union,MoneyGram,PayPal payments for offline orders.</div>
               </dd>
             </dl>
@@ -1232,6 +1230,7 @@
 </html>
 <script src="static/scripts//jquery-1.9.1.js"></script>
 <script src="static/scripts//jquery.validate.min.js"></script>
+<script src="static/scripts//jquery.nice-select.min.js"></script>
 <script src="static/scripts//tippy.all.min.js"></script>
 <script src="static/scripts//jquery.magnific-popup.min.js"></script>
 <script src="static/scripts//svg4everybody.min.js"></script>
@@ -1262,8 +1261,12 @@
   <label for="demo-hide">Cсылки</label>
   <input type="checkbox" hidden style="display:none;" id="demo-hide">
   <ul>
+    <li><a href="/cabinet-add-product.html">cabinet-add-product.html</a></li>
     <li><a href="/cabinet-messages.html">cabinet-messages.html</a></li>
+    <li><a href="/cabinet-order.html">cabinet-order.html</a></li>
     <li><a href="/cabinet-orders.html">cabinet-orders.html</a></li>
+    <li><a href="/cabinet-products.html">cabinet-products.html</a></li>
+    <li><a href="/cabinet-statistic.html">cabinet-statistic.html</a></li>
     <li><a href="/cabinet.html">cabinet.html</a></li>
     <li><a href="/catalog.html">catalog.html</a></li>
     <li><a href="/categories.html">categories.html</a></li>

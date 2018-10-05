@@ -23,8 +23,8 @@
           <div class="ta-right"> <a href="#">Забыли пароль?</a></div>
         </div>
         <div class="Form__footer">
-          <button class="btn-primary Form__btn" type="submit">Войти</button>
-          <button class="btn-gray Form__btn" type="reset">Отмена</button>
+          <button class="btn btn--primary Form__btn" type="submit">Войти</button>
+          <button class="btn btn--gray Form__btn" type="reset">Отмена</button>
         </div>
       </form>
       <div class="Popup__footer">Не зарегистрированны?     <a class="open-popap-btn" role="button" href="#registry-popup" data-mfp-src="#registry-popup">Регистрация</a></div>
@@ -61,8 +61,8 @@
               <input class="input d-b" type="password" required="required" name="producer-reg-form[password]" placeholder="Пароль"/>
             </div>
             <div class="Form__footer">
-              <button class="btn-primary Form__btn" type="submit">Зарегистрироваться</button>
-              <button class="btn-gray Form__btn" type="reset">Отмена</button>
+              <button class="btn btn--primary Form__btn" type="submit">Зарегистрироваться</button>
+              <button class="btn btn--gray Form__btn" type="reset">Отмена</button>
             </div>
           </form>
           <script>document.addEventListener('DOMContentLoaded', function() {$('#producer-reg-form').validate();});</script>
@@ -99,8 +99,8 @@
               <input class="input d-b" type="password" required="required" name="customer-reg-form[password]" placeholder="Пароль"/>
             </div>
             <div class="Form__footer">
-              <button class="btn-primary Form__btn" type="submit">Зарегистрироваться            </button>
-              <button class="btn-gray Form__btn" type="reset">Отмена</button>
+              <button class="btn btn--primary Form__btn" type="submit">Зарегистрироваться            </button>
+              <button class="btn btn--gray Form__btn" type="reset">Отмена</button>
             </div>
           </form>
           <script>document.addEventListener('DOMContentLoaded', function() {$('#customer-reg-form').validate();});</script>
@@ -208,8 +208,8 @@
         </div>
         <div class="Basket__total"><strong>Сумма к оплате:</strong><strong class="Basket__accent">$263.00 </strong></div>
       </div>
-      <button class="Basket__btn btn-primary-reverse" type="button">Оформить заказ</button>
-      <button class="Basket__btn btn-primary" type="button">Вернуться к покупкам</button>
+      <button class="Basket__btn btn btn--primary-reverse" type="button">Оформить заказ</button>
+      <button class="Basket__btn btn btn--primary" type="button">Вернуться к покупкам</button>
     </div>
     <header class="Header Page__header" id="header">
       <div class="container"><a class="Header__logo logo" href="/"><img class="Header__logo-desctop" src="img/logo.png"/><img class="Header__logo-mobile" src="img/logo-mobile.png"/></a>
@@ -324,7 +324,7 @@
         <div class="Filters">
           <div class="Filters__btns">
             <div class="Filters__btn">
-              <button class="btn-gray d-b" type="button" data-target="#f-cats">КАТЕГОРИИ</button>
+              <button class="btn btn--gray d-b" type="button" data-target="#f-cats">КАТЕГОРИИ</button>
             </div>
           </div>
           <div class="Filters__left" id="f-cats">
@@ -406,7 +406,7 @@
               </svg><strong>Пользователь желает совершить защищенную сделку</strong>
             </div>
             <div class="A-info__item">
-              <button class="btn-primary" type="button">
+              <button class="btn btn--primary" type="button">
                 <svg class="ic-envelope btn__icon" role="img">
                   <use xlink:href="static/decors/sprite.svg#ic-envelope"></use>
                 </svg>Подать предложение
@@ -542,6 +542,7 @@
 </html>
 <script src="static/scripts//jquery-1.9.1.js"></script>
 <script src="static/scripts//jquery.validate.min.js"></script>
+<script src="static/scripts//jquery.nice-select.min.js"></script>
 <script src="static/scripts//tippy.all.min.js"></script>
 <script src="static/scripts//jquery.magnific-popup.min.js"></script>
 <script src="static/scripts//svg4everybody.min.js"></script>
@@ -572,8 +573,12 @@
   <label for="demo-hide">Cсылки</label>
   <input type="checkbox" hidden style="display:none;" id="demo-hide">
   <ul>
+    <li><a href="/cabinet-add-product.html">cabinet-add-product.html</a></li>
     <li><a href="/cabinet-messages.html">cabinet-messages.html</a></li>
+    <li><a href="/cabinet-order.html">cabinet-order.html</a></li>
     <li><a href="/cabinet-orders.html">cabinet-orders.html</a></li>
+    <li><a href="/cabinet-products.html">cabinet-products.html</a></li>
+    <li><a href="/cabinet-statistic.html">cabinet-statistic.html</a></li>
     <li><a href="/cabinet.html">cabinet.html</a></li>
     <li><a href="/catalog.html">catalog.html</a></li>
     <li><a href="/categories.html">categories.html</a></li>

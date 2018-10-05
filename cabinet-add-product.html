@@ -330,180 +330,65 @@
         </ul>
       </aside>
       <main class="Page__main">
-        <h1 class="Page__title">Заказы</h1>
-        <div class="Tabs v2">
-          <ul class="Tabs__nav">
-            <li class="Tabs__item active"><a class="Tabs__link" href="#orders-new" data-toggle="tab">Новые заказы<span class="Tabs__icon">(21)</span></a></li>
-            <li class="Tabs__item"><a class="Tabs__link" href="#orders-await" data-toggle="tab">Ожидание оплаты<span class="Tabs__icon">(2)</span></a></li>
-            <li class="Tabs__item"><a class="Tabs__link" href="#orders-none" data-toggle="tab">Нет товара<span class="Tabs__icon">(11)</span></a></li>
-            <li class="Tabs__item"><a class="Tabs__link" href="#orders-complete" data-toggle="tab">Выполнено<span class="Tabs__icon">(135)</span></a></li>
-          </ul>
-          <div class="Tabs__tab active" id="orders-new">
-            <div class="Table">
-              <table>
-                <tHead>
-                  <tr>
-                    <th>№  </th>
-                    <th>Товар </th>
-                    <th>Сумма</th>
-                    <th>Заказчик</th>
-                  </tr>
-                </tHead>
-                <tBody>
-                  <tr>
-                    <td><a href="/cabinet-order.html">35422</a><br /><span class="small">23.10.2018</span></td>
-                    <td> <a class="Media" href="/cabinet-order.html">
-                        <div class="Media__pic">
-                          <div class="as-ratio as-ratio--landscape"><img class="as-ratio__inner" src="img/category-1.png" alt="super-product"></div>
-                        </div>
-                        <div class="Media__desc">Диван "Элит"</div></a></td>
-                    <td>3743,36 <span class="small">грн</span></td>
-                    <td>Маколей Калкин <br /><span class="small">+380638228426</span></td>
-                  </tr>
-                  <tr>
-                    <td><a href="/cabinet-order.html">30622</a><br /><span class="small">03.10.2018</span></td>
-                    <td> <a class="Media" href="/cabinet-order.html">
-                        <div class="Media__pic">
-                          <div class="as-ratio as-ratio--landscape"><img class="as-ratio__inner" src="img/category-5.png" alt="super-product"></div>
-                        </div>
-                        <div class="Media__desc">Кресло “Шеф”: офисное кресло с поворотным механизмом и регулировкой по высоте.</div></a></td>
-                    <td>743,36 <span class="small">грн</span></td>
-                    <td>Маколей Калкин <br /><span class="small">+380638255376</span></td>
-                  </tr>
-                  <tr>
-                    <td><a href="/cabinet-order.html">30334</a><br /><span class="small">01.11.2018</span></td>
-                    <td> <a class="Media" href="/cabinet-order.html">
-                        <div class="Media__pic">
-                          <div class="as-ratio as-ratio--landscape"><img class="as-ratio__inner" src="img/category-2.png" alt="super-product"></div>
-                        </div>
-                        <div class="Media__desc">Шкаф-купе от производителя "Гербор"</div></a></td>
-                    <td>1342,00 <span class="small">грн</span></td>
-                    <td>Федор Пупкин <br /><span class="small">+380638206396</span></td>
-                  </tr>
-                </tBody>
-              </table>
+        <h1 class="Page__title">Редактирование товара</h1>
+        <form class="Form" method="POST" id="settings-main">
+          <fieldset class="Form__low">
+            <div class="Form__item">
+              <label class="Form__label" for="settings-main-address">Код товара</label>
+              <input class="input d-b input-number" type="number" value="75630" name="settings[main][address]" id="settings-main-address">
             </div>
-            <div class="Tabs__tab" id="orders-await">
-              <div class="Table">
-                <table>
-                  <tHead>
-                    <tr>
-                      <th>№  </th>
-                      <th>Товар </th>
-                      <th>Сумма</th>
-                      <th>Заказчик</th>
-                    </tr>
-                  </tHead>
-                  <tBody>
-                    <tr>
-                      <td><a href="/cabinet-order.html">30334</a><br /><span class="small">01.11.2018</span></td>
-                      <td> <a class="Media" href="/cabinet-order.html">
-                          <div class="Media__pic">
-                            <div class="as-ratio as-ratio--landscape"><img class="as-ratio__inner" src="img/category-2.png" alt="super-product"></div>
-                          </div>
-                          <div class="Media__desc">Шкаф-купе от производителя "Гербор"</div></a></td>
-                      <td>1342,00 <span class="small">грн</span></td>
-                      <td>Федор Пупкин <br /><span class="small">+380638206396</span></td>
-                    </tr>
-                    <tr>
-                      <td><a href="/cabinet-order.html">35422</a><br /><span class="small">23.10.2018</span></td>
-                      <td> <a class="Media" href="/cabinet-order.html">
-                          <div class="Media__pic">
-                            <div class="as-ratio as-ratio--landscape"><img class="as-ratio__inner" src="img/category-1.png" alt="super-product"></div>
-                          </div>
-                          <div class="Media__desc">Диван "Элит"</div></a></td>
-                      <td>3743,36 <span class="small">грн</span></td>
-                      <td>Маколей Калкин <br /><span class="small">+380638228426</span></td>
-                    </tr>
-                    <tr>
-                      <td><a href="/cabinet-order.html">30622</a><br /><span class="small">03.10.2018</span></td>
-                      <td> <a class="Media" href="/cabinet-order.html">
-                          <div class="Media__pic">
-                            <div class="as-ratio as-ratio--landscape"><img class="as-ratio__inner" src="img/category-5.png" alt="super-product"></div>
-                          </div>
-                          <div class="Media__desc">Кресло “Шеф”: офисное кресло с поворотным механизмом и регулировкой по высоте.</div></a></td>
-                      <td>743,36 <span class="small">грн</span></td>
-                      <td>Маколей Калкин <br /><span class="small">+380638255376</span></td>
-                    </tr>
-                  </tBody>
-                </table>
-              </div>
+            <div class="Form__item">
+              <label class="Form__label" for="settings-main-address">Цена</label>
+              <input class="input d-b" type="text" value="3300" name="settings[main][address]" id="settings-main-address">
             </div>
-            <div class="Tabs__tab" id="orders-none">
-              <div class="Table">
-                <table>
-                  <tHead>
-                    <tr>
-                      <th>№  </th>
-                      <th>Товар </th>
-                      <th>Сумма</th>
-                      <th>Заказчик</th>
-                    </tr>
-                  </tHead>
-                  <tBody>
-                    <tr>
-                      <td><a href="/cabinet-order.html">30622</a><br /><span class="small">03.10.2018</span></td>
-                      <td> <a class="Media" href="/cabinet-order.html">
-                          <div class="Media__pic">
-                            <div class="as-ratio as-ratio--landscape"><img class="as-ratio__inner" src="img/category-5.png" alt="super-product"></div>
-                          </div>
-                          <div class="Media__desc">Кресло “Шеф”: офисное кресло с поворотным механизмом и регулировкой по высоте.</div></a></td>
-                      <td>743,36 <span class="small">грн</span></td>
-                      <td>Маколей Калкин <br /><span class="small">+380638255376</span></td>
-                    </tr>
-                    <tr>
-                      <td><a href="/cabinet-order.html">30334</a><br /><span class="small">01.11.2018</span></td>
-                      <td> <a class="Media" href="/cabinet-order.html">
-                          <div class="Media__pic">
-                            <div class="as-ratio as-ratio--landscape"><img class="as-ratio__inner" src="img/category-2.png" alt="super-product"></div>
-                          </div>
-                          <div class="Media__desc">Шкаф-купе от производителя "Гербор"</div></a></td>
-                      <td>1342,00 <span class="small">грн</span></td>
-                      <td>Федор Пупкин <br /><span class="small">+380638206396</span></td>
-                    </tr>
-                  </tBody>
-                </table>
-              </div>
+            <div class="Form__item">
+              <label class="Form__label" for="settings-main-address">Мин. заказ:</label>
+              <input class="input d-b" type="text" value="50" name="settings[main][address]" id="settings-main-address">
             </div>
-            <div class="Tabs__tab" id="orders-complete">
-              <div class="Table">
-                <table>
-                  <tHead>
-                    <tr>
-                      <th>№  </th>
-                      <th>Товар </th>
-                      <th>Сумма</th>
-                      <th>Заказчик</th>
-                    </tr>
-                  </tHead>
-                  <tBody>
-                    <tr>
-                      <td><a href="/cabinet-order.html">30334</a><br /><span class="small">01.11.2018</span></td>
-                      <td> <a class="Media" href="/cabinet-order.html">
-                          <div class="Media__pic">
-                            <div class="as-ratio as-ratio--landscape"><img class="as-ratio__inner" src="img/category-2.png" alt="super-product"></div>
-                          </div>
-                          <div class="Media__desc">Шкаф-купе от производителя "Гербор"</div></a></td>
-                      <td>1342,00 <span class="small">грн</span></td>
-                      <td>Федор Пупкин <br /><span class="small">+380638206396</span></td>
-                    </tr>
-                    <tr>
-                      <td><a href="/cabinet-order.html">30622</a><br /><span class="small">03.10.2018</span></td>
-                      <td> <a class="Media" href="/cabinet-order.html">
-                          <div class="Media__pic">
-                            <div class="as-ratio as-ratio--landscape"><img class="as-ratio__inner" src="img/category-5.png" alt="super-product"></div>
-                          </div>
-                          <div class="Media__desc">Кресло “Шеф”: офисное кресло с поворотным механизмом и регулировкой по высоте.</div></a></td>
-                      <td>743,36 <span class="small">грн</span></td>
-                      <td>Маколей Калкин <br /><span class="small">+380638255376</span></td>
-                    </tr>
-                  </tBody>
-                </table>
-              </div>
+            <div class="Form__item">
+              <label class="Form__label" for="settings-main-exsists">Название единиц</label>
+              <select class="select select--default d-b">
+                <option>Штука</option>
+                <option>Килограм</option>
+                <option>Метр </option>
+                <option>Вагон</option>
+              </select>
             </div>
+            <div class="Form__item">
+              <label class="Form__label" for="settings-main-exsists">Наличие</label>
+              <select class="select select--default d-b">
+                <option>Наличие</option>
+                <option>Нет в наличии</option>
+                <option>Под заказ </option>
+                <option>Заканчиваеться</option>
+              </select>
+            </div>
+          </fieldset>
+          <fieldset class="Form__main">
+            <div class="Form__item">
+              <label class="Form__label" for="settings-main-name">Название товара</label>
+              <input class="input d-b" type="text" value="Кресло “Шеф”." required name="settings[main][name]" id="settings-main-name">
+            </div>
+            <div class="Form__item">
+              <label class="Form__label" for="settings-main-description">Полное описание товара </label>
+              <textarea class="input d-b" name="settings[main][description]" id="settings-main-description">Мы созданы для комфорта. А точнее, для того, чтобы наши клиенты ощущали эстетическое и осязательное наслаждения не только от качественной мебели, но также и комфорт от процесса ее выбора, заказа и покупки.</textarea>
+            </div>
+            <div class="Form__item">
+              <label class="Form__label" for="settings-main-seodescription">SeoDescription</label>
+              <textarea class="input d-b" name="settings[main][seodescription]" id="settings-main-seodescription"></textarea>
+            </div>
+            <div class="Form__item">
+              <label class="Form__label" for="settings-main-logo">Загрузить изображение</label>
+              <input class="d-b" type="file" required name="settings[main][logo]" id="settings-main-logo">
+            </div>
+          </fieldset>
+          <div class="Form__footer">
+            <button class="Form__btn btn btn--primary" type="submit">Сохранить </button>
+            <button class="Form__btn btn btn--gray" type="reset">Сбросить </button>
           </div>
-        </div>
+        </form>
       </main>
+      <script>document.addEventListener('DOMContentLoaded', function() {$('#settings-main').validate();});</script>
     </div>
     <footer class="Footer" id="footer">
       <div class="container">
