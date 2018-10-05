@@ -280,210 +280,144 @@
     <div class="container">
       <ul class="Breadcrumbs">
         <li class="Breadcrumbs__item"><a class="Breadcrumbs__link" href="/">Главная</a></li>
-        <li class="Breadcrumbs__item"><a class="Breadcrumbs__link" href="/tenders.html">Тендеры</a></li>
-        <li class="Breadcrumbs__item"><a class="Breadcrumbs__link" href="/tender.html">12</a></li>
+        <li class="Breadcrumbs__item"><a class="Breadcrumbs__link" href="/cabinet.html">Личный кабинет</a></li>
+        <li class="Breadcrumbs__item"><a class="Breadcrumbs__link" href="/cabinet/about.html">О компании</a></li>
       </ul>
     </div>
     <div class="container">
       <aside class="Page__sidebar">
-        <div class="Box">
-          <div class="Box__name"><strong>ЕВГЕНИЙ КОРЕНЮГИН</strong></div>
-          <div class="Box__item"> 
-            <div class="Box__icon">
-              <svg class="ic-us" role="img">
-                <use xlink:href="static/decors/sprite.svg#ic-us"></use>
-              </svg>
-            </div>
-            <div class="Box__inner"><small>Страна</small><br><strong>CША</strong></div>
-          </div>
-          <div class="Box__item"> 
-            <div class="Box__icon">
-              <svg class="ic-phone" role="img">
-                <use xlink:href="static/decors/sprite.svg#ic-phone"></use>
-              </svg>
-            </div>
-            <div class="Box__inner"><small>Номер телефона</small><br><strong>+79260173707</strong></div>
-          </div>
-          <div class="Box__item"> 
-            <div class="Box__icon">
+        <ul class="Box">
+          <li class="Box__item"><span class="Box__icon">
+              <svg class="ic-home" role="img">
+                <use xlink:href="static/decors/sprite.svg#ic-home"></use>
+              </svg></span><a class="Box__inner" href="/">Главная</a></li>
+          <li class="Box__item"><span class="Box__icon">
+              <svg class="ic-info" role="img">
+                <use xlink:href="static/decors/sprite.svg#ic-info"></use>
+              </svg></span><a class="Box__inner" href="/">О компании</a><a class="Box__toggler dd-toggler" href="#settings-menu-about">
+              <svg class="ic-chevron" role="img">
+                <use xlink:href="static/decors/sprite.svg#ic-chevron"></use>
+              </svg></a>
+            <ul class="Box Box__subbox opened" id="settings-menu-about">
+              <li class="Box__item"><a class="Box__inner" href="/">Общая информация</a></li>
+              <li class="Box__item"><a class="Box__inner" href="/">Контакты</a></li>
+              <li class="Box__item"><a class="Box__inner" href="/">Оплата, доставка</a></li>
+            </ul>
+          </li>
+          <li class="Box__item"><span class="Box__icon">
+              <svg class="ic-folder" role="img">
+                <use xlink:href="static/decors/sprite.svg#ic-folder"></use>
+              </svg></span><a class="Box__inner" href="/">Товары</a><a class="Box__toggler dd-toggler" href="#settings-menu-products">
+              <svg class="ic-chevron" role="img">
+                <use xlink:href="static/decors/sprite.svg#ic-chevron"></use>
+              </svg></a>
+            <ul class="Box Box__subbox opened" id="settings-menu-products">
+              <li class="Box__item"><a class="Box__inner" href="/">Группы товаров</a></li>
+              <li class="Box__item"><a class="Box__inner" href="/">Экспорт товаров</a></li>
+              <li class="Box__item"><a class="Box__inner" href="/">Импорт товаров</a></li>
+              <li class="Box__item"><a class="Box__inner" href="/">Оптимизация товаров</a></li>
+              <li class="Box__item"><a class="Box__inner" href="/">Бренды</a></li>
+            </ul>
+          </li>
+          <li class="Box__item"><span class="Box__icon">
               <svg class="ic-envelope" role="img">
                 <use xlink:href="static/decors/sprite.svg#ic-envelope"></use>
-              </svg>
-            </div>
-            <div class="Box__inner"><small>Електронная почта</small><br><strong>ekorenyugin@yandex.ru</strong></div>
-          </div>
-          <div class="Box__item b-none">
-            <div class="Box__icon">
-              <svg class="ic-calendar" role="img">
-                <use xlink:href="static/decors/sprite.svg#ic-calendar"></use>
-              </svg>
-            </div>&nbsp;&nbsp;
-            <div class="Box__inner"><small>На портале с</small><br><strong>с мая 2017г.</strong></div>
-          </div>
-        </div>
-        <div class="Filters">
-          <div class="Filters__btns">
-            <div class="Filters__btn">
-              <button class="btn-gray d-b" type="button" data-target="#f-cats">КАТЕГОРИИ</button>
-            </div>
-          </div>
-          <div class="Filters__left" id="f-cats">
-            <h2 class="Box__title">Категории</h2>
-            <ul class="Box" id="menu-common-cat">
-              <li class="Box__item">
-                <div class="Box__icon">
-                  <input type="checkbox"/>
-                </div>  <a class="Box__inner" href="/">Сельхоз и продукты питания</a>
-              </li>
-              <li class="Box__item">
-                <div class="Box__icon">
-                  <input type="checkbox"/>
-                </div>  <a class="Box__inner" href="/">Одежда и текстиль</a><a class="Box__toggler dd-toggler" href="#menu-cat-tabels">
-                  <svg class="ic-chevron" role="img">
-                    <use xlink:href="static/decors/sprite.svg#ic-chevron"></use>
-                  </svg></a>
-                <ul class="Box Box__subbox" id="menu-cat-tabels">
-                  <li class="Box__item">
-                    <div class="Box__icon">
-                      <input type="checkbox"/>
-                    </div>  <a class="Box__inner" href="/">Безопасность и защита</a>
-                  </li>
-                  <li class="Box__item">
-                    <div class="Box__icon">
-                      <input type="checkbox"/>
-                    </div>  <a class="Box__inner" href="/">Софт и комплектующие для пк</a>
-                  </li>
-                  <li class="Box__item">
-                    <div class="Box__icon">
-                      <input type="checkbox"/>
-                    </div>  <a class="Box__inner" href="/">Бытовая техника</a>
-                  </li>
-                </ul>
-              </li>
-              <li class="Box__item">
-                <div class="Box__icon">
-                  <input type="checkbox"/>
-                </div>  <a class="Box__inner" href="/">Электроника</a>
-              </li>
-              <li class="Box__item">
-                <div class="Box__icon">
-                  <input type="checkbox"/>
-                </div>  <a class="Box__inner" href="/">Авто и транспорт</a>
-              </li>
-              <li class="Box__item">
-                <div class="Box__icon">
-                  <input type="checkbox"/>
-                </div>  <a class="Box__inner" href="/">Cумки, обувь и аксессуары</a>
-              </li>
-              <li class="Box__item">
-                <div class="Box__icon">
-                  <input type="checkbox"/>
-                </div>  <a class="Box__inner" href="/">Оборудование и инструменты</a>
-              </li>
-              <li class="Box__item ta-right"><a class="Box__inner" href="/">Еще...</a></li>
-            </ul>
-          </div>
-        </div>
+              </svg></span><a class="Box__inner" href="/">Сообщения</a></li>
+          <li class="Box__item"><span class="Box__icon">
+              <svg class="ic-cart-2" role="img">
+                <use xlink:href="static/decors/sprite.svg#ic-cart-2"></use>
+              </svg></span><a class="Box__inner" href="/">Заказы</a> <a class="Box__inner Box__accent" href="/">(62)</a></li>
+        </ul>
       </aside>
       <main class="Page__main">
-        <div class="A-info">
-          <h1 class="A-info__title">Cмягчитель для изделий трикотажных из полушерстяной пряжи.</h1>
-          <div class="A-info__main">
-            <div class="A-info__item">
-              <p>Я заинтересован в заказе мягчителя (при заключительной стирке в производственной стиральной машине) для изделий трикотажных из полушерстяной пряжи. Прошу направить наименование и стоимость товара.</p>
-            </div>
-            <dl class="A-info__item">
-              <dt class="A-info__dt">Цена:</dt>
-              <dd class="A-info__dd">Договорная</dd>
-            </dl>
-            <dl class="A-info__item">
-              <dt class="A-info__dt">Срок:</dt>
-              <dd class="A-info__dd">2 месяца</dd>
-            </dl>
-            <div class="A-info__item">
-              <svg class="ic-shield-2 guarantee" role="img" data-tippy="data-tippy" data-tippy-maxWidth="250px" title="Безопасная сделка">
-                <use xlink:href="static/decors/sprite.svg#ic-shield-2"></use>
-              </svg><strong>Пользователь желает совершить защищенную сделку</strong>
-            </div>
-            <div class="A-info__item">
-              <button class="btn-primary" type="button">
-                <svg class="ic-envelope btn__icon" role="img">
-                  <use xlink:href="static/decors/sprite.svg#ic-envelope"></use>
-                </svg>Подать предложение
-              </button>
-            </div>
-          </div>
-          <div class="A-info__footer">
-            <div class="A-info__item">
-              <div class="A-info__date">4 месяца назад</div>
-              <div class="A-info__views">
-                <svg class="ic-telegram va-middle" role="img" width="20" height="20">
-                  <use xlink:href="static/decors/sprite.svg#ic-telegram"></use>
-                </svg>  52 просмотра
-              </div>
-            </div>
+        <h1 class="Page__title">Сообщения</h1>
+        <div class="Panel">
+          <label class="Panel__item">
+            <input class="va-middle" type="checkbox" data-target="[name*=&quot;order-messages&quot;]" id="order-messages-checkall">    Выбрать все
+          </label>
+          <div class="Panel__item">
+            <button class="btn-red" type="button" data-target="[name*=&quot;order-messages&quot;]" id="order-messages-deleteall">Удалить</button>
           </div>
         </div>
-        <p class="fz-md">Предложения: <span class="primary-color">4</span></p>
-        <div class="Comment">
-          <div class="Comment__header">
-            <div class="Comment__date">2 сентября 2018 г. 18:22</div>
-            <div class="Comment__country">Германия
-              <svg class="ic-de" role="img" width="30px" height="20px">
-                <use xlink:href="static/decors/sprite.svg#ic-de"></use>
-              </svg>
-            </div>
-          </div>
-          <div class="Comment__text">можем предложить Нетканое полотно Спанбонд 60г/м2,черный, 1,6*5м</div>
-          <div class="Comment__footer">
-            <div class="Comment__price">USD 32,00</div>
-            <div class="Comment__time">3 day</div>
-          </div>
-        </div>
-        <div class="Comment">
-          <div class="Comment__header">
-            <div class="Comment__date">1 сентября 2018 г. 18:22</div>
-            <div class="Comment__country">Россия
-              <svg class="ic-ru" role="img" width="30px" height="20px">
-                <use xlink:href="static/decors/sprite.svg#ic-ru"></use>
-              </svg>
-            </div>
-          </div>
-          <div class="Comment__text">У нас в Иваново компания Альянс http://spanb.ru/ продает очень дёшево.</div>
-          <div class="Comment__footer">
-            <div class="Comment__price">USD 12,00</div>
-            <div class="Comment__time">1 day</div>
-          </div>
-        </div>
-        <div class="Comment">
-          <div class="Comment__header">
-            <div class="Comment__date">2 сентября 2018 г. 18:22</div>
-            <div class="Comment__country">Германия
-              <svg class="ic-de" role="img" width="30px" height="20px">
-                <use xlink:href="static/decors/sprite.svg#ic-de"></use>
-              </svg>
-            </div>
-          </div>
-          <div class="Comment__text">можем предложить Нетканое полотно Спанбонд 60г/м2,черный, 1,6*5м</div>
-          <div class="Comment__footer">
-            <div class="Comment__price">USD 32,00</div>
-            <div class="Comment__time">3 day</div>
-          </div>
-        </div>
-        <div class="Comment">
-          <div class="Comment__header">
-            <div class="Comment__date">1 сентября 2018 г. 18:22</div>
-            <div class="Comment__country">Россия
-              <svg class="ic-ru" role="img" width="30px" height="20px">
-                <use xlink:href="static/decors/sprite.svg#ic-ru"></use>
-              </svg>
-            </div>
-          </div>
-          <div class="Comment__text">У нас в Иваново компания Альянс http://spanb.ru/ продает очень дёшево.</div>
-          <div class="Comment__footer">
-            <div class="Comment__price">USD 12,00</div>
-            <div class="Comment__time">1 day</div>
-          </div>
+        <div class="Table" id="order-messages-container">
+          <table>
+            <tHead>
+              <tr>
+                <th></th>
+                <th> Дата</th>
+                <th>Отправитель</th>
+                <th></th>
+                <th>Тип сообщения</th>
+                <th></th>
+              </tr>
+            </tHead>
+            <tBody>
+              <tr>
+                <td> 
+                  <input type="checkbox" name="order-messages[1]">
+                </td>
+                <td>03.10.2018</td>
+                <td>Федя Пупкин</td>
+                <td> Далеко-далеко за словесными горами в стране, гласных...</td>
+                <td>Заказы</td>
+                <td> 
+                  <button class="btn-close" type="button">
+                    <svg class="ic-close" role="img">
+                      <use xlink:href="static/decors/sprite.svg#ic-close"></use>
+                    </svg>
+                  </button>
+                </td>
+              </tr>
+              <tr>
+                <td> 
+                  <input type="checkbox" name="order-messages[2]">
+                </td>
+                <td>03.10.2018</td>
+                <td>Джон Доу</td>
+                <td> Далеко-далеко за словесными горами в стране, гласных...</td>
+                <td>Заказы</td>
+                <td> 
+                  <button class="btn-close" type="button">
+                    <svg class="ic-close" role="img">
+                      <use xlink:href="static/decors/sprite.svg#ic-close"></use>
+                    </svg>
+                  </button>
+                </td>
+              </tr>
+              <tr>
+                <td> 
+                  <input type="checkbox" name="order-messages[3]">
+                </td>
+                <td>03.10.2018</td>
+                <td>Маколей Калкин</td>
+                <td>Заказ товара через корзину на портале BigOpt.com...</td>
+                <td>Заказы</td>
+                <td> 
+                  <button class="btn-close" type="button">
+                    <svg class="ic-close" role="img">
+                      <use xlink:href="static/decors/sprite.svg#ic-close"></use>
+                    </svg>
+                  </button>
+                </td>
+              </tr>
+              <tr>
+                <td> 
+                  <input type="checkbox" name="order-messages[4]">
+                </td>
+                <td>03.10.2018</td>
+                <td>Маколей Калкин</td>
+                <td>Заказ товара через корзину на портале BigOpt.com...</td>
+                <td>Заказы</td>
+                <td> 
+                  <button class="btn-close" type="button">
+                    <svg class="ic-close" role="img">
+                      <use xlink:href="static/decors/sprite.svg#ic-close"></use>
+                    </svg>
+                  </button>
+                </td>
+              </tr>
+            </tBody>
+          </table>
         </div>
       </main>
     </div>

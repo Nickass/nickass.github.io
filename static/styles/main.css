@@ -710,6 +710,14 @@ select:invalid {
   padding-top: 100%;
 }
 
+.as-ratio--portrait:before {
+  padding-top: 133.33333%;
+}
+
+.as-ratio--landscape:before {
+  padding-top: 75%;
+}
+
 .as-ratio__inner {
   display: block;
   position: absolute;
@@ -1491,6 +1499,28 @@ select:invalid {
   color: #fff;
 }
 
+.btn-red, .btn-close {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+  border: 0;
+  padding: 0;
+  display: inline-block;
+  background-color: transparent;
+  text-decoration: none;
+  background-color: red;
+  font-weight: 600;
+  color: #fff;
+  padding: 8px 10px;
+  fill: #fff;
+  text-align: center;
+  line-height: 15px;
+}
+
+.btn-red:hover, .btn-close:hover {
+  background-color: #cc0000;
+}
+
 .btn-green {
   -webkit-box-sizing: border-box;
      -moz-box-sizing: border-box;
@@ -1587,6 +1617,21 @@ select:invalid {
   fill: #fff;
 }
 
+.btn-close {
+  width: 1.78571em;
+  height: 1.78571em;
+  line-height: 1.78571em;
+  padding: 0.35714em;
+  -webkit-border-radius: 2px;
+          border-radius: 2px;
+}
+
+.btn-close:focus {
+  outline: none;
+  -webkit-box-shadow: 0 0 2px #ccc;
+          box-shadow: 0 0 2px #ccc;
+}
+
 .btn__icon {
   display: inline-block;
   width: 20px;
@@ -1594,6 +1639,13 @@ select:invalid {
   margin: 0 6px;
   float: left;
   vertical-align: middle;
+}
+
+.ic-filter {
+  width: 20px;
+  height: 20px;
+  padding: 2px;
+  fill: #333;
 }
 
 .Price {
@@ -2892,6 +2944,7 @@ a.Box__inner:hover {
   height: 100%;
   text-decoration: none;
   text-transform: uppercase;
+  padding: 0 5px;
 }
 
 .Tabs__link:focus {
@@ -2899,14 +2952,15 @@ a.Box__inner:hover {
 }
 
 .Tabs__icon {
+  position: relative;
   display: inline-block;
   vertical-align: baseline;
   width: 15px;
   height: 15px;
   margin-left: 5px;
-  margin-right: -10px;
+  margin-right: -5px;
   line-height: 1;
-  margin-top: -2px;
+  top: -1px;
   fill: #737272;
   -webkit-transform-origin: 50% 35%;
       -ms-transform-origin: 50% 35%;
@@ -2916,6 +2970,8 @@ a.Box__inner:hover {
   -o-transition: transform 200ms;
   transition: transform 200ms;
   transition: transform 200ms, -webkit-transform 200ms;
+  color: #04527a;
+  font-size: 0.9em;
 }
 
 .Tabs__icon.active {
@@ -4167,6 +4223,100 @@ a.Box__inner:hover {
   float: right;
   margin-left: 10px;
   margin-bottom: 10px;
+}
+
+.Media {
+  display: block;
+  min-width: 280px;
+  max-width: 100%;
+}
+
+.Media:before, .Media:after {
+  display: table;
+  content: "";
+}
+
+.Media:after {
+  clear: both;
+}
+
+.lt-ie8 .Media {
+  zoom: 1;
+}
+
+.Media__pic {
+  float: left;
+  width: 25%;
+  padding: 0 10px;
+}
+
+.Media__desc {
+  float: left;
+  width: 75%;
+}
+
+.Panel {
+  margin: 10px 0;
+  padding: 10px;
+  -webkit-border-radius: 3px;
+          border-radius: 3px;
+  background: #f0f0f0;
+  font-size: 0;
+}
+
+.Panel__item {
+  display: inline-block;
+  margin-right: 10px;
+  font-size: 14px;
+}
+
+.Table {
+  display: block;
+  width: 100%;
+  overflow: auto;
+}
+
+.Table table {
+  width: 100%;
+}
+
+.Table tHead {
+  border-bottom: 1px solid #04527a;
+  text-align: left;
+  padding-bottom: 10px;
+}
+
+.Table tHead tr:last-child th, .Table tHead tr:last-child {
+  padding-bottom: 10px;
+}
+
+.Table tBody tr {
+  border-bottom: 1px solid #eee;
+}
+
+.Table tBody tr:hover {
+  background-color: #f8f8f8;
+}
+
+.Table tBody tr:last-child {
+  border-bottom: none;
+}
+
+.Table tBody tr tr:first-child td {
+  padding-top: 10px;
+}
+
+.Table th {
+  font-weight: 600;
+}
+
+.Table th, .Table td {
+  padding: 5px;
+}
+
+.Table a {
+  color: #23527c;
+  text-decoration: none;
 }
 
 .Header {
@@ -5926,4 +6076,8 @@ a.Box__inner:hover {
 
 .error {
   color: red;
+}
+
+.small {
+  font-size: 0.9em;
 }
