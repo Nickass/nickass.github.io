@@ -1723,6 +1723,7 @@ select:invalid {
   border-color: #666;
   white-space: nowrap;
   max-width: 270px;
+  min-width: 120px;
 }
 
 .select--primary, .select--yellow {
