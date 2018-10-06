@@ -114,12 +114,12 @@
         <div class="B-item__header"><strong>Поставщик:  </strong><strong class="primary-color">"Regina"</strong>&nbsp; &nbsp;<span class="tariff">tariff<strong class="tariff__name">premium</strong></span>&nbsp; &nbsp;
           <svg class="ic-shield guarantee" role="img">
             <use xlink:href="static/decors/sprite.svg#ic-shield"></use>
-          </svg>
-          <button class="B-item__close" type="button" onclick="$(this).closest('.Basket__item').hide()">
-            <svg class="ic-close" role="img">
-              <use xlink:href="static/decors/sprite.svg#ic-close"></use>
-            </svg>
-          </button>
+          </svg><span class="B-item__close">
+            <button class="btn btn--danger btn--square" type="button" onclick="$(this).closest('.Basket__item').fadeOut(300, function(){$(this).remove()})">
+              <svg class="ic-close btn__icon" role="img">
+                <use xlink:href="static/decors/sprite.svg#ic-close"></use>
+              </svg>
+            </button></span>
         </div>
         <table class="B-item">
           <tr class="B-item__thead">
@@ -156,13 +156,12 @@
         </table>
       </div>
       <div class="Basket__item">
-        <div class="B-item__header"><strong>Поставщик:</strong><strong class="primary-color">"Regina"</strong>
-          <button class="B-item__close" type="button" onclick="$(this).closest('.Basket__item').hide()">
-            <svg class="ic-close" role="img">
-              <use xlink:href="static/decors/sprite.svg#ic-close"></use>
-            </svg>
-          </button>
-        </div>
+        <div class="B-item__header"><strong>Поставщик:</strong><strong class="primary-color">"Regina"</strong><span class="B-item__close">
+            <button class="btn btn--danger btn--square" type="button" onclick="$(this).closest('.Basket__item').fadeOut(300, function(){$(this).remove()})">
+              <svg class="ic-close btn__icon" role="img">
+                <use xlink:href="static/decors/sprite.svg#ic-close"></use>
+              </svg>
+            </button></span></div>
         <table class="B-item">
           <tr class="B-item__thead">
             <td class="B-item__td">Товар</td>
@@ -281,7 +280,8 @@
       <ul class="Breadcrumbs">
         <li class="Breadcrumbs__item"><a class="Breadcrumbs__link" href="/">Главная</a></li>
         <li class="Breadcrumbs__item"><a class="Breadcrumbs__link" href="/cabinet.html">Личный кабинет</a></li>
-        <li class="Breadcrumbs__item"><a class="Breadcrumbs__link" href="/cabinet/about.html">О компании</a></li>
+        <li class="Breadcrumbs__item"><a class="Breadcrumbs__link" href="/cabinet-products.html">Товары</a></li>
+        <li class="Breadcrumbs__item"><a class="Breadcrumbs__link" href="/cabinet-add-product.html">Редактирование товара</a></li>
       </ul>
     </div>
     <div class="container">
@@ -290,64 +290,69 @@
           <li class="Box__item"><span class="Box__icon">
               <svg class="ic-home" role="img">
                 <use xlink:href="static/decors/sprite.svg#ic-home"></use>
-              </svg></span><a class="Box__inner" href="/">Главная</a></li>
+              </svg></span><a class="Box__inner" href="/cabinet.html">Главная</a></li>
           <li class="Box__item"><span class="Box__icon">
               <svg class="ic-info" role="img">
                 <use xlink:href="static/decors/sprite.svg#ic-info"></use>
-              </svg></span><a class="Box__inner" href="/">О компании</a><a class="Box__toggler dd-toggler" href="#settings-menu-about">
+              </svg></span><a class="Box__inner" href="/cabinet.html">О компании</a><a class="Box__toggler dd-toggler" href="#cabinet-menu-about">
               <svg class="ic-chevron" role="img">
                 <use xlink:href="static/decors/sprite.svg#ic-chevron"></use>
               </svg></a>
-            <ul class="Box Box__subbox opened" id="settings-menu-about">
-              <li class="Box__item"><a class="Box__inner" href="/">Общая информация</a></li>
-              <li class="Box__item"><a class="Box__inner" href="/">Контакты</a></li>
-              <li class="Box__item"><a class="Box__inner" href="/">Оплата, доставка</a></li>
+            <ul class="Box Box__subbox" id="cabinet-menu-about">
+              <li class="Box__item"><a class="Box__inner" href="/cabinet.html">Общая информация</a></li>
+              <li class="Box__item"><a class="Box__inner" href="/cabinet.html">Контакты</a></li>
+              <li class="Box__item"><a class="Box__inner" href="/cabinet.html">Оплата, доставка</a></li>
             </ul>
           </li>
           <li class="Box__item"><span class="Box__icon">
               <svg class="ic-folder" role="img">
                 <use xlink:href="static/decors/sprite.svg#ic-folder"></use>
-              </svg></span><a class="Box__inner" href="/">Товары</a><a class="Box__toggler dd-toggler" href="#settings-menu-products">
+              </svg></span><a class="Box__inner" href="/cabinet-products.html">Товары</a><a class="Box__toggler dd-toggler" href="#cabinet-menu-products">
               <svg class="ic-chevron" role="img">
                 <use xlink:href="static/decors/sprite.svg#ic-chevron"></use>
               </svg></a>
-            <ul class="Box Box__subbox opened" id="settings-menu-products">
-              <li class="Box__item"><a class="Box__inner" href="/">Группы товаров</a></li>
-              <li class="Box__item"><a class="Box__inner" href="/">Экспорт товаров</a></li>
-              <li class="Box__item"><a class="Box__inner" href="/">Импорт товаров</a></li>
-              <li class="Box__item"><a class="Box__inner" href="/">Оптимизация товаров</a></li>
-              <li class="Box__item"><a class="Box__inner" href="/">Бренды</a></li>
+            <ul class="Box Box__subbox" id="cabinet-menu-products">
+              <li class="Box__item"><a class="Box__inner" href="/cabinet-products.html">Группы товаров</a></li>
+              <li class="Box__item"><a class="Box__inner" href="/cabinet-products.html">Экспорт товаров</a></li>
+              <li class="Box__item"><a class="Box__inner" href="/cabinet-products.html">Импорт товаров</a></li>
+              <li class="Box__item"><a class="Box__inner" href="/cabinet-products.html">Оптимизация товаров</a></li>
+              <li class="Box__item"><a class="Box__inner" href="/cabinet-products.html">Бренды</a></li>
+              <li class="Box__item"><a class="Box__inner" href="/cabinet-add-product.html">Добавить товар</a></li>
             </ul>
           </li>
           <li class="Box__item"><span class="Box__icon">
               <svg class="ic-envelope" role="img">
                 <use xlink:href="static/decors/sprite.svg#ic-envelope"></use>
-              </svg></span><a class="Box__inner" href="/">Сообщения</a></li>
+              </svg></span><a class="Box__inner" href="/cabinet-messages.html">Сообщения</a></li>
           <li class="Box__item"><span class="Box__icon">
               <svg class="ic-cart-2" role="img">
                 <use xlink:href="static/decors/sprite.svg#ic-cart-2"></use>
-              </svg></span><a class="Box__inner" href="/">Заказы</a> <a class="Box__inner Box__accent" href="/">(62)</a></li>
+              </svg></span><a class="Box__inner" href="/cabinet-orders.html">Заказы</a> <a class="Box__inner Box__accent" href="/cabinet-orders.html">(62)</a></li>
+          <li class="Box__item"><span class="Box__icon">
+              <svg class="ic-line-chart" role="img">
+                <use xlink:href="static/decors/sprite.svg#ic-line-chart"></use>
+              </svg></span><a class="Box__inner" href="/cabinet-statistic.html">Статистика</a></li>
         </ul>
       </aside>
       <main class="Page__main">
         <h1 class="Page__title">Редактирование товара</h1>
-        <form class="Form" method="POST" id="settings-main">
+        <form class="Form" method="POST" id="product">
           <fieldset class="Form__low">
             <div class="Form__item">
-              <label class="Form__label" for="settings-main-address">Код товара</label>
-              <input class="input d-b input-number" type="number" value="75630" name="settings[main][address]" id="settings-main-address">
+              <label class="Form__label" for="product-code">Код товара</label>
+              <input class="input d-b input-number" type="number" value="75630" name="product[0][code]" id="product-code">
             </div>
             <div class="Form__item">
-              <label class="Form__label" for="settings-main-address">Цена</label>
-              <input class="input d-b" type="text" value="3300" name="settings[main][address]" id="settings-main-address">
+              <label class="Form__label" for="product-price">Цена</label>
+              <input class="input d-b" type="text" value="3300" name="product[0][price]" id="product-price">
             </div>
             <div class="Form__item">
-              <label class="Form__label" for="settings-main-address">Мин. заказ:</label>
-              <input class="input d-b" type="text" value="50" name="settings[main][address]" id="settings-main-address">
+              <label class="Form__label" for="product-min-order">Мин. заказ:</label>
+              <input class="input d-b" type="text" value="50" name="product[0][min-order]" id="product-min-order">
             </div>
             <div class="Form__item">
-              <label class="Form__label" for="settings-main-exsists">Название единиц</label>
-              <select class="select select--default d-b">
+              <label class="Form__label" for="product-name_unit">Название единиц</label>
+              <select class="select select--default d-b" name="product[0][name_unit]" id="product-name_unit">
                 <option>Штука</option>
                 <option>Килограм</option>
                 <option>Метр </option>
@@ -355,8 +360,8 @@
               </select>
             </div>
             <div class="Form__item">
-              <label class="Form__label" for="settings-main-exsists">Наличие</label>
-              <select class="select select--default d-b">
+              <label class="Form__label" for="product-state">Наличие</label>
+              <select class="select select--default d-b" name="product[0][state]" id="product-state">
                 <option>Наличие</option>
                 <option>Нет в наличии</option>
                 <option>Под заказ </option>
@@ -366,20 +371,20 @@
           </fieldset>
           <fieldset class="Form__main">
             <div class="Form__item">
-              <label class="Form__label" for="settings-main-name">Название товара</label>
-              <input class="input d-b" type="text" value="Кресло “Шеф”." required name="settings[main][name]" id="settings-main-name">
+              <label class="Form__label" for="product-name">Название товара</label>
+              <input class="input d-b" type="text" value="Кресло “Шеф”." required name="product[0][name]" id="product-name">
             </div>
             <div class="Form__item">
-              <label class="Form__label" for="settings-main-description">Полное описание товара </label>
-              <textarea class="input d-b" name="settings[main][description]" id="settings-main-description">Мы созданы для комфорта. А точнее, для того, чтобы наши клиенты ощущали эстетическое и осязательное наслаждения не только от качественной мебели, но также и комфорт от процесса ее выбора, заказа и покупки.</textarea>
+              <label class="Form__label" for="product-description">Полное описание товара </label>
+              <textarea class="input d-b" name="product[0][description]" id="product-description">Мы созданы для комфорта. А точнее, для того, чтобы наши клиенты ощущали эстетическое и осязательное наслаждения не только от качественной мебели, но также и комфорт от процесса ее выбора, заказа и покупки.</textarea>
             </div>
             <div class="Form__item">
-              <label class="Form__label" for="settings-main-seodescription">SeoDescription</label>
-              <textarea class="input d-b" name="settings[main][seodescription]" id="settings-main-seodescription"></textarea>
+              <label class="Form__label" for="product-seo_description">SeoDescription</label>
+              <textarea class="input d-b" name="product[0][seo_description]" id="product-seo_description"></textarea>
             </div>
             <div class="Form__item">
-              <label class="Form__label" for="settings-main-logo">Загрузить изображение</label>
-              <input class="d-b" type="file" required name="settings[main][logo]" id="settings-main-logo">
+              <label class="Form__label" for="product-image">Загрузить изображение</label>
+              <input class="d-b" type="file" required name="product[0][image]" id="product-image">
             </div>
           </fieldset>
           <div class="Form__footer">
@@ -388,7 +393,7 @@
           </div>
         </form>
       </main>
-      <script>document.addEventListener('DOMContentLoaded', function() {$('#settings-main').validate();});</script>
+      <script>document.addEventListener('DOMContentLoaded', function() {$('#product').validate();});</script>
     </div>
     <footer class="Footer" id="footer">
       <div class="container">
@@ -478,7 +483,6 @@
   <ul>
     <li><a href="/cabinet-add-product.html">cabinet-add-product.html</a></li>
     <li><a href="/cabinet-messages.html">cabinet-messages.html</a></li>
-    <li><a href="/cabinet-order.html">cabinet-order.html</a></li>
     <li><a href="/cabinet-orders.html">cabinet-orders.html</a></li>
     <li><a href="/cabinet-products.html">cabinet-products.html</a></li>
     <li><a href="/cabinet-statistic.html">cabinet-statistic.html</a></li>

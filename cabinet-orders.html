@@ -114,12 +114,12 @@
         <div class="B-item__header"><strong>Поставщик:  </strong><strong class="primary-color">"Regina"</strong>&nbsp; &nbsp;<span class="tariff">tariff<strong class="tariff__name">premium</strong></span>&nbsp; &nbsp;
           <svg class="ic-shield guarantee" role="img">
             <use xlink:href="static/decors/sprite.svg#ic-shield"></use>
-          </svg>
-          <button class="B-item__close" type="button" onclick="$(this).closest('.Basket__item').hide()">
-            <svg class="ic-close" role="img">
-              <use xlink:href="static/decors/sprite.svg#ic-close"></use>
-            </svg>
-          </button>
+          </svg><span class="B-item__close">
+            <button class="btn btn--danger btn--square" type="button" onclick="$(this).closest('.Basket__item').fadeOut(300, function(){$(this).remove()})">
+              <svg class="ic-close btn__icon" role="img">
+                <use xlink:href="static/decors/sprite.svg#ic-close"></use>
+              </svg>
+            </button></span>
         </div>
         <table class="B-item">
           <tr class="B-item__thead">
@@ -156,13 +156,12 @@
         </table>
       </div>
       <div class="Basket__item">
-        <div class="B-item__header"><strong>Поставщик:</strong><strong class="primary-color">"Regina"</strong>
-          <button class="B-item__close" type="button" onclick="$(this).closest('.Basket__item').hide()">
-            <svg class="ic-close" role="img">
-              <use xlink:href="static/decors/sprite.svg#ic-close"></use>
-            </svg>
-          </button>
-        </div>
+        <div class="B-item__header"><strong>Поставщик:</strong><strong class="primary-color">"Regina"</strong><span class="B-item__close">
+            <button class="btn btn--danger btn--square" type="button" onclick="$(this).closest('.Basket__item').fadeOut(300, function(){$(this).remove()})">
+              <svg class="ic-close btn__icon" role="img">
+                <use xlink:href="static/decors/sprite.svg#ic-close"></use>
+              </svg>
+            </button></span></div>
         <table class="B-item">
           <tr class="B-item__thead">
             <td class="B-item__td">Товар</td>
@@ -290,43 +289,48 @@
           <li class="Box__item"><span class="Box__icon">
               <svg class="ic-home" role="img">
                 <use xlink:href="static/decors/sprite.svg#ic-home"></use>
-              </svg></span><a class="Box__inner" href="/">Главная</a></li>
+              </svg></span><a class="Box__inner" href="/cabinet.html">Главная</a></li>
           <li class="Box__item"><span class="Box__icon">
               <svg class="ic-info" role="img">
                 <use xlink:href="static/decors/sprite.svg#ic-info"></use>
-              </svg></span><a class="Box__inner" href="/">О компании</a><a class="Box__toggler dd-toggler" href="#settings-menu-about">
+              </svg></span><a class="Box__inner" href="/cabinet.html">О компании</a><a class="Box__toggler dd-toggler" href="#cabinet-menu-about">
               <svg class="ic-chevron" role="img">
                 <use xlink:href="static/decors/sprite.svg#ic-chevron"></use>
               </svg></a>
-            <ul class="Box Box__subbox opened" id="settings-menu-about">
-              <li class="Box__item"><a class="Box__inner" href="/">Общая информация</a></li>
-              <li class="Box__item"><a class="Box__inner" href="/">Контакты</a></li>
-              <li class="Box__item"><a class="Box__inner" href="/">Оплата, доставка</a></li>
+            <ul class="Box Box__subbox" id="cabinet-menu-about">
+              <li class="Box__item"><a class="Box__inner" href="/cabinet.html">Общая информация</a></li>
+              <li class="Box__item"><a class="Box__inner" href="/cabinet.html">Контакты</a></li>
+              <li class="Box__item"><a class="Box__inner" href="/cabinet.html">Оплата, доставка</a></li>
             </ul>
           </li>
           <li class="Box__item"><span class="Box__icon">
               <svg class="ic-folder" role="img">
                 <use xlink:href="static/decors/sprite.svg#ic-folder"></use>
-              </svg></span><a class="Box__inner" href="/">Товары</a><a class="Box__toggler dd-toggler" href="#settings-menu-products">
+              </svg></span><a class="Box__inner" href="/cabinet-products.html">Товары</a><a class="Box__toggler dd-toggler" href="#cabinet-menu-products">
               <svg class="ic-chevron" role="img">
                 <use xlink:href="static/decors/sprite.svg#ic-chevron"></use>
               </svg></a>
-            <ul class="Box Box__subbox opened" id="settings-menu-products">
-              <li class="Box__item"><a class="Box__inner" href="/">Группы товаров</a></li>
-              <li class="Box__item"><a class="Box__inner" href="/">Экспорт товаров</a></li>
-              <li class="Box__item"><a class="Box__inner" href="/">Импорт товаров</a></li>
-              <li class="Box__item"><a class="Box__inner" href="/">Оптимизация товаров</a></li>
-              <li class="Box__item"><a class="Box__inner" href="/">Бренды</a></li>
+            <ul class="Box Box__subbox" id="cabinet-menu-products">
+              <li class="Box__item"><a class="Box__inner" href="/cabinet-products.html">Группы товаров</a></li>
+              <li class="Box__item"><a class="Box__inner" href="/cabinet-products.html">Экспорт товаров</a></li>
+              <li class="Box__item"><a class="Box__inner" href="/cabinet-products.html">Импорт товаров</a></li>
+              <li class="Box__item"><a class="Box__inner" href="/cabinet-products.html">Оптимизация товаров</a></li>
+              <li class="Box__item"><a class="Box__inner" href="/cabinet-products.html">Бренды</a></li>
+              <li class="Box__item"><a class="Box__inner" href="/cabinet-add-product.html">Добавить товар</a></li>
             </ul>
           </li>
           <li class="Box__item"><span class="Box__icon">
               <svg class="ic-envelope" role="img">
                 <use xlink:href="static/decors/sprite.svg#ic-envelope"></use>
-              </svg></span><a class="Box__inner" href="/">Сообщения</a></li>
+              </svg></span><a class="Box__inner" href="/cabinet-messages.html">Сообщения</a></li>
           <li class="Box__item"><span class="Box__icon">
               <svg class="ic-cart-2" role="img">
                 <use xlink:href="static/decors/sprite.svg#ic-cart-2"></use>
-              </svg></span><a class="Box__inner" href="/">Заказы</a> <a class="Box__inner Box__accent" href="/">(62)</a></li>
+              </svg></span><a class="Box__inner" href="/cabinet-orders.html">Заказы</a> <a class="Box__inner Box__accent" href="/cabinet-orders.html">(62)</a></li>
+          <li class="Box__item"><span class="Box__icon">
+              <svg class="ic-line-chart" role="img">
+                <use xlink:href="static/decors/sprite.svg#ic-line-chart"></use>
+              </svg></span><a class="Box__inner" href="/cabinet-statistic.html">Статистика</a></li>
         </ul>
       </aside>
       <main class="Page__main">
@@ -593,7 +597,6 @@
   <ul>
     <li><a href="/cabinet-add-product.html">cabinet-add-product.html</a></li>
     <li><a href="/cabinet-messages.html">cabinet-messages.html</a></li>
-    <li><a href="/cabinet-order.html">cabinet-order.html</a></li>
     <li><a href="/cabinet-orders.html">cabinet-orders.html</a></li>
     <li><a href="/cabinet-products.html">cabinet-products.html</a></li>
     <li><a href="/cabinet-statistic.html">cabinet-statistic.html</a></li>

@@ -114,12 +114,12 @@
         <div class="B-item__header"><strong>Поставщик:  </strong><strong class="primary-color">"Regina"</strong>&nbsp; &nbsp;<span class="tariff">tariff<strong class="tariff__name">premium</strong></span>&nbsp; &nbsp;
           <svg class="ic-shield guarantee" role="img">
             <use xlink:href="static/decors/sprite.svg#ic-shield"></use>
-          </svg>
-          <button class="B-item__close" type="button" onclick="$(this).closest('.Basket__item').hide()">
-            <svg class="ic-close" role="img">
-              <use xlink:href="static/decors/sprite.svg#ic-close"></use>
-            </svg>
-          </button>
+          </svg><span class="B-item__close">
+            <button class="btn btn--danger btn--square" type="button" onclick="$(this).closest('.Basket__item').fadeOut(300, function(){$(this).remove()})">
+              <svg class="ic-close btn__icon" role="img">
+                <use xlink:href="static/decors/sprite.svg#ic-close"></use>
+              </svg>
+            </button></span>
         </div>
         <table class="B-item">
           <tr class="B-item__thead">
@@ -156,13 +156,12 @@
         </table>
       </div>
       <div class="Basket__item">
-        <div class="B-item__header"><strong>Поставщик:</strong><strong class="primary-color">"Regina"</strong>
-          <button class="B-item__close" type="button" onclick="$(this).closest('.Basket__item').hide()">
-            <svg class="ic-close" role="img">
-              <use xlink:href="static/decors/sprite.svg#ic-close"></use>
-            </svg>
-          </button>
-        </div>
+        <div class="B-item__header"><strong>Поставщик:</strong><strong class="primary-color">"Regina"</strong><span class="B-item__close">
+            <button class="btn btn--danger btn--square" type="button" onclick="$(this).closest('.Basket__item').fadeOut(300, function(){$(this).remove()})">
+              <svg class="ic-close btn__icon" role="img">
+                <use xlink:href="static/decors/sprite.svg#ic-close"></use>
+              </svg>
+            </button></span></div>
         <table class="B-item">
           <tr class="B-item__thead">
             <td class="B-item__td">Товар</td>
@@ -1865,7 +1864,6 @@
   <ul>
     <li><a href="/cabinet-add-product.html">cabinet-add-product.html</a></li>
     <li><a href="/cabinet-messages.html">cabinet-messages.html</a></li>
-    <li><a href="/cabinet-order.html">cabinet-order.html</a></li>
     <li><a href="/cabinet-orders.html">cabinet-orders.html</a></li>
     <li><a href="/cabinet-products.html">cabinet-products.html</a></li>
     <li><a href="/cabinet-statistic.html">cabinet-statistic.html</a></li>

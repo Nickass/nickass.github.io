@@ -114,12 +114,12 @@
         <div class="B-item__header"><strong>Поставщик:  </strong><strong class="primary-color">"Regina"</strong>&nbsp; &nbsp;<span class="tariff">tariff<strong class="tariff__name">premium</strong></span>&nbsp; &nbsp;
           <svg class="ic-shield guarantee" role="img">
             <use xlink:href="static/decors/sprite.svg#ic-shield"></use>
-          </svg>
-          <button class="B-item__close" type="button" onclick="$(this).closest('.Basket__item').hide()">
-            <svg class="ic-close" role="img">
-              <use xlink:href="static/decors/sprite.svg#ic-close"></use>
-            </svg>
-          </button>
+          </svg><span class="B-item__close">
+            <button class="btn btn--danger btn--square" type="button" onclick="$(this).closest('.Basket__item').fadeOut(300, function(){$(this).remove()})">
+              <svg class="ic-close btn__icon" role="img">
+                <use xlink:href="static/decors/sprite.svg#ic-close"></use>
+              </svg>
+            </button></span>
         </div>
         <table class="B-item">
           <tr class="B-item__thead">
@@ -156,13 +156,12 @@
         </table>
       </div>
       <div class="Basket__item">
-        <div class="B-item__header"><strong>Поставщик:</strong><strong class="primary-color">"Regina"</strong>
-          <button class="B-item__close" type="button" onclick="$(this).closest('.Basket__item').hide()">
-            <svg class="ic-close" role="img">
-              <use xlink:href="static/decors/sprite.svg#ic-close"></use>
-            </svg>
-          </button>
-        </div>
+        <div class="B-item__header"><strong>Поставщик:</strong><strong class="primary-color">"Regina"</strong><span class="B-item__close">
+            <button class="btn btn--danger btn--square" type="button" onclick="$(this).closest('.Basket__item').fadeOut(300, function(){$(this).remove()})">
+              <svg class="ic-close btn__icon" role="img">
+                <use xlink:href="static/decors/sprite.svg#ic-close"></use>
+              </svg>
+            </button></span></div>
         <table class="B-item">
           <tr class="B-item__thead">
             <td class="B-item__td">Товар</td>
@@ -281,7 +280,7 @@
       <ul class="Breadcrumbs">
         <li class="Breadcrumbs__item"><a class="Breadcrumbs__link" href="/">Главная</a></li>
         <li class="Breadcrumbs__item"><a class="Breadcrumbs__link" href="/cabinet.html">Личный кабинет</a></li>
-        <li class="Breadcrumbs__item"><a class="Breadcrumbs__link" href="/cabinet/about.html">О компании</a></li>
+        <li class="Breadcrumbs__item"><a class="Breadcrumbs__link" href="/cabinet-products.html">Товары</a></li>
       </ul>
     </div>
     <div class="container">
@@ -290,77 +289,82 @@
           <li class="Box__item"><span class="Box__icon">
               <svg class="ic-home" role="img">
                 <use xlink:href="static/decors/sprite.svg#ic-home"></use>
-              </svg></span><a class="Box__inner" href="/">Главная</a></li>
+              </svg></span><a class="Box__inner" href="/cabinet.html">Главная</a></li>
           <li class="Box__item"><span class="Box__icon">
               <svg class="ic-info" role="img">
                 <use xlink:href="static/decors/sprite.svg#ic-info"></use>
-              </svg></span><a class="Box__inner" href="/">О компании</a><a class="Box__toggler dd-toggler" href="#settings-menu-about">
+              </svg></span><a class="Box__inner" href="/cabinet.html">О компании</a><a class="Box__toggler dd-toggler" href="#cabinet-menu-about">
               <svg class="ic-chevron" role="img">
                 <use xlink:href="static/decors/sprite.svg#ic-chevron"></use>
               </svg></a>
-            <ul class="Box Box__subbox opened" id="settings-menu-about">
-              <li class="Box__item"><a class="Box__inner" href="/">Общая информация</a></li>
-              <li class="Box__item"><a class="Box__inner" href="/">Контакты</a></li>
-              <li class="Box__item"><a class="Box__inner" href="/">Оплата, доставка</a></li>
+            <ul class="Box Box__subbox" id="cabinet-menu-about">
+              <li class="Box__item"><a class="Box__inner" href="/cabinet.html">Общая информация</a></li>
+              <li class="Box__item"><a class="Box__inner" href="/cabinet.html">Контакты</a></li>
+              <li class="Box__item"><a class="Box__inner" href="/cabinet.html">Оплата, доставка</a></li>
             </ul>
           </li>
           <li class="Box__item"><span class="Box__icon">
               <svg class="ic-folder" role="img">
                 <use xlink:href="static/decors/sprite.svg#ic-folder"></use>
-              </svg></span><a class="Box__inner" href="/">Товары</a><a class="Box__toggler dd-toggler" href="#settings-menu-products">
+              </svg></span><a class="Box__inner" href="/cabinet-products.html">Товары</a><a class="Box__toggler dd-toggler" href="#cabinet-menu-products">
               <svg class="ic-chevron" role="img">
                 <use xlink:href="static/decors/sprite.svg#ic-chevron"></use>
               </svg></a>
-            <ul class="Box Box__subbox opened" id="settings-menu-products">
-              <li class="Box__item"><a class="Box__inner" href="/">Группы товаров</a></li>
-              <li class="Box__item"><a class="Box__inner" href="/">Экспорт товаров</a></li>
-              <li class="Box__item"><a class="Box__inner" href="/">Импорт товаров</a></li>
-              <li class="Box__item"><a class="Box__inner" href="/">Оптимизация товаров</a></li>
-              <li class="Box__item"><a class="Box__inner" href="/">Бренды</a></li>
+            <ul class="Box Box__subbox" id="cabinet-menu-products">
+              <li class="Box__item"><a class="Box__inner" href="/cabinet-products.html">Группы товаров</a></li>
+              <li class="Box__item"><a class="Box__inner" href="/cabinet-products.html">Экспорт товаров</a></li>
+              <li class="Box__item"><a class="Box__inner" href="/cabinet-products.html">Импорт товаров</a></li>
+              <li class="Box__item"><a class="Box__inner" href="/cabinet-products.html">Оптимизация товаров</a></li>
+              <li class="Box__item"><a class="Box__inner" href="/cabinet-products.html">Бренды</a></li>
+              <li class="Box__item"><a class="Box__inner" href="/cabinet-add-product.html">Добавить товар</a></li>
             </ul>
           </li>
           <li class="Box__item"><span class="Box__icon">
               <svg class="ic-envelope" role="img">
                 <use xlink:href="static/decors/sprite.svg#ic-envelope"></use>
-              </svg></span><a class="Box__inner" href="/">Сообщения</a></li>
+              </svg></span><a class="Box__inner" href="/cabinet-messages.html">Сообщения</a></li>
           <li class="Box__item"><span class="Box__icon">
               <svg class="ic-cart-2" role="img">
                 <use xlink:href="static/decors/sprite.svg#ic-cart-2"></use>
-              </svg></span><a class="Box__inner" href="/">Заказы</a> <a class="Box__inner Box__accent" href="/">(62)</a></li>
+              </svg></span><a class="Box__inner" href="/cabinet-orders.html">Заказы</a> <a class="Box__inner Box__accent" href="/cabinet-orders.html">(62)</a></li>
+          <li class="Box__item"><span class="Box__icon">
+              <svg class="ic-line-chart" role="img">
+                <use xlink:href="static/decors/sprite.svg#ic-line-chart"></use>
+              </svg></span><a class="Box__inner" href="/cabinet-statistic.html">Статистика</a></li>
         </ul>
       </aside>
       <main class="Page__main">
         <h1 class="Page__title">Товары </h1>
         <div class="Panel" style="z-index:30;">
-          <div class="Panel__item">
-            <button class="btn btn--danger fz-md" type="button"><b class="btn__icon">+</b>Добавить товар</button>
+          <div class="Panel__item" style="z-index:40;">
+            <button class="d-b btn btn--danger fz-md" type="button"><b class="btn__icon">+</b>Добавить товар</button>
           </div>
-          <div class="Panel__item">
-            <button class="btn btn--main fz-md" type="button"><b class="btn__icon">+</b>Добавить группу</button>
+          <div class="Panel__item" style="z-index:20;">
+            <button class="d-b btn btn--main fz-md" type="button"><b class="btn__icon">+</b>Добавить группу</button>
           </div>
         </div>
         <div class="Panel" style="z-index:20;">
-          <div class="Panel__item">
+          <div class="Panel__item" style="z-index:60;">
             <svg class="ic-filter" role="img">
               <use xlink:href="static/decors/sprite.svg#ic-filter"></use>
             </svg>Фильтр: 
           </div>
-          <div class="Panel__item">
-            <button class="btn btn--gray" type="button">Выбрать рубрику</button>
+          <div class="Panel__item" style="z-index:50;">
+            <button class="d-b btn btn--gray" type="button">Выбрать рубрику</button>
           </div>
-          <div class="Panel__item">
-            <button class="btn btn--gray" type="button">Топ товары</button>
+          <div class="Panel__item" style="z-index:40;">
+            <button class="d-b btn btn--gray" type="button">Топ товары</button>
           </div>
-          <div class="Panel__item">
-            <select class="select select--gray">
+          <div class="Panel__item" style="z-index:30;">
+            <select class="d-b select select--gray">
               <option>Наличие</option>
               <option>Нет в наличии</option>
               <option>Под заказ </option>
               <option>Заканчиваеться</option>
             </select>
           </div>
-          <div class="Panel__item">
-            <select class="select select--gray">
+          <div class="Panel__item" style="z-index:20;">
+            <select class="d-b select select--gray">
               <option>Статус акции</option>
               <option>Нет</option>
               <option>Новинка</option>
@@ -368,8 +372,8 @@
               <option>Распродажа</option>
             </select>
           </div>
-          <div class="Panel__item">
-            <form class="Selector Selector--main">
+          <div class="Panel__item" style="z-index:10;">
+            <form class="Selector d-b-search Selector--main">
               <input class="Selector__field dd-toggler" type="text" placeholder="Поиск" data-target="#settings-products-search"/>
               <button class="Selector__button dd-toggler" type="submit" data-target="#settings-products-search">
                 <svg class="ic-search" role="img">
@@ -387,26 +391,26 @@
           </div>
         </div>
         <div class="Panel" style="z-index:10;">
-          <label class="Panel__item">
-            <input class="va-middle" type="checkbox" data-target="[name*=&quot;settings-prodcuts&quot;]" id="settings-prodcuts-checkall">    Выбрать все
+          <label class="Panel__item" style="z-index:50;">
+            <input class="va-middle" type="checkbox" id="products-checkall">    Выбрать все
           </label>
-          <div class="Panel__item">
-            <select class="select select--green">
+          <div class="Panel__item" style="z-index:40;">
+            <select class="d-b select select--green">
               <option>Изменить рубрику</option>
               <option>Изменить рубрику товара</option>
               <option>Изменить рубрику сайта</option>
             </select>
           </div>
-          <div class="Panel__item">
-            <select class="select select--green">
+          <div class="Panel__item" style="z-index:30;">
+            <select class="d-b select select--green">
               <option>Изменить наличие</option>
               <option>Нет в наличии</option>
               <option>Под заказ </option>
               <option>Заканчиваеться</option>
             </select>
           </div>
-          <div class="Panel__item">
-            <select class="select select--green">
+          <div class="Panel__item" style="z-index:20;">
+            <select class="d-b select select--green">
               <option>Статус акции</option>
               <option>Нет</option>
               <option>Новинка</option>
@@ -414,11 +418,11 @@
               <option>Распродажа</option>
             </select>
           </div>
-          <div class="Panel__item">
-            <button class="btn btn--danger" type="button" data-target="[name*=&quot;settings-prodcuts&quot;]" id="settings-prodcuts-deleteall">Удалить</button>
+          <div class="Panel__item" style="z-index:10;">
+            <button class="d-b btn btn--danger" type="button" id="products-deleteall">Удалить</button>
           </div>
         </div>
-        <div class="Table" id="settings-prodcuts-container">
+        <div class="Table" id="products-container">
           <table>
             <tHead>
               <tr>
@@ -432,14 +436,14 @@
             <tBody>
               <tr>
                 <td> 
-                  <input type="checkbox" name="settings-prodcuts[1]">
+                  <input type="checkbox" name="products[1][check]">
                 </td>
                 <td> 
                   <div class="Media">
                     <div class="Media__pic">
                       <div class="as-ratio as-ratio--landscape"><img class="as-ratio__inner" src="img/category-2.png" alt="super-product"></div>
                     </div>
-                    <div class="Media__desc"><a href="/cabinet-order.html">Шкаф-купе от производителя "Гербор"</a></div>
+                    <div class="Media__desc"><a href="/cabinet-add-product.html">Шкаф-купе от производителя "Гербор"</a></div>
                   </div>
                 </td>
                 <td>a-30035</td>
@@ -464,14 +468,14 @@
               </tr>
               <tr>
                 <td> 
-                  <input type="checkbox" name="settings-prodcuts[2]">
+                  <input type="checkbox" name="products[2][check]">
                 </td>
                 <td> 
                   <div class="Media">
                     <div class="Media__pic">
                       <div class="as-ratio as-ratio--landscape"><img class="as-ratio__inner" src="img/category-1.png" alt="super-product"></div>
                     </div>
-                    <div class="Media__desc"><a href="/cabinet-order.html">Диван "Элит"</a></div>
+                    <div class="Media__desc"><a href="/cabinet-add-product.html">Диван "Элит"</a></div>
                   </div>
                 </td>
                 <td>a-14215</td>
@@ -496,14 +500,14 @@
               </tr>
               <tr>
                 <td> 
-                  <input type="checkbox" name="settings-prodcuts[3]">
+                  <input type="checkbox" name="products[3][check]">
                 </td>
                 <td> 
                   <div class="Media">
                     <div class="Media__pic">
                       <div class="as-ratio as-ratio--landscape"><img class="as-ratio__inner" src="img/category-5.png" alt="super-product"></div>
                     </div>
-                    <div class="Media__desc"><a href="/cabinet-order.html">Кресло “Шеф”: офисное кресло с поворотным механизмом и регулировкой по высоте.</a></div>
+                    <div class="Media__desc"><a href="/cabinet-add-product.html">Кресло “Шеф”: офисное кресло с поворотным механизмом и регулировкой по высоте.</a></div>
                   </div>
                 </td>
                 <td>a-32435</td>
@@ -619,7 +623,6 @@
   <ul>
     <li><a href="/cabinet-add-product.html">cabinet-add-product.html</a></li>
     <li><a href="/cabinet-messages.html">cabinet-messages.html</a></li>
-    <li><a href="/cabinet-order.html">cabinet-order.html</a></li>
     <li><a href="/cabinet-orders.html">cabinet-orders.html</a></li>
     <li><a href="/cabinet-products.html">cabinet-products.html</a></li>
     <li><a href="/cabinet-statistic.html">cabinet-statistic.html</a></li>
