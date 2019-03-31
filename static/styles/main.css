@@ -1827,7 +1827,9 @@ select:invalid {
   left: 0;
   min-width: 100%;
   max-width: 300px;
-  overflow: hidden;
+  max-height: 350px;
+  overflow: auto;
+  overflow-x: hidden;
   background: #fff;
   border-style: solid;
   border-color: inherit;
@@ -2698,6 +2700,10 @@ a.Box__inner:hover {
   color: #323232;
   font-weight: 700;
   margin-bottom: 0px;
+  white-space: nowrap;
+  overflow: hidden;
+  -o-text-overflow: ellipsis;
+     text-overflow: ellipsis;
 }
 
 .Product__field span {
@@ -4339,7 +4345,6 @@ a.Box__inner:hover {
 
 .Media {
   display: block;
-  min-width: 280px;
   max-width: 100%;
 }
 
@@ -4358,13 +4363,26 @@ a.Box__inner:hover {
 
 .Media__pic {
   float: left;
-  width: 25%;
-  padding: 0 10px;
+  width: 40%;
+  padding-right: 10px;
+}
+
+@media (min-width: 560px) and (max-width: 767px), (min-width: 1020px) {
+  .Media__pic {
+    width: 25%;
+    padding: 0 10px;
+  }
 }
 
 .Media__desc {
   float: left;
-  width: 75%;
+  width: 60%;
+}
+
+@media (min-width: 560px) and (max-width: 767px), (min-width: 1020px) {
+  .Media__desc {
+    width: 75%;
+  }
 }
 
 .Panel {
@@ -5344,6 +5362,13 @@ a.Box__inner:hover {
   color: #04527a;
 }
 
+.Services__count {
+  display: inline-block;
+  margin-left: 5px;
+  font-size: .8em;
+  color: #4a4a4a;
+}
+
 .Reviews {
   font-size: 18px;
   margin: 50px 0;
@@ -6238,4 +6263,10 @@ a.Box__inner:hover {
 
 .small {
   font-size: 0.9em;
+}
+
+@media (max-width: 560px) {
+  .hide-xs {
+    display: none;
+  }
 }
